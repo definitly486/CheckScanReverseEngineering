@@ -1,0 +1,904 @@
+./analysis/apk_analysis/jadx/sources/yads/wa3.java:6:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/yads/wa3.java:10:    public final HttpURLConnection b;
+./analysis/apk_analysis/jadx/sources/yads/wa3.java:13:    public wa3(HttpURLConnection httpURLConnection) {
+./analysis/apk_analysis/jadx/sources/yads/wa3.java:16:            errorStream = httpURLConnection.getInputStream();
+./analysis/apk_analysis/jadx/sources/yads/wa3.java:18:            errorStream = httpURLConnection.getErrorStream();
+./analysis/apk_analysis/jadx/sources/yads/wa3.java:21:        this.b = httpURLConnection;
+./analysis/apk_analysis/jadx/sources/yads/i94.java:9:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/yads/i94.java:92:        HttpURLConnection httpURLConnection = (HttpURLConnection) ((URLConnection) FirebasePerfUrlConnection.instrument(url.openConnection()));
+./analysis/apk_analysis/jadx/sources/yads/i94.java:93:        httpURLConnection.setInstanceFollowRedirects(HttpURLConnection.getFollowRedirects());
+./analysis/apk_analysis/jadx/sources/yads/i94.java:95:        httpURLConnection.setConnectTimeout(i);
+./analysis/apk_analysis/jadx/sources/yads/i94.java:96:        httpURLConnection.setReadTimeout(i);
+./analysis/apk_analysis/jadx/sources/yads/i94.java:98:        httpURLConnection.setUseCaches(false);
+./analysis/apk_analysis/jadx/sources/yads/i94.java:99:        httpURLConnection.setDoInput(true);
+./analysis/apk_analysis/jadx/sources/yads/i94.java:101:            ((HttpsURLConnection) httpURLConnection).setSSLSocketFactory(sSLSocketFactory);
+./analysis/apk_analysis/jadx/sources/yads/i94.java:105:                httpURLConnection.setRequestProperty(str, (String) map3.get(str));
+./analysis/apk_analysis/jadx/sources/yads/i94.java:109:                httpURLConnection.setRequestMethod("GET");
+./analysis/apk_analysis/jadx/sources/yads/i94.java:114:                httpURLConnection.setRequestMethod("POST");
+./analysis/apk_analysis/jadx/sources/yads/i94.java:117:                    httpURLConnection.setDoOutput(true);
+./analysis/apk_analysis/jadx/sources/yads/i94.java:118:                    if (!httpURLConnection.getRequestProperties().containsKey("Content-Type")) {
+./analysis/apk_analysis/jadx/sources/yads/i94.java:119:                        httpURLConnection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+./analysis/apk_analysis/jadx/sources/yads/i94.java:121:                    DataOutputStream dataOutputStream = new DataOutputStream(httpURLConnection.getOutputStream());
+./analysis/apk_analysis/jadx/sources/yads/i94.java:126:            int responseCode = httpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/yads/i94.java:128:                throw new IOException("Could not retrieve response code from HttpUrlConnection.");
+./analysis/apk_analysis/jadx/sources/yads/i94.java:131:                sa3 sa3Var = new sa3(responseCode, xa3.a(httpURLConnection.getHeaderFields()), -1, null);
+./analysis/apk_analysis/jadx/sources/yads/i94.java:132:                httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/yads/i94.java:136:                return new sa3(responseCode, xa3.a(httpURLConnection.getHeaderFields()), httpURLConnection.getContentLength(), new wa3(httpURLConnection));
+./analysis/apk_analysis/jadx/sources/yads/i94.java:141:                    httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/yads/li6.java:7:    public static boolean a = Log.isLoggable("Volley", 2);
+./analysis/apk_analysis/jadx/sources/yads/f85.java:24:        File fileA = pp0.a(context, "mobileads-volley-cache");
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:13:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:31:    public HttpURLConnection j;
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:60:            HttpURLConnection httpURLConnectionA = a(new URL(bd0Var.a.toString()), bd0Var.c, bd0Var.d, bd0Var.f, bd0Var.g, (bd0Var.i & 1) == 1, true, bd0Var.e);
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:61:            this.j = httpURLConnectionA;
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:62:            this.m = httpURLConnectionA.getResponseCode();
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:63:            httpURLConnectionA.getResponseMessage();
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:66:                Map<String, List<String>> headerFields = httpURLConnectionA.getHeaderFields();
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:68:                    String headerField = httpURLConnectionA.getHeaderField("Content-Range");
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:95:                InputStream errorStream = httpURLConnectionA.getErrorStream();
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:118:            httpURLConnectionA.getContentType();
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:127:            boolean zEqualsIgnoreCase = "gzip".equalsIgnoreCase(httpURLConnectionA.getHeaderField("Content-Encoding"));
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:132:                String headerField2 = httpURLConnectionA.getHeaderField("Content-Length");
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:133:                String headerField3 = httpURLConnectionA.getHeaderField("Content-Range");
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:174:                this.k = httpURLConnectionA.getInputStream();
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:202:        HttpURLConnection httpURLConnection = this.j;
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:203:        return httpURLConnection == null ? p55.h : new el0(httpURLConnection.getHeaderFields());
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:282:        HttpURLConnection httpURLConnection = this.j;
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:283:        if (httpURLConnection == null) {
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:286:        return Uri.parse(httpURLConnection.getURL().toString());
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:290:        HttpURLConnection httpURLConnection = this.j;
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:291:        if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:293:                httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:301:    public final HttpURLConnection a(URL url, int i, byte[] bArr, long j, long j2, boolean z, boolean z2, Map map) throws IOException {
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:305:        HttpURLConnection httpURLConnectionA = a(url);
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:306:        httpURLConnectionA.setConnectTimeout(this.e);
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:307:        httpURLConnectionA.setReadTimeout(this.f);
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:323:            httpURLConnectionA.setRequestProperty((String) entry.getKey(), (String) entry.getValue());
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:336:            httpURLConnectionA.setRequestProperty("Range", string);
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:340:            httpURLConnectionA.setRequestProperty("User-Agent", str2);
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:342:        httpURLConnectionA.setRequestProperty("Accept-Encoding", z ? "gzip" : "identity");
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:343:        httpURLConnectionA.setInstanceFollowRedirects(z2);
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:344:        httpURLConnectionA.setDoOutput(bArr != null);
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:356:        httpURLConnectionA.setRequestMethod(str);
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:358:            httpURLConnectionA.setFixedLengthStreamingMode(bArr.length);
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:359:            httpURLConnectionA.connect();
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:360:            OutputStream outputStream = httpURLConnectionA.getOutputStream();
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:363:            return httpURLConnectionA;
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:365:        httpURLConnectionA.connect();
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:366:        return httpURLConnectionA;
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:369:    public HttpURLConnection a(URL url) {
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:370:        return (HttpURLConnection) ((URLConnection) FirebasePerfUrlConnection.instrument(url.openConnection()));
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:395:    public static void a(HttpURLConnection httpURLConnection, long j) {
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:397:        if (httpURLConnection == null || (i = u56.a) < 19 || i > 20) {
+./analysis/apk_analysis/jadx/sources/yads/fl0.java:401:            InputStream inputStream = httpURLConnection.getInputStream();
+./analysis/apk_analysis/jadx/sources/yads/af5.java:4:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/yads/af5.java:20:    public final HttpURLConnection a(URL url) {
+./analysis/apk_analysis/jadx/sources/yads/af5.java:21:        HttpURLConnection httpURLConnection = (HttpURLConnection) ((URLConnection) FirebasePerfUrlConnection.instrument(url.openConnection()));
+./analysis/apk_analysis/jadx/sources/yads/af5.java:23:        if (sSLSocketFactory != null && (httpURLConnection instanceof HttpsURLConnection)) {
+./analysis/apk_analysis/jadx/sources/yads/af5.java:24:            ((HttpsURLConnection) httpURLConnection).setSSLSocketFactory(sSLSocketFactory);
+./analysis/apk_analysis/jadx/sources/yads/af5.java:26:        return httpURLConnection;
+./analysis/apk_analysis/jadx/sources/retrofit2/HttpException.java:1:package retrofit2;
+./analysis/apk_analysis/jadx/sources/retrofit2/adapter/rxjava2/HttpException.java:1:package retrofit2.adapter.rxjava2;
+./analysis/apk_analysis/jadx/sources/retrofit2/adapter/rxjava2/HttpException.java:5:public final class HttpException extends retrofit2.HttpException {
+./analysis/apk_analysis/jadx/sources/okhttp3/OkHttpClient.java:1:package okhttp3;
+./analysis/apk_analysis/jadx/sources/okhttp3/OkHttpClient.java:37:public class OkHttpClient implements Cloneable, okhttp3.a.InterfaceC0310a {
+./analysis/apk_analysis/jadx/sources/okhttp3/OkHttpClient.java:261:    @Override // okhttp3.a.InterfaceC0310a
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:1:package okhttp3;
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:24:    /* JADX INFO: renamed from: okhttp3.b$b, reason: collision with other inner class name */
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:32:    public void cacheConditionalHit(okhttp3.a aVar, z47 z47Var) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:37:    public void cacheHit(okhttp3.a aVar, z47 z47Var) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:42:    public void cacheMiss(okhttp3.a aVar) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:46:    public void callEnd(okhttp3.a aVar) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:50:    public void callFailed(okhttp3.a aVar, IOException iOException) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:55:    public void callStart(okhttp3.a aVar) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:59:    public void canceled(okhttp3.a aVar) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:63:    public void connectEnd(okhttp3.a aVar, InetSocketAddress inetSocketAddress, Proxy proxy, ts6 ts6Var) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:69:    public void connectFailed(okhttp3.a aVar, InetSocketAddress inetSocketAddress, Proxy proxy, ts6 ts6Var, IOException iOException) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:76:    public void connectStart(okhttp3.a aVar, InetSocketAddress inetSocketAddress, Proxy proxy) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:82:    public void connectionAcquired(okhttp3.a aVar, lw1 lw1Var) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:87:    public void connectionReleased(okhttp3.a aVar, lw1 lw1Var) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:92:    public void dnsEnd(okhttp3.a aVar, String str, List<InetAddress> list) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:98:    public void dnsStart(okhttp3.a aVar, String str) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:103:    public void proxySelectEnd(okhttp3.a aVar, fz3 fz3Var, List<Proxy> list) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:109:    public void proxySelectStart(okhttp3.a aVar, fz3 fz3Var) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:114:    public void requestBodyEnd(okhttp3.a aVar, long j) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:118:    public void requestBodyStart(okhttp3.a aVar) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:122:    public void requestFailed(okhttp3.a aVar, IOException iOException) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:127:    public void requestHeadersEnd(okhttp3.a aVar, b37 b37Var) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:132:    public void requestHeadersStart(okhttp3.a aVar) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:136:    public void responseBodyEnd(okhttp3.a aVar, long j) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:140:    public void responseBodyStart(okhttp3.a aVar) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:144:    public void responseFailed(okhttp3.a aVar, IOException iOException) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:149:    public void responseHeadersEnd(okhttp3.a aVar, z47 z47Var) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:154:    public void responseHeadersStart(okhttp3.a aVar) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:158:    public void satisfactionFailure(okhttp3.a aVar, z47 z47Var) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:163:    public void secureConnectEnd(okhttp3.a aVar, lu3 lu3Var) {
+./analysis/apk_analysis/jadx/sources/okhttp3/b.java:167:    public void secureConnectStart(okhttp3.a aVar) {
+./analysis/apk_analysis/jadx/sources/okhttp3/a.java:1:package okhttp3;
+./analysis/apk_analysis/jadx/sources/okhttp3/a.java:11:    /* JADX INFO: renamed from: okhttp3.a$a, reason: collision with other inner class name */
+./analysis/apk_analysis/jadx/sources/okhttp3/internal/publicsuffix/PublicSuffixDatabase.java:1:package okhttp3.internal.publicsuffix;
+./analysis/apk_analysis/jadx/sources/okhttp3/internal/connection/RouteException.java:1:package okhttp3.internal.connection;
+./analysis/apk_analysis/jadx/sources/okhttp3/internal/http2/ConnectionShutdownException.java:1:package okhttp3.internal.http2;
+./analysis/apk_analysis/jadx/sources/okhttp3/internal/http2/StreamResetException.java:1:package okhttp3.internal.http2;
+./analysis/apk_analysis/jadx/sources/defpackage/uh2.java:5:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/uh2.java:12:        HttpURLConnection httpURLConnection = (HttpURLConnection) ((URLConnection) FirebasePerfUrlConnection.instrument(new URL(str).openConnection()));
+./analysis/apk_analysis/jadx/sources/defpackage/uh2.java:13:        httpURLConnection.setRequestMethod("GET");
+./analysis/apk_analysis/jadx/sources/defpackage/uh2.java:14:        httpURLConnection.connect();
+./analysis/apk_analysis/jadx/sources/defpackage/uh2.java:15:        return new th2(httpURLConnection);
+./analysis/apk_analysis/jadx/sources/defpackage/on.java:7:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/fr2.java:5:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:14:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:64:        HttpURLConnection httpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:68:        HttpURLConnection httpURLConnection2;
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:73:        HttpURLConnection httpURLConnection3;
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:93:                    if (!(uRLConnectionOpenConnection instanceof HttpURLConnection)) {
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:96:                    HttpURLConnection httpURLConnection4 = (HttpURLConnection) uRLConnectionOpenConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:97:                    httpURLConnection4.setDefaultUseCaches(false);
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:99:                    httpURLConnection4.setConnectTimeout(ExoPlayer.DEFAULT_STUCK_PLAYING_NOT_ENDING_TIMEOUT_MS);
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:101:                    httpURLConnection4.setReadTimeout(61000);
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:102:                    httpURLConnection4.setInstanceFollowRedirects(false);
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:103:                    httpURLConnection4.setDoInput(true);
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:109:                                    httpURLConnection4.addRequestProperty((String) entry.getKey(), (String) entry.getValue());
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:125:                                    httpURLConnection4.setDoOutput(true);
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:126:                                    httpURLConnection4.addRequestProperty("Content-Encoding", "gzip");
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:127:                                    httpURLConnection4.setFixedLengthStreamingMode(length);
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:128:                                    httpURLConnection4.connect();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:129:                                    OutputStream outputStream4 = httpURLConnection4.getOutputStream();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:133:                                        responseCode = httpURLConnection4.getResponseCode();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:136:                                                final Map<String, List<String>> headerFields = httpURLConnection4.getHeaderFields();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:139:                                                    inputStream = httpURLConnection4.getInputStream();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:152:                                                        httpURLConnection4.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:176:                                                httpURLConnection2 = httpURLConnection4;
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:185:                                                if (httpURLConnection2 != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:186:                                                    httpURLConnection2.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:201:                                                httpURLConnection3 = httpURLConnection4;
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:210:                                                if (httpURLConnection3 != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:211:                                                    httpURLConnection3.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:229:                                            httpURLConnection2 = httpURLConnection4;
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:233:                                            if (httpURLConnection2 != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:234:                                                httpURLConnection2.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:250:                                            httpURLConnection3 = httpURLConnection4;
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:254:                                            if (httpURLConnection3 != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:255:                                                httpURLConnection3.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:275:                                        httpURLConnection2 = httpURLConnection4;
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:279:                                        if (httpURLConnection2 != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:280:                                            httpURLConnection2.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:298:                                        httpURLConnection3 = httpURLConnection4;
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:302:                                        if (httpURLConnection3 != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:303:                                            httpURLConnection3.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:322:                                responseCode = httpURLConnection4.getResponseCode();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:323:                                final Map headerFields2 = httpURLConnection4.getHeaderFields();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:325:                                inputStream = httpURLConnection4.getInputStream();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:337:                                httpURLConnection4.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:355:                        httpURLConnection = httpURLConnection4;
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:358:                        httpURLConnection3 = httpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:363:                        if (httpURLConnection3 != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:364:                            httpURLConnection3.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:383:                    httpURLConnection2 = null;
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:388:                    if (httpURLConnection2 != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:389:                        httpURLConnection2.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/s2c.java:408:            httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/defpackage/gq1.java:7:import retrofit2.HttpException;
+./analysis/apk_analysis/jadx/sources/defpackage/p13.java:14:import okhttp3.a;
+./analysis/apk_analysis/jadx/sources/defpackage/p13.java:15:import okhttp3.b;
+./analysis/apk_analysis/jadx/sources/defpackage/p13.java:16:import okhttp3.internal.http2.ConnectionShutdownException;
+./analysis/apk_analysis/jadx/sources/defpackage/p13.java:17:import okhttp3.internal.http2.StreamResetException;
+./analysis/apk_analysis/jadx/sources/defpackage/ry6.java:5:import okhttp3.a;
+./analysis/apk_analysis/jadx/sources/defpackage/ky0.java:5:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/vy3.java:8:import okhttp3.internal.http2.StreamResetException;
+./analysis/apk_analysis/jadx/sources/defpackage/mt9.java:8:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/mt9.java:50:                    HttpURLConnection httpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/mt9.java:79:                                httpURLConnection = (HttpURLConnection) ((URLConnection) FirebasePerfUrlConnection.instrument(new URL(str2).openConnection()));
+./analysis/apk_analysis/jadx/sources/defpackage/mt9.java:81:                                    httpURLConnection.setReadTimeout(10000);
+./analysis/apk_analysis/jadx/sources/defpackage/mt9.java:82:                                    httpURLConnection.setConnectTimeout(10000);
+./analysis/apk_analysis/jadx/sources/defpackage/mt9.java:83:                                    httpURLConnection.setInstanceFollowRedirects(true);
+./analysis/apk_analysis/jadx/sources/defpackage/mt9.java:84:                                    httpURLConnection.setRequestProperty("connection", TJAdUnitConstants.String.CLOSE);
+./analysis/apk_analysis/jadx/sources/defpackage/mt9.java:85:                                    y14.m(httpURLConnection);
+./analysis/apk_analysis/jadx/sources/defpackage/mt9.java:86:                                    httpURLConnection.connect();
+./analysis/apk_analysis/jadx/sources/defpackage/mt9.java:87:                                    int responseCode = httpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/defpackage/mt9.java:90:                                        File fileE = uy9VarB.e(httpURLConnection.getInputStream(), str2);
+./analysis/apk_analysis/jadx/sources/defpackage/mt9.java:111:                                httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/defpackage/mt9.java:113:                            if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/mt9.java:114:                                httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/jy6.java:15:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/jy6.java:18:public final class jy6 implements okhttp3.a {
+./analysis/apk_analysis/jadx/sources/defpackage/jy6.java:22:    public final okhttp3.b e;
+./analysis/apk_analysis/jadx/sources/defpackage/jy6.java:158:    @Override // okhttp3.a
+./analysis/apk_analysis/jadx/sources/defpackage/jy6.java:234:        okhttp3.b bVar = this.e;
+./analysis/apk_analysis/jadx/sources/defpackage/jy6.java:244:    @Override // okhttp3.a
+./analysis/apk_analysis/jadx/sources/defpackage/jy6.java:314:    @Override // okhttp3.a
+./analysis/apk_analysis/jadx/sources/defpackage/jy6.java:487:    @Override // okhttp3.a
+./analysis/apk_analysis/jadx/sources/defpackage/jy6.java:492:    @Override // okhttp3.a
+./analysis/apk_analysis/jadx/sources/defpackage/tf1.java:3:import retrofit2.HttpException;
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:10:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:21:    public HttpURLConnection d;
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:33:    public static int d(HttpURLConnection httpURLConnection) {
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:35:            return httpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:59:        HttpURLConnection httpURLConnection = this.d;
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:60:        if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:61:            httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:90:            HttpURLConnection httpURLConnection = (HttpURLConnection) ((URLConnection) FirebasePerfUrlConnection.instrument(url.openConnection()));
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:92:                httpURLConnection.addRequestProperty(entry.getKey(), entry.getValue());
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:94:            httpURLConnection.setConnectTimeout(i2);
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:95:            httpURLConnection.setReadTimeout(i2);
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:96:            httpURLConnection.setUseCaches(false);
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:97:            httpURLConnection.setDoInput(true);
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:98:            httpURLConnection.setInstanceFollowRedirects(false);
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:99:            this.d = httpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:101:                httpURLConnection.connect();
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:131:                HttpURLConnection httpURLConnection2 = this.d;
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:133:                    if (TextUtils.isEmpty(httpURLConnection2.getContentEncoding())) {
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:134:                        yx1 yx1Var = new yx1(httpURLConnection2.getInputStream(), httpURLConnection2.getContentLength());
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:139:                        Log.d("HttpUrlFetcher", "Got non empty content encoding: " + httpURLConnection2.getContentEncoding());
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:141:                    InputStream inputStream = httpURLConnection2.getInputStream();
+./analysis/apk_analysis/jadx/sources/defpackage/gz3.java:145:                    throw new HttpException("Failed to obtain InputStream", e3, d(httpURLConnection2));
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:13:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:48:        HttpURLConnection httpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:65:            if (!(uRLConnectionOpenConnection instanceof HttpURLConnection)) {
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:68:            httpURLConnection = (HttpURLConnection) uRLConnectionOpenConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:69:            httpURLConnection.setDefaultUseCaches(false);
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:71:            httpURLConnection.setConnectTimeout(ExoPlayer.DEFAULT_STUCK_PLAYING_NOT_ENDING_TIMEOUT_MS);
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:73:            httpURLConnection.setReadTimeout(61000);
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:74:            httpURLConnection.setInstanceFollowRedirects(false);
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:75:            httpURLConnection.setDoInput(true);
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:80:                        httpURLConnection.addRequestProperty((String) entry.getKey(), (String) entry.getValue());
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:89:                    httpURLConnection.setDoOutput(true);
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:90:                    httpURLConnection.addRequestProperty("Content-Encoding", "gzip");
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:91:                    httpURLConnection.setFixedLengthStreamingMode(length);
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:92:                    httpURLConnection.connect();
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:93:                    OutputStream outputStream2 = httpURLConnection.getOutputStream();
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:109:                        if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:110:                            httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:125:                        if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:126:                            httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:132:                responseCode = httpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:135:                        Map<String, List<String>> headerFields = httpURLConnection.getHeaderFields();
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:138:                            inputStream = httpURLConnection.getInputStream();
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:146:                                        httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:170:                        if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:171:                            httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:181:                        if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:182:                            httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:194:                    if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:195:                        httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:205:                    if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:206:                        httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:222:            httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/defpackage/mlb.java:226:            httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/defpackage/n13.java:5:import okhttp3.internal.http2.ConnectionShutdownException;
+./analysis/apk_analysis/jadx/sources/defpackage/n13.java:6:import okhttp3.internal.http2.StreamResetException;
+./analysis/apk_analysis/jadx/sources/defpackage/n13.java:11:    public final okhttp3.b b;
+./analysis/apk_analysis/jadx/sources/defpackage/n13.java:170:    public n13(jy6 jy6Var, okhttp3.b bVar, p13 p13Var, o13 o13Var) {
+./analysis/apk_analysis/jadx/sources/defpackage/n13.java:194:        okhttp3.b bVar = this.b;
+./analysis/apk_analysis/jadx/sources/defpackage/ly6.java:28:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/ly6.java:29:import okhttp3.b;
+./analysis/apk_analysis/jadx/sources/defpackage/ly6.java:30:import okhttp3.internal.connection.RouteException;
+./analysis/apk_analysis/jadx/sources/defpackage/ly6.java:128:    /* JADX WARN: Type inference failed for: r1v10, types: [okhttp3.b] */
+./analysis/apk_analysis/jadx/sources/defpackage/ly6.java:135:    /* JADX WARN: Type inference failed for: r1v3, types: [okhttp3.b] */
+./analysis/apk_analysis/jadx/sources/defpackage/ly6.java:142:    /* JADX WARN: Type inference failed for: r2v3, types: [okhttp3.a] */
+./analysis/apk_analysis/jadx/sources/defpackage/ly6.java:144:    /* JADX WARN: Type inference failed for: r2v6, types: [okhttp3.a] */
+./analysis/apk_analysis/jadx/sources/defpackage/ly6.java:147:    public final void d(int i, int i2, int i3, boolean z, okhttp3.a aVar, b bVar) throws Throwable {
+./analysis/apk_analysis/jadx/sources/defpackage/ly6.java:262:                            okhttp3.a aVar2 = aVar;
+./analysis/apk_analysis/jadx/sources/defpackage/ly6.java:338:    public final void f(int i, int i2, okhttp3.a aVar, b bVar) throws IOException {
+./analysis/apk_analysis/jadx/sources/defpackage/ly6.java:372:    public final void g(int i, int i2, int i3, okhttp3.a aVar, b bVar) throws IOException {
+./analysis/apk_analysis/jadx/sources/defpackage/ly6.java:446:    public final void h(uw1 uw1Var, okhttp3.a aVar, b bVar) throws Throwable {
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java:12:import okhttp3.a;
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java:106:                                    throw kb9.j(method, i8, "@Url must be okhttp3.HttpUrl, String, java.net.URI, or android.net.Uri type.", new Object[0]);
+./analysis/apk_analysis/jadx/sources/defpackage/j02.java:9:import okhttp3.internal.publicsuffix.PublicSuffixDatabase;
+./analysis/apk_analysis/jadx/sources/defpackage/zy0.java:29:    public final void onFailure(okhttp3.a aVar, IOException iOException) {
+./analysis/apk_analysis/jadx/sources/defpackage/zy0.java:34:    public final void onResponse(okhttp3.a aVar, z47 z47Var) {
+./analysis/apk_analysis/jadx/sources/defpackage/o67.java:17:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/o67.java:18:import okhttp3.internal.connection.RouteException;
+./analysis/apk_analysis/jadx/sources/defpackage/o67.java:19:import okhttp3.internal.http2.ConnectionShutdownException;
+./analysis/apk_analysis/jadx/sources/defpackage/tg4.java:4:@bd2(c = "retrofit2.KotlinExtensions", f = "KotlinExtensions.kt", l = {119}, m = "suspendAndThrow")
+./analysis/apk_analysis/jadx/sources/defpackage/k87.java:8:import okhttp3.b;
+./analysis/apk_analysis/jadx/sources/defpackage/k87.java:14:    public final okhttp3.a c;
+./analysis/apk_analysis/jadx/sources/defpackage/k87.java:34:    public k87(l9 l9Var, j87 j87Var, okhttp3.a aVar, b bVar) {
+./analysis/apk_analysis/jadx/sources/defpackage/oy0.java:6:import okhttp3.b;
+./analysis/apk_analysis/jadx/sources/defpackage/oy0.java:7:import okhttp3.internal.http2.ConnectionShutdownException;
+./analysis/apk_analysis/jadx/sources/defpackage/z86.java:26:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/wc5.java:24:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/ha7.java:4:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/fa7.java:4:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/qy3.java:10:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/qy3.java:11:import okhttp3.internal.http2.ConnectionShutdownException;
+./analysis/apk_analysis/jadx/sources/defpackage/qy3.java:12:import okhttp3.internal.http2.StreamResetException;
+./analysis/apk_analysis/jadx/sources/defpackage/mk0.java:4:import retrofit2.adapter.rxjava2.HttpException;
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:15:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:38:        HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:39:        httpURLConnection.setConnectTimeout(30000);
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:40:        httpURLConnection.setReadTimeout(130000);
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:41:        httpURLConnection.setDoOutput(true);
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:42:        httpURLConnection.setInstanceFollowRedirects(false);
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:43:        httpURLConnection.setRequestMethod("POST");
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:44:        httpURLConnection.setRequestProperty("User-Agent", "datatransport/3.3.0 android/");
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:45:        httpURLConnection.setRequestProperty("Content-Encoding", "gzip");
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:46:        httpURLConnection.setRequestProperty("Content-Type", "application/json");
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:47:        httpURLConnection.setRequestProperty("Accept-Encoding", "gzip");
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:50:            httpURLConnection.setRequestProperty("X-Goog-Api-Key", str);
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:53:            OutputStream outputStream = httpURLConnection.getOutputStream();
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:62:                    int responseCode = httpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:68:                    hv4.a(httpURLConnection.getHeaderField("Content-Type"), "CctTransportBackend", "Content-Type: %s");
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:69:                    hv4.a(httpURLConnection.getHeaderField("Content-Encoding"), "CctTransportBackend", "Content-Encoding: %s");
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:71:                        return new r81.b(responseCode, new URL(httpURLConnection.getHeaderField("Location")), 0L);
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:76:                    InputStream inputStream = httpURLConnection.getInputStream();
+./analysis/apk_analysis/jadx/sources/defpackage/if1.java:78:                        InputStream gZIPInputStream = "gzip".equals(httpURLConnection.getHeaderField("Content-Encoding")) ? new GZIPInputStream(inputStream) : inputStream;
+./analysis/apk_analysis/jadx/sources/defpackage/db6.java:25:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/ty0.java:4:import okhttp3.a;
+./analysis/apk_analysis/jadx/sources/defpackage/yy0.java:3:import okhttp3.a;
+./analysis/apk_analysis/jadx/sources/defpackage/ia7.java:4:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/dy3.java:10:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/ln9.java:4:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/ln9.java:19:    public static void b(HttpURLConnection httpURLConnection, Map map) {
+./analysis/apk_analysis/jadx/sources/defpackage/ln9.java:26:                httpURLConnection.addRequestProperty(str, (String) it2.next());
+./analysis/apk_analysis/jadx/sources/defpackage/ln9.java:31:    public final void a(HttpURLConnection httpURLConnection) {
+./analysis/apk_analysis/jadx/sources/defpackage/ln9.java:32:        Map<String, List<String>> headerFields = httpURLConnection.getHeaderFields();
+./analysis/apk_analysis/jadx/sources/defpackage/ln9.java:34:            this.a.put(URI.create(httpURLConnection.getURL().toString()), headerFields);
+./analysis/apk_analysis/jadx/sources/defpackage/ln9.java:40:    public final void c(HttpURLConnection httpURLConnection) {
+./analysis/apk_analysis/jadx/sources/defpackage/ln9.java:43:            b(httpURLConnection, this.a.get(URI.create(httpURLConnection.getURL().toString()), map));
+./analysis/apk_analysis/jadx/sources/defpackage/ez0.java:9:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/y52.java:9:import okhttp3.b;
+./analysis/apk_analysis/jadx/sources/defpackage/y52.java:19:    @Override // okhttp3.b.c
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:9:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:32:        HttpURLConnection httpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:50:                httpURLConnection = (HttpURLConnection) ((URLConnection) FirebasePerfUrlConnection.instrument(new URL(str2).openConnection()));
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:52:                    httpURLConnection.setReadTimeout(10000);
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:53:                    httpURLConnection.setConnectTimeout(10000);
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:54:                    httpURLConnection.setRequestMethod("GET");
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:55:                    httpURLConnection.addRequestProperty("User-Agent", System.getProperty("http.agent"));
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:56:                    httpURLConnection.setInstanceFollowRedirects(false);
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:57:                    httpURLConnection.setRequestProperty("connection", TJAdUnitConstants.String.CLOSE);
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:58:                    y14.m(httpURLConnection);
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:60:                        ln9Var.c(httpURLConnection);
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:62:                    httpURLConnection.connect();
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:73:                httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:76:                httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:80:                    int responseCode = httpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:82:                        InputStream inputStream = httpURLConnection.getInputStream();
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:90:                            ln9Var.a(httpURLConnection);
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:94:                        aVar = (responseCode == 302 || responseCode == 301 || responseCode == 303) ? d1.a(str2, httpURLConnection, responseCode) : new d1.a(2, responseCode, null, "Unsupported response code");
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:102:            if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/pda.java:103:                httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/n67.java:15:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/n67.java:20:    public final okhttp3.a.InterfaceC0310a b;
+./analysis/apk_analysis/jadx/sources/defpackage/n67.java:104:        public okhttp3.a.InterfaceC0310a a;
+./analysis/apk_analysis/jadx/sources/defpackage/n67.java:131:            okhttp3.a.InterfaceC0310a okHttpClient = this.a;
+./analysis/apk_analysis/jadx/sources/defpackage/n67.java:135:            okhttp3.a.InterfaceC0310a interfaceC0310a = okHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/n67.java:156:    public n67(okhttp3.a.InterfaceC0310a interfaceC0310a, fz3 fz3Var, List list, List list2, Executor executor) {
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:10:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:31:        HttpURLConnection httpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:37:            httpURLConnection = (HttpURLConnection) ((URLConnection) FirebasePerfUrlConnection.instrument(new URL(str).openConnection()));
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:39:                httpURLConnection.setReadTimeout(10000);
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:40:                httpURLConnection.setConnectTimeout(10000);
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:41:                httpURLConnection.setInstanceFollowRedirects(true);
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:42:                httpURLConnection.setRequestProperty("connection", TJAdUnitConstants.String.CLOSE);
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:43:                y14.m(httpURLConnection);
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:46:                        httpURLConnection.setRequestProperty((String) entry.getKey(), (String) entry.getValue());
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:51:                    httpURLConnection.setDoOutput(true);
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:52:                    httpURLConnection.setRequestMethod("POST");
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:53:                    httpURLConnection.setRequestProperty("Content-Type", "application/x-mtrgdata-v1");
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:54:                    OutputStream outputStream = httpURLConnection.getOutputStream();
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:72:                    httpURLConnection.connect();
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:75:                int responseCode = httpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:78:                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream(), p));
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:108:                    this.o.a("code=" + httpURLConnection.getResponseCode(), 0, 1, PlaybackException.ERROR_CODE_IO_NETWORK_CONNECTION_FAILED, null);
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:125:            httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:127:        if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/g5a.java:128:            httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:10:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:19:        HttpURLConnection httpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:29:            httpURLConnection = (HttpURLConnection) ((URLConnection) FirebasePerfUrlConnection.instrument(new URL(str).openConnection()));
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:31:                httpURLConnection.setUseCaches(false);
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:32:                httpURLConnection.setDoOutput(true);
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:33:                httpURLConnection.setConnectTimeout(AutofillUtils_androidKt.MAX_AUTOFILL_TEXT_LENGTH);
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:34:                httpURLConnection.setReadTimeout(AutofillUtils_androidKt.MAX_AUTOFILL_TEXT_LENGTH);
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:35:                httpURLConnection.setRequestMethod("POST");
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:36:                httpURLConnection.setRequestProperty("Content-Type", "text/html; charset=utf-8");
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:37:                httpURLConnection.setRequestProperty("connection", TJAdUnitConstants.String.CLOSE);
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:38:                y14.m(httpURLConnection);
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:39:                httpURLConnection.connect();
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:40:                OutputStream outputStream = httpURLConnection.getOutputStream();
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:46:                httpURLConnection.getInputStream().close();
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:47:                httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:57:                    if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:58:                        httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/h8a.java:64:            httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/defpackage/gb9.java:20:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/gb9.java:46:        g = ta8.U(ta8.T(OkHttpClient.class.getName(), "okhttp3."), "Client");
+./analysis/apk_analysis/jadx/sources/defpackage/ti.java:7:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/ti.java:24:        linkedHashMap.put("okhttp3.mockwebserver.MockWebServer", "okhttp.MockWebServer");
+./analysis/apk_analysis/jadx/sources/defpackage/dz3.java:6:    public final okhttp3.a.InterfaceC0310a b;
+./analysis/apk_analysis/jadx/sources/defpackage/dz3.java:12:        public a(m37 m37Var, okhttp3.a.InterfaceC0310a interfaceC0310a, i02<b57, ResponseT> i02Var, gy0<ResponseT, ReturnT> gy0Var) {
+./analysis/apk_analysis/jadx/sources/defpackage/dz3.java:27:        public b(m37 m37Var, okhttp3.a.InterfaceC0310a interfaceC0310a, i02 i02Var, gy0 gy0Var, boolean z) {
+./analysis/apk_analysis/jadx/sources/defpackage/dz3.java:62:        public c(m37 m37Var, okhttp3.a.InterfaceC0310a interfaceC0310a, i02<b57, ResponseT> i02Var, gy0<ResponseT, fy0<ResponseT>> gy0Var) {
+./analysis/apk_analysis/jadx/sources/defpackage/dz3.java:85:    public dz3(m37 m37Var, okhttp3.a.InterfaceC0310a interfaceC0310a, i02<b57, ResponseT> i02Var) {
+./analysis/apk_analysis/jadx/sources/defpackage/px0.java:15:import okhttp3.b;
+./analysis/apk_analysis/jadx/sources/defpackage/px0.java:301:                                    aVarP.f.a("Warning", "110 HttpURLConnection \"Response is stale\"");
+./analysis/apk_analysis/jadx/sources/defpackage/px0.java:304:                                    aVarP.f.a("Warning", "113 HttpURLConnection \"Heuristic expiration\"");
+./analysis/apk_analysis/jadx/sources/defpackage/px0.java:349:                                aVarP.f.a("Warning", "110 HttpURLConnection \"Response is stale\"");
+./analysis/apk_analysis/jadx/sources/defpackage/px0.java:352:                                aVarP.f.a("Warning", "113 HttpURLConnection \"Heuristic expiration\"");
+./analysis/apk_analysis/jadx/sources/defpackage/jw1.java:4:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/jw1.java:5:import okhttp3.internal.connection.RouteException;
+./analysis/apk_analysis/jadx/sources/defpackage/jv.java:6:import okhttp3.b;
+./analysis/apk_analysis/jadx/sources/defpackage/jv.java:19:    @Override // okhttp3.b.c
+./analysis/apk_analysis/jadx/sources/defpackage/th2.java:7:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/th2.java:11:    public final HttpURLConnection b;
+./analysis/apk_analysis/jadx/sources/defpackage/th2.java:13:    public th2(HttpURLConnection httpURLConnection) {
+./analysis/apk_analysis/jadx/sources/defpackage/th2.java:14:        this.b = httpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/th2.java:17:    public static String n(HttpURLConnection httpURLConnection) {
+./analysis/apk_analysis/jadx/sources/defpackage/th2.java:18:        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(httpURLConnection.getErrorStream()));
+./analysis/apk_analysis/jadx/sources/defpackage/th2.java:51:        HttpURLConnection httpURLConnection = this.b;
+./analysis/apk_analysis/jadx/sources/defpackage/th2.java:53:            z = httpURLConnection.getResponseCode() / 100 == 2;
+./analysis/apk_analysis/jadx/sources/defpackage/th2.java:64:            return "Unable to fetch " + httpURLConnection.getURL() + ". Failed with " + httpURLConnection.getResponseCode() + "\n" + n(httpURLConnection);
+./analysis/apk_analysis/jadx/sources/defpackage/ma7.java:7:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/defpackage/ma7.java:8:import okhttp3.b;
+./analysis/apk_analysis/jadx/sources/defpackage/vz0.java:14:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/vz0.java:36:        HttpURLConnection httpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/vz0.java:96:                        httpURLConnection.setReadTimeout(10000);
+./analysis/apk_analysis/jadx/sources/defpackage/vz0.java:97:                        httpURLConnection.setConnectTimeout(10000);
+./analysis/apk_analysis/jadx/sources/defpackage/vz0.java:98:                        httpURLConnection.setInstanceFollowRedirects(true);
+./analysis/apk_analysis/jadx/sources/defpackage/vz0.java:99:                        httpURLConnection.setRequestProperty("connection", TJAdUnitConstants.String.CLOSE);
+./analysis/apk_analysis/jadx/sources/defpackage/vz0.java:100:                        y14.m(httpURLConnection);
+./analysis/apk_analysis/jadx/sources/defpackage/vz0.java:101:                        httpURLConnection.connect();
+./analysis/apk_analysis/jadx/sources/defpackage/vz0.java:102:                        int responseCode = httpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/defpackage/vz0.java:105:                            InputStream inputStream = httpURLConnection.getInputStream();
+./analysis/apk_analysis/jadx/sources/defpackage/vz0.java:130:                    httpURLConnection = (HttpURLConnection) ((URLConnection) FirebasePerfUrlConnection.instrument(new URL(str).openConnection()));
+./analysis/apk_analysis/jadx/sources/defpackage/vz0.java:134:                    httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/defpackage/vz0.java:137:                if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/defpackage/vz0.java:138:                    httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/defpackage/y14.java:20:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/defpackage/y14.java:225:    public static void m(HttpURLConnection httpURLConnection) {
+./analysis/apk_analysis/jadx/sources/defpackage/y14.java:227:        if (pw9Var != null && (httpURLConnection instanceof HttpsURLConnection)) {
+./analysis/apk_analysis/jadx/sources/defpackage/y14.java:229:                ((HttpsURLConnection) httpURLConnection).setSSLSocketFactory(pw9Var.a.getSocketFactory());
+./analysis/apk_analysis/jadx/sources/defpackage/gv5.java:12:    public final okhttp3.a.InterfaceC0310a e;
+./analysis/apk_analysis/jadx/sources/defpackage/gv5.java:15:    public okhttp3.a h;
+./analysis/apk_analysis/jadx/sources/defpackage/gv5.java:27:        public final void onFailure(okhttp3.a aVar, IOException iOException) {
+./analysis/apk_analysis/jadx/sources/defpackage/gv5.java:37:        public final void onResponse(okhttp3.a aVar, z47 z47Var) {
+./analysis/apk_analysis/jadx/sources/defpackage/gv5.java:131:    public gv5(m37 m37Var, Object obj, Object[] objArr, okhttp3.a.InterfaceC0310a interfaceC0310a, i02<b57, T> i02Var) {
+./analysis/apk_analysis/jadx/sources/defpackage/gv5.java:141:        okhttp3.a aVar;
+./analysis/apk_analysis/jadx/sources/defpackage/gv5.java:157:    public final okhttp3.a e() {
+./analysis/apk_analysis/jadx/sources/defpackage/gv5.java:237:        okhttp3.a aVarI;
+./analysis/apk_analysis/jadx/sources/defpackage/gv5.java:251:    public final okhttp3.a i() throws IOException {
+./analysis/apk_analysis/jadx/sources/defpackage/gv5.java:252:        okhttp3.a aVar = this.h;
+./analysis/apk_analysis/jadx/sources/defpackage/gv5.java:267:            okhttp3.a aVarE = e();
+./analysis/apk_analysis/jadx/sources/defpackage/gv5.java:325:                okhttp3.a aVar = this.h;
+./analysis/apk_analysis/jadx/sources/defpackage/gv5.java:338:        okhttp3.a aVar;
+./analysis/apk_analysis/jadx/sources/defpackage/gv5.java:350:                        okhttp3.a aVarE = e();
+./analysis/apk_analysis/jadx/sources/defpackage/qg4.java:4:import retrofit2.HttpException;
+./analysis/apk_analysis/jadx/sources/defpackage/jy0.java:3:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:13:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:27:    /* JADX WARN: Type inference failed for: r1v3, types: [java.net.HttpURLConnection] */
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:30:    /* JADX WARN: Type inference failed for: r8v2, types: [java.net.HttpURLConnection] */
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:45:                HttpURLConnection httpURLConnection = (HttpURLConnection) uRLConnection;
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:47:                    httpURLConnection.setConnectTimeout(15000);
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:48:                    httpURLConnection.setReadTimeout(30000);
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:51:                            httpURLConnection.setRequestProperty((String) entry.getKey(), (String) entry.getValue());
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:55:                        httpURLConnection.setRequestMethod("POST");
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:57:                        httpURLConnection.setRequestProperty("Content-Type", str3);
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:58:                        httpURLConnection.setRequestProperty("Connection", TJAdUnitConstants.String.CLOSE);
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:59:                        httpURLConnection.setDoOutput(true);
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:62:                        httpURLConnection.setFixedLengthStreamingMode(bytes.length);
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:63:                        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(httpURLConnection.getOutputStream());
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:77:                    httpURLConnection.connect();
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:78:                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:98:                    s2 s2Var2 = new s2(httpURLConnection.getResponseCode(), sb.toString(), (httpURLConnection.getResponseCode() == 302 || httpURLConnection.getResponseCode() == 301) ? httpURLConnection.getHeaderField("Location") : null, httpURLConnection.getDate(), httpURLConnection.getExpiration(), httpURLConnection.getHeaderFields());
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:99:                    httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/tapjoy/internal/r2.java:103:                    r1 = httpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/my/tracker/MyTrackerConfig.java:9:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/e0.java:4:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/e0.java:12:    public static void a(HttpURLConnection httpURLConnection) {
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/e0.java:14:        if (sVar != null && (httpURLConnection instanceof HttpsURLConnection)) {
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/e0.java:16:                ((HttpsURLConnection) httpURLConnection).setSSLSocketFactory(sVar.b.getSocketFactory());
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/n1.java:9:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/u0.java:7:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/u0.java:17:        HttpURLConnection httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/u0.java:22:            HttpURLConnection httpURLConnection2 = (HttpURLConnection) ((URLConnection) FirebasePerfUrlConnection.instrument(new URL(str).openConnection()));
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/u0.java:24:                httpURLConnection2.setConnectTimeout(3000);
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/u0.java:25:                httpURLConnection2.setReadTimeout(3000);
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/u0.java:26:                httpURLConnection2.setRequestMethod("GET");
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/u0.java:27:                e0.a(httpURLConnection2);
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/u0.java:28:                int responseCode = httpURLConnection2.getResponseCode();
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/u0.java:33:                    BufferedReader bufferedReader = bVarD.a ? new BufferedReader(new InputStreamReader(httpURLConnection2.getInputStream())) : new BufferedReader(new InputStreamReader(httpURLConnection2.getErrorStream()));
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/u0.java:48:                    httpURLConnection2.disconnect();
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/u0.java:58:                httpURLConnection = httpURLConnection2;
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/u0.java:65:                    if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/u0.java:66:                        httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/o1.java:15:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:9:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:52:        HttpURLConnection httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:58:            HttpURLConnection httpURLConnection2 = (HttpURLConnection) ((URLConnection) FirebasePerfUrlConnection.instrument(new URL(str).openConnection()));
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:60:                httpURLConnection2.setConnectTimeout(10000);
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:61:                httpURLConnection2.setReadTimeout(10000);
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:62:                httpURLConnection2.setInstanceFollowRedirects(true);
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:63:                httpURLConnection2.setRequestMethod("POST");
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:64:                httpURLConnection2.setRequestProperty("Connection", TJAdUnitConstants.String.CLOSE);
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:65:                httpURLConnection2.setRequestProperty("Content-Type", this.a.a());
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:66:                httpURLConnection2.setUseCaches(false);
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:67:                httpURLConnection2.setDoOutput(true);
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:68:                e0.a(httpURLConnection2);
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:73:                            httpURLConnection2.setRequestProperty("Content-Encoding", "gzip");
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:74:                            GZIPOutputStream gZIPOutputStream = new GZIPOutputStream(new BufferedOutputStream(httpURLConnection2.getOutputStream()));
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:78:                            BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(httpURLConnection2.getOutputStream());
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:88:                            int responseCode = httpURLConnection2.getResponseCode();
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:99:                                    BufferedReader bufferedReader2 = new BufferedReader(new InputStreamReader(httpURLConnection2.getInputStream()));
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:128:                            httpURLConnection2.disconnect();
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:151:                httpURLConnection = httpURLConnection2;
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:158:                    if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/com/my/tracker/obfuscated/v0.java:159:                        httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:12:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:41:    public static a a(String str, HttpURLConnection httpURLConnection, int i) {
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:44:            String string = httpURLConnection.getURL().toURI().resolve(new URI(httpURLConnection.getHeaderField("Location"))).toString();
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:62:        HttpURLConnection httpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:70:                httpURLConnection = (HttpURLConnection) ((URLConnection) FirebasePerfUrlConnection.instrument(new URL(str).openConnection()));
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:72:                    httpURLConnection.setReadTimeout(10000);
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:73:                    httpURLConnection.setConnectTimeout(10000);
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:74:                    httpURLConnection.setRequestMethod("GET");
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:75:                    httpURLConnection.addRequestProperty("User-Agent", System.getProperty("http.agent"));
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:76:                    httpURLConnection.setInstanceFollowRedirects(false);
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:77:                    httpURLConnection.setRequestProperty("connection", TJAdUnitConstants.String.CLOSE);
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:78:                    y14.m(httpURLConnection);
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:79:                    ln9Var.c(httpURLConnection);
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:80:                    httpURLConnection.connect();
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:91:                httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:94:                httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:98:                    int responseCode = httpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:100:                        InputStream inputStream = httpURLConnection.getInputStream();
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:107:                        ln9Var.a(httpURLConnection);
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:110:                        aVar = (responseCode == 302 || responseCode == 301 || responseCode == 303) ? a(str, httpURLConnection, responseCode) : new a(2, responseCode, null, "Unsupported response code");
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:118:            if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/com/my/target/d1.java:119:                httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/yalantis/ucrop/UCropInitializer.java:3:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/com/yalantis/ucrop/task/BitmapLoadTask.java:32:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/com/yalantis/ucrop/OkHttpClientStore.java:3:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/com/google/android/gms/auth/api/signin/internal/zbb.java:12:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/android/gms/auth/api/signin/internal/zbb.java:43:            HttpURLConnection httpURLConnection = (HttpURLConnection) new URL(sb.toString()).openConnection();
+./analysis/apk_analysis/jadx/sources/com/google/android/gms/auth/api/signin/internal/zbb.java:44:            httpURLConnection.setRequestProperty("Content-Type", ShareTarget.ENCODING_TYPE_URL_ENCODED);
+./analysis/apk_analysis/jadx/sources/com/google/android/gms/auth/api/signin/internal/zbb.java:45:            int responseCode = httpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/com/google/android/gms/ads/identifier/zze.java:6:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/android/gms/ads/identifier/zze.java:15:                HttpURLConnection httpURLConnection = (HttpURLConnection) new URL(str).openConnection();
+./analysis/apk_analysis/jadx/sources/com/google/android/gms/ads/identifier/zze.java:17:                    int responseCode = httpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/com/google/android/gms/ads/identifier/zze.java:26:                    httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/google/android/gms/ads/identifier/zze.java:29:                    httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:38:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:107:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:117:    @Override // java.net.HttpURLConnection, java.net.URLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:122:    @Override // java.net.HttpURLConnection, java.net.URLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:132:    @Override // java.net.HttpURLConnection, java.net.URLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:162:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:192:    @Override // java.net.HttpURLConnection, java.net.URLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:202:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:217:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:222:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:256:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:281:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:296:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:306:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:331:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpsURLConnection.java:336:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:7:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:14:public final class InstrHttpURLConnection extends HttpURLConnection {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:17:    public InstrHttpURLConnection(HttpURLConnection httpURLConnection, Timer timer, NetworkRequestMetricBuilder networkRequestMetricBuilder) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:18:        super(httpURLConnection.getURL());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:19:        this.delegate = new InstrURLConnectionBase(httpURLConnection, timer, networkRequestMetricBuilder);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:32:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:96:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:106:    @Override // java.net.HttpURLConnection, java.net.URLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:111:    @Override // java.net.HttpURLConnection, java.net.URLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:121:    @Override // java.net.HttpURLConnection, java.net.URLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:146:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:161:    @Override // java.net.HttpURLConnection, java.net.URLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:171:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:186:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:191:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:215:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:240:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:250:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:260:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:280:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrHttpURLConnection.java:285:    @Override // java.net.HttpURLConnection
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/FirebasePerfOkHttpClient.java:14:import okhttp3.a;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/FirebasePerfUrlConnection.java:9:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/FirebasePerfUrlConnection.java:28:            return uRLConnectionOpenConnection instanceof HttpURLConnection ? new InstrHttpURLConnection((HttpURLConnection) uRLConnectionOpenConnection, timer, networkRequestMetricBuilderBuilder).getContent() : uRLConnectionOpenConnection.getContent();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/FirebasePerfUrlConnection.java:42:        return obj instanceof HttpURLConnection ? new InstrHttpURLConnection((HttpURLConnection) obj, new Timer(), NetworkRequestMetricBuilder.builder(TransportManager.getInstance())) : obj;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/FirebasePerfUrlConnection.java:57:            return uRLConnectionOpenConnection instanceof HttpURLConnection ? new InstrHttpURLConnection((HttpURLConnection) uRLConnectionOpenConnection, timer, networkRequestMetricBuilderBuilder).getInputStream() : uRLConnectionOpenConnection.getInputStream();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/FirebasePerfUrlConnection.java:84:            if (uRLConnectionOpenConnection instanceof HttpURLConnection) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/FirebasePerfUrlConnection.java:85:                return new InstrHttpURLConnection((HttpURLConnection) uRLConnectionOpenConnection, timer, networkRequestMetricBuilderBuilder).getContent(clsArr);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:9:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:19:    private final HttpURLConnection httpUrlConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:25:    public InstrURLConnectionBase(HttpURLConnection httpURLConnection, Timer timer, NetworkRequestMetricBuilder networkRequestMetricBuilder) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:26:        this.httpUrlConnection = httpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:29:        networkRequestMetricBuilder.setUrl(httpURLConnection.getURL().toString());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:54:        this.httpUrlConnection.addRequestProperty(str, str2);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:65:            this.httpUrlConnection.connect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:76:        this.httpUrlConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:80:        return this.httpUrlConnection.equals(obj);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:84:        return this.httpUrlConnection.getAllowUserInteraction();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:88:        return this.httpUrlConnection.getConnectTimeout();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:93:        this.networkMetricBuilder.setHttpResponseCode(this.httpUrlConnection.getResponseCode());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:95:            Object content = this.httpUrlConnection.getContent();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:99:                networkRequestMetricBuilder.setResponseContentType(this.httpUrlConnection.getContentType());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:102:            networkRequestMetricBuilder.setResponseContentType(this.httpUrlConnection.getContentType());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:103:            this.networkMetricBuilder.setResponsePayloadBytes(this.httpUrlConnection.getContentLength());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:116:        return this.httpUrlConnection.getContentEncoding();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:121:        return this.httpUrlConnection.getContentLength();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:126:        return this.httpUrlConnection.getContentLengthLong();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:131:        return this.httpUrlConnection.getContentType();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:136:        return this.httpUrlConnection.getDate();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:140:        return this.httpUrlConnection.getDefaultUseCaches();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:144:        return this.httpUrlConnection.getDoInput();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:148:        return this.httpUrlConnection.getDoOutput();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:154:            this.networkMetricBuilder.setHttpResponseCode(this.httpUrlConnection.getResponseCode());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:158:        InputStream errorStream = this.httpUrlConnection.getErrorStream();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:164:        return this.httpUrlConnection.getExpiration();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:169:        return this.httpUrlConnection.getHeaderField(i);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:174:        return this.httpUrlConnection.getHeaderFieldDate(str, j);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:179:        return this.httpUrlConnection.getHeaderFieldInt(str, i);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:184:        return this.httpUrlConnection.getHeaderFieldKey(i);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:189:        return this.httpUrlConnection.getHeaderFieldLong(str, j);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:194:        return this.httpUrlConnection.getHeaderFields();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:198:        return this.httpUrlConnection.getIfModifiedSince();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:203:        this.networkMetricBuilder.setHttpResponseCode(this.httpUrlConnection.getResponseCode());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:204:        this.networkMetricBuilder.setResponseContentType(this.httpUrlConnection.getContentType());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:206:            InputStream inputStream = this.httpUrlConnection.getInputStream();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:216:        return this.httpUrlConnection.getInstanceFollowRedirects();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:221:        return this.httpUrlConnection.getLastModified();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:226:            OutputStream outputStream = this.httpUrlConnection.getOutputStream();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:237:            return this.httpUrlConnection.getPermission();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:246:        return this.httpUrlConnection.getReadTimeout();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:250:        return this.httpUrlConnection.getRequestMethod();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:254:        return this.httpUrlConnection.getRequestProperties();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:258:        return this.httpUrlConnection.getRequestProperty(str);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:269:            int responseCode = this.httpUrlConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:287:            String responseMessage = this.httpUrlConnection.getResponseMessage();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:288:            this.networkMetricBuilder.setHttpResponseCode(this.httpUrlConnection.getResponseCode());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:298:        return this.httpUrlConnection.getURL();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:302:        return this.httpUrlConnection.getUseCaches();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:306:        return this.httpUrlConnection.hashCode();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:310:        this.httpUrlConnection.setAllowUserInteraction(z);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:314:        this.httpUrlConnection.setChunkedStreamingMode(i);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:318:        this.httpUrlConnection.setConnectTimeout(i);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:322:        this.httpUrlConnection.setDefaultUseCaches(z);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:326:        this.httpUrlConnection.setDoInput(z);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:330:        this.httpUrlConnection.setDoOutput(z);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:334:        this.httpUrlConnection.setFixedLengthStreamingMode(i);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:338:        this.httpUrlConnection.setIfModifiedSince(j);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:342:        this.httpUrlConnection.setInstanceFollowRedirects(z);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:346:        this.httpUrlConnection.setReadTimeout(i);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:350:        this.httpUrlConnection.setRequestMethod(str);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:357:        this.httpUrlConnection.setRequestProperty(str, str2);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:361:        this.httpUrlConnection.setUseCaches(z);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:365:        return this.httpUrlConnection.toString();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:369:        return this.httpUrlConnection.usingProxy();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:373:        this.httpUrlConnection.setFixedLengthStreamingMode(j);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:378:        return this.httpUrlConnection.getHeaderField(str);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:383:        this.networkMetricBuilder.setHttpResponseCode(this.httpUrlConnection.getResponseCode());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:385:            Object content = this.httpUrlConnection.getContent(clsArr);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:389:                networkRequestMetricBuilder.setResponseContentType(this.httpUrlConnection.getContentType());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:392:            networkRequestMetricBuilder.setResponseContentType(this.httpUrlConnection.getContentType());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrURLConnectionBase.java:393:            this.networkMetricBuilder.setResponsePayloadBytes(this.httpUrlConnection.getContentLength());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/perf/network/InstrumentOkHttpEnqueueCallback.java:11:import okhttp3.a;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/messaging/TopicSubscriptionClient.java:10:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/messaging/TopicSubscriptionClient.java:65:    public HttpURLConnection createConnection(URL url) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/messaging/TopicSubscriptionClient.java:66:        return (HttpURLConnection) url.openConnection();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:22:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:202:    private void setCommonRequestHeaders(HttpURLConnection httpURLConnection, String str) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:203:        httpURLConnection.setRequestProperty(API_KEY_HEADER, this.apiKey);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:204:        httpURLConnection.setRequestProperty(X_ANDROID_PACKAGE_HEADER, this.context.getPackageName());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:205:        httpURLConnection.setRequestProperty(X_ANDROID_CERT_HEADER, getFingerprintHashForPackage());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:206:        httpURLConnection.setRequestProperty(X_GOOGLE_GFE_CAN_RETRY, "yes");
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:207:        httpURLConnection.setRequestProperty(INSTALLATIONS_AUTH_TOKEN_HEADER, str);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:208:        httpURLConnection.setRequestProperty("Content-Type", "application/json");
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:209:        httpURLConnection.setRequestProperty("Accept", "application/json");
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:212:    private void setCustomRequestHeaders(HttpURLConnection httpURLConnection, Map<String, String> map) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:214:            httpURLConnection.setRequestProperty(entry.getKey(), entry.getValue());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:218:    private void setFetchRequestBody(HttpURLConnection httpURLConnection, byte[] bArr) throws IOException {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:219:        httpURLConnection.setFixedLengthStreamingMode(bArr.length);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:220:        BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(httpURLConnection.getOutputStream());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:226:    private void setUpUrlConnection(HttpURLConnection httpURLConnection, String str, String str2, Map<String, String> map) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:227:        httpURLConnection.setDoOutput(true);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:230:        httpURLConnection.setConnectTimeout((int) timeUnit.toMillis(j));
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:231:        httpURLConnection.setReadTimeout((int) timeUnit.toMillis(this.readTimeoutInSeconds));
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:232:        httpURLConnection.setRequestProperty(IF_NONE_MATCH_HEADER, str);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:233:        setCommonRequestHeaders(httpURLConnection, str2);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:234:        setCustomRequestHeaders(httpURLConnection, map);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:237:    public HttpURLConnection createHttpURLConnection() {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:239:            return (HttpURLConnection) new URL(getFetchUrl(this.projectNumber, this.namespace)).openConnection();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:245:    public ConfigFetchHandler.FetchResponse fetch(HttpURLConnection httpURLConnection, String str, String str2, Map<String, String> map, String str3, Map<String, String> map2, Long l, Date date, Map<String, String> map3) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:246:        setUpUrlConnection(httpURLConnection, str3, str2, map2);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:249:                setFetchRequestBody(httpURLConnection, createFetchRequestBody(str, str2, map, l, map3).toString().getBytes("utf-8"));
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:250:                httpURLConnection.connect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:251:                int responseCode = httpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:253:                    throw new FirebaseRemoteConfigServerException(responseCode, httpURLConnection.getResponseMessage());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:255:                String headerField = httpURLConnection.getHeaderField(ETAG_HEADER);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:256:                JSONObject fetchResponseBody = getFetchResponseBody(httpURLConnection);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:257:                httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:259:                    httpURLConnection.getInputStream().close();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:265:                httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHttpClient.java:267:                    httpURLConnection.getInputStream().close();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigAutoFetch.java:20:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigAutoFetch.java:39:    private final HttpURLConnection httpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigAutoFetch.java:47:    public ConfigAutoFetch(HttpURLConnection httpURLConnection, ConfigFetchHandler configFetchHandler, ConfigCacheClient configCacheClient, Set<ConfigUpdateListener> set, ConfigUpdateListener configUpdateListener, ScheduledExecutorService scheduledExecutorService, ConfigSharedPrefsClient configSharedPrefsClient) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigAutoFetch.java:48:        this.httpURLConnection = httpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigAutoFetch.java:202:        HttpURLConnection httpURLConnection = this.httpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigAutoFetch.java:203:        if (httpURLConnection == null) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigAutoFetch.java:210:                    inputStream = httpURLConnection.getInputStream();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigFetchHandler.java:169:                FetchResponse fetchResponseFetch = this.frcBackendApiClient.fetch(this.frcBackendApiClient.createHttpURLConnection(), str, str2, getUserProperties(), this.frcSharedPrefs.getLastFetchETag(), map, getFirstOpenTime(), date2, this.frcSharedPrefs.getCustomSignals());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:32:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:63:    private HttpURLConnection httpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:210:                HttpURLConnection httpURLConnection = (HttpURLConnection) task.getResult();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:211:                this.httpURLConnection = httpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:212:                task = httpURLConnection.getInputStream();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:214:                    errorStream = this.httpURLConnection.getErrorStream();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:216:                        int responseCode = this.httpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:222:                                ConfigAutoFetch configAutoFetchStartAutoFetch = startAutoFetch(this.httpURLConnection);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:245:                                        forbiddenErrorResponseMessage = parseForbiddenErrorResponseMessage(this.httpURLConnection.getErrorStream());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:249:                                this.httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:265:                                forbiddenErrorResponseMessage2 = parseForbiddenErrorResponseMessage(this.httpURLConnection.getErrorStream());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:289:                                forbiddenErrorResponseMessage3 = parseForbiddenErrorResponseMessage(this.httpURLConnection.getErrorStream());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:318:                    this.httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:326:                this.httpURLConnection = null;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:353:            HttpURLConnection httpURLConnection = (HttpURLConnection) getUrl().openConnection();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:354:            setRequestParams(httpURLConnection, (String) task2.getResult(), ((InstallationTokenResult) task.getResult()).getToken());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:355:            return Tasks.forResult(httpURLConnection);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:413:    private void setCommonRequestHeaders(HttpURLConnection httpURLConnection, String str) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:414:        httpURLConnection.setRequestProperty(INSTALLATIONS_AUTH_TOKEN_HEADER, str);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:415:        httpURLConnection.setRequestProperty(API_KEY_HEADER, this.firebaseApp.getOptions().getApiKey());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:416:        httpURLConnection.setRequestProperty(X_ANDROID_PACKAGE_HEADER, this.context.getPackageName());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:417:        httpURLConnection.setRequestProperty(X_ANDROID_CERT_HEADER, getFingerprintHashForPackage());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:418:        httpURLConnection.setRequestProperty(X_GOOGLE_GFE_CAN_RETRY, "yes");
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:419:        httpURLConnection.setRequestProperty(X_ACCEPT_RESPONSE_STREAMING, TJAdUnitConstants.String.TRUE);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:420:        httpURLConnection.setRequestProperty("Content-Type", "application/json");
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:421:        httpURLConnection.setRequestProperty("Accept", "application/json");
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:438:                Task<HttpURLConnection> taskCreateRealtimeConnection = createRealtimeConnection();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:445:        HttpURLConnection httpURLConnection = this.httpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:446:        if (httpURLConnection != null && !this.isInBackground) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:447:            httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:453:    public Task<HttpURLConnection> createRealtimeConnection() {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:477:        HttpURLConnection httpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:485:                if (z && (httpURLConnection = this.httpURLConnection) != null) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:486:                    httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:494:    public void setRequestParams(HttpURLConnection httpURLConnection, String str, String str2) throws IOException {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:495:        httpURLConnection.setRequestMethod("POST");
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:496:        setCommonRequestHeaders(httpURLConnection, str2);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:498:        BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(httpURLConnection.getOutputStream());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:504:    public synchronized ConfigAutoFetch startAutoFetch(HttpURLConnection httpURLConnection) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/remoteconfig/internal/ConfigRealtimeHttpClient.java:505:        return new ConfigAutoFetch(httpURLConnection, this.configFetchHandler, this.activatedCache, this.listeners, new ConfigUpdateListener() { // from class: com.google.firebase.remoteconfig.internal.ConfigRealtimeHttpClient.2
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:29:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:148:    private static void logFisCommunicationError(HttpURLConnection httpURLConnection, String str, String str2, String str3) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:149:        String errorResponse = readErrorResponse(httpURLConnection);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:157:    private HttpURLConnection openHttpURLConnection(URL url, String str) throws FirebaseInstallationsException {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:159:            HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:160:            httpURLConnection.setConnectTimeout(10000);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:161:            httpURLConnection.setUseCaches(false);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:162:            httpURLConnection.setReadTimeout(10000);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:163:            httpURLConnection.addRequestProperty(CONTENT_TYPE_HEADER_KEY, JSON_CONTENT_TYPE);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:164:            httpURLConnection.addRequestProperty(ACCEPT_HEADER_KEY, JSON_CONTENT_TYPE);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:165:            httpURLConnection.addRequestProperty(CONTENT_ENCODING_HEADER_KEY, GZIP_CONTENT_ENCODING);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:166:            httpURLConnection.addRequestProperty(CACHE_CONTROL_HEADER_KEY, CACHE_CONTROL_DIRECTIVE);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:167:            httpURLConnection.addRequestProperty(X_ANDROID_PACKAGE_HEADER_KEY, this.context.getPackageName());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:171:                    httpURLConnection.addRequestProperty(HEART_BEAT_HEADER, (String) Tasks.await(heartBeatController.getHeartBeatsHeader()));
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:179:            httpURLConnection.addRequestProperty(X_ANDROID_CERT_HEADER_KEY, getFingerprintHashForPackage());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:180:            httpURLConnection.addRequestProperty(API_KEY_HEADER, str);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:181:            return httpURLConnection;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:195:    private InstallationResponse readCreateResponse(HttpURLConnection httpURLConnection) throws IOException {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:196:        InputStream inputStream = httpURLConnection.getInputStream();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:233:    private static String readErrorResponse(HttpURLConnection httpURLConnection) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:234:        InputStream errorStream = httpURLConnection.getErrorStream();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:251:                String str = String.format("Error when communicating with the Firebase Installations server API. HTTP response: [%d %s: %s]", Integer.valueOf(httpURLConnection.getResponseCode()), httpURLConnection.getResponseMessage(), sb);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:271:    private TokenResult readGenerateAuthTokenResponse(HttpURLConnection httpURLConnection) throws IOException {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:272:        InputStream inputStream = httpURLConnection.getInputStream();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:292:    private void writeFIDCreateRequestBodyToOutputStream(HttpURLConnection httpURLConnection, String str, String str2) throws IOException {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:293:        writeRequestBodyToOutputStream(httpURLConnection, getJsonBytes(buildCreateFirebaseInstallationRequestBody(str, str2)));
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:296:    private void writeGenerateAuthTokenRequestBodyToOutputStream(HttpURLConnection httpURLConnection) throws IOException {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:297:        writeRequestBodyToOutputStream(httpURLConnection, getJsonBytes(buildGenerateAuthTokenRequestBody()));
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:326:            HttpURLConnection httpURLConnectionOpenHttpURLConnection = openHttpURLConnection(fullyQualifiedRequestUri, str);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:329:                    httpURLConnectionOpenHttpURLConnection.setRequestMethod("POST");
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:330:                    httpURLConnectionOpenHttpURLConnection.setDoOutput(true);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:332:                        httpURLConnectionOpenHttpURLConnection.addRequestProperty(X_ANDROID_IID_MIGRATION_KEY, str5);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:334:                    writeFIDCreateRequestBodyToOutputStream(httpURLConnectionOpenHttpURLConnection, str2, str4);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:335:                    int responseCode = httpURLConnectionOpenHttpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:338:                        createResponse = readCreateResponse(httpURLConnectionOpenHttpURLConnection);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:340:                        logFisCommunicationError(httpURLConnectionOpenHttpURLConnection, str4, str, str3);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:348:                        httpURLConnectionOpenHttpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:351:                    httpURLConnectionOpenHttpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:355:                    httpURLConnectionOpenHttpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:370:            HttpURLConnection httpURLConnectionOpenHttpURLConnection = openHttpURLConnection(fullyQualifiedRequestUri, str);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:372:                httpURLConnectionOpenHttpURLConnection.setRequestMethod(FirebasePerformance.HttpMethod.DELETE);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:373:                httpURLConnectionOpenHttpURLConnection.addRequestProperty("Authorization", "FIS_v2 " + str4);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:374:                int responseCode = httpURLConnectionOpenHttpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:376:                    logFisCommunicationError(httpURLConnectionOpenHttpURLConnection, null, str, str3);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:382:                    httpURLConnectionOpenHttpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:385:                httpURLConnectionOpenHttpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:390:                httpURLConnectionOpenHttpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:406:            HttpURLConnection httpURLConnectionOpenHttpURLConnection = openHttpURLConnection(fullyQualifiedRequestUri, str);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:409:                    httpURLConnectionOpenHttpURLConnection.setRequestMethod("POST");
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:410:                    httpURLConnectionOpenHttpURLConnection.addRequestProperty("Authorization", "FIS_v2 " + str4);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:411:                    httpURLConnectionOpenHttpURLConnection.setDoOutput(true);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:412:                    writeGenerateAuthTokenRequestBodyToOutputStream(httpURLConnectionOpenHttpURLConnection);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:413:                    int responseCode = httpURLConnectionOpenHttpURLConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:416:                        generateAuthTokenResponse = readGenerateAuthTokenResponse(httpURLConnectionOpenHttpURLConnection);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:418:                        logFisCommunicationError(httpURLConnectionOpenHttpURLConnection, null, str, str3);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:429:                            httpURLConnectionOpenHttpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:433:                    httpURLConnectionOpenHttpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/installations/remote/FirebaseInstallationServiceClient.java:437:                    httpURLConnectionOpenHttpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/c.java:26:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/c.java:123:    public static final okhttp3.b a(d dVar, okhttp3.a aVar) {
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/f.java:8:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:14:public final class d extends okhttp3.b {
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:39:    @Override // okhttp3.b
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:40:    public final void callFailed(okhttp3.a aVar, IOException iOException) {
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:57:    @Override // okhttp3.b
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:58:    public final void connectEnd(okhttp3.a aVar, InetSocketAddress inetSocketAddress, Proxy proxy, ts6 ts6Var) {
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:62:    @Override // okhttp3.b
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:63:    public final void connectStart(okhttp3.a aVar, InetSocketAddress inetSocketAddress, Proxy proxy) {
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:67:    @Override // okhttp3.b
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:68:    public final void connectionAcquired(okhttp3.a aVar, lw1 lw1Var) {
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:73:    @Override // okhttp3.b
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:74:    public final void dnsEnd(okhttp3.a aVar, String str, List list) {
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:78:    @Override // okhttp3.b
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:79:    public final void dnsStart(okhttp3.a aVar, String str) {
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:83:    @Override // okhttp3.b
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:84:    public final void requestHeadersEnd(okhttp3.a aVar, b37 b37Var) {
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:88:    @Override // okhttp3.b
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:89:    public final void responseBodyEnd(okhttp3.a aVar, long j) {
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:93:    @Override // okhttp3.b
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:94:    public final void responseHeadersStart(okhttp3.a aVar) {
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:98:    @Override // okhttp3.b
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:99:    public final void secureConnectEnd(okhttp3.a aVar, lu3 lu3Var) {
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:103:    @Override // okhttp3.b
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/d.java:104:    public final void secureConnectStart(okhttp3.a aVar) {
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/e.java:25:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/push/impl/G2.java:14:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/push/impl/N0.java:9:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/push/impl/N0.java:15:    public final HttpURLConnection a;
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/push/impl/N0.java:18:        this.a = (HttpURLConnection) ((URLConnection) FirebasePerfUrlConnection.instrument(new URL(str).openConnection()));
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/push/impl/A1.java:12:import okhttp3.OkHttpClient;
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:21:import java.net.HttpURLConnection;
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:44:    private HttpURLConnection connection;
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:75:        HttpURLConnection httpURLConnection = this.connection;
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:76:        if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:78:                httpURLConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:111:    private static boolean isCompressed(HttpURLConnection httpURLConnection) {
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:112:        return "gzip".equalsIgnoreCase(httpURLConnection.getHeaderField("Content-Encoding"));
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:115:    private HttpURLConnection makeConnection(DataSpec dataSpec) throws IOException {
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:132:            HttpURLConnection httpURLConnectionMakeConnection = makeConnection(url, i, bArr, j, j2, zIsFlagSet, false, dataSpec.httpRequestHeaders);
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:133:            int responseCode = httpURLConnectionMakeConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:134:            String headerField = httpURLConnectionMakeConnection.getHeaderField("Location");
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:136:                httpURLConnectionMakeConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:140:                    return httpURLConnectionMakeConnection;
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:142:                httpURLConnectionMakeConnection.disconnect();
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:247:        HttpURLConnection httpURLConnection = this.connection;
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:248:        return httpURLConnection == null ? x.h : new NullFilteringHeadersMap(httpURLConnection.getHeaderFields());
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:253:        HttpURLConnection httpURLConnection = this.connection;
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:254:        if (httpURLConnection != null) {
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:255:            return Uri.parse(httpURLConnection.getURL().toString());
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:273:            HttpURLConnection httpURLConnectionMakeConnection = makeConnection(dataSpec);
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:274:            this.connection = httpURLConnectionMakeConnection;
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:275:            this.responseCode = httpURLConnectionMakeConnection.getResponseCode();
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:276:            String responseMessage = httpURLConnectionMakeConnection.getResponseMessage();
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:279:                Map<String, List<String>> headerFields = httpURLConnectionMakeConnection.getHeaderFields();
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:281:                    if (dataSpec.position == HttpUtil.getDocumentSize(httpURLConnectionMakeConnection.getHeaderField("Content-Range"))) {
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:291:                InputStream errorStream = httpURLConnectionMakeConnection.getErrorStream();
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:301:            String contentType = httpURLConnectionMakeConnection.getContentType();
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:313:            boolean zIsCompressed = isCompressed(httpURLConnectionMakeConnection);
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:321:                    long contentLength = HttpUtil.getContentLength(httpURLConnectionMakeConnection.getHeaderField("Content-Length"), httpURLConnectionMakeConnection.getHeaderField("Content-Range"));
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:326:                this.inputStream = httpURLConnectionMakeConnection.getInputStream();
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:352:    public HttpURLConnection openConnection(URL url) {
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:353:        return (HttpURLConnection) ((URLConnection) FirebasePerfUrlConnection.instrument(url.openConnection()));
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:517:    private HttpURLConnection makeConnection(URL url, int i, byte[] bArr, long j, long j2, boolean z, boolean z2, Map<String, String> map) throws IOException {
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:518:        HttpURLConnection httpURLConnectionOpenConnection = openConnection(url);
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:519:        httpURLConnectionOpenConnection.setConnectTimeout(this.connectTimeoutMillis);
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:520:        httpURLConnectionOpenConnection.setReadTimeout(this.readTimeoutMillis);
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:529:            httpURLConnectionOpenConnection.setRequestProperty((String) entry.getKey(), (String) entry.getValue());
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:533:            httpURLConnectionOpenConnection.setRequestProperty("Range", strBuildRangeRequestHeader);
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:537:            httpURLConnectionOpenConnection.setRequestProperty("User-Agent", str);
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:539:        httpURLConnectionOpenConnection.setRequestProperty("Accept-Encoding", z ? "gzip" : "identity");
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:540:        httpURLConnectionOpenConnection.setInstanceFollowRedirects(z2);
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:541:        httpURLConnectionOpenConnection.setDoOutput(bArr != null);
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:542:        httpURLConnectionOpenConnection.setRequestMethod(DataSpec.getStringForHttpMethod(i));
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:544:            httpURLConnectionOpenConnection.setFixedLengthStreamingMode(bArr.length);
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:545:            httpURLConnectionOpenConnection.connect();
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:546:            OutputStream outputStream = httpURLConnectionOpenConnection.getOutputStream();
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:549:            return httpURLConnectionOpenConnection;
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:551:        httpURLConnectionOpenConnection.connect();
+./analysis/apk_analysis/jadx/sources/androidx/media3/datasource/DefaultHttpDataSource.java:552:        return httpURLConnectionOpenConnection;

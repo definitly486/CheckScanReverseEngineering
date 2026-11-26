@@ -1,0 +1,66 @@
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java-53-            h36<?> h36Var2 = null;
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java-54-            if (i6 >= length) {
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java-55-                if (aVar.o == null) {
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java:56:                    throw kb9.i(method, null, "HTTP method annotation is required (e.g., @GET, @POST, etc.).", new Object[0]);
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java-57-                }
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java-58-                if (!aVar.p) {
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java-59-                    if (aVar.r) {
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java:60:                        throw kb9.i(method, null, "Multipart can only be specified on HTTP methods with request body (e.g., @POST).", new Object[0]);
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java-61-                    }
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java-62-                    if (aVar.q) {
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java:63:                        throw kb9.i(method, null, "FormUrlEncoded can only be specified on HTTP methods with request body (e.g., @POST).", new Object[0]);
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java-64-                    }
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java-65-                }
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java-66-                Annotation[][] annotationArr2 = aVar.e;
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java-67-                int length2 = annotationArr2.length;
+./analysis/apk_analysis/jadx/sources/defpackage/uq7.java-68-                aVar.w = new h36[length2];
+--
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/common/CommonUtils.java-242-        return context.getSharedPreferences(LEGACY_SHARED_PREFS_NAME, 0);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/common/CommonUtils.java-243-    }
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/common/CommonUtils.java-244-
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/common/CommonUtils.java:245:    public static String getMappingFileId(Context context) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/common/CommonUtils.java-246-        int resourcesIdentifier = getResourcesIdentifier(context, MAPPING_FILE_ID_RESOURCE_NAME, TypedValues.Custom.S_STRING);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/common/CommonUtils.java-247-        if (resourcesIdentifier == 0) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/common/CommonUtils.java-248-            resourcesIdentifier = getResourcesIdentifier(context, LEGACY_MAPPING_FILE_ID_RESOURCE_NAME, TypedValues.Custom.S_STRING);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/common/CommonUtils.java-249-        }
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/common/CommonUtils.java-250-        if (resourcesIdentifier != 0) {
+--
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/settings/SettingsController.java-91-        SettingsJsonParser settingsJsonParser = new SettingsJsonParser(systemCurrentTimeProvider);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/settings/SettingsController.java-92-        CachedSettingsIo cachedSettingsIo = new CachedSettingsIo(fileStore);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/settings/SettingsController.java-93-        Locale locale = Locale.US;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/settings/SettingsController.java:94:        return new SettingsController(context, new SettingsRequest(str, idManager.getModelName(), idManager.getOsBuildVersionString(), idManager.getOsDisplayVersionString(), idManager, CommonUtils.createInstanceIdFrom(CommonUtils.getMappingFileId(context), str, str3, str2), str3, str2, DeliveryMechanism.determineFrom(installerPackageName).getId()), systemCurrentTimeProvider, settingsJsonParser, cachedSettingsIo, new DefaultSettingsSpiCall(me0.c("https://firebase-settings.crashlytics.com/spi/v2/platforms/android/gmp/", str, "/settings"), httpRequestFactory), dataCollectionArbiter);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/settings/SettingsController.java-95-    }
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/settings/SettingsController.java-96-
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/settings/SettingsController.java-97-    private Settings getCachedSettingsData(SettingsCacheBehavior settingsCacheBehavior) throws Throwable {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/settings/SettingsController.java-98-        Settings settings = null;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/internal/settings/SettingsController.java-99-        try {
+--
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/FirebaseCrashlytics.java-66-        FirebaseSessionsDependencies.register(crashlyticsAppQualitySessionsSubscriber);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/FirebaseCrashlytics.java-67-        CrashlyticsCore crashlyticsCore = new CrashlyticsCore(firebaseApp, idManager, crashlyticsNativeComponentDeferredProxy, dataCollectionArbiter, analyticsDeferredProxy.getDeferredBreadcrumbSource(), analyticsDeferredProxy.getAnalyticsEventLogger(), fileStore, crashlyticsAppQualitySessionsSubscriber, new RemoteConfigDeferredProxy(deferred3), crashlyticsWorkers);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/FirebaseCrashlytics.java-68-        String applicationId = firebaseApp.getOptions().getApplicationId();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/FirebaseCrashlytics.java:69:        String mappingFileId = CommonUtils.getMappingFileId(applicationContext);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/FirebaseCrashlytics.java-70-        List<BuildIdInfo> buildIdInfo = CommonUtils.getBuildIdInfo(applicationContext);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/FirebaseCrashlytics.java-71-        Logger.getLogger().d("Mapping file ID is: " + mappingFileId);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/FirebaseCrashlytics.java-72-        for (BuildIdInfo buildIdInfo2 : buildIdInfo) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/FirebaseCrashlytics.java-73-            Logger logger = Logger.getLogger();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/crashlytics/FirebaseCrashlytics.java-74-            String libraryName = buildIdInfo2.getLibraryName();
+--
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-26-            this.mTransformedMappingArea = getTransformedMappingArea(rational);
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-27-        }
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-28-
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java:29:        private float getMappingAreaSize(RectF rectF) {
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-30-            return rectF.height() * rectF.width();
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-31-        }
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-32-
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-33-        private float getOverlappingAreaSize(RectF rectF, RectF rectF2) {
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-34-            return (rectF.width() < rectF2.width() ? rectF.width() : rectF2.width()) * (rectF.height() < rectF2.height() ? rectF.height() : rectF2.height());
+--
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-55-            boolean zIsMappingAreaCovered = isMappingAreaCovered(transformedMappingArea, this.mTransformedMappingArea);
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-56-            boolean zIsMappingAreaCovered2 = isMappingAreaCovered(transformedMappingArea2, this.mTransformedMappingArea);
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-57-            if (zIsMappingAreaCovered && zIsMappingAreaCovered2) {
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java:58:                return (int) Math.signum(getMappingAreaSize(transformedMappingArea) - getMappingAreaSize(transformedMappingArea2));
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-59-            }
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-60-            if (zIsMappingAreaCovered) {
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-61-                return -1;
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-62-            }
+./analysis/apk_analysis/jadx/sources/androidx/camera/core/impl/utils/AspectRatioUtil.java-63-            if (zIsMappingAreaCovered2) {

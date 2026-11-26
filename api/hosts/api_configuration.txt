@@ -1,0 +1,54 @@
+./analysis/apk_analysis/jadx/sources/yads/jb4.java:213:        ls4Var.loadDataWithBaseURL("https://yandex.ru", ls4Var.a(str), "text/html", "UTF-8", null);
+./analysis/apk_analysis/jadx/sources/yads/br.java:14:        ls4Var.loadDataWithBaseURL("https://yandex.ru", ls4Var.a(str), "text/html", "UTF-8", null);
+./analysis/apk_analysis/jadx/sources/yads/mc0.java:438:            String str33 = "BaseURL";
+./analysis/apk_analysis/jadx/sources/yads/mc0.java:439:            if (am6.c(xmlPullParser, "BaseURL")) {
+./analysis/apk_analysis/jadx/sources/yads/mc0.java:2760:                                                                                                        } while (!am6.b(xmlPullParser, "BaseURL"));
+./analysis/apk_analysis/jadx/sources/defpackage/wc5.java:2118:                String str = (String) ze7Var2.c("location_by_ip_base_url");
+./analysis/apk_analysis/jadx/sources/defpackage/wc5.java:2306:                Object objB = on.a((String) ze7Var2.c("ofd_base_url"), (OkHttpClient) ze7Var2.e(x07.a(OkHttpClient.class), null, p72.c)).b(ns5.class);
+./analysis/apk_analysis/jadx/sources/defpackage/n67.java:122:                r01.e(fz3VarA, "baseUrl must end in /: ");
+./analysis/apk_analysis/jadx/sources/com/tapjoy/TJUser.java:329:        TapjoyLog.d("URL parameters: " + TapjoyConnectCore.getInstance().getBaseURLParams());
+./analysis/apk_analysis/jadx/sources/com/tapjoy/TJUser.java:334:        Map<String, String> baseURLParams = TapjoyConnectCore.getInstance().getBaseURLParams();
+./analysis/apk_analysis/jadx/sources/com/tapjoy/TJUser.java:336:        String str2 = r2.a(strC, r2.a(baseURLParams), null, null, null).b;
+./analysis/apk_analysis/jadx/sources/com/tapjoy/TJWebViewActivity.java:170:            tJWebView2.loadDataWithBaseURL(str, str2, "text/html", "UTF-8", null);
+./analysis/apk_analysis/jadx/sources/com/tapjoy/b0.java:36:        tJWebView.loadDataWithBaseURL(placementURL, str, "text/html", "charset=UTF-8", null);
+./analysis/apk_analysis/jadx/sources/com/tapjoy/c.java:63:                } else if (tJPlacementData.getBaseURL() == null || this.b.getHttpResponse() == null) {
+./analysis/apk_analysis/jadx/sources/com/tapjoy/c.java:67:                    this.d.e.loadDataWithBaseURL(this.b.getBaseURL(), this.b.getHttpResponse(), "text/html", "utf-8", null);
+./analysis/apk_analysis/jadx/sources/com/tapjoy/TJPlacementData.java:22:        setBaseURL(str);
+./analysis/apk_analysis/jadx/sources/com/tapjoy/TJPlacementData.java:29:    public String getBaseURL() {
+./analysis/apk_analysis/jadx/sources/com/tapjoy/TJPlacementData.java:82:    public void setBaseURL(String str) {
+./analysis/apk_analysis/jadx/sources/com/tapjoy/TapjoyConnectCore.java:134:    public Map<String, String> getBaseURLParams() {
+./analysis/apk_analysis/jadx/sources/com/my/target/w0.java:210:                        webView.loadDataWithBaseURL("https://ad.mail.ru/", str, "text/html", "UTF-8", null);
+./analysis/apk_analysis/jadx/sources/com/my/target/k1.java:248:                webView.loadDataWithBaseURL("https://ad.mail.ru/", str2, "text/html", "UTF-8", null);
+./analysis/apk_analysis/jadx/sources/com/my/target/e1.java:113:            webView.loadDataWithBaseURL("https://ad.mail.ru/", str, "text/html", "UTF-8", null);
+./analysis/apk_analysis/jadx/sources/com/warefly/checkscan/CheckScanApplication.java:129:            Map mapE = n05.e(new b36("server_host", string), new b36("location_by_ip_base_url", checkScanApplication.getResources().getString(R.string.location_by_ip_url)), new b36("ofd_base_url", checkScanApplication.getResources().getString(R.string.ofd_base_url)), new b36("sse_url", string.concat("/v1/sse/event/subscribe")));
+./analysis/apk_analysis/jadx/sources/com/warefly/checkscan/R.java:9923:        public static final int firebase_database_url = 0x7f1402a0;
+./analysis/apk_analysis/jadx/sources/com/warefly/checkscan/R.java:10337:        public static final int ofd_base_url = 0x7f140487;
+./analysis/apk_analysis/jadx/sources/com/google/android/gms/internal/measurement/zzin.java:16:    MISSING_SGTM_SERVER_URL(22);
+./analysis/apk_analysis/jadx/sources/com/google/android/gms/internal/measurement/zzin.java:51:                        return MISSING_SGTM_SERVER_URL;
+./analysis/apk_analysis/jadx/sources/com/google/android/gms/measurement/internal/zzpk.java:1019:                        str3 = iZzh != 5 ? "NON_PLAY_MISSING_SGTM_SERVER_URL" : "MISSING_SGTM_PROXY_INFO";
+./analysis/apk_analysis/jadx/sources/com/google/android/gms/measurement/internal/zzou.java:81:                                zzilVarZzb.zza(zzin.MISSING_SGTM_SERVER_URL);
+./analysis/apk_analysis/jadx/sources/com/google/android/gms/measurement/internal/zzou.java:93:                                zzicVar.zzaW().zzk().zzb("[sgtm] Local service, missing sgtm_server_url", fmbVarZ2.m());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/sessions/settings/RemoteSettingsFetcher.java:26:    private static final String FIREBASE_SESSIONS_BASE_URL_STRING = "firebase-settings.crashlytics.com";
+./analysis/apk_analysis/jadx/sources/com/google/firebase/sessions/settings/RemoteSettingsFetcher.java:90:        return new URL(new Uri.Builder().scheme(ProxyConfig.MATCH_HTTPS).authority(FIREBASE_SESSIONS_BASE_URL_STRING).appendPath("spi").appendPath("v2").appendPath("platforms").appendPath("android").appendPath("gmp").appendPath(this.appInfo.getAppId()).appendPath("settings").appendQueryParameter("build_version", this.appInfo.getAndroidAppInfo().getAppBuildVersion()).appendQueryParameter("display_version", this.appInfo.getAndroidAppInfo().getVersionName()).build().toString());
+./analysis/apk_analysis/jadx/sources/com/google/firebase/FirebaseOptions.java:15:    private static final String DATABASE_URL_RESOURCE_NAME = "firebase_database_url";
+./analysis/apk_analysis/jadx/sources/com/google/firebase/FirebaseOptions.java:22:    private final String databaseUrl;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/FirebaseOptions.java:32:        this.databaseUrl = str3;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/FirebaseOptions.java:45:        return new FirebaseOptions(string, stringResourceValueReader.getString(API_KEY_RESOURCE_NAME), stringResourceValueReader.getString(DATABASE_URL_RESOURCE_NAME), stringResourceValueReader.getString(GA_TRACKING_ID_RESOURCE_NAME), stringResourceValueReader.getString(GCM_SENDER_ID_RESOURCE_NAME), stringResourceValueReader.getString(STORAGE_BUCKET_RESOURCE_NAME), stringResourceValueReader.getString(PROJECT_ID_RESOURCE_NAME));
+./analysis/apk_analysis/jadx/sources/com/google/firebase/FirebaseOptions.java:53:        return Objects.equal(this.applicationId, firebaseOptions.applicationId) && Objects.equal(this.apiKey, firebaseOptions.apiKey) && Objects.equal(this.databaseUrl, firebaseOptions.databaseUrl) && Objects.equal(this.gaTrackingId, firebaseOptions.gaTrackingId) && Objects.equal(this.gcmSenderId, firebaseOptions.gcmSenderId) && Objects.equal(this.storageBucket, firebaseOptions.storageBucket) && Objects.equal(this.projectId, firebaseOptions.projectId);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/FirebaseOptions.java:64:    public String getDatabaseUrl() {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/FirebaseOptions.java:65:        return this.databaseUrl;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/FirebaseOptions.java:85:        return Objects.hashCode(this.applicationId, this.apiKey, this.databaseUrl, this.gaTrackingId, this.gcmSenderId, this.storageBucket, this.projectId);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/FirebaseOptions.java:89:        return Objects.toStringHelper(this).add("applicationId", this.applicationId).add(DynamicLink.Builder.KEY_API_KEY, this.apiKey).add("databaseUrl", this.databaseUrl).add("gcmSenderId", this.gcmSenderId).add("storageBucket", this.storageBucket).add("projectId", this.projectId).toString();
+./analysis/apk_analysis/jadx/sources/com/google/firebase/FirebaseOptions.java:95:        private String databaseUrl;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/FirebaseOptions.java:104:            this.databaseUrl = firebaseOptions.databaseUrl;
+./analysis/apk_analysis/jadx/sources/com/google/firebase/FirebaseOptions.java:112:            return new FirebaseOptions(this.applicationId, this.apiKey, this.databaseUrl, this.gaTrackingId, this.gcmSenderId, this.storageBucket, this.projectId);
+./analysis/apk_analysis/jadx/sources/com/google/firebase/FirebaseOptions.java:125:        public Builder setDatabaseUrl(String str) {
+./analysis/apk_analysis/jadx/sources/com/google/firebase/FirebaseOptions.java:126:            this.databaseUrl = str;
+./analysis/apk_analysis/jadx/sources/io/appmetrica/analytics/push/provider/firebase/impl/h.java:24:        return CoreUtils.getStringFromMetaData(this.a, "ymp_firebase_api_key");
+Binary file ./analysis/apk_analysis/jadx/resources/lib/armeabi-v7a/libconscrypt_jni.so matches
+Binary file ./analysis/apk_analysis/jadx/resources/lib/arm64-v8a/libconscrypt_jni.so matches
+./analysis/apk_analysis/jadx/resources/res/values/public.xml:9868:    <public type="string" name="firebase_database_url" id="0x7f1402a0" />
+./analysis/apk_analysis/jadx/resources/res/values/public.xml:10282:    <public type="string" name="ofd_base_url" id="0x7f140487" />
+./analysis/apk_analysis/jadx/resources/res/values/strings.xml:546:    <string name="firebase_database_url">https://checkscan-3ed22.firebaseio.com</string>
+./analysis/apk_analysis/jadx/resources/res/values/strings.xml:960:    <string name="ofd_base_url">https://ofd.ru</string>
+./analysis/apk_analysis/jadx/resources/res/raw/firebase_common_keep.xml:3:    tools:keep="@string/google_app_id,@string/gcm_defaultSenderId,@string/google_api_key,@string/firebase_database_url,@string/ga_trackingId,@string/google_storage_bucket,@string/project_id" />

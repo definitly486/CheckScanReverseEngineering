@@ -1,0 +1,8 @@
+app-measurement.com
+checkscan-3ed22.firebaseio.com
+console.firebase.google.com
+firebase-settings.crashlytics.com
+firebase.google.com
+firebaseinstallations.googleapis.com
+firebaseremoteconfig.googleapis.com
+firebaseremoteconfigrealtime.googleapis.com
