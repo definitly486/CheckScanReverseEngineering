@@ -1,0 +1,68 @@
+./apk_analysis/jadx/sources/defpackage/ex7.java-1-package defpackage;
+./apk_analysis/jadx/sources/defpackage/ex7.java-2-
+./apk_analysis/jadx/sources/defpackage/ex7.java-3-/* JADX INFO: loaded from: classes.dex */
+./apk_analysis/jadx/sources/defpackage/ex7.java:4:public final class ex7 {
+./apk_analysis/jadx/sources/defpackage/ex7.java-5-
+./apk_analysis/jadx/sources/defpackage/ex7.java-6-    @bq7("phone")
+./apk_analysis/jadx/sources/defpackage/ex7.java-7-    private final String a;
+./apk_analysis/jadx/sources/defpackage/ex7.java-8-
+./apk_analysis/jadx/sources/defpackage/ex7.java-9-    @bq7("allowSmsNotifications")
+--
+./apk_analysis/jadx/sources/defpackage/ex7.java-16-    private final String d;
+./apk_analysis/jadx/sources/defpackage/ex7.java-17-
+./apk_analysis/jadx/sources/defpackage/ex7.java-18-    @bq7("fromOnboarding")
+./apk_analysis/jadx/sources/defpackage/ex7.java-19-    private final Boolean e;
+./apk_analysis/jadx/sources/defpackage/ex7.java-20-
+./apk_analysis/jadx/sources/defpackage/ex7.java:21:    public ex7(String str, boolean z, dw1 dw1Var, String str2, Boolean bool) {
+./apk_analysis/jadx/sources/defpackage/ex7.java-22-        str.getClass();
+./apk_analysis/jadx/sources/defpackage/ex7.java-23-        dw1Var.getClass();
+./apk_analysis/jadx/sources/defpackage/ex7.java-24-        this.a = str;
+./apk_analysis/jadx/sources/defpackage/ex7.java-25-        this.b = z;
+./apk_analysis/jadx/sources/defpackage/ex7.java-26-        this.c = dw1Var;
+--
+./apk_analysis/jadx/sources/defpackage/ex7.java-30-
+./apk_analysis/jadx/sources/defpackage/ex7.java-31-    public final boolean equals(Object obj) {
+./apk_analysis/jadx/sources/defpackage/ex7.java-32-        if (this == obj) {
+./apk_analysis/jadx/sources/defpackage/ex7.java-33-            return true;
+./apk_analysis/jadx/sources/defpackage/ex7.java-34-        }
+./apk_analysis/jadx/sources/defpackage/ex7.java:35:        if (!(obj instanceof ex7)) {
+./apk_analysis/jadx/sources/defpackage/ex7.java-36-            return false;
+./apk_analysis/jadx/sources/defpackage/ex7.java-37-        }
+./apk_analysis/jadx/sources/defpackage/ex7.java:38:        ex7 ex7Var = (ex7) obj;
+./apk_analysis/jadx/sources/defpackage/ex7.java-39-        return aa4.e(this.a, ex7Var.a) && this.b == ex7Var.b && this.c == ex7Var.c && aa4.e(this.d, ex7Var.d) && aa4.e(this.e, ex7Var.e);
+./apk_analysis/jadx/sources/defpackage/ex7.java-40-    }
+./apk_analysis/jadx/sources/defpackage/ex7.java-41-
+./apk_analysis/jadx/sources/defpackage/ex7.java-42-    public final int hashCode() {
+./apk_analysis/jadx/sources/defpackage/ex7.java-43-        int iHashCode = (this.c.hashCode() + tg.c(this.a.hashCode() * 31, 31, this.b)) * 31;
+--
+./apk_analysis/jadx/sources/defpackage/ex7.java-61-        sbB.append(bool);
+./apk_analysis/jadx/sources/defpackage/ex7.java-62-        sbB.append(")");
+./apk_analysis/jadx/sources/defpackage/ex7.java-63-        return sbB.toString();
+./apk_analysis/jadx/sources/defpackage/ex7.java-64-    }
+./apk_analysis/jadx/sources/defpackage/ex7.java-65-
+./apk_analysis/jadx/sources/defpackage/ex7.java:66:    public /* synthetic */ ex7(String str, boolean z, dw1 dw1Var, String str2, Boolean bool, int i, jh2 jh2Var) {
+./apk_analysis/jadx/sources/defpackage/ex7.java-67-        this(str, z, dw1Var, (i & 8) != 0 ? null : str2, (i & 16) != 0 ? null : bool);
+./apk_analysis/jadx/sources/defpackage/ex7.java-68-    }
+./apk_analysis/jadx/sources/defpackage/ex7.java-69-}
+./apk_analysis/jadx/sources/defpackage/dx.java-207-        Object objC = zwVar.l;
+./apk_analysis/jadx/sources/defpackage/dx.java-208-        a32 a32Var = a32.COROUTINE_SUSPENDED;
+./apk_analysis/jadx/sources/defpackage/dx.java-209-        int i2 = zwVar.n;
+./apk_analysis/jadx/sources/defpackage/dx.java-210-        if (i2 == 0) {
+./apk_analysis/jadx/sources/defpackage/dx.java-211-            r57.b(objC);
+./apk_analysis/jadx/sources/defpackage/dx.java:212:            ex7 ex7Var = new ex7(str, z, dw1Var, str2, bool);
+./apk_analysis/jadx/sources/defpackage/dx.java-213-            zwVar.n = 1;
+./apk_analysis/jadx/sources/defpackage/dx.java-214-            objC = this.a.c(ex7Var, zwVar);
+./apk_analysis/jadx/sources/defpackage/dx.java-215-            if (objC == a32Var) {
+./apk_analysis/jadx/sources/defpackage/dx.java-216-                return a32Var;
+./apk_analysis/jadx/sources/defpackage/dx.java-217-            }
+./apk_analysis/jadx/sources/defpackage/cv.java-9-
+./apk_analysis/jadx/sources/defpackage/cv.java-10-    @z06("api/v2.1/users/signin/confirm/v2")
+./apk_analysis/jadx/sources/defpackage/cv.java-11-    Object b(@lk0 dx7 dx7Var, e02<? super a57<g3>> e02Var);
+./apk_analysis/jadx/sources/defpackage/cv.java-12-
+./apk_analysis/jadx/sources/defpackage/cv.java-13-    @z06("api/v2.1/users/signin/v2")
+./apk_analysis/jadx/sources/defpackage/cv.java:14:    Object c(@lk0 ex7 ex7Var, e02<? super a57<ex>> e02Var);
+./apk_analysis/jadx/sources/defpackage/cv.java-15-
+./apk_analysis/jadx/sources/defpackage/cv.java-16-    @z06("api/v2.1/users/email")
+./apk_analysis/jadx/sources/defpackage/cv.java-17-    Object d(@lk0 hw2 hw2Var, e02<? super a57<Object>> e02Var);
+./apk_analysis/jadx/sources/defpackage/cv.java-18-
+./apk_analysis/jadx/sources/defpackage/cv.java-19-    @gn3("api/v2.1/users/policies")

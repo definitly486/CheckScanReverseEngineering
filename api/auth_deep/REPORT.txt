@@ -1,0 +1,27 @@
+CHECKSCAN AUTHENTICATION ANALYSIS
+=================================
+
+JADX: ./apk_analysis/jadx/sources
+
+Основные классы:
+[FOUND] j02
+[FOUND] ix8
+[FOUND] am2
+[FOUND] ex7
+
+Результаты:
+./api/auth_deep/auth/dto_json.txt
+./api/auth_deep/auth/enums.txt
+./api/auth_deep/auth/headers_and_ev3.txt
+./api/auth_deep/auth/network_interceptors.txt
+./api/auth_deep/auth/sms_destination.txt
+./api/auth_deep/auth/token_storage.txt
+./api/auth_deep/classes/am2_class.txt
+./api/auth_deep/classes/ex7_class.txt
+./api/auth_deep/classes/ix8_class.txt
+./api/auth_deep/classes/j02_class.txt
+./api/auth_deep/references/am2_references.txt
+./api/auth_deep/references/ex7_references.txt
+./api/auth_deep/references/ix8_references.txt
+./api/auth_deep/references/j02_references.txt
+./api/auth_deep/REPORT.txt
