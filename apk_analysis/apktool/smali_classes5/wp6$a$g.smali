@@ -1,0 +1,237 @@
+.class public final Lwp6$a$g;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lwp6$a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "g"
+.end annotation
+
+
+# instance fields
+.field private final a:Ljava/lang/String;
+    .annotation runtime Lbq7;
+        value = "title"
+    .end annotation
+.end field
+
+.field private final b:Ljava/lang/String;
+    .annotation runtime Lbq7;
+        value = "infoText"
+    .end annotation
+.end field
+
+.field private final c:Ljava/util/List;
+    .annotation runtime Lbq7;
+        value = "tags"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lwp6$a$f;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "Lwp6$a$f;",
+            ">;)V"
+        }
+    .end annotation
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lwp6$a$g;->a:Ljava/lang/String;
+
+    iput-object p2, p0, Lwp6$a$g;->b:Ljava/lang/String;
+
+    iput-object p3, p0, Lwp6$a$g;->c:Ljava/util/List;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lwp6$a$g;->b:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public final b()Ljava/util/List;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lwp6$a$f;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object p0, p0, Lwp6$a$g;->c:Ljava/util/List;
+
+    return-object p0
+.end method
+
+.method public final c()Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lwp6$a$g;->a:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Lwp6$a$g;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, Lwp6$a$g;
+
+    iget-object v1, p0, Lwp6$a$g;->a:Ljava/lang/String;
+
+    iget-object v3, p1, Lwp6$a$g;->a:Ljava/lang/String;
+
+    invoke-static {v1, v3}, Laa4;->e(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    return v2
+
+    :cond_2
+    iget-object v1, p0, Lwp6$a$g;->b:Ljava/lang/String;
+
+    iget-object v3, p1, Lwp6$a$g;->b:Ljava/lang/String;
+
+    invoke-static {v1, v3}, Laa4;->e(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    return v2
+
+    :cond_3
+    iget-object p0, p0, Lwp6$a$g;->c:Ljava/util/List;
+
+    iget-object p1, p1, Lwp6$a$g;->c:Ljava/util/List;
+
+    invoke-static {p0, p1}, Laa4;->e(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-nez p0, :cond_4
+
+    return v2
+
+    :cond_4
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    iget-object v0, p0, Lwp6$a$g;->a:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Lwp6$a$g;->b:Ljava/lang/String;
+
+    if-nez v1, :cond_0
+
+    const/4 v1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    move-result v1
+
+    :goto_0
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object p0, p0, Lwp6$a$g;->c:Ljava/util/List;
+
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    move-result p0
+
+    add-int/2addr p0, v0
+
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 5
+
+    iget-object v0, p0, Lwp6$a$g;->a:Ljava/lang/String;
+
+    iget-object v1, p0, Lwp6$a$g;->b:Ljava/lang/String;
+
+    iget-object p0, p0, Lwp6$a$g;->c:Ljava/util/List;
+
+    const-string v2, ", infoText="
+
+    const-string v3, ", tags="
+
+    const-string v4, "TagsBlockResponse(title="
+
+    invoke-static {v4, v0, v2, v1, v3}, Lad2;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ")"
+
+    invoke-static {v1, p0, v0}, Lbg;->e(Ljava/lang/String;Ljava/util/List;Ljava/lang/StringBuilder;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method

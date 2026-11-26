@@ -1,0 +1,136 @@
+.class final Landroidx/compose/material3/SliderKt$RangeSlider$16;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ldm3;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose/material3/SliderKt;->RangeSlider(Landroidx/compose/material3/RangeSliderState;Landroidx/compose/ui/Modifier;ZLandroidx/compose/material3/SliderColors;Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/foundation/interaction/MutableInteractionSource;Ldm3;Ldm3;Ldm3;Landroidx/compose/runtime/Composer;II)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ldm3<",
+        "Landroidx/compose/material3/RangeSliderState;",
+        "Landroidx/compose/runtime/Composer;",
+        "Ljava/lang/Integer;",
+        "Lj59;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $colors:Landroidx/compose/material3/SliderColors;
+
+.field final synthetic $enabled:Z
+
+
+# direct methods
+.method public constructor <init>(ZLandroidx/compose/material3/SliderColors;)V
+    .locals 0
+
+    iput-boolean p1, p0, Landroidx/compose/material3/SliderKt$RangeSlider$16;->$enabled:Z
+
+    iput-object p2, p0, Landroidx/compose/material3/SliderKt$RangeSlider$16;->$colors:Landroidx/compose/material3/SliderColors;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 55
+    check-cast p1, Landroidx/compose/material3/RangeSliderState;
+
+    check-cast p2, Landroidx/compose/runtime/Composer;
+
+    check-cast p3, Ljava/lang/Number;
+
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
+
+    move-result p3
+
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/material3/SliderKt$RangeSlider$16;->invoke(Landroidx/compose/material3/RangeSliderState;Landroidx/compose/runtime/Composer;I)V
+
+    sget-object p0, Lj59;->a:Lj59;
+
+    return-object p0
+.end method
+
+.method public final invoke(Landroidx/compose/material3/RangeSliderState;Landroidx/compose/runtime/Composer;I)V
+    .locals 17
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, p3
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    const/4 v2, -0x1
+
+    const-string v3, "androidx.compose.material3.RangeSlider.<anonymous> (Slider.kt:720)"
+
+    const v4, -0x1b045617
+
+    invoke-static {v4, v1, v2, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    :cond_0
+    sget-object v5, Landroidx/compose/material3/SliderDefaults;->INSTANCE:Landroidx/compose/material3/SliderDefaults;
+
+    iget-boolean v8, v0, Landroidx/compose/material3/SliderKt$RangeSlider$16;->$enabled:Z
+
+    iget-object v9, v0, Landroidx/compose/material3/SliderKt$RangeSlider$16;->$colors:Landroidx/compose/material3/SliderColors;
+
+    and-int/lit8 v0, v1, 0xe
+
+    const/high16 v1, 0x6000000
+
+    or-int v15, v0, v1
+
+    const/16 v16, 0xf2
+
+    const/4 v7, 0x0
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    move-object/from16 v6, p1
+
+    move-object/from16 v14, p2
+
+    invoke-virtual/range {v5 .. v16}, Landroidx/compose/material3/SliderDefaults;->Track-4EFweAY(Landroidx/compose/material3/RangeSliderState;Landroidx/compose/ui/Modifier;ZLandroidx/compose/material3/SliderColors;Lbm3;Ldm3;FFLandroidx/compose/runtime/Composer;II)V
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
+
+    :cond_1
+    return-void
+.end method

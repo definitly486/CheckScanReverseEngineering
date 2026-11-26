@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextSize14.Black40"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_field"
+        android:padding="@dimen/dimen_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:paddingStart="@dimen/dimen_0"
+        android:paddingEnd="@dimen/dimen_0"
+        app:boxBackgroundColor="@color/white"
+        app:errorIconDrawable="@null"
+        app:hintTextAppearance="@style/TextInputRegularHintTextAppearance"
+        app:hintTextColor="@color/black_40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        style="@style/TextInputLayout8Corners">
+        <com.warefly.checkscan.maskededittext.MaskedInputEditText
+            android:textColor="@color/blueCharcoal"
+            android:textColorHint="@color/black_40"
+            android:id="@+id/et_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            style="@style/TextSize16.Medium.Gray100"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

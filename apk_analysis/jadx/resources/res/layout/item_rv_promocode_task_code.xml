@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/dimen_8">
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tv_promocode_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/promocode_code_title"
+        android:textAlignment="center"
+        style="@style/TextSize16.Manatee"/>
+    <TextView
+        android:id="@+id/tv_promocode"
+        android:background="@drawable/background_transparent_radius_4_stroke_1"
+        android:padding="@dimen/dimen_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:text="@string/promocode_code_hide"
+        android:textAlignment="center"
+        style="@style/TextSize22.Manatee"/>
+</LinearLayout>

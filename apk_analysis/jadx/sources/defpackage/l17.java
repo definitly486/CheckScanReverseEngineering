@@ -1,0 +1,46 @@
+package defpackage;
+
+import androidx.media3.extractor.text.ttml.TtmlNode;
+
+/* JADX INFO: loaded from: classes5.dex */
+public final class l17 {
+
+    @bq7(TtmlNode.ATTR_ID)
+    private final int a;
+
+    @bq7("name")
+    private final String b;
+
+    public l17(int i, String str) {
+        str.getClass();
+        this.a = i;
+        this.b = str;
+    }
+
+    public final int a() {
+        return this.a;
+    }
+
+    public final String b() {
+        return this.b;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof l17)) {
+            return false;
+        }
+        l17 l17Var = (l17) obj;
+        return this.a == l17Var.a && aa4.e(this.b, l17Var.b);
+    }
+
+    public final int hashCode() {
+        return this.b.hashCode() + (Integer.hashCode(this.a) * 31);
+    }
+
+    public final String toString() {
+        return c9.d(this.a, "Region(id=", ", name=", this.b, ")");
+    }
+}

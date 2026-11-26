@@ -1,0 +1,214 @@
+.class public final Lik8$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/util/Iterator;
+.implements Lre4;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lik8;->iterator()Ljava/util/Iterator;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/Iterator<",
+        "TT;>;",
+        "Lre4;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final b:Ljava/util/Iterator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Iterator<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field public c:I
+
+.field public d:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TT;"
+        }
+    .end annotation
+.end field
+
+.field public final synthetic e:Lik8;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lik8<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lik8;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lik8<",
+            "TT;>;)V"
+        }
+    .end annotation
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lik8$a;->e:Lik8;
+
+    iget-object p1, p1, Lik8;->a:Lzo7;
+
+    invoke-interface {p1}, Lzo7;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lik8$a;->b:Ljava/util/Iterator;
+
+    const/4 p1, -0x1
+
+    iput p1, p0, Lik8$a;->c:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 2
+
+    iget-object v0, p0, Lik8$a;->b:Ljava/util/Iterator;
+
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lik8$a;->e:Lik8;
+
+    iget-object v1, v1, Lik8;->b:Lnl3;
+
+    invoke-interface {v1, v0}, Lnl3;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Boolean;
+
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x1
+
+    iput v1, p0, Lik8$a;->c:I
+
+    iput-object v0, p0, Lik8$a;->d:Ljava/lang/Object;
+
+    return-void
+
+    :cond_0
+    const/4 v0, 0x0
+
+    iput v0, p0, Lik8$a;->c:I
+
+    return-void
+.end method
+
+.method public final hasNext()Z
+    .locals 2
+
+    iget v0, p0, Lik8$a;->c:I
+
+    const/4 v1, -0x1
+
+    if-ne v0, v1, :cond_0
+
+    invoke-virtual {p0}, Lik8$a;->a()V
+
+    :cond_0
+    iget p0, p0, Lik8$a;->c:I
+
+    const/4 v0, 0x1
+
+    if-ne p0, v0, :cond_1
+
+    return v0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public final next()Ljava/lang/Object;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
+
+    iget v0, p0, Lik8$a;->c:I
+
+    const/4 v1, -0x1
+
+    if-ne v0, v1, :cond_0
+
+    invoke-virtual {p0}, Lik8$a;->a()V
+
+    :cond_0
+    iget v0, p0, Lik8$a;->c:I
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lik8$a;->d:Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    iput-object v2, p0, Lik8$a;->d:Ljava/lang/Object;
+
+    iput v1, p0, Lik8$a;->c:I
+
+    return-object v0
+
+    :cond_1
+    invoke-static {}, Lqz0;->e()V
+
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method public final remove()V
+    .locals 1
+
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string v0, "Operation is not supported for read-only collection"
+
+    invoke-direct {p0, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method

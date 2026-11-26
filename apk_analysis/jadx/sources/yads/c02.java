@@ -1,0 +1,22 @@
+package yads;
+
+/* JADX INFO: loaded from: classes6.dex */
+public final class c02 implements xq3 {
+    public final zw2 a;
+    public final zw2 b;
+    public final zw2 c;
+    public final zw2 d;
+
+    static {
+        wr2.a(Double.valueOf(0.19d));
+        wr2.a(2L);
+        wr2.a(0);
+    }
+
+    public c02(zw2 zw2Var, zw2 zw2Var2, zw2 zw2Var3, zw2 zw2Var4) {
+        this.a = zw2Var;
+        this.b = zw2Var2;
+        this.c = zw2Var3;
+        this.d = zw2Var4;
+    }
+}

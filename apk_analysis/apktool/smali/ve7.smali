@@ -1,0 +1,18 @@
+.class public final synthetic Lve7;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lxe7$a;
+
+
+# virtual methods
+.method public final a(Landroid/database/sqlite/SQLiteDatabase;)V
+    .locals 0
+
+    const-string p0, "ALTER TABLE events ADD COLUMN product_id INTEGER"
+
+    invoke-virtual {p1, p0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+
+    return-void
+.end method

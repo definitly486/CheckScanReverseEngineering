@@ -1,0 +1,6 @@
+package yads;
+
+/* JADX INFO: loaded from: classes6.dex */
+public final class ng {
+    public final qi5 a = new qi5();
+}

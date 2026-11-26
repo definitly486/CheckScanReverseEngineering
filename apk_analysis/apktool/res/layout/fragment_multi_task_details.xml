@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_content" android:paddingBottom="@dimen/dimen_32" android:clipToPadding="false" android:layout_width="@dimen/dimen_0" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/dimen_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <include android:id="@id/incld_ads_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24" android:layout_marginEnd="@dimen/dimen_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/layout_ads_badge" />
+    <ImageView android:id="@id/btn_close" android:layout_width="@dimen/dimen_44" android:layout_height="@dimen/dimen_44" android:layout_marginTop="@dimen/dimen_16" android:importantForAccessibility="no" android:layout_marginStart="@dimen/dimen_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_back_button_outlined" />
+    <include android:id="@id/incld_error" android:visibility="gone" layout="@layout/layout_simple_try_again" />
+    <include android:id="@id/incld_loading" android:visibility="visible" layout="@layout/layout_spinner_loading" />
+</androidx.constraintlayout.widget.ConstraintLayout>

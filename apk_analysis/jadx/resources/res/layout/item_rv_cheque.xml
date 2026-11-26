@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_title"
+    android:background="@drawable/background_blue_charcoal_80_radius_130"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:lines="2"
+    android:drawablePadding="@dimen/margin_more_little_bit"
+    android:drawableStart="@drawable/ic_book_mark"
+    android:paddingHorizontal="@dimen/margin_top_medium_sm"
+    android:paddingVertical="@dimen/margin_small_2_sm"
+    style="@style/TextSize14.White"/>

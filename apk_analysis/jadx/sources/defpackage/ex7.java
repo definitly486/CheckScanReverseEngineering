@@ -1,0 +1,69 @@
+package defpackage;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class ex7 {
+
+    @bq7("phone")
+    private final String a;
+
+    @bq7("allowSmsNotifications")
+    private final boolean b;
+
+    @bq7("confirmType")
+    private final dw1 c;
+
+    @bq7("referral")
+    private final String d;
+
+    @bq7("fromOnboarding")
+    private final Boolean e;
+
+    public ex7(String str, boolean z, dw1 dw1Var, String str2, Boolean bool) {
+        str.getClass();
+        dw1Var.getClass();
+        this.a = str;
+        this.b = z;
+        this.c = dw1Var;
+        this.d = str2;
+        this.e = bool;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof ex7)) {
+            return false;
+        }
+        ex7 ex7Var = (ex7) obj;
+        return aa4.e(this.a, ex7Var.a) && this.b == ex7Var.b && this.c == ex7Var.c && aa4.e(this.d, ex7Var.d) && aa4.e(this.e, ex7Var.e);
+    }
+
+    public final int hashCode() {
+        int iHashCode = (this.c.hashCode() + tg.c(this.a.hashCode() * 31, 31, this.b)) * 31;
+        String str = this.d;
+        int iHashCode2 = (iHashCode + (str == null ? 0 : str.hashCode())) * 31;
+        Boolean bool = this.e;
+        return iHashCode2 + (bool != null ? bool.hashCode() : 0);
+    }
+
+    public final String toString() {
+        String str = this.a;
+        boolean z = this.b;
+        dw1 dw1Var = this.c;
+        String str2 = this.d;
+        Boolean bool = this.e;
+        StringBuilder sbB = p2.b("SignInRequestBody(phone=", str, ", allowSmsNotifications=", ", confirmType=", z);
+        sbB.append(dw1Var);
+        sbB.append(", referral=");
+        sbB.append(str2);
+        sbB.append(", fromOnboarding=");
+        sbB.append(bool);
+        sbB.append(")");
+        return sbB.toString();
+    }
+
+    public /* synthetic */ ex7(String str, boolean z, dw1 dw1Var, String str2, Boolean bool, int i, jh2 jh2Var) {
+        this(str, z, dw1Var, (i & 8) != 0 ? null : str2, (i & 16) != 0 ? null : bool);
+    }
+}

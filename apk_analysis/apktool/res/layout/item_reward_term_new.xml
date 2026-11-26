@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:background="@drawable/background_transparent_stroke_2" android:padding="@dimen/margin_medium_sm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_end_sm"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColorHighlight="@android:color/transparent" android:textColorLink="@color/readilyBlue" android:id="@id/tv_title" android:layout_width="@dimen/fill_free_space" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_large_sm" app:layout_constraintEnd_toStartOf="@id/tv_bonus" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/BonusesTermTitleNew" />
+    <TextView android:id="@id/tv_bonus" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/BonusesTermValueNew" />
+</androidx.constraintlayout.widget.ConstraintLayout>

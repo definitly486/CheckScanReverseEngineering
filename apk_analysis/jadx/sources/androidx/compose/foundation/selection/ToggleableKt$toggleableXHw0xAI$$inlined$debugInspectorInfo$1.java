@@ -1,0 +1,40 @@
+package androidx.compose.foundation.selection;
+
+import androidx.compose.ui.platform.InspectorInfo;
+import androidx.compose.ui.semantics.Role;
+import com.tapjoy.TJAdUnitConstants;
+import defpackage.gh4;
+import defpackage.il1;
+import defpackage.j59;
+import defpackage.nl3;
+
+/* JADX INFO: renamed from: androidx.compose.foundation.selection.ToggleableKt$toggleable-XHw0xAI$$inlined$debugInspectorInfo$1, reason: invalid class name */
+/* JADX INFO: loaded from: classes.dex */
+public final class ToggleableKt$toggleableXHw0xAI$$inlined$debugInspectorInfo$1 extends gh4 implements nl3<InspectorInfo, j59> {
+    final /* synthetic */ boolean $enabled$inlined;
+    final /* synthetic */ nl3 $onValueChange$inlined;
+    final /* synthetic */ Role $role$inlined;
+    final /* synthetic */ boolean $value$inlined;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ToggleableKt$toggleableXHw0xAI$$inlined$debugInspectorInfo$1(boolean z, boolean z2, Role role, nl3 nl3Var) {
+        super(1);
+        this.$value$inlined = z;
+        this.$enabled$inlined = z2;
+        this.$role$inlined = role;
+        this.$onValueChange$inlined = nl3Var;
+    }
+
+    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    public final void invoke2(InspectorInfo inspectorInfo) {
+        inspectorInfo.setName("toggleable");
+        il1.c(this.$enabled$inlined, il1.c(this.$value$inlined, inspectorInfo.getProperties(), "value", inspectorInfo), TJAdUnitConstants.String.ENABLED, inspectorInfo).set("role", this.$role$inlined);
+        inspectorInfo.getProperties().set("onValueChange", this.$onValueChange$inlined);
+    }
+
+    @Override // defpackage.nl3
+    public /* bridge */ /* synthetic */ j59 invoke(InspectorInfo inspectorInfo) {
+        invoke2(inspectorInfo);
+        return j59.a;
+    }
+}

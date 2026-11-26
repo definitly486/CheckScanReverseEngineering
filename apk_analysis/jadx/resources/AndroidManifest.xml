@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="20140579"
+    android:versionName="2.14.5.79"
+    android:compileSdkVersion="36"
+    android:compileSdkVersionCodename="16"
+    package="com.warefly.checkscan"
+    platformBuildVersionCode="36"
+    platformBuildVersionName="16">
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="36"/>
+    <queries>
+        <package android:name="ru.nspk.mirpay"/>
+        <package android:name="ru.alfabank.mobile.android"/>
+        <package android:name="ru.otpbank.mobile"/>
+        <package android:name="ru.gazprombank.android.mobilebank.app"/>
+        <package android:name="ru.bankuralsib.mb.android"/>
+        <package android:name="ru.sovcomcard.halva.v1"/>
+        <package android:name="ru.sberbankmobile"/>
+        <package android:name="com.idamob.tinkoff.android"/>
+        <package android:name="ru.vtb24.mobilebanking.android"/>
+        <package android:name="ru.raiffeisennews"/>
+        <package android:name="logo.com.mbanking"/>
+        <package android:name="ru.rshb.dbo"/>
+        <package android:name="ru.mkb.mobile"/>
+        <package android:name="ru.mts.money"/>
+        <package android:name="ru.mts.bank"/>
+        <package android:name="ru.lewis.dbo"/>
+        <package android:name="com.yandex.browser"/>
+        <package android:name="com.yandex.searchapp"/>
+        <package android:name="ru.tander.magnit"/>
+        <package android:name="ru.oneme.app"/>
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="org.thunderdog.challegram"/>
+        <package android:name="org.orange.mobile"/>
+        <package android:name="ru.ozon.fintech.finance"/>
+        <package android:name="com.gpn.azs"/>
+        <package android:name="ru.serebryakovas.lukoilmobileapp"/>
+        <package android:name="ru.pichesky.rosneft"/>
+        <package android:name="ru.yandex.mobile.gasstations"/>
+        <package android:name="ru.gorparkovki.federal"/>
+        <package android:name="ru.mosparking.appnew"/>
+        <package android:name="ru.spb.parking"/>
+        <package android:name="ru.rosfinesinapp.android"/>
+        <package android:name="ru.rosfines.android"/>
+        <package android:name="com.e1c.SmallBusiness"/>
+        <package android:name="ru.crptech.mark"/>
+        <package android:name="ru.ozon.seller_app"/>
+        <package android:name="wb.partners"/>
+        <package android:name="ru.yandex.market.partner"/>
+        <package android:name="com.kontur.diadoc2"/>
+        <package android:name="ru.tensor.sbis.droid.saby"/>
+        <package android:name="com.gnivts.selfemployed"/>
+        <package android:name="ru.yandex.yandexnavi"/>
+        <package android:name="ru.wb.courier"/>
+        <package android:name="dop.dep.delivery"/>
+        <package android:name="alex.oreo.ioma"/>
+        <package android:name="ru.foodfox.courier.debug.releaseserver"/>
+        <package android:name="ru.ozon.hire"/>
+        <package android:name="ru.yandex.taximeter"/>
+        <package android:name="ru.alfabank.oavdo.amc"/>
+        <package android:name="ru.vtb.smb"/>
+        <package android:name="ru.skblab.skbbank"/>
+        <package android:name="modulbank.ru.app"/>
+        <package android:name="ru.sberbank_sbbol"/>
+        <package android:name="ru.tinkoff.sme"/>
+        <package android:name="ru.zhuck.webapp"/>
+        <package android:name="apps.yclients1"/>
+        <package android:name="club.chizhik"/>
+        <package android:name="com.edadeal.android"/>
+        <package android:name="ru.bestprice.fixprice"/>
+        <package android:name="com.wildberries.ru"/>
+        <package android:name="com.android.chrome"/>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
+        </intent>
+        <intent>
+            <action android:name="ru.vk.store.sdk.install.referrer.InstallReferrerProvider"/>
+        </intent>
+        <package android:name="ru.vk.store"/>
+        <package android:name="ru.vk.store.qa"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="ru.vk.store.RequestIgnoreBatteryOptimizations"/>
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="intent"/>
+        </intent>
+    </queries>
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true"
+        android:xlargeScreens="true"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature
+        android:name="android.hardware.sensor.light"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.sensor.compass"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.sensor.barometer"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="false"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission
+        android:name="com.warefly.checkscan.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.warefly.checkscan.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application
+        android:theme="@style/Theme.App.Starting"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:name="com.warefly.checkscan.CheckScanApplication"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel"
+            android:resource="@string/default_notification_channel_id"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="true"/>
+        <service
+            android:name="com.warefly.checkscan.core.analytics.services.messaging.FirebaseMessagesService"
+            android:exported="false"
+            android:foregroundServiceType="remoteMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.android.gms.metadata.ModuleDependencies"
+            android:enabled="false"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data
+                android:name="photopicker_activity:0:required"
+                android:value=""/>
+        </service>
+        <receiver
+            android:name="com.warefly.checkscan.auth.services.sms.SmsReceiverImpl"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <property
+            android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+            android:value="true"/>
+        <profileable android:shell="true"/>
+        <activity
+            android:name="com.warefly.checkscan.presentation.CiceroneActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter
+                android:label="@string/deeplink_page_scan_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/deeplink_scheme"/>
+                <data android:host="@string/deeplink_page_scan"/>
+                <data android:host="@string/deeplink_page_camera"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/deeplink_page_queue_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/deeplink_scheme"
+                    android:host="@string/deeplink_page_queue"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/dynamic_link_scheme"
+                    android:host="@string/dynamic_link_host"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/deeplink_page_request_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/deeplink_scheme"
+                    android:host="@string/deeplink_page_request"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/deeplink_page_cashback_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/deeplink_scheme"
+                    android:host="@string/deeplink_page_cashback"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/deeplink_page_operations_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/deeplink_scheme"
+                    android:host="@string/deeplink_page_operations"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/deeplink_page_cheque_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/deeplink_scheme"
+                    android:host="@string/deeplink_page_cheque"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/deeplink_products_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/deeplink_scheme"/>
+                <data android:scheme="@string/deeplink_products"/>
+                <data android:scheme="@string/deeplink_products_merchant"/>
+                <data android:scheme="@string/deeplink_products_offer"/>
+                <data android:scheme="@string/deeplink_products_selection"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/deeplink_tasks_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/deeplink_scheme"/>
+                <data android:host="@string/deeplink_tasks"/>
+                <data android:host="@string/deeplink_task"/>
+                <data android:host="@string/deeplink_task_with_subtasks"/>
+                <data android:host="@string/deeplink_task_with_rewarded_subtasks"/>
+                <data android:host="@string/deeplink_daily_task"/>
+                <data android:host="@string/deeplink_gift"/>
+                <data android:host="@string/deeplink_task_grouped"/>
+                <data android:host="@string/deeplink_task_promocode"/>
+                <data android:host="@string/deeplink_completed_tasks"/>
+                <data android:host="@string/deeplink_checkbox"/>
+                <data android:host="@string/deeplink_checkbox_steps"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/deeplink_page_bankcards_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/deeplink_scheme"/>
+                <data android:host="@string/deeplink_page_bankcards"/>
+                <data android:host="@string/deeplink_bank_landing"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/deeplink_page_bankcard_options_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/deeplink_scheme"
+                    android:host="@string/deeplink_page_bankcard_options"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/deeplink_page_partner_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/deeplink_scheme"/>
+                <data android:host="@string/deeplink_page_coupon"/>
+                <data android:host="@string/deeplink_page_bonus_program"/>
+                <data android:host="@string/deeplink_specials"/>
+                <data android:host="@string/deeplink_favorites"/>
+                <data android:host="@string/deeplink_promocode"/>
+                <data android:host="@string/deeplink_online_shops"/>
+                <data android:host="@string/deeplink_category"/>
+                <data android:host="@string/deeplink_brandlink"/>
+                <data android:host="@string/deeplink_webview"/>
+                <data android:host="@string/deeplink_merchandise"/>
+                <data android:host="@string/deeplink_page_admitad"/>
+                <data android:host="@string/deeplink_page_bonuses"/>
+                <data android:host="@string/deeplink_online_shop_tutorial"/>
+                <data android:host="@string/deeplink_online_shops_categories"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/deeplink_page_sign_up_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/deeplink_scheme"
+                    android:host="@string/deeplink_page_sign_up"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/deeplink_electrocheque_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/deeplink_scheme"/>
+                <data android:host="@string/deeplink_electrocheque"/>
+                <data android:host="@string/deeplink_electrocheque2"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/deeplink_page_transfer_coupon_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/deeplink_scheme"
+                    android:host="@string/deeplink_page_transfer_coupon"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/deeplink_page_notifications_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/deeplink_scheme"
+                    android:host="@string/deeplink_page_notifications"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="intent"
+                    android:host="checkscan.page.link"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/deeplink_scheme"/>
+                <data android:host="@string/deeplink_profile"/>
+                <data android:host="@string/deeplink_add_email"/>
+                <data android:host="@string/deeplink_fill_my_data"/>
+                <data android:host="@string/deeplink_cheques"/>
+                <data android:host="@string/deeplink_bank_card_status"/>
+                <data android:host="@string/deeplink_about"/>
+                <data android:host="@string/deeplink_cobrand_create_card"/>
+                <data android:host="@string/deeplink_landing"/>
+                <data android:host="@string/deeplink_open_url"/>
+                <data android:host="@string/deeplink_use_desk"/>
+                <data android:host="@string/deeplink_cobrand_categories"/>
+                <data android:host="@string/deeplink_top_checkscan"/>
+                <data android:host="@string/deeplink_offer_landing"/>
+                <data android:host="@string/deeplink_transfer_showcase_promo"/>
+                <data android:host="@string/deeplink_transfer_showcase_promocodes"/>
+                <data android:host="@string/deeplink_create_red_card"/>
+                <data android:host="@string/deeplink_support_form"/>
+            </intent-filter>
+            <intent-filter
+                android:label="@string/deeplink_insurance_showcase_label"
+                android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/deeplink_scheme"
+                    android:host="@string/deeplink_insurance_showcase"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts"/>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/deeplink_scheme"
+                    android:host="@string/deeplink_track_user"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/deeplink_scheme"
+                    android:host="@string/deeplink_subscription_landing"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.warefly.checkscan.presentation.webview.WebViewActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation">
+            <intent-filter android:label="@string/deeplink_open_external_link_in_checkscan_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="@string/deeplink_scheme"
+                    android:host="@string/deeplink_open_external_link_in_checkscan"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.warefly.checkscan.presentation.webview.WebViewReplenishmentActivity"
+            android:exported="false"/>
+        <activity
+            android:theme="@style/Theme.App.UCrop"
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity
+            android:name="com.my.target.common.MyTargetActivity"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <meta-data
+            android:name="io.appmetrica.analytics.push.default_notification_icon"
+            android:resource="@drawable/ic_notification"/>
+        <provider
+            android:name="com.warefly.checkscan.fileProvider.ShareFileProvider"
+            android:exported="false"
+            android:authorities="com.warefly.checkscan.fileprovider.share"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_share"/>
+        </provider>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.warefly.checkscan.androidx-startup">
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+        <provider
+            android:name="com.warefly.checkscan.shared.universalWebView.webView.UniversalWebViewFileProvider"
+            android:exported="false"
+            android:authorities="com.warefly.checkscan.universalwebview.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/universal_web_view_file_paths"/>
+        </provider>
+        <provider
+            android:name="com.my.target.common.MyTargetContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.warefly.checkscan.mytargetcontentprovider"/>
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="9.1.0"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+            android:exported="false"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data
+                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+                android:value="true"/>
+        </receiver>
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.FirebaseDynamicLinksKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"/>
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true"/>
+        <service
+            android:name="com.google.firebase.sessions.SessionLifecycleService"
+            android:enabled="false"
+            android:exported="false"/>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.warefly.checkscan.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true"/>
+        <uses-library
+            android:name="androidx.camera.extensions.impl"
+            android:required="false"/>
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <activity
+            android:theme="@style/MonetizationAdsInternal.AdActivity"
+            android:name="com.yandex.mobile.ads.common.AdActivity"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"
+            android:enableOnBackInvokedCallback="false"/>
+        <provider
+            android:name="com.yandex.mobile.ads.core.initializer.YandexAdsInitializeProvider"
+            android:exported="false"
+            android:authorities="com.warefly.checkscan.YandexAdsInitializeProvider"/>
+        <activity
+            android:theme="@style/DebugPanelTheme"
+            android:name="com.yandex.mobile.ads.features.debugpanel.ui.IntegrationInspectorActivity"
+            android:exported="false"
+            android:enableOnBackInvokedCallback="false"/>
+        <provider
+            android:name="com.yandex.mobile.ads.features.debugpanel.data.local.DebugPanelFileProvider"
+            android:exported="false"
+            android:authorities="com.warefly.checkscan.monetization.ads.inspector.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/debug_panel_file_paths"/>
+        </provider>
+        <service
+            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider
+            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+            android:exported="false"
+            android:authorities="com.warefly.checkscan.mlkitinitprovider"
+            android:initOrder="99"/>
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@bool/enable_system_job_service_default"
+            android:exported="true"
+            android:directBootAware="false"/>
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@bool/enable_system_foreground_service_default"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable.BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true"/>
+        <activity
+            android:name="com.zakshaker.browser.CashbackBrowserActivity"
+            android:exported="true"/>
+        <service
+            android:name="io.appmetrica.analytics.internal.AppMetricaService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="io.appmetrica.analytics.IAppMetricaService"/>
+                <data android:scheme="appmetrica"/>
+            </intent-filter>
+        </service>
+        <provider
+            android:name="io.appmetrica.analytics.internal.PreloadInfoContentProvider"
+            android:enabled="true"
+            android:exported="true"
+            android:authorities="com.warefly.checkscan.appmetrica.preloadinfo.retail"/>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"/>
+        <activity
+            android:theme="@style/TranslucentTheme"
+            android:name="com.tapjoy.TJAdUnitActivity"
+            android:configChanges="screenSize|uiMode|orientation|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:enableOnBackInvokedCallback="true"/>
+        <activity
+            android:theme="@style/TranslucentTheme"
+            android:name="com.tapjoy.TJWebViewActivity"
+            android:configChanges="screenSize|uiMode|orientation|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:enableOnBackInvokedCallback="true"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"/>
+        <uses-library
+            android:name="android.ext.adservices"
+            android:required="false"/>
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false"/>
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false"/>
+        <service
+            android:name="ru.rustore.sdk.install.referrer.internal.presentation.FsaEventSenderJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <service
+            android:label="SendMetricsEventJobService"
+            android:name="ru.rustore.sdk.metrics.internal.presentation.SendMetricsEventJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <activity
+            android:theme="@android:style/Theme.NoDisplay"
+            android:name="io.appmetrica.analytics.push.internal.activity.AppMetricaPushDummyActivity"
+            android:exported="false"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="io.appmetrica.analytics.push.action.NOTIFICATION_ACTION"/>
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="io.appmetrica.analytics.push.internal.receiver.AppMetricaPushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="io.appmetrica.analytics.push.action.NOTIFICATION_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="io.appmetrica.analytics.push.internal.service.PushJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <service
+            android:name="io.appmetrica.analytics.push.internal.service.PushService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <receiver
+            android:name="io.appmetrica.analytics.push.internal.receiver.AppMetricaPushNotificationStatusChangeHandler"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.app.action.APP_BLOCK_STATE_CHANGED"/>
+                <action android:name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"/>
+                <action android:name="android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="io.appmetrica.analytics.push.internal.receiver.TtlBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="io.appmetrica.analytics.push.action.EXPIRED_BY_TTL_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct"/>
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false"/>
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="appid=101652909"/>
+    </application>
+</manifest>

@@ -1,0 +1,39 @@
+.class public final Lepa;
+.super Lcom/google/android/gms/internal/measurement/zzaat;
+.source "SourceFile"
+
+
+# static fields
+.field public static final a:Lepa;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lepa;
+
+    invoke-direct {v0}, Lcom/google/android/gms/internal/measurement/zzaat;-><init>()V
+
+    new-instance v1, Ldpa;
+
+    invoke-direct {v1}, Lcom/google/android/gms/internal/measurement/zzaaw;-><init>()V
+
+    new-instance v1, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-direct {v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
+
+    sput-object v0, Lepa;->a:Lepa;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    const-string p0, "No-op Provider"
+
+    return-object p0
+.end method

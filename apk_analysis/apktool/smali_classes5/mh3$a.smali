@@ -1,0 +1,252 @@
+.class public final Lmh3$a;
+.super Ljava/util/concurrent/atomic/AtomicInteger;
+.source "SourceFile"
+
+# interfaces
+.implements Lrh3;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lmh3;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/util/concurrent/atomic/AtomicInteger;",
+        "Lrh3<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final b:Lwb8;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lwb8<",
+            "-TT;>;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Ldc8;
+
+.field public final d:Ldt6;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldt6<",
+            "+TT;>;"
+        }
+    .end annotation
+.end field
+
+.field public final e:Lze6;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lze6<",
+            "-",
+            "Ljava/lang/Throwable;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public f:J
+
+.field public g:J
+
+
+# direct methods
+.method public constructor <init>(Lwb8;JLrm3$m;Ldc8;Ldt6;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
+
+    iput-object p1, p0, Lmh3$a;->b:Lwb8;
+
+    iput-object p5, p0, Lmh3$a;->c:Ldc8;
+
+    iput-object p6, p0, Lmh3$a;->d:Ldt6;
+
+    iput-object p4, p0, Lmh3$a;->e:Lze6;
+
+    iput-wide p2, p0, Lmh3$a;->f:J
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lbc8;)V
+    .locals 0
+
+    iget-object p0, p0, Lmh3$a;->c:Ldc8;
+
+    invoke-virtual {p0, p1}, Ldc8;->g(Lbc8;)V
+
+    return-void
+.end method
+
+.method public final b()V
+    .locals 6
+
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    const/4 v0, 0x1
+
+    :cond_0
+    iget-object v1, p0, Lmh3$a;->c:Ldc8;
+
+    iget-boolean v1, v1, Ldc8;->g:Z
+
+    if-eqz v1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    iget-wide v1, p0, Lmh3$a;->g:J
+
+    const-wide/16 v3, 0x0
+
+    cmp-long v5, v1, v3
+
+    if-eqz v5, :cond_2
+
+    iput-wide v3, p0, Lmh3$a;->g:J
+
+    iget-object v3, p0, Lmh3$a;->c:Ldc8;
+
+    invoke-virtual {v3, v1, v2}, Ldc8;->f(J)V
+
+    :cond_2
+    iget-object v1, p0, Lmh3$a;->d:Ldt6;
+
+    invoke-interface {v1, p0}, Ldt6;->a(Lwb8;)V
+
+    neg-int v0, v0
+
+    invoke-virtual {p0, v0}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    :cond_3
+    :goto_0
+    return-void
+.end method
+
+.method public final onComplete()V
+    .locals 0
+
+    iget-object p0, p0, Lmh3$a;->b:Lwb8;
+
+    invoke-interface {p0}, Lwb8;->onComplete()V
+
+    return-void
+.end method
+
+.method public final onError(Ljava/lang/Throwable;)V
+    .locals 4
+
+    iget-wide v0, p0, Lmh3$a;->f:J
+
+    const-wide v2, 0x7fffffffffffffffL
+
+    cmp-long v2, v0, v2
+
+    if-eqz v2, :cond_0
+
+    const-wide/16 v2, 0x1
+
+    sub-long v2, v0, v2
+
+    iput-wide v2, p0, Lmh3$a;->f:J
+
+    :cond_0
+    const-wide/16 v2, 0x0
+
+    cmp-long v0, v0, v2
+
+    iget-object v1, p0, Lmh3$a;->b:Lwb8;
+
+    if-nez v0, :cond_1
+
+    invoke-interface {v1, p1}, Lwb8;->onError(Ljava/lang/Throwable;)V
+
+    return-void
+
+    :cond_1
+    :try_start_0
+    iget-object v0, p0, Lmh3$a;->e:Lze6;
+
+    invoke-interface {v0, p1}, Lze6;->test(Ljava/lang/Object;)Z
+
+    move-result v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-nez v0, :cond_2
+
+    invoke-interface {v1, p1}, Lwb8;->onError(Ljava/lang/Throwable;)V
+
+    return-void
+
+    :cond_2
+    invoke-virtual {p0}, Lmh3$a;->b()V
+
+    return-void
+
+    :catchall_0
+    move-exception p0
+
+    invoke-static {p0}, Lm13;->d(Ljava/lang/Throwable;)V
+
+    new-instance v0, Lio/reactivex/exceptions/CompositeException;
+
+    filled-new-array {p1, p0}, [Ljava/lang/Throwable;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Lio/reactivex/exceptions/CompositeException;-><init>([Ljava/lang/Throwable;)V
+
+    invoke-interface {v1, v0}, Lwb8;->onError(Ljava/lang/Throwable;)V
+
+    return-void
+.end method
+
+.method public final onNext(Ljava/lang/Object;)V
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
+
+    iget-wide v0, p0, Lmh3$a;->g:J
+
+    const-wide/16 v2, 0x1
+
+    add-long/2addr v0, v2
+
+    iput-wide v0, p0, Lmh3$a;->g:J
+
+    iget-object p0, p0, Lmh3$a;->b:Lwb8;
+
+    invoke-interface {p0, p1}, Lwb8;->onNext(Ljava/lang/Object;)V
+
+    return-void
+.end method

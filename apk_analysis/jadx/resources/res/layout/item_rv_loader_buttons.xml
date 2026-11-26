@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/margin_sm">
+    <com.warefly.checkscan.shimmer.ShimmerFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_large_sm"
+        app:shimmer_duration="1000">
+        <FrameLayout
+            android:background="@drawable/background_shimmer_rectangle_placeholder"
+            android:layout_width="@dimen/image_side_middle"
+            android:layout_height="@dimen/margin_fourty_average"/>
+    </com.warefly.checkscan.shimmer.ShimmerFrameLayout>
+    <com.warefly.checkscan.shimmer.ShimmerFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_large_sm"
+        app:shimmer_duration="1000">
+        <FrameLayout
+            android:background="@drawable/background_shimmer_rectangle_placeholder"
+            android:layout_width="@dimen/image_side_middle"
+            android:layout_height="@dimen/margin_fourty_average"/>
+    </com.warefly.checkscan.shimmer.ShimmerFrameLayout>
+    <com.warefly.checkscan.shimmer.ShimmerFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_large_sm"
+        app:shimmer_duration="1000">
+        <FrameLayout
+            android:background="@drawable/background_shimmer_rectangle_placeholder"
+            android:layout_width="@dimen/image_side_middle"
+            android:layout_height="@dimen/margin_fourty_average"/>
+    </com.warefly.checkscan.shimmer.ShimmerFrameLayout>
+    <com.warefly.checkscan.shimmer.ShimmerFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_large_sm"
+        app:shimmer_duration="1000">
+        <FrameLayout
+            android:background="@drawable/background_shimmer_rectangle_placeholder"
+            android:layout_width="@dimen/image_side_middle"
+            android:layout_height="@dimen/margin_fourty_average"/>
+    </com.warefly.checkscan.shimmer.ShimmerFrameLayout>
+</LinearLayout>

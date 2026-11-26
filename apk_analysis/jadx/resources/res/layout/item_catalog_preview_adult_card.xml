@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/background_white_radius_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/margin_large_sm"
+        android:paddingVertical="@dimen/margin_small_2_sm">
+        <ImageView
+            android:id="@+id/iv_adult"
+            android:layout_width="@dimen/margin_fourty_average"
+            android:layout_height="@dimen/margin_fourty_average"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_adult"/>
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="@dimen/fill_free_space"
+            android:layout_height="wrap_content"
+            android:text="@string/adult_content_agree_description_new"
+            android:layout_marginStart="@dimen/margin_small_2_sm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_adult"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/AdultTextDescription"/>
+        <TextView
+            android:id="@+id/btn_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_more_little_bit"
+            android:text="@string/adult_content_agree_title_new"
+            android:layout_marginStart="@dimen/margin_small_2_sm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_adult"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description"
+            style="@style/AdultTextButton"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

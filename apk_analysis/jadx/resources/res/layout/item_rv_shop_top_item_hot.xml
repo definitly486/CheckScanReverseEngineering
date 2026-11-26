@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_white_stroke_sundown"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_top_market"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fill_free_space"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            app:shapeAppearance="@style/ImageView.CornerTop8"/>
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/tv_title"
+            android:background="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:textAlignment="center"
+            android:paddingVertical="@dimen/margin_more_little_bit"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_power_code"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_powercode"
+        android:contentDescription="@null"/>
+</FrameLayout>

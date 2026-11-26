@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/padding_big_sm" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_error_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/layout_error_title" android:textAlignment="center" style="@style/TextSize22.BlueCharcoal" />
+    <TextView android:textColor="@color/readilyBlue" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_try_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/no_internet_tv_button_margin_top" android:text="@string/try_again" android:paddingHorizontal="@dimen/padding_large_sm" style="@style/BlueAliceButtonRadius8" />
+</LinearLayout>

@@ -1,0 +1,98 @@
+.class public final Lcom/google/android/gms/internal/measurement/zzaaj$a;
+.super Lcom/google/android/gms/internal/measurement/zzaac;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/gms/internal/measurement/zzaaj;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# virtual methods
+.method public final zza(Ljava/lang/Class;)Ljava/lang/String;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "+",
+            "Lcom/google/android/gms/internal/measurement/zzxi<",
+            "*>;>;)",
+            "Ljava/lang/String;"
+        }
+    .end annotation
+
+    sget-boolean p0, Lcom/google/android/gms/internal/measurement/zzaaj;->b:Z
+
+    if-eqz p0, :cond_0
+
+    :try_start_0
+    invoke-static {}, Lcom/google/android/gms/internal/measurement/zzaaj;->e()Ljava/lang/Class;
+
+    move-result-object p0
+
+    invoke-virtual {p1, p0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    invoke-static {}, Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    return-object p0
+
+    :catchall_0
+    :cond_0
+    sget-boolean p0, Lcom/google/android/gms/internal/measurement/zzaaj;->c:Z
+
+    if-eqz p0, :cond_1
+
+    const/4 p0, 0x1
+
+    invoke-static {p1, p0}, Lcom/google/android/gms/internal/measurement/zzabq;->zza(Ljava/lang/Class;I)Ljava/lang/StackTraceElement;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_1
+
+    invoke-virtual {p0}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method public final zzb(Ljava/lang/Class;I)Lcom/google/android/gms/internal/measurement/zzyc;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "*>;I)",
+            "Lcom/google/android/gms/internal/measurement/zzyc;"
+        }
+    .end annotation
+
+    sget-object p0, Lcom/google/android/gms/internal/measurement/zzyc;->zza:Lcom/google/android/gms/internal/measurement/zzyc;
+
+    return-object p0
+.end method

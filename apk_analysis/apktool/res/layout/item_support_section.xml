@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/dimen_16" app:cardElevation="@dimen/dimen_0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dimen_16">
+        <TextView android:id="@id/tv_title" android:layout_width="@dimen/dimen_0" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dimen_12" android:paddingVertical="@dimen/dimen_20" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/iv_arrow" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextSize18.Medium.Gray100" />
+        <ImageView android:id="@id/iv_arrow" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_32" android:importantForAccessibility="no" android:layout_marginVertical="@dimen/dimen_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_right" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

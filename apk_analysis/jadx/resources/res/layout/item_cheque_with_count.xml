@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:background="@drawable/background_blue_charcoal_80_radius_130"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_more_little_bit"
+        android:lines="2"
+        android:drawablePadding="@dimen/margin_more_little_bit"
+        android:drawableStart="@drawable/ic_book_mark"
+        android:paddingHorizontal="@dimen/margin_top_medium_sm"
+        android:paddingVertical="@dimen/margin_small_2_sm"
+        style="@style/TextSize14.White"/>
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:id="@+id/tv_count"
+        android:background="@drawable/background_circle_red"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextSize14.White"/>
+</FrameLayout>

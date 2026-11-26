@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white_lilac" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/btn_left" android:padding="@dimen/margin_small_sm" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_left" android:contentDescription="@null" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.warefly.checkscan.ui.dotindicator.DotsIndicator android:layout_gravity="center" android:id="@id/dots_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" app:dotsColor="@color/readilyBlue" app:dotsCornerRadius="@dimen/margin_sm" app:dotsSize="@dimen/margin_end_sm" app:dotsSpacing="@dimen/margin_more_little_bit" app:dotsWidthFactor="5.0" app:progressMode="true" app:selectedDotColor="@color/readilyBlue" />
+        </FrameLayout>
+        <ImageView android:id="@id/btn_right" android:padding="@dimen/margin_small_sm" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_blue" android:contentDescription="@null" />
+    </LinearLayout>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp_cards" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/background_blue_alice_landing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/margin_large_sm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.warefly.checkscan.core.ui.CheckBox android:id="@id/cb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@drawable/chekbox_checked" android:paddingStart="@dimen/margin_small_2_sm" />
+</FrameLayout>

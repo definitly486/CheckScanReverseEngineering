@@ -1,0 +1,193 @@
+.class public final Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/compose/runtime/composer/gapbuffer/changelist/OperationArgContainer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x11
+    name = "OpIterator"
+.end annotation
+
+
+# instance fields
+.field private intIdx:I
+
+.field private objIdx:I
+
+.field private opIdx:I
+
+.field final synthetic this$0:Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->this$0:Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final currentOperationDebugString()Ljava/lang/String;
+    .locals 3
+
+    iget-object v0, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->this$0:Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "operation["
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget v2, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->opIdx:I
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, "] = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, ""
+
+    invoke-static {v0, p0, v2}, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;->access$currentOpToDebugString(Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public getInt(I)I
+    .locals 1
+
+    iget-object v0, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->this$0:Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;
+
+    iget-object v0, v0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;->intArgs:[I
+
+    iget p0, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->intIdx:I
+
+    add-int/2addr p0, p1
+
+    aget p0, v0, p0
+
+    return p0
+.end method
+
+.method public getObject-PtL-UHM(I)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(I)TT;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->this$0:Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;
+
+    iget-object v0, v0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;->objectArgs:[Ljava/lang/Object;
+
+    iget p0, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->objIdx:I
+
+    add-int/2addr p0, p1
+
+    aget-object p0, v0, p0
+
+    return-object p0
+.end method
+
+.method public final getOperation()Landroidx/compose/runtime/composer/gapbuffer/changelist/Operation;
+    .locals 1
+
+    iget-object v0, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->this$0:Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;
+
+    iget-object v0, v0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;->opCodes:[Landroidx/compose/runtime/composer/gapbuffer/changelist/Operation;
+
+    iget p0, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->opIdx:I
+
+    aget-object p0, v0, p0
+
+    return-object p0
+.end method
+
+.method public final next()Z
+    .locals 4
+
+    iget v0, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->opIdx:I
+
+    iget-object v1, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->this$0:Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;
+
+    iget v1, v1, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;->opCodesSize:I
+
+    const/4 v2, 0x0
+
+    if-lt v0, v1, :cond_0
+
+    return v2
+
+    :cond_0
+    invoke-virtual {p0}, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->getOperation()Landroidx/compose/runtime/composer/gapbuffer/changelist/Operation;
+
+    move-result-object v0
+
+    iget v1, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->intIdx:I
+
+    invoke-virtual {v0}, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operation;->getInts()I
+
+    move-result v3
+
+    add-int/2addr v3, v1
+
+    iput v3, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->intIdx:I
+
+    iget v1, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->objIdx:I
+
+    invoke-virtual {v0}, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operation;->getObjects()I
+
+    move-result v0
+
+    add-int/2addr v0, v1
+
+    iput v0, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->objIdx:I
+
+    iget v0, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->opIdx:I
+
+    const/4 v1, 0x1
+
+    add-int/2addr v0, v1
+
+    iput v0, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->opIdx:I
+
+    iget-object p0, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations$OpIterator;->this$0:Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;
+
+    iget p0, p0, Landroidx/compose/runtime/composer/gapbuffer/changelist/Operations;->opCodesSize:I
+
+    if-ge v0, p0, :cond_1
+
+    return v1
+
+    :cond_1
+    return v2
+.end method

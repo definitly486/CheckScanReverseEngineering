@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/margin_vast_big"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitStart" android:layout_weight="1.0" android:contentDescription="@null" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0" style="@style/TextSize32.White" />
+</LinearLayout>

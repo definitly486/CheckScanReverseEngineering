@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coord_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/toolbar_banner" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="@dimen/dimen_0">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/appbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:contentScrim="@color/blueAlice" app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.warefly.checkscan.core.ui.SafeImageView android:id="@id/iv_banner" android:visibility="gone" android:layout_width="@dimen/dimen_0" android:layout_height="@dimen/dimen_286" android:minHeight="@dimen/dimen_286" android:contentDescription="@null" app:layout_collapseMode="parallax" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <com.warefly.checkscan.shimmer.ShimmerFrameLayout android:id="@id/iv_loading" android:layout_width="@dimen/dimen_0" android:layout_height="@dimen/dimen_286" app:layout_collapseMode="parallax" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <FrameLayout android:background="@color/almostThereMoon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </com.warefly.checkscan.shimmer.ShimmerFrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_content" android:paddingBottom="@dimen/dimen_100" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/dimen_16" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+    <com.google.android.material.card.MaterialCardView android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/layout_button_scan" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardElevation="@dimen/dimen_10" style="@style/MaterialCardViewTopCorners16">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_scan" android:background="@drawable/primary60_button_8dp" android:paddingTop="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_8" android:layout_marginHorizontal="@dimen/dimen_16">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:importantForAccessibility="no" app:srcCompat="@drawable/ic_scan" />
+            <Space android:layout_width="@dimen/dimen_4" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/products_add_receipt_button" style="@style/TextSize16.Medium.White" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <include android:id="@id/incld_loading" android:visibility="gone" layout="@layout/layout_spinner_loading" />
+    <include android:id="@id/incld_error" android:visibility="gone" layout="@layout/layout_simple_try_again" />
+    <ImageView android:id="@id/btn_back" android:layout_width="@dimen/dimen_44" android:layout_height="@dimen/dimen_44" android:layout_marginTop="@dimen/dimen_16" android:src="@drawable/ic_back_button_outlined" android:contentDescription="@null" android:layout_marginStart="@dimen/dimen_16" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

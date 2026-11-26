@@ -1,0 +1,364 @@
+.class final Landroidx/collection/MutableKeys$iterator$1$iterator$1;
+.super Lf57;
+.source "SourceFile"
+
+# interfaces
+.implements Lbm3;
+
+
+# annotations
+.annotation runtime Lbd2;
+    c = "androidx.collection.MutableKeys$iterator$1$iterator$1"
+    f = "ScatterMap.kt"
+    l = {
+        0x656
+    }
+    m = "invokeSuspend"
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/collection/MutableKeys$iterator$1;-><init>(Landroidx/collection/MutableKeys;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lf57;",
+        "Lbm3<",
+        "Lbp7<",
+        "-",
+        "Ljava/lang/Integer;",
+        ">;",
+        "Le02<",
+        "-",
+        "Lj59;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field I$0:I
+
+.field I$1:I
+
+.field I$2:I
+
+.field I$3:I
+
+.field J$0:J
+
+.field private synthetic L$0:Ljava/lang/Object;
+
+.field L$1:Ljava/lang/Object;
+
+.field label:I
+
+.field final synthetic this$0:Landroidx/collection/MutableKeys;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/collection/MutableKeys<",
+            "TK;TV;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Landroidx/collection/MutableKeys;Le02;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/collection/MutableKeys<",
+            "TK;TV;>;",
+            "Le02<",
+            "-",
+            "Landroidx/collection/MutableKeys$iterator$1$iterator$1;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->this$0:Landroidx/collection/MutableKeys;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p2}, Lf57;-><init>(ILe02;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Le02;)Le02;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Le02<",
+            "*>;)",
+            "Le02<",
+            "Lj59;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;
+
+    iget-object p0, p0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->this$0:Landroidx/collection/MutableKeys;
+
+    invoke-direct {v0, p0, p2}, Landroidx/collection/MutableKeys$iterator$1$iterator$1;-><init>(Landroidx/collection/MutableKeys;Le02;)V
+
+    iput-object p1, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->L$0:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method public final invoke(Lbp7;Le02;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lbp7<",
+            "-",
+            "Ljava/lang/Integer;",
+            ">;",
+            "Le02<",
+            "-",
+            "Lj59;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    invoke-virtual {p0, p1, p2}, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->create(Ljava/lang/Object;Le02;)Le02;
+
+    move-result-object p0
+
+    check-cast p0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;
+
+    sget-object p1, Lj59;->a:Lj59;
+
+    invoke-virtual {p0, p1}, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 13
+    check-cast p1, Lbp7;
+
+    check-cast p2, Le02;
+
+    invoke-virtual {p0, p1, p2}, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->invoke(Lbp7;Le02;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    sget-object v1, La32;->COROUTINE_SUSPENDED:La32;
+
+    iget v2, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->label:I
+
+    const/4 v3, 0x0
+
+    const/16 v4, 0x8
+
+    const/4 v5, 0x1
+
+    if-eqz v2, :cond_1
+
+    if-ne v2, v5, :cond_0
+
+    iget v2, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->I$3:I
+
+    iget v6, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->I$2:I
+
+    iget-wide v7, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->J$0:J
+
+    iget v9, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->I$1:I
+
+    iget v10, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->I$0:I
+
+    iget-object v11, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->L$1:Ljava/lang/Object;
+
+    check-cast v11, [J
+
+    iget-object v12, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->L$0:Ljava/lang/Object;
+
+    check-cast v12, Lbp7;
+
+    invoke-static/range {p1 .. p1}, Lr57;->b(Ljava/lang/Object;)V
+
+    goto/16 :goto_2
+
+    :cond_0
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-static {v0}, Lah;->f(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    return-object v0
+
+    :cond_1
+    invoke-static/range {p1 .. p1}, Lr57;->b(Ljava/lang/Object;)V
+
+    iget-object v2, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->L$0:Ljava/lang/Object;
+
+    check-cast v2, Lbp7;
+
+    iget-object v6, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->this$0:Landroidx/collection/MutableKeys;
+
+    invoke-static {v6}, Landroidx/collection/MutableKeys;->access$getParent$p(Landroidx/collection/MutableKeys;)Landroidx/collection/MutableScatterMap;
+
+    move-result-object v6
+
+    iget-object v6, v6, Landroidx/collection/ScatterMap;->metadata:[J
+
+    array-length v7, v6
+
+    add-int/lit8 v7, v7, -0x2
+
+    if-ltz v7, :cond_5
+
+    move v8, v3
+
+    :goto_0
+    aget-wide v9, v6, v8
+
+    not-long v11, v9
+
+    const/4 v13, 0x7
+
+    shl-long/2addr v11, v13
+
+    and-long/2addr v11, v9
+
+    const-wide v13, -0x7f7f7f7f7f7f7f80L    # -2.937446524422997E-306
+
+    and-long/2addr v11, v13
+
+    cmp-long v11, v11, v13
+
+    if-eqz v11, :cond_4
+
+    sub-int v11, v8, v7
+
+    not-int v11, v11
+
+    ushr-int/lit8 v11, v11, 0x1f
+
+    rsub-int/lit8 v11, v11, 0x8
+
+    move v12, v11
+
+    move-object v11, v6
+
+    move v6, v12
+
+    move-object v12, v2
+
+    move v2, v3
+
+    move-wide/from16 v17, v9
+
+    move v10, v7
+
+    move v9, v8
+
+    move-wide/from16 v7, v17
+
+    :goto_1
+    if-ge v2, v6, :cond_3
+
+    const-wide/16 v13, 0xff
+
+    and-long/2addr v13, v7
+
+    const-wide/16 v15, 0x80
+
+    cmp-long v13, v13, v15
+
+    if-gez v13, :cond_2
+
+    shl-int/lit8 v13, v9, 0x3
+
+    add-int/2addr v13, v2
+
+    new-instance v14, Ljava/lang/Integer;
+
+    invoke-direct {v14, v13}, Ljava/lang/Integer;-><init>(I)V
+
+    iput-object v12, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->L$0:Ljava/lang/Object;
+
+    iput-object v11, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->L$1:Ljava/lang/Object;
+
+    iput v10, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->I$0:I
+
+    iput v9, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->I$1:I
+
+    iput-wide v7, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->J$0:J
+
+    iput v6, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->I$2:I
+
+    iput v2, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->I$3:I
+
+    iput v5, v0, Landroidx/collection/MutableKeys$iterator$1$iterator$1;->label:I
+
+    invoke-virtual {v12, v0, v14}, Lbp7;->a(Le02;Ljava/lang/Object;)La32;
+
+    move-result-object v13
+
+    if-ne v13, v1, :cond_2
+
+    return-object v1
+
+    :cond_2
+    :goto_2
+    shr-long/2addr v7, v4
+
+    add-int/2addr v2, v5
+
+    goto :goto_1
+
+    :cond_3
+    if-ne v6, v4, :cond_5
+
+    move v8, v9
+
+    move v7, v10
+
+    move-object v6, v11
+
+    move-object v2, v12
+
+    :cond_4
+    if-eq v8, v7, :cond_5
+
+    add-int/lit8 v8, v8, 0x1
+
+    goto :goto_0
+
+    :cond_5
+    sget-object v0, Lj59;->a:Lj59;
+
+    return-object v0
+.end method

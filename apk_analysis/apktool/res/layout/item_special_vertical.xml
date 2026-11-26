@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/corner_radius_10" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_picture" android:layout_width="@dimen/fill_free_space" android:layout_height="@dimen/fill_free_space" android:scaleType="fitXY" android:contentDescription="@null" app:layout_constraintDimensionRatio="312:190" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <include android:id="@id/incld_ads_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_8" app:layout_constraintBottom_toBottomOf="@id/iv_picture" app:layout_constraintEnd_toEndOf="parent" layout="@layout/layout_ads_badge" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

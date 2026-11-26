@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/card_block_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/margin_large_sm"
+    android:paddingVertical="@dimen/margin_top_medium_sm">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_card_balance_hint"
+        style="@style/ItemCardBalanceHint"/>
+    <TextView
+        android:id="@+id/tv_balance_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ItemCardBalance"/>
+    <TextView
+        android:id="@+id/tv_about_accrual_cashback_balance"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_big_sm"
+        style="@style/ItemCardBalanceAbout"/>
+    <include
+        android:id="@+id/layout_status_failed"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_big_sm"
+        layout="@layout/item_status_failed"/>
+</LinearLayout>

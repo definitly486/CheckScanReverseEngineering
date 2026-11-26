@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/readilyBlue" android:id="@id/btn_logout" android:padding="@dimen/dimen_13" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:minHeight="@dimen/dimen_0" android:text="@string/profile_page_logout_btn_text" style="@style/Button.BlueAlice.8dp.Outlined"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

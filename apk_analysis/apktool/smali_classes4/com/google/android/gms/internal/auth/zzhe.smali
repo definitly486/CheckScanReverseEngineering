@@ -1,0 +1,94 @@
+.class public final Lcom/google/android/gms/internal/auth/zzhe;
+.super Ljava/util/AbstractList;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/util/RandomAccess;
+.implements Lcom/google/android/gms/internal/auth/zzff;
+
+
+# annotations
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation
+
+
+# instance fields
+.field public final b:Lcom/google/android/gms/internal/auth/zzff;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/internal/auth/zzff;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/auth/zzhe;->b:Lcom/google/android/gms/internal/auth/zzff;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic get(I)Ljava/lang/Object;
+    .locals 0
+
+    iget-object p0, p0, Lcom/google/android/gms/internal/auth/zzhe;->b:Lcom/google/android/gms/internal/auth/zzff;
+
+    check-cast p0, Lcom/google/android/gms/internal/auth/zzfe;
+
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/auth/zzfe;->zzf(I)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final iterator()Ljava/util/Iterator;
+    .locals 1
+
+    new-instance v0, Lvmb;
+
+    invoke-direct {v0, p0}, Lvmb;-><init>(Lcom/google/android/gms/internal/auth/zzhe;)V
+
+    return-object v0
+.end method
+
+.method public final listIterator(I)Ljava/util/ListIterator;
+    .locals 1
+
+    new-instance v0, Lrmb;
+
+    invoke-direct {v0, p0, p1}, Lrmb;-><init>(Lcom/google/android/gms/internal/auth/zzhe;I)V
+
+    return-object v0
+.end method
+
+.method public final size()I
+    .locals 0
+
+    iget-object p0, p0, Lcom/google/android/gms/internal/auth/zzhe;->b:Lcom/google/android/gms/internal/auth/zzff;
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final zze()Lcom/google/android/gms/internal/auth/zzff;
+    .locals 0
+
+    return-object p0
+.end method
+
+.method public final zzg()Ljava/util/List;
+    .locals 0
+
+    iget-object p0, p0, Lcom/google/android/gms/internal/auth/zzhe;->b:Lcom/google/android/gms/internal/auth/zzff;
+
+    invoke-interface {p0}, Lcom/google/android/gms/internal/auth/zzff;->zzg()Ljava/util/List;
+
+    move-result-object p0
+
+    return-object p0
+.end method

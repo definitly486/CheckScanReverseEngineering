@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_place_pic" android:layout_width="@dimen/margin_huge" android:layout_height="@dimen/margin_layout_big" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_shop_place" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="end" app:constraint_referenced_ids="iv_place_pic" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/colorPrimary" android:id="@id/tv_cheque_place_name" android:layout_width="@dimen/fill_free_space" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/barrier" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/colorGreyishBlue" android:id="@id/tv_cheque_place_address" android:layout_width="@dimen/fill_free_space" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/barrier" app:layout_constraintTop_toBottomOf="@id/tv_cheque_place_name" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/colorGreyishBlue" android:id="@id/tv_cheque_datetime" android:layout_width="@dimen/fill_free_space" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small_sm" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/barrier" app:layout_constraintTop_toBottomOf="@id/tv_cheque_place_address" />
+</androidx.constraintlayout.widget.ConstraintLayout>

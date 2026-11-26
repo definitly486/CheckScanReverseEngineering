@@ -1,0 +1,36 @@
+.class public interface abstract Lcom/warefly/checkscan/presentation/electrocheque/onboarding/presenter/ElectroChequesOnBoardingView;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/warefly/checkscan/core/ui/base/architecture/BaseView;
+
+
+# virtual methods
+.method public abstract enableButton(Z)V
+.end method
+
+.method public abstract enableRegisteredButton(Z)V
+.end method
+
+.method public abstract showInstructions(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lt64;",
+            ">;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract showQuestions(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lrv6;",
+            ">;)V"
+        }
+    .end annotation
+.end method

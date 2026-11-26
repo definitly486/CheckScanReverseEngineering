@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:background="@color/white" android:paddingBottom="@dimen/search_bar_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/margin_top_sm" android:paddingHorizontal="@dimen/margin_large_sm"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.warefly.checkscan.ui.SearchBar android:id="@id/search_bar" android:layout_width="@dimen/fill_free_space" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_small_2_sm" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/btn_cancel" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:id="@id/btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_btn_cancel_title" app:layout_constraintBottom_toBottomOf="@id/search_bar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/search_bar" style="@style/ItemCardBalanceAbout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

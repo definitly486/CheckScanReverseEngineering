@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center" android:id="@id/tv_promocode_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/coupon_code_title" android:textAlignment="center" android:layout_marginHorizontal="@dimen/margin_enormous_sm" style="@style/CouponPromocodeHintTitle" />
+    <TextView android:id="@id/tv_promocode" android:background="@drawable/background_transparent_radius_4_stroke_1" android:padding="@dimen/margin_small_2_sm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small_2_sm" android:text="@string/coupon_code_hide" android:textAlignment="center" android:layout_marginHorizontal="@dimen/margin_enormous_sm" style="@style/CouponPromocodeHint" />
+</LinearLayout>

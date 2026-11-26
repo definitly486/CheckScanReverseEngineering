@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/margin_large_sm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_large_sm"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:ellipsize="end" android:id="@id/tv_title" android:layout_width="@dimen/fill_free_space" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_sm" android:maxLines="1" android:layout_marginEnd="@dimen/margin_sm" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/btn_check_more" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/BonusesHeaderWithoutSpace" />
+    <TextView android:id="@id/btn_check_more" android:layout_width="@dimen/fragment_catalog_free_space" android:layout_height="wrap_content" android:text="@string/catalog_specials_all" android:fontFamily="@font/roboto_medium" android:textAlignment="textEnd" app:layout_constraintBottom_toBottomOf="@id/tv_title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/tv_title" style="@style/DescriptiveLinkWithoutPadding" />
+</androidx.constraintlayout.widget.ConstraintLayout>

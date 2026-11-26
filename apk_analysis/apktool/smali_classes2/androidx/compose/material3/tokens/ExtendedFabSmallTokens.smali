@@ -1,0 +1,135 @@
+.class public final Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final $stable:I
+
+.field private static final ContainerHeight:F
+
+.field private static final ContainerShape:Landroidx/compose/material3/tokens/ShapeKeyTokens;
+
+.field public static final INSTANCE:Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;
+
+.field private static final IconLabelSpace:F
+
+.field private static final IconSize:F
+
+.field private static final LeadingSpace:F
+
+.field private static final TrailingSpace:F
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;
+
+    invoke-direct {v0}, Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;-><init>()V
+
+    sput-object v0, Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;->INSTANCE:Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;
+
+    const/high16 v0, 0x42600000    # 56.0f
+
+    invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
+
+    move-result v0
+
+    sput v0, Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;->ContainerHeight:F
+
+    sget-object v0, Landroidx/compose/material3/tokens/ShapeKeyTokens;->CornerLarge:Landroidx/compose/material3/tokens/ShapeKeyTokens;
+
+    sput-object v0, Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;->ContainerShape:Landroidx/compose/material3/tokens/ShapeKeyTokens;
+
+    const/high16 v0, 0x41000000    # 8.0f
+
+    invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
+
+    move-result v0
+
+    sput v0, Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;->IconLabelSpace:F
+
+    const/high16 v0, 0x41c00000    # 24.0f
+
+    invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
+
+    move-result v0
+
+    sput v0, Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;->IconSize:F
+
+    const/high16 v0, 0x41800000    # 16.0f
+
+    invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
+
+    move-result v1
+
+    sput v1, Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;->LeadingSpace:F
+
+    invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
+
+    move-result v0
+
+    sput v0, Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;->TrailingSpace:F
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getContainerHeight-D9Ej5fM()F
+    .locals 0
+
+    sget p0, Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;->ContainerHeight:F
+
+    return p0
+.end method
+
+.method public final getContainerShape()Landroidx/compose/material3/tokens/ShapeKeyTokens;
+    .locals 0
+
+    sget-object p0, Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;->ContainerShape:Landroidx/compose/material3/tokens/ShapeKeyTokens;
+
+    return-object p0
+.end method
+
+.method public final getIconLabelSpace-D9Ej5fM()F
+    .locals 0
+
+    sget p0, Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;->IconLabelSpace:F
+
+    return p0
+.end method
+
+.method public final getIconSize-D9Ej5fM()F
+    .locals 0
+
+    sget p0, Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;->IconSize:F
+
+    return p0
+.end method
+
+.method public final getLeadingSpace-D9Ej5fM()F
+    .locals 0
+
+    sget p0, Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;->LeadingSpace:F
+
+    return p0
+.end method
+
+.method public final getTrailingSpace-D9Ej5fM()F
+    .locals 0
+
+    sget p0, Landroidx/compose/material3/tokens/ExtendedFabSmallTokens;->TrailingSpace:F
+
+    return p0
+.end method

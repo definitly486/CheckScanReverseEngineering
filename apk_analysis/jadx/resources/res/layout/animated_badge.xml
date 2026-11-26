@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_gravity="top|center_horizontal"
+        android:id="@+id/menu_item_badge"
+        android:layout_width="@dimen/dimen_12"
+        android:layout_height="@dimen/dimen_12"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="@dimen/dimen_16"
+        app:srcCompat="@drawable/circle_pulse_animated"/>
+</merge>

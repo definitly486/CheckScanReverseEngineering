@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/mc_product" android:layout_width="@dimen/dimen_0" android:layout_height="@dimen/dimen_140" app:cardCornerRadius="@dimen/dimen_16" app:cardElevation="@dimen/dimen_0" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/iv_product" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+    </com.google.android.material.card.MaterialCardView>
+    <View android:id="@id/view_badge_top_point" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_20" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/mc_product" />
+    <FrameLayout android:id="@id/badge_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0" app:layout_constraintBottom_toBottomOf="@id/view_badge_top_point" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.card.MaterialCardView android:layout_gravity="bottom" android:id="@id/mc_badge" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_4" android:rotation="-2.0" app:cardBackgroundColor="@color/primary_60" app:cardCornerRadius="@dimen/dimen_4" app:cardElevation="@dimen/dimen_0">
+            <TextView android:ellipsize="end" android:id="@id/tv_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingHorizontal="@dimen/dimen_4" android:paddingVertical="@dimen/dimen_2" style="@style/TextSize14.Bold.White" />
+        </com.google.android.material.card.MaterialCardView>
+    </FrameLayout>
+    <TextView android:ellipsize="end" android:id="@id/tv_title" android:layout_width="@dimen/dimen_0" android:layout_height="wrap_content" android:maxLines="3" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/badge_layout" style="@style/TextSize14.Gray80" />
+</androidx.constraintlayout.widget.ConstraintLayout>

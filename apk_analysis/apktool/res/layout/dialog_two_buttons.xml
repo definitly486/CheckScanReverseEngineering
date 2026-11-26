@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/margin_large_sm" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_medium_sm" android:textAlignment="center" style="@style/BottomSheetTextTitle" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_medium_sm" android:textAlignment="center" style="@style/TextSize16.Medium.BlueCharcoal" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/button_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big_middle" android:textAlignment="center" style="@style/BlueButton" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/button_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_sm" android:textAlignment="center" style="@style/NoBackgroundButton" />
+</LinearLayout>

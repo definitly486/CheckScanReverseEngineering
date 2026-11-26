@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/background_white_radius_20" android:paddingTop="@dimen/margin_large_sm" android:paddingBottom="@dimen/margin_top_medium_sm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/margin_large_sm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/image_push_bell" android:scaleType="centerInside" android:contentDescription="@null" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large_sm" android:text="@string/dialog_permission_push_title" android:textAlignment="center" style="@style/TextSize22.BlueCharcoal" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_sm" android:text="@string/dialog_permission_push_description" android:textAlignment="center" style="@style/TextSize14" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/btn_positive" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_medium_sm" android:text="@string/dialog_permission_push_positive" style="@style/BlueButtonRadius8" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/btn_negative" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large_sm" android:text="@string/dialog_permission_push_negative" android:textAlignment="center" style="@style/TextSize16.Medium.ReadilyBlue" />
+</LinearLayout>

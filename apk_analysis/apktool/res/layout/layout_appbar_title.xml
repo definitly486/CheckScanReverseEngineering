@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_btn_back" android:padding="@dimen/margin_small_sm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_arrow_left" />
+        <TextView android:textColor="@color/blueCharcoal" android:ellipsize="end" android:gravity="center" android:id="@id/tv_title" android:layout_width="0.0dip" android:layout_height="@dimen/fill_free_space" android:maxLines="1" android:fontFamily="@font/roboto_medium" android:layout_marginEnd="@dimen/margin_top_medium_sm" app:layout_constraintBottom_toBottomOf="@id/iv_btn_back" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/iv_btn_back" app:layout_constraintTop_toTopOf="parent" style="@style/TextSize16.Medium.BlueCharcoal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.appbar.AppBarLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.warefly.checkscan.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:background="@drawable/background_shimmer_rectangle_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+</com.warefly.checkscan.shimmer.ShimmerFrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/view_dialog_header"
+        android:background="@drawable/white_bottom_sheet_top_background"
+        android:layout_width="@dimen/fill_free_space"
+        android:layout_height="@dimen/categories_view_dialog_header_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_layout"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fill_free_space"
+        app:layout_constraintTop_toBottomOf="@+id/view_dialog_header">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                android:id="@+id/incld_all_products_category"
+                layout="@layout/item_online_shops_category"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_categories"
+                android:clipToPadding="false"
+                android:layout_width="@dimen/fill_free_space"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small_sm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/incld_all_products_category"/>
+            <TextView
+                android:id="@+id/btn_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/online_shops_categories_btn_margin"
+                android:text="@string/categories_dialog_btn_check"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_categories"
+                style="@style/Button"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

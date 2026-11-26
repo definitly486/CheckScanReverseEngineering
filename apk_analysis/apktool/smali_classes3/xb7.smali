@@ -1,0 +1,46 @@
+.class public final synthetic Lxb7;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lll3;
+
+
+# instance fields
+.field public final synthetic b:Ljava/lang/Object;
+
+.field public final synthetic c:Landroidx/window/area/SafeWindowAreaComponentProvider;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ljava/lang/Object;Landroidx/window/area/SafeWindowAreaComponentProvider;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lxb7;->b:Ljava/lang/Object;
+
+    iput-object p2, p0, Lxb7;->c:Landroidx/window/area/SafeWindowAreaComponentProvider;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lxb7;->b:Ljava/lang/Object;
+
+    iget-object p0, p0, Lxb7;->c:Landroidx/window/area/SafeWindowAreaComponentProvider;
+
+    invoke-static {v0, p0}, Landroidx/window/area/SafeWindowAreaComponentProvider;->a(Ljava/lang/Object;Landroidx/window/area/SafeWindowAreaComponentProvider;)Z
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p0
+
+    return-object p0
+.end method

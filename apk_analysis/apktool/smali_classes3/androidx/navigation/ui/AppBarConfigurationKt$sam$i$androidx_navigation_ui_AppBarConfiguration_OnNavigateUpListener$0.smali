@@ -1,0 +1,120 @@
+.class public final synthetic Landroidx/navigation/ui/AppBarConfigurationKt$sam$i$androidx_navigation_ui_AppBarConfiguration_OnNavigateUpListener$0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/navigation/ui/AppBarConfiguration$OnNavigateUpListener;
+.implements Lmm3;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/navigation/ui/AppBarConfigurationKt;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field private final synthetic function:Lll3;
+
+
+# direct methods
+.method public constructor <init>(Lll3;)V
+    .locals 0
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/navigation/ui/AppBarConfigurationKt$sam$i$androidx_navigation_ui_AppBarConfiguration_OnNavigateUpListener$0;->function:Lll3;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    instance-of v0, p1, Landroidx/navigation/ui/AppBarConfiguration$OnNavigateUpListener;
+
+    if-eqz v0, :cond_0
+
+    instance-of v0, p1, Lmm3;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {p0}, Lmm3;->getFunctionDelegate()Lcm3;
+
+    move-result-object p0
+
+    check-cast p1, Lmm3;
+
+    invoke-interface {p1}, Lmm3;->getFunctionDelegate()Lcm3;
+
+    move-result-object p1
+
+    invoke-static {p0, p1}, Laa4;->e(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public final getFunctionDelegate()Lcm3;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcm3<",
+            "*>;"
+        }
+    .end annotation
+
+    iget-object p0, p0, Landroidx/navigation/ui/AppBarConfigurationKt$sam$i$androidx_navigation_ui_AppBarConfiguration_OnNavigateUpListener$0;->function:Lll3;
+
+    check-cast p0, Lcm3;
+
+    return-object p0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    invoke-interface {p0}, Lmm3;->getFunctionDelegate()Lcm3;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final synthetic onNavigateUp()Z
+    .locals 0
+
+    iget-object p0, p0, Landroidx/navigation/ui/AppBarConfigurationKt$sam$i$androidx_navigation_ui_AppBarConfiguration_OnNavigateUpListener$0;->function:Lll3;
+
+    invoke-interface {p0}, Lll3;->invoke()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Boolean;
+
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    return p0
+.end method

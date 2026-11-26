@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background_blue_charcoal_80_radius_130"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/scanner_camera_use_description"
+    android:maxLines="1"
+    android:drawablePadding="@dimen/margin_small_2_sm"
+    android:drawableStart="@drawable/ic_scan_20"
+    android:paddingHorizontal="@dimen/margin_top_medium_sm"
+    android:paddingVertical="@dimen/margin_small_2_sm"
+    style="@style/TextSize14.White"/>

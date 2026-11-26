@@ -1,0 +1,31 @@
+.class public final Lthc;
+.super Lcom/google/android/gms/internal/auth/zzj;
+.source "SourceFile"
+
+
+# instance fields
+.field public final synthetic a:Lcom/google/android/gms/tasks/TaskCompletionSource;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/tasks/TaskCompletionSource;)V
+    .locals 0
+
+    iput-object p1, p0, Lthc;->a:Lcom/google/android/gms/tasks/TaskCompletionSource;
+
+    invoke-direct {p0}, Lcom/google/android/gms/internal/auth/zzj;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final zzb(Lcom/google/android/gms/common/api/Status;Landroid/os/Bundle;)V
+    .locals 0
+
+    iget-object p0, p0, Lthc;->a:Lcom/google/android/gms/tasks/TaskCompletionSource;
+
+    invoke-static {p1, p2, p0}, Lipa;->a(Lcom/google/android/gms/common/api/Status;Landroid/os/Parcelable;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
+
+    return-void
+.end method

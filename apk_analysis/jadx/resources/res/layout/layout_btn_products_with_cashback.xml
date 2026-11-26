@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_get_card_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_products_with_cashback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_stocks_iv_products_with_cashback_margin_top_bottom"
+        android:layout_marginBottom="@dimen/btn_stocks_iv_products_with_cashback_margin_top_bottom"
+        android:contentDescription="@null"
+        android:layout_marginStart="@dimen/btn_stocks_iv_products_with_cashback_margin_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_subtract"/>
+    <TextView
+        android:textSize="@dimen/btn_stocks_btn_products_text_size"
+        android:gravity="center_vertical"
+        android:id="@+id/btn_products_with_cashback"
+        android:layout_width="@dimen/btn_stocks_btn_products_width"
+        android:layout_height="@dimen/fill_free_space"
+        android:text="@string/products_with_cashback"
+        android:maxLines="1"
+        android:layout_marginHorizontal="@dimen/margin_sm"
+        app:autoSizeMaxTextSize="@dimen/btn_stocks_btn_products_text_size"
+        app:autoSizeMinTextSize="@dimen/size_8sp"
+        app:autoSizeStepGranularity="@dimen/size_1sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_products_arrow_right"
+        app:layout_constraintStart_toEndOf="@+id/iv_products_with_cashback"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/ButtonReadilyBlueCornerRad3"/>
+    <ImageView
+        android:id="@+id/iv_products_arrow_right"
+        android:layout_width="@dimen/btn_stocks_iv_products_arrow_right_size"
+        android:layout_height="@dimen/btn_stocks_iv_products_arrow_right_size"
+        android:contentDescription="@null"
+        android:layout_marginEnd="@dimen/btn_stocks_iv_products_arrow_right_margin_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_right"
+        app:tint="@color/white"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

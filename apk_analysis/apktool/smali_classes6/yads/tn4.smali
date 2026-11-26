@@ -1,0 +1,42 @@
+.class public final Lyads/tn4;
+.super Landroid/util/LruCache;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>(I)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Landroid/util/LruCache;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final sizeOf(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 0
+
+    check-cast p1, Ljava/lang/String;
+
+    check-cast p2, Landroid/graphics/Bitmap;
+
+    if-eqz p2, :cond_0
+
+    invoke-virtual {p2}, Landroid/graphics/Bitmap;->getByteCount()I
+
+    move-result p0
+
+    div-int/lit16 p0, p0, 0x400
+
+    return p0
+
+    :cond_0
+    const/4 p2, 0x0
+
+    invoke-super {p0, p1, p2}, Landroid/util/LruCache;->sizeOf(Ljava/lang/Object;Ljava/lang/Object;)I
+
+    move-result p0
+
+    return p0
+.end method

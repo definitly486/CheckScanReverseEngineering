@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:background="@drawable/background_search_cashback_web"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small_2_sm"
+            android:layout_weight="1"
+            android:inputType="text"
+            app:queryBackground="@null"
+            app:queryHint="@string/bonuses_search_hint"
+            app:searchIcon="@drawable/ic_search_24"/>
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_marginEnd="@dimen/margin_large_sm"
+            style="@style/TextSize14.ReadilyBlue.Medium"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_content"
+        android:background="@color/athensGray"
+        android:paddingTop="@dimen/margin_small_2_sm"
+        android:paddingBottom="@dimen/margin_vast_big"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/margin_small_2_sm"/>
+</LinearLayout>

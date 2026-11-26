@@ -1,0 +1,6 @@
+.class public interface abstract Lio/appmetrica/analytics/impl/mb;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/os/IInterface;

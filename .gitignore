@@ -1,0 +1,49 @@
+# CheckScan APK reverse-engineering output
+# Ignore generated extraction/decompilation directories
+/apk/
+/decoded/
+/decompiled/
+/jadx/
+/apktool/
+/build/
+/dist/
+/tmp/
+/temp/
+
+# APK and Android package artifacts
+*.apk
+*.apks
+*.aab
+*.dex
+*.odex
+*.vdex
+*.art
+
+# Generated analysis reports and indexes
+/api/
+/reports/
+/logs/
+*.log
+*.report
+*.dump
+
+# Decompiled / extracted source and resources
+/smali*/
+*/smali*/
+*/sources/
+*/resources/
+*/unknown/
+
+# Tool caches and temporary files
+.cache/
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

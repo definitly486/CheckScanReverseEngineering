@@ -1,0 +1,7 @@
+package defpackage;
+
+import java.util.Map;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final class pa6 extends x39<Map<String, ? extends Object>> {
+}

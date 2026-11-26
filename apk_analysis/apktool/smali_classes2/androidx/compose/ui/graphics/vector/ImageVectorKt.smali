@@ -1,0 +1,510 @@
+.class public final Landroidx/compose/ui/graphics/vector/ImageVectorKt;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static final synthetic access$peek(Ljava/util/ArrayList;)Ljava/lang/Object;
+    .locals 0
+
+    invoke-static {p0}, Landroidx/compose/ui/graphics/vector/ImageVectorKt;->peek(Ljava/util/ArrayList;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final synthetic access$pop(Ljava/util/ArrayList;)Ljava/lang/Object;
+    .locals 0
+
+    invoke-static {p0}, Landroidx/compose/ui/graphics/vector/ImageVectorKt;->pop(Ljava/util/ArrayList;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final synthetic access$push(Ljava/util/ArrayList;Ljava/lang/Object;)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Landroidx/compose/ui/graphics/vector/ImageVectorKt;->push(Ljava/util/ArrayList;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static final group(Landroidx/compose/ui/graphics/vector/ImageVector$Builder;Ljava/lang/String;FFFFFFFLjava/util/List;Lnl3;)Landroidx/compose/ui/graphics/vector/ImageVector$Builder;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/ui/graphics/vector/ImageVector$Builder;",
+            "Ljava/lang/String;",
+            "FFFFFFF",
+            "Ljava/util/List<",
+            "+",
+            "Landroidx/compose/ui/graphics/vector/PathNode;",
+            ">;",
+            "Lnl3<",
+            "-",
+            "Landroidx/compose/ui/graphics/vector/ImageVector$Builder;",
+            "Lj59;",
+            ">;)",
+            "Landroidx/compose/ui/graphics/vector/ImageVector$Builder;"
+        }
+    .end annotation
+
+    invoke-virtual/range {p0 .. p9}, Landroidx/compose/ui/graphics/vector/ImageVector$Builder;->addGroup(Ljava/lang/String;FFFFFFFLjava/util/List;)Landroidx/compose/ui/graphics/vector/ImageVector$Builder;
+
+    invoke-interface {p10, p0}, Lnl3;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-virtual {p0}, Landroidx/compose/ui/graphics/vector/ImageVector$Builder;->clearGroup()Landroidx/compose/ui/graphics/vector/ImageVector$Builder;
+
+    return-object p0
+.end method
+
+.method public static synthetic group$default(Landroidx/compose/ui/graphics/vector/ImageVector$Builder;Ljava/lang/String;FFFFFFFLjava/util/List;Lnl3;ILjava/lang/Object;)Landroidx/compose/ui/graphics/vector/ImageVector$Builder;
+    .locals 10
+
+    move/from16 v0, p11
+
+    and-int/lit8 v1, v0, 0x1
+
+    if-eqz v1, :cond_0
+
+    const-string p1, ""
+
+    :cond_0
+    move-object v1, p1
+
+    and-int/lit8 p1, v0, 0x2
+
+    const/4 v2, 0x0
+
+    if-eqz p1, :cond_1
+
+    move p2, v2
+
+    :cond_1
+    and-int/lit8 p1, v0, 0x4
+
+    if-eqz p1, :cond_2
+
+    move v3, v2
+
+    goto :goto_0
+
+    :cond_2
+    move v3, p3
+
+    :goto_0
+    and-int/lit8 p1, v0, 0x8
+
+    if-eqz p1, :cond_3
+
+    move v4, v2
+
+    goto :goto_1
+
+    :cond_3
+    move v4, p4
+
+    :goto_1
+    and-int/lit8 p1, v0, 0x10
+
+    const/high16 p3, 0x3f800000    # 1.0f
+
+    if-eqz p1, :cond_4
+
+    move v5, p3
+
+    goto :goto_2
+
+    :cond_4
+    move v5, p5
+
+    :goto_2
+    and-int/lit8 p1, v0, 0x20
+
+    if-eqz p1, :cond_5
+
+    move v6, p3
+
+    goto :goto_3
+
+    :cond_5
+    move/from16 v6, p6
+
+    :goto_3
+    and-int/lit8 p1, v0, 0x40
+
+    if-eqz p1, :cond_6
+
+    move v7, v2
+
+    goto :goto_4
+
+    :cond_6
+    move/from16 v7, p7
+
+    :goto_4
+    and-int/lit16 p1, v0, 0x80
+
+    if-eqz p1, :cond_7
+
+    move v8, v2
+
+    goto :goto_5
+
+    :cond_7
+    move/from16 v8, p8
+
+    :goto_5
+    and-int/lit16 p1, v0, 0x100
+
+    if-eqz p1, :cond_8
+
+    invoke-static {}, Landroidx/compose/ui/graphics/vector/VectorKt;->getEmptyPath()Ljava/util/List;
+
+    move-result-object p1
+
+    move-object v9, p1
+
+    :goto_6
+    move-object v0, p0
+
+    move v2, p2
+
+    goto :goto_7
+
+    :cond_8
+    move-object/from16 v9, p9
+
+    goto :goto_6
+
+    :goto_7
+    invoke-virtual/range {v0 .. v9}, Landroidx/compose/ui/graphics/vector/ImageVector$Builder;->addGroup(Ljava/lang/String;FFFFFFFLjava/util/List;)Landroidx/compose/ui/graphics/vector/ImageVector$Builder;
+
+    move-object/from16 p1, p10
+
+    invoke-interface {p1, p0}, Lnl3;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-virtual {p0}, Landroidx/compose/ui/graphics/vector/ImageVector$Builder;->clearGroup()Landroidx/compose/ui/graphics/vector/ImageVector$Builder;
+
+    return-object p0
+.end method
+
+.method public static final path-R_LF-3I(Landroidx/compose/ui/graphics/vector/ImageVector$Builder;Ljava/lang/String;Landroidx/compose/ui/graphics/Brush;FLandroidx/compose/ui/graphics/Brush;FFIIFILnl3;)Landroidx/compose/ui/graphics/vector/ImageVector$Builder;
+    .locals 18
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/ui/graphics/vector/ImageVector$Builder;",
+            "Ljava/lang/String;",
+            "Landroidx/compose/ui/graphics/Brush;",
+            "F",
+            "Landroidx/compose/ui/graphics/Brush;",
+            "FFIIFI",
+            "Lnl3<",
+            "-",
+            "Landroidx/compose/ui/graphics/vector/PathBuilder;",
+            "Lj59;",
+            ">;)",
+            "Landroidx/compose/ui/graphics/vector/ImageVector$Builder;"
+        }
+    .end annotation
+
+    new-instance v0, Landroidx/compose/ui/graphics/vector/PathBuilder;
+
+    invoke-direct {v0}, Landroidx/compose/ui/graphics/vector/PathBuilder;-><init>()V
+
+    move-object/from16 v1, p11
+
+    invoke-interface {v1, v0}, Lnl3;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/graphics/vector/PathBuilder;->getNodes()Ljava/util/List;
+
+    move-result-object v2
+
+    const/16 v16, 0x3800
+
+    const/16 v17, 0x0
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    const/4 v15, 0x0
+
+    move-object/from16 v1, p0
+
+    move-object/from16 v4, p1
+
+    move-object/from16 v5, p2
+
+    move/from16 v6, p3
+
+    move-object/from16 v7, p4
+
+    move/from16 v8, p5
+
+    move/from16 v9, p6
+
+    move/from16 v10, p7
+
+    move/from16 v11, p8
+
+    move/from16 v12, p9
+
+    move/from16 v3, p10
+
+    invoke-static/range {v1 .. v17}, Landroidx/compose/ui/graphics/vector/ImageVector$Builder;->addPath-oIyEayM$default(Landroidx/compose/ui/graphics/vector/ImageVector$Builder;Ljava/util/List;ILjava/lang/String;Landroidx/compose/ui/graphics/Brush;FLandroidx/compose/ui/graphics/Brush;FFIIFFFFILjava/lang/Object;)Landroidx/compose/ui/graphics/vector/ImageVector$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static synthetic path-R_LF-3I$default(Landroidx/compose/ui/graphics/vector/ImageVector$Builder;Ljava/lang/String;Landroidx/compose/ui/graphics/Brush;FLandroidx/compose/ui/graphics/Brush;FFIIFILnl3;ILjava/lang/Object;)Landroidx/compose/ui/graphics/vector/ImageVector$Builder;
+    .locals 19
+
+    move/from16 v0, p12
+
+    and-int/lit8 v1, v0, 0x1
+
+    if-eqz v1, :cond_0
+
+    const-string v1, ""
+
+    move-object v5, v1
+
+    goto :goto_0
+
+    :cond_0
+    move-object/from16 v5, p1
+
+    :goto_0
+    and-int/lit8 v1, v0, 0x2
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_1
+
+    move-object v6, v2
+
+    goto :goto_1
+
+    :cond_1
+    move-object/from16 v6, p2
+
+    :goto_1
+    and-int/lit8 v1, v0, 0x4
+
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    if-eqz v1, :cond_2
+
+    move v7, v3
+
+    goto :goto_2
+
+    :cond_2
+    move/from16 v7, p3
+
+    :goto_2
+    and-int/lit8 v1, v0, 0x8
+
+    if-eqz v1, :cond_3
+
+    move-object v8, v2
+
+    goto :goto_3
+
+    :cond_3
+    move-object/from16 v8, p4
+
+    :goto_3
+    and-int/lit8 v1, v0, 0x10
+
+    if-eqz v1, :cond_4
+
+    move v9, v3
+
+    goto :goto_4
+
+    :cond_4
+    move/from16 v9, p5
+
+    :goto_4
+    and-int/lit8 v1, v0, 0x20
+
+    if-eqz v1, :cond_5
+
+    const/4 v1, 0x0
+
+    move v10, v1
+
+    goto :goto_5
+
+    :cond_5
+    move/from16 v10, p6
+
+    :goto_5
+    and-int/lit8 v1, v0, 0x40
+
+    if-eqz v1, :cond_6
+
+    invoke-static {}, Landroidx/compose/ui/graphics/vector/VectorKt;->getDefaultStrokeLineCap()I
+
+    move-result v1
+
+    move v11, v1
+
+    goto :goto_6
+
+    :cond_6
+    move/from16 v11, p7
+
+    :goto_6
+    and-int/lit16 v1, v0, 0x80
+
+    if-eqz v1, :cond_7
+
+    invoke-static {}, Landroidx/compose/ui/graphics/vector/VectorKt;->getDefaultStrokeLineJoin()I
+
+    move-result v1
+
+    move v12, v1
+
+    goto :goto_7
+
+    :cond_7
+    move/from16 v12, p8
+
+    :goto_7
+    and-int/lit16 v1, v0, 0x100
+
+    if-eqz v1, :cond_8
+
+    const/high16 v1, 0x40800000    # 4.0f
+
+    move v13, v1
+
+    goto :goto_8
+
+    :cond_8
+    move/from16 v13, p9
+
+    :goto_8
+    and-int/lit16 v0, v0, 0x200
+
+    if-eqz v0, :cond_9
+
+    invoke-static {}, Landroidx/compose/ui/graphics/vector/VectorKt;->getDefaultFillType()I
+
+    move-result v0
+
+    move v4, v0
+
+    goto :goto_9
+
+    :cond_9
+    move/from16 v4, p10
+
+    :goto_9
+    new-instance v0, Landroidx/compose/ui/graphics/vector/PathBuilder;
+
+    invoke-direct {v0}, Landroidx/compose/ui/graphics/vector/PathBuilder;-><init>()V
+
+    move-object/from16 v1, p11
+
+    invoke-interface {v1, v0}, Lnl3;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/graphics/vector/PathBuilder;->getNodes()Ljava/util/List;
+
+    move-result-object v3
+
+    const/16 v17, 0x3800
+
+    const/16 v18, 0x0
+
+    const/4 v14, 0x0
+
+    const/4 v15, 0x0
+
+    const/16 v16, 0x0
+
+    move-object/from16 v2, p0
+
+    invoke-static/range {v2 .. v18}, Landroidx/compose/ui/graphics/vector/ImageVector$Builder;->addPath-oIyEayM$default(Landroidx/compose/ui/graphics/vector/ImageVector$Builder;Ljava/util/List;ILjava/lang/String;Landroidx/compose/ui/graphics/Brush;FLandroidx/compose/ui/graphics/Brush;FFIIFFFFILjava/lang/Object;)Landroidx/compose/ui/graphics/vector/ImageVector$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method private static final peek(Ljava/util/ArrayList;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/ArrayList<",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    invoke-static {v0, p0}, Ldd2;->b(ILjava/util/ArrayList;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static final pop(Ljava/util/ArrayList;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/ArrayList<",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, -0x1
+
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static final push(Ljava/util/ArrayList;Ljava/lang/Object;)Z
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/ArrayList<",
+            "TT;>;TT;)Z"
+        }
+    .end annotation
+
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    return p0
+.end method

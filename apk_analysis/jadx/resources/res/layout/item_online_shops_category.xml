@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_category_name"
+        android:layout_width="@dimen/fill_free_space"
+        android:layout_height="wrap_content"
+        android:text="Все товары"
+        app:layout_constraintEnd_toStartOf="@+id/cb_category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/BasicFilter"/>
+    <CheckBox
+        android:id="@+id/cb_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:button="@drawable/chekbox_checked"
+        android:text=" "
+        android:layout_marginEnd="@dimen/margin_big_sm"
+        android:buttonTint="@color/white"
+        android:buttonTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_category_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_category_name"/>
+    <View
+        android:id="@+id/divider"
+        android:background="@color/colorWhisper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_list_item_divider_height"
+        android:layout_marginBottom="@dimen/dialog_list_item_divider_margin_bottom"
+        android:layout_marginStart="@dimen/dialog_list_item_divider_margin_start"
+        android:layout_marginEnd="@dimen/dialog_list_item_divider_margin_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_category_name"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

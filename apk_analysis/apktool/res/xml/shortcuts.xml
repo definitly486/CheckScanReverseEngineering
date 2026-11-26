@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_notification" android:enabled="true" android:shortcutId="camera" android:shortcutShortLabel="@string/deeplink_page_scan_label">
+        <intent android:targetPackage="com.warefly.checkscan" android:action="android.intent.action.VIEW" android:data="checksan://camera" android:targetClass="com.warefly.checkscan.presentation.CiceroneActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/shortcut_cash_back" android:enabled="true" android:shortcutId="cashback" android:shortcutShortLabel="@string/deeplink_page_cashback_label">
+        <intent android:targetPackage="com.warefly.checkscan" android:action="android.intent.action.VIEW" android:data="checksan://cashback" android:targetClass="com.warefly.checkscan.presentation.CiceroneActivity" />
+    </shortcut>
+</shortcuts>

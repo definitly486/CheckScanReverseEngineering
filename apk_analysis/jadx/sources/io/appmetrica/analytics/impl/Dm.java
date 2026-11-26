@@ -1,0 +1,123 @@
+package io.appmetrica.analytics.impl;
+
+import io.appmetrica.analytics.protobuf.nano.CodedInputByteBufferNano;
+import io.appmetrica.analytics.protobuf.nano.CodedOutputByteBufferNano;
+import io.appmetrica.analytics.protobuf.nano.InternalNano;
+import io.appmetrica.analytics.protobuf.nano.InvalidProtocolBufferNanoException;
+import io.appmetrica.analytics.protobuf.nano.MessageNano;
+import io.appmetrica.analytics.protobuf.nano.WireFormatNano;
+
+/* JADX INFO: loaded from: classes5.dex */
+public final class Dm extends MessageNano {
+    public static volatile Dm[] b;
+    public Cm[] a;
+
+    public Dm() {
+        a();
+    }
+
+    public static Dm[] b() {
+        if (b == null) {
+            synchronized (InternalNano.LAZY_INIT_LOCK) {
+                try {
+                    if (b == null) {
+                        b = new Dm[0];
+                    }
+                } catch (Throwable th) {
+                    throw th;
+                }
+            }
+        }
+        return b;
+    }
+
+    @Override // io.appmetrica.analytics.protobuf.nano.MessageNano
+    /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+    public final Dm mergeFrom(CodedInputByteBufferNano codedInputByteBufferNano) throws InvalidProtocolBufferNanoException {
+        while (true) {
+            int tag = codedInputByteBufferNano.readTag();
+            if (tag == 0) {
+                break;
+            }
+            if (tag == 10) {
+                int repeatedFieldArrayLength = WireFormatNano.getRepeatedFieldArrayLength(codedInputByteBufferNano, 10);
+                Cm[] cmArr = this.a;
+                int length = cmArr == null ? 0 : cmArr.length;
+                int i = repeatedFieldArrayLength + length;
+                Cm[] cmArr2 = new Cm[i];
+                if (length != 0) {
+                    System.arraycopy(cmArr, 0, cmArr2, 0, length);
+                }
+                while (length < i - 1) {
+                    Cm cm = new Cm();
+                    cmArr2[length] = cm;
+                    codedInputByteBufferNano.readMessage(cm);
+                    codedInputByteBufferNano.readTag();
+                    length++;
+                }
+                Cm cm2 = new Cm();
+                cmArr2[length] = cm2;
+                codedInputByteBufferNano.readMessage(cm2);
+                this.a = cmArr2;
+            } else if (!WireFormatNano.parseUnknownField(codedInputByteBufferNano, tag)) {
+                break;
+            }
+        }
+        return this;
+    }
+
+    @Override // io.appmetrica.analytics.protobuf.nano.MessageNano
+    public final int computeSerializedSize() {
+        int iComputeSerializedSize = super.computeSerializedSize();
+        Cm[] cmArr = this.a;
+        if (cmArr != null && cmArr.length > 0) {
+            int i = 0;
+            while (true) {
+                Cm[] cmArr2 = this.a;
+                if (i >= cmArr2.length) {
+                    break;
+                }
+                Cm cm = cmArr2[i];
+                if (cm != null) {
+                    iComputeSerializedSize = CodedOutputByteBufferNano.computeMessageSize(1, cm) + iComputeSerializedSize;
+                }
+                i++;
+            }
+        }
+        return iComputeSerializedSize;
+    }
+
+    @Override // io.appmetrica.analytics.protobuf.nano.MessageNano
+    public final void writeTo(CodedOutputByteBufferNano codedOutputByteBufferNano) {
+        Cm[] cmArr = this.a;
+        if (cmArr != null && cmArr.length > 0) {
+            int i = 0;
+            while (true) {
+                Cm[] cmArr2 = this.a;
+                if (i >= cmArr2.length) {
+                    break;
+                }
+                Cm cm = cmArr2[i];
+                if (cm != null) {
+                    codedOutputByteBufferNano.writeMessage(1, cm);
+                }
+                i++;
+            }
+        }
+        super.writeTo(codedOutputByteBufferNano);
+    }
+
+    public static Dm b(CodedInputByteBufferNano codedInputByteBufferNano) {
+        return new Dm().mergeFrom(codedInputByteBufferNano);
+    }
+
+    public final Dm a() {
+        this.a = Cm.b();
+        this.cachedSize = -1;
+        return this;
+    }
+
+    public static Dm a(byte[] bArr) {
+        return (Dm) MessageNano.mergeFrom(new Dm(), bArr);
+    }
+}

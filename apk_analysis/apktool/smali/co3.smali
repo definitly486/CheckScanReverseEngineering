@@ -1,0 +1,27 @@
+.class public final Lco3;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final a:Ltc5;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lis0;
+
+    const/4 v1, 0x3
+
+    invoke-direct {v0, v1}, Lis0;-><init>(I)V
+
+    invoke-static {v0}, Lh;->c(Lnl3;)Ltc5;
+
+    move-result-object v0
+
+    sput-object v0, Lco3;->a:Ltc5;
+
+    return-void
+.end method

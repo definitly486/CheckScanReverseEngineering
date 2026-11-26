@@ -1,0 +1,365 @@
+.class public final Lio/appmetrica/analytics/impl/Af;
+.super Lio/appmetrica/analytics/protobuf/nano/MessageNano;
+.source "SourceFile"
+
+
+# static fields
+.field public static final c:I = 0x0
+
+.field public static final d:I = 0x1
+
+.field public static final e:I = 0x2
+
+.field public static final f:I = 0x3
+
+.field public static volatile g:[Lio/appmetrica/analytics/impl/Af;
+
+
+# instance fields
+.field public a:Lio/appmetrica/analytics/impl/yf;
+
+.field public b:[Lio/appmetrica/analytics/impl/zf;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lio/appmetrica/analytics/protobuf/nano/MessageNano;-><init>()V
+
+    invoke-virtual {p0}, Lio/appmetrica/analytics/impl/Af;->a()Lio/appmetrica/analytics/impl/Af;
+
+    return-void
+.end method
+
+.method public static a([B)Lio/appmetrica/analytics/impl/Af;
+    .locals 1
+
+    .line 93
+    new-instance v0, Lio/appmetrica/analytics/impl/Af;
+
+    invoke-direct {v0}, Lio/appmetrica/analytics/impl/Af;-><init>()V
+
+    invoke-static {v0, p0}, Lio/appmetrica/analytics/protobuf/nano/MessageNano;->mergeFrom(Lio/appmetrica/analytics/protobuf/nano/MessageNano;[B)Lio/appmetrica/analytics/protobuf/nano/MessageNano;
+
+    move-result-object p0
+
+    check-cast p0, Lio/appmetrica/analytics/impl/Af;
+
+    return-object p0
+.end method
+
+.method public static b(Lio/appmetrica/analytics/protobuf/nano/CodedInputByteBufferNano;)Lio/appmetrica/analytics/impl/Af;
+    .locals 1
+
+    .line 26
+    new-instance v0, Lio/appmetrica/analytics/impl/Af;
+
+    invoke-direct {v0}, Lio/appmetrica/analytics/impl/Af;-><init>()V
+
+    invoke-virtual {v0, p0}, Lio/appmetrica/analytics/impl/Af;->a(Lio/appmetrica/analytics/protobuf/nano/CodedInputByteBufferNano;)Lio/appmetrica/analytics/impl/Af;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static b()[Lio/appmetrica/analytics/impl/Af;
+    .locals 2
+
+    sget-object v0, Lio/appmetrica/analytics/impl/Af;->g:[Lio/appmetrica/analytics/impl/Af;
+
+    if-nez v0, :cond_1
+
+    sget-object v0, Lio/appmetrica/analytics/protobuf/nano/InternalNano;->LAZY_INIT_LOCK:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    :try_start_0
+    sget-object v1, Lio/appmetrica/analytics/impl/Af;->g:[Lio/appmetrica/analytics/impl/Af;
+
+    if-nez v1, :cond_0
+
+    const/4 v1, 0x0
+
+    new-array v1, v1, [Lio/appmetrica/analytics/impl/Af;
+
+    sput-object v1, Lio/appmetrica/analytics/impl/Af;->g:[Lio/appmetrica/analytics/impl/Af;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    monitor-exit v0
+
+    goto :goto_2
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+
+    :cond_1
+    :goto_2
+    sget-object v0, Lio/appmetrica/analytics/impl/Af;->g:[Lio/appmetrica/analytics/impl/Af;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final a()Lio/appmetrica/analytics/impl/Af;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 90
+    iput-object v0, p0, Lio/appmetrica/analytics/impl/Af;->a:Lio/appmetrica/analytics/impl/yf;
+
+    .line 91
+    invoke-static {}, Lio/appmetrica/analytics/impl/zf;->b()[Lio/appmetrica/analytics/impl/zf;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lio/appmetrica/analytics/impl/Af;->b:[Lio/appmetrica/analytics/impl/zf;
+
+    const/4 v0, -0x1
+
+    .line 92
+    iput v0, p0, Lio/appmetrica/analytics/protobuf/nano/MessageNano;->cachedSize:I
+
+    return-object p0
+.end method
+
+.method public final a(Lio/appmetrica/analytics/protobuf/nano/CodedInputByteBufferNano;)Lio/appmetrica/analytics/impl/Af;
+    .locals 5
+
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, Lio/appmetrica/analytics/protobuf/nano/CodedInputByteBufferNano;->readTag()I
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    const/16 v1, 0xa
+
+    if-eq v0, v1, :cond_5
+
+    const/16 v1, 0x12
+
+    if-eq v0, v1, :cond_1
+
+    invoke-static {p1, v0}, Lio/appmetrica/analytics/protobuf/nano/WireFormatNano;->parseUnknownField(Lio/appmetrica/analytics/protobuf/nano/CodedInputByteBufferNano;I)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    goto :goto_3
+
+    :cond_1
+    invoke-static {p1, v1}, Lio/appmetrica/analytics/protobuf/nano/WireFormatNano;->getRepeatedFieldArrayLength(Lio/appmetrica/analytics/protobuf/nano/CodedInputByteBufferNano;I)I
+
+    move-result v0
+
+    iget-object v1, p0, Lio/appmetrica/analytics/impl/Af;->b:[Lio/appmetrica/analytics/impl/zf;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_2
+
+    move v3, v2
+
+    goto :goto_1
+
+    :cond_2
+    array-length v3, v1
+
+    :goto_1
+    add-int/2addr v0, v3
+
+    new-array v4, v0, [Lio/appmetrica/analytics/impl/zf;
+
+    if-eqz v3, :cond_3
+
+    invoke-static {v1, v2, v4, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    :cond_3
+    :goto_2
+    add-int/lit8 v1, v0, -0x1
+
+    if-ge v3, v1, :cond_4
+
+    new-instance v1, Lio/appmetrica/analytics/impl/zf;
+
+    invoke-direct {v1}, Lio/appmetrica/analytics/impl/zf;-><init>()V
+
+    aput-object v1, v4, v3
+
+    invoke-virtual {p1, v1}, Lio/appmetrica/analytics/protobuf/nano/CodedInputByteBufferNano;->readMessage(Lio/appmetrica/analytics/protobuf/nano/MessageNano;)V
+
+    invoke-virtual {p1}, Lio/appmetrica/analytics/protobuf/nano/CodedInputByteBufferNano;->readTag()I
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_2
+
+    :cond_4
+    new-instance v0, Lio/appmetrica/analytics/impl/zf;
+
+    invoke-direct {v0}, Lio/appmetrica/analytics/impl/zf;-><init>()V
+
+    aput-object v0, v4, v3
+
+    invoke-virtual {p1, v0}, Lio/appmetrica/analytics/protobuf/nano/CodedInputByteBufferNano;->readMessage(Lio/appmetrica/analytics/protobuf/nano/MessageNano;)V
+
+    iput-object v4, p0, Lio/appmetrica/analytics/impl/Af;->b:[Lio/appmetrica/analytics/impl/zf;
+
+    goto :goto_0
+
+    :cond_5
+    iget-object v0, p0, Lio/appmetrica/analytics/impl/Af;->a:Lio/appmetrica/analytics/impl/yf;
+
+    if-nez v0, :cond_6
+
+    new-instance v0, Lio/appmetrica/analytics/impl/yf;
+
+    invoke-direct {v0}, Lio/appmetrica/analytics/impl/yf;-><init>()V
+
+    iput-object v0, p0, Lio/appmetrica/analytics/impl/Af;->a:Lio/appmetrica/analytics/impl/yf;
+
+    :cond_6
+    invoke-virtual {p1, v0}, Lio/appmetrica/analytics/protobuf/nano/CodedInputByteBufferNano;->readMessage(Lio/appmetrica/analytics/protobuf/nano/MessageNano;)V
+
+    goto :goto_0
+
+    :cond_7
+    :goto_3
+    return-object p0
+.end method
+
+.method public final computeSerializedSize()I
+    .locals 4
+
+    invoke-super {p0}, Lio/appmetrica/analytics/protobuf/nano/MessageNano;->computeSerializedSize()I
+
+    move-result v0
+
+    iget-object v1, p0, Lio/appmetrica/analytics/impl/Af;->a:Lio/appmetrica/analytics/impl/yf;
+
+    if-eqz v1, :cond_0
+
+    const/4 v2, 0x1
+
+    invoke-static {v2, v1}, Lio/appmetrica/analytics/protobuf/nano/CodedOutputByteBufferNano;->computeMessageSize(ILio/appmetrica/analytics/protobuf/nano/MessageNano;)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    :cond_0
+    iget-object v1, p0, Lio/appmetrica/analytics/impl/Af;->b:[Lio/appmetrica/analytics/impl/zf;
+
+    if-eqz v1, :cond_2
+
+    array-length v1, v1
+
+    if-lez v1, :cond_2
+
+    const/4 v1, 0x0
+
+    :goto_0
+    iget-object v2, p0, Lio/appmetrica/analytics/impl/Af;->b:[Lio/appmetrica/analytics/impl/zf;
+
+    array-length v3, v2
+
+    if-ge v1, v3, :cond_2
+
+    aget-object v2, v2, v1
+
+    if-eqz v2, :cond_1
+
+    const/4 v3, 0x2
+
+    invoke-static {v3, v2}, Lio/appmetrica/analytics/protobuf/nano/CodedOutputByteBufferNano;->computeMessageSize(ILio/appmetrica/analytics/protobuf/nano/MessageNano;)I
+
+    move-result v2
+
+    add-int/2addr v2, v0
+
+    move v0, v2
+
+    :cond_1
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    return v0
+.end method
+
+.method public final bridge synthetic mergeFrom(Lio/appmetrica/analytics/protobuf/nano/CodedInputByteBufferNano;)Lio/appmetrica/analytics/protobuf/nano/MessageNano;
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lio/appmetrica/analytics/impl/Af;->a(Lio/appmetrica/analytics/protobuf/nano/CodedInputByteBufferNano;)Lio/appmetrica/analytics/impl/Af;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final writeTo(Lio/appmetrica/analytics/protobuf/nano/CodedOutputByteBufferNano;)V
+    .locals 3
+
+    iget-object v0, p0, Lio/appmetrica/analytics/impl/Af;->a:Lio/appmetrica/analytics/impl/yf;
+
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {p1, v1, v0}, Lio/appmetrica/analytics/protobuf/nano/CodedOutputByteBufferNano;->writeMessage(ILio/appmetrica/analytics/protobuf/nano/MessageNano;)V
+
+    :cond_0
+    iget-object v0, p0, Lio/appmetrica/analytics/impl/Af;->b:[Lio/appmetrica/analytics/impl/zf;
+
+    if-eqz v0, :cond_2
+
+    array-length v0, v0
+
+    if-lez v0, :cond_2
+
+    const/4 v0, 0x0
+
+    :goto_0
+    iget-object v1, p0, Lio/appmetrica/analytics/impl/Af;->b:[Lio/appmetrica/analytics/impl/zf;
+
+    array-length v2, v1
+
+    if-ge v0, v2, :cond_2
+
+    aget-object v1, v1, v0
+
+    if-eqz v1, :cond_1
+
+    const/4 v2, 0x2
+
+    invoke-virtual {p1, v2, v1}, Lio/appmetrica/analytics/protobuf/nano/CodedOutputByteBufferNano;->writeMessage(ILio/appmetrica/analytics/protobuf/nano/MessageNano;)V
+
+    :cond_1
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    invoke-super {p0, p1}, Lio/appmetrica/analytics/protobuf/nano/MessageNano;->writeTo(Lio/appmetrica/analytics/protobuf/nano/CodedOutputByteBufferNano;)V
+
+    return-void
+.end method

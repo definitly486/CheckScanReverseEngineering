@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coord_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/toolbar_banner" android:background="@color/readilyBlue" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="300.0dip" app:elevation="@dimen/fill_free_space">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:contentScrim="@color/readilyBlue" app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+            <ImageView android:id="@id/iv_banner" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@null" app:layout_collapseMode="parallax" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_content" android:background="@drawable/white_bottom_sheet_top_background" android:paddingTop="@dimen/margin_top_medium_sm" android:paddingBottom="@dimen/margin_fourty_large" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-20.0dip" android:paddingHorizontal="@dimen/margin_large_sm" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+    <ImageView android:id="@id/btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big_sm" android:src="@drawable/ic_back_button" android:contentDescription="@null" android:layout_marginStart="@dimen/margin_sm" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

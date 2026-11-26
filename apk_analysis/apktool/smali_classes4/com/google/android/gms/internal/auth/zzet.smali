@@ -1,0 +1,160 @@
+.class public Lcom/google/android/gms/internal/auth/zzet;
+.super Lcom/google/android/gms/internal/auth/zzdp;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<MessageType:",
+        "Lcom/google/android/gms/internal/auth/zzev<",
+        "TMessageType;TBuilderType;>;BuilderType:",
+        "Lcom/google/android/gms/internal/auth/zzet<",
+        "TMessageType;TBuilderType;>;>",
+        "Lcom/google/android/gms/internal/auth/zzdp<",
+        "TMessageType;TBuilderType;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final b:Lcom/google/android/gms/internal/auth/zzev;
+
+.field public c:Lcom/google/android/gms/internal/auth/zzev;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/internal/auth/zzhs;)V
+    .locals 1
+
+    invoke-direct {p0}, Lcom/google/android/gms/internal/auth/zzdp;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/auth/zzet;->b:Lcom/google/android/gms/internal/auth/zzev;
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/auth/zzev;->g()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/auth/zzev;->b()Lcom/google/android/gms/internal/auth/zzev;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/auth/zzet;->c:Lcom/google/android/gms/internal/auth/zzev;
+
+    return-void
+
+    :cond_0
+    const-string p0, "Default instance must be immutable."
+
+    invoke-static {p0}, Lfg;->c(Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic clone()Ljava/lang/Object;
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/auth/zzet;->zzb()Lcom/google/android/gms/internal/auth/zzet;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final bridge synthetic zza()Lcom/google/android/gms/internal/auth/zzdp;
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/auth/zzet;->zzb()Lcom/google/android/gms/internal/auth/zzet;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final zzb()Lcom/google/android/gms/internal/auth/zzet;
+    .locals 2
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/auth/zzet;->b:Lcom/google/android/gms/internal/auth/zzev;
+
+    const/4 v1, 0x5
+
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/auth/zzev;->h(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/internal/auth/zzet;
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/auth/zzet;->zzc()Lcom/google/android/gms/internal/auth/zzev;
+
+    move-result-object p0
+
+    iput-object p0, v0, Lcom/google/android/gms/internal/auth/zzet;->c:Lcom/google/android/gms/internal/auth/zzev;
+
+    return-object v0
+.end method
+
+.method public zzc()Lcom/google/android/gms/internal/auth/zzev;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TMessageType;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/auth/zzet;->c:Lcom/google/android/gms/internal/auth/zzev;
+
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/auth/zzev;->g()Z
+
+    move-result v0
+
+    iget-object v1, p0, Lcom/google/android/gms/internal/auth/zzet;->c:Lcom/google/android/gms/internal/auth/zzev;
+
+    if-nez v0, :cond_0
+
+    return-object v1
+
+    :cond_0
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    sget-object v0, Lqib;->c:Lqib;
+
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Lqib;->a(Ljava/lang/Class;)Lcjb;
+
+    move-result-object v0
+
+    invoke-interface {v0, v1}, Lcjb;->zze(Ljava/lang/Object;)V
+
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/auth/zzev;->d()V
+
+    iget-object p0, p0, Lcom/google/android/gms/internal/auth/zzet;->c:Lcom/google/android/gms/internal/auth/zzev;
+
+    return-object p0
+.end method
+
+.method public bridge synthetic zzd()Lcom/google/android/gms/internal/auth/zzfx;
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/auth/zzet;->zzc()Lcom/google/android/gms/internal/auth/zzev;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final bridge synthetic zze()Lcom/google/android/gms/internal/auth/zzfx;
+    .locals 0
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method

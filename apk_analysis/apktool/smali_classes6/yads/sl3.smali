@@ -1,0 +1,174 @@
+.class public final Lyads/sl3;
+.super Lyads/u13;
+.source "SourceFile"
+
+
+# static fields
+.field public static final a:Lyads/sl3;
+
+.field public static final b:Ljava/util/List;
+
+.field public static final c:Lyads/xo2;
+
+.field public static final d:Z
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    new-instance v0, Lyads/sl3;
+
+    invoke-direct {v0}, Lyads/sl3;-><init>()V
+
+    sput-object v0, Lyads/sl3;->a:Lyads/sl3;
+
+    new-instance v0, Lyads/w13;
+
+    sget-object v1, Lyads/xo2;->c:Lyads/xo2;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Lyads/w13;-><init>(Lyads/xo2;I)V
+
+    new-instance v3, Lyads/w13;
+
+    invoke-direct {v3, v1, v2}, Lyads/w13;-><init>(Lyads/xo2;I)V
+
+    filled-new-array {v0, v3}, [Lyads/w13;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lu96;->i([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    sput-object v0, Lyads/sl3;->b:Ljava/util/List;
+
+    sput-object v1, Lyads/sl3;->c:Lyads/xo2;
+
+    const/4 v0, 0x1
+
+    sput-boolean v0, Lyads/sl3;->d:Z
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lyads/u13;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lyads/yo2;Lyads/uo2;Ljava/util/List;)Ljava/lang/Object;
+    .locals 3
+
+    invoke-static {p3}, Lqn1;->T(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    check-cast p0, Ljava/lang/Long;
+
+    invoke-virtual {p0}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide p1
+
+    invoke-static {p3}, Lqn1;->b0(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    check-cast v0, Ljava/lang/Long;
+
+    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Ljava/lang/Long;->signum(J)I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v1, -0x8000000000000000L
+
+    cmp-long v1, p1, v1
+
+    if-nez v1, :cond_2
+
+    const/4 p1, -0x1
+
+    if-ne v0, p1, :cond_1
+
+    :goto_0
+    return-object p0
+
+    :cond_1
+    const-string p0, "copySign"
+
+    const-string p1, "Integer overflow."
+
+    invoke-static {p0, p1, p3}, Lyads/wo2;->a(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+
+    const/4 p0, 0x0
+
+    throw p0
+
+    :cond_2
+    invoke-static {p1, p2}, Ljava/lang/Math;->abs(J)J
+
+    move-result-wide p0
+
+    int-to-long p2, v0
+
+    mul-long/2addr p0, p2
+
+    invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final a()Ljava/util/List;
+    .locals 0
+
+    .line 63
+    sget-object p0, Lyads/sl3;->b:Ljava/util/List;
+
+    return-object p0
+.end method
+
+.method public final c()Ljava/lang/String;
+    .locals 0
+
+    const-string p0, "copySign"
+
+    return-object p0
+.end method
+
+.method public final d()Lyads/xo2;
+    .locals 0
+
+    sget-object p0, Lyads/sl3;->c:Lyads/xo2;
+
+    return-object p0
+.end method
+
+.method public final e()Z
+    .locals 0
+
+    sget-boolean p0, Lyads/sl3;->d:Z
+
+    return p0
+.end method

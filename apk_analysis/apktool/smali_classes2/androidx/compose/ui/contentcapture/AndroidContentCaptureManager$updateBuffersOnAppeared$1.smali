@@ -1,0 +1,77 @@
+.class final Landroidx/compose/ui/contentcapture/AndroidContentCaptureManager$updateBuffersOnAppeared$1;
+.super Lgh4;
+.source "SourceFile"
+
+# interfaces
+.implements Lbm3;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose/ui/contentcapture/AndroidContentCaptureManager;->updateBuffersOnAppeared(ILandroidx/compose/ui/semantics/SemanticsNode;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lgh4;",
+        "Lbm3<",
+        "Ljava/lang/Integer;",
+        "Landroidx/compose/ui/semantics/SemanticsNode;",
+        "Lj59;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Landroidx/compose/ui/contentcapture/AndroidContentCaptureManager;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/compose/ui/contentcapture/AndroidContentCaptureManager;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/compose/ui/contentcapture/AndroidContentCaptureManager$updateBuffersOnAppeared$1;->this$0:Landroidx/compose/ui/contentcapture/AndroidContentCaptureManager;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Lgh4;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    move-result p1
+
+    check-cast p2, Landroidx/compose/ui/semantics/SemanticsNode;
+
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/contentcapture/AndroidContentCaptureManager$updateBuffersOnAppeared$1;->invoke(ILandroidx/compose/ui/semantics/SemanticsNode;)V
+
+    sget-object p0, Lj59;->a:Lj59;
+
+    return-object p0
+.end method
+
+.method public final invoke(ILandroidx/compose/ui/semantics/SemanticsNode;)V
+    .locals 0
+
+    .line 14
+    iget-object p0, p0, Landroidx/compose/ui/contentcapture/AndroidContentCaptureManager$updateBuffersOnAppeared$1;->this$0:Landroidx/compose/ui/contentcapture/AndroidContentCaptureManager;
+
+    invoke-static {p0, p1, p2}, Landroidx/compose/ui/contentcapture/AndroidContentCaptureManager;->access$updateBuffersOnAppeared(Landroidx/compose/ui/contentcapture/AndroidContentCaptureManager;ILandroidx/compose/ui/semantics/SemanticsNode;)V
+
+    return-void
+.end method

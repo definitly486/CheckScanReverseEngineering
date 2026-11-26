@@ -1,0 +1,10 @@
+package defpackage;
+
+import android.view.View;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final class ib4 extends View {
+    public static int windowAttachCount(View view) {
+        return view.getWindowAttachCount();
+    }
+}

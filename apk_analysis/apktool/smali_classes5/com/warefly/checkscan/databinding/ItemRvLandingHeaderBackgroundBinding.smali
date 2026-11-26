@@ -1,0 +1,95 @@
+.class public final Lcom/warefly/checkscan/databinding/ItemRvLandingHeaderBackgroundBinding;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/viewbinding/ViewBinding;
+
+
+# instance fields
+.field private final rootView:Landroid/view/View;
+
+.field public final vBackground:Landroid/view/View;
+
+
+# direct methods
+.method private constructor <init>(Landroid/view/View;Landroid/view/View;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/warefly/checkscan/databinding/ItemRvLandingHeaderBackgroundBinding;->rootView:Landroid/view/View;
+
+    iput-object p2, p0, Lcom/warefly/checkscan/databinding/ItemRvLandingHeaderBackgroundBinding;->vBackground:Landroid/view/View;
+
+    return-void
+.end method
+
+.method public static bind(Landroid/view/View;)Lcom/warefly/checkscan/databinding/ItemRvLandingHeaderBackgroundBinding;
+    .locals 1
+
+    if-eqz p0, :cond_0
+
+    new-instance v0, Lcom/warefly/checkscan/databinding/ItemRvLandingHeaderBackgroundBinding;
+
+    invoke-direct {v0, p0, p0}, Lcom/warefly/checkscan/databinding/ItemRvLandingHeaderBackgroundBinding;-><init>(Landroid/view/View;Landroid/view/View;)V
+
+    return-object v0
+
+    :cond_0
+    const-string p0, "rootView"
+
+    invoke-static {p0}, Lo2;->d(Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method public static inflate(Landroid/view/LayoutInflater;)Lcom/warefly/checkscan/databinding/ItemRvLandingHeaderBackgroundBinding;
+    .locals 2
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    .line 18
+    invoke-static {p0, v0, v1}, Lcom/warefly/checkscan/databinding/ItemRvLandingHeaderBackgroundBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/warefly/checkscan/databinding/ItemRvLandingHeaderBackgroundBinding;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/warefly/checkscan/databinding/ItemRvLandingHeaderBackgroundBinding;
+    .locals 2
+
+    const v0, 0x7f0d01d4
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v0, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p0
+
+    if-eqz p2, :cond_0
+
+    invoke-virtual {p1, p0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
+    :cond_0
+    invoke-static {p0}, Lcom/warefly/checkscan/databinding/ItemRvLandingHeaderBackgroundBinding;->bind(Landroid/view/View;)Lcom/warefly/checkscan/databinding/ItemRvLandingHeaderBackgroundBinding;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public getRoot()Landroid/view/View;
+    .locals 0
+
+    iget-object p0, p0, Lcom/warefly/checkscan/databinding/ItemRvLandingHeaderBackgroundBinding;->rootView:Landroid/view/View;
+
+    return-object p0
+.end method

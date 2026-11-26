@@ -1,0 +1,27 @@
+package com.google.android.gms.signin.internal;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
+import com.google.android.gms.common.internal.zay;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final class zai extends AbstractSafeParcelable {
+    public static final Parcelable.Creator<zai> CREATOR = new zaj();
+    public final int b;
+    public final zay c;
+
+    public zai(int i, zay zayVar) {
+        this.b = i;
+        this.c = zayVar;
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        int iBeginObjectHeader = SafeParcelWriter.beginObjectHeader(parcel);
+        SafeParcelWriter.writeInt(parcel, 1, this.b);
+        SafeParcelWriter.writeParcelable(parcel, 2, this.c, i, false);
+        SafeParcelWriter.finishObjectHeader(parcel, iBeginObjectHeader);
+    }
+}

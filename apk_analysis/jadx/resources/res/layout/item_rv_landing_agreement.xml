@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_blue_alice_landing"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/margin_large_sm">
+    <com.warefly.checkscan.core.ui.CheckBox
+        android:textColorLink="@color/readilyBlue"
+        android:id="@+id/cb_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:button="@drawable/chekbox_checked"
+        android:foregroundGravity="fill"
+        android:paddingStart="@dimen/margin_sm"
+        android:buttonTintMode="multiply"/>
+</FrameLayout>

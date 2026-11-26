@@ -1,0 +1,208 @@
+.class final Landroidx/compose/material3/AppBarColumnKt$AppBarColumn$2$1$2;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ldm3;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose/material3/AppBarColumnKt$AppBarColumn$2;->invoke(Landroidx/compose/runtime/Composer;I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ldm3<",
+        "Landroidx/compose/foundation/layout/ColumnScope;",
+        "Landroidx/compose/runtime/Composer;",
+        "Ljava/lang/Integer;",
+        "Lj59;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $menuState:Landroidx/compose/material3/AppBarMenuState;
+
+.field final synthetic $overflowState:Landroidx/compose/material3/AppBarOverflowState;
+
+.field final synthetic $scope$delegate:Landroidx/compose/runtime/State;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/compose/runtime/State<",
+            "Landroidx/compose/material3/AppBarColumnScopeImpl;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Landroidx/compose/material3/AppBarOverflowState;Landroidx/compose/runtime/State;Landroidx/compose/material3/AppBarMenuState;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/material3/AppBarOverflowState;",
+            "Landroidx/compose/runtime/State<",
+            "Landroidx/compose/material3/AppBarColumnScopeImpl;",
+            ">;",
+            "Landroidx/compose/material3/AppBarMenuState;",
+            ")V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Landroidx/compose/material3/AppBarColumnKt$AppBarColumn$2$1$2;->$overflowState:Landroidx/compose/material3/AppBarOverflowState;
+
+    iput-object p2, p0, Landroidx/compose/material3/AppBarColumnKt$AppBarColumn$2$1$2;->$scope$delegate:Landroidx/compose/runtime/State;
+
+    iput-object p3, p0, Landroidx/compose/material3/AppBarColumnKt$AppBarColumn$2$1$2;->$menuState:Landroidx/compose/material3/AppBarMenuState;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 97
+    check-cast p1, Landroidx/compose/foundation/layout/ColumnScope;
+
+    check-cast p2, Landroidx/compose/runtime/Composer;
+
+    check-cast p3, Ljava/lang/Number;
+
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
+
+    move-result p3
+
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/material3/AppBarColumnKt$AppBarColumn$2$1$2;->invoke(Landroidx/compose/foundation/layout/ColumnScope;Landroidx/compose/runtime/Composer;I)V
+
+    sget-object p0, Lj59;->a:Lj59;
+
+    return-object p0
+.end method
+
+.method public final invoke(Landroidx/compose/foundation/layout/ColumnScope;Landroidx/compose/runtime/Composer;I)V
+    .locals 3
+
+    and-int/lit8 p1, p3, 0x11
+
+    const/16 v0, 0x10
+
+    const/4 v1, 0x0
+
+    if-eq p1, v0, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    move p1, v1
+
+    :goto_0
+    and-int/lit8 v0, p3, 0x1
+
+    invoke-interface {p2, p1, v0}, Landroidx/compose/runtime/Composer;->shouldExecute(ZI)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_4
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    const/4 p1, -0x1
+
+    const-string v0, "androidx.compose.material3.AppBarColumn.<anonymous>.<anonymous>.<anonymous> (AppBarColumn.kt:77)"
+
+    const v2, 0x29f1aca3
+
+    invoke-static {v2, p3, p1, v0}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    :cond_1
+    iget-object p1, p0, Landroidx/compose/material3/AppBarColumnKt$AppBarColumn$2$1$2;->$scope$delegate:Landroidx/compose/runtime/State;
+
+    invoke-static {p1}, Landroidx/compose/material3/AppBarColumnKt;->access$AppBarColumn$lambda$2(Landroidx/compose/runtime/State;)Landroidx/compose/material3/AppBarColumnScopeImpl;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/compose/material3/AppBarColumnScopeImpl;->getItems()Ljava/util/List;
+
+    move-result-object p1
+
+    iget-object p3, p0, Landroidx/compose/material3/AppBarColumnKt$AppBarColumn$2$1$2;->$overflowState:Landroidx/compose/material3/AppBarOverflowState;
+
+    invoke-interface {p3}, Landroidx/compose/material3/AppBarOverflowState;->getVisibleItemCount()I
+
+    move-result p3
+
+    iget-object v0, p0, Landroidx/compose/material3/AppBarColumnKt$AppBarColumn$2$1$2;->$overflowState:Landroidx/compose/material3/AppBarOverflowState;
+
+    invoke-interface {v0}, Landroidx/compose/material3/AppBarOverflowState;->getTotalItemCount()I
+
+    move-result v0
+
+    invoke-interface {p1, p3, v0}, Ljava/util/List;->subList(II)Ljava/util/List;
+
+    move-result-object p1
+
+    iget-object p0, p0, Landroidx/compose/material3/AppBarColumnKt$AppBarColumn$2$1$2;->$menuState:Landroidx/compose/material3/AppBarMenuState;
+
+    move-object p3, p1
+
+    check-cast p3, Ljava/util/Collection;
+
+    invoke-interface {p3}, Ljava/util/Collection;->size()I
+
+    move-result p3
+
+    :goto_1
+    if-ge v1, p3, :cond_2
+
+    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/compose/material3/AppBarItem;
+
+    const/4 v2, 0x6
+
+    invoke-interface {v0, p0, p2, v2}, Landroidx/compose/material3/AppBarItem;->MenuContent(Landroidx/compose/material3/AppBarMenuState;Landroidx/compose/runtime/Composer;I)V
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_1
+
+    :cond_2
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_3
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
+
+    :cond_3
+    return-void
+
+    :cond_4
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
+
+    return-void
+.end method

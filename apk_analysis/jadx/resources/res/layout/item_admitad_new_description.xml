@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_white_background_with_shadow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/margin_large_sm"
+    android:paddingVertical="@dimen/margin_top_medium_sm">
+    <TextView
+        android:id="@+id/tv_description_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/admitad_full_description"
+        style="@style/AdmitadDescription"/>
+    <TextView
+        android:textColor="@color/colorTextBody"
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large_sm"/>
+    <TextView
+        android:textSize="@dimen/settings_tv_text_size"
+        android:textColor="@color/readilyBlue"
+        android:gravity="center"
+        android:id="@+id/btn_go_to_operations"
+        android:background="@drawable/rounded_rectangle_sky_light_blue_3dp"
+        android:padding="@dimen/padding_medium_sm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_medium_sm"
+        android:text="@string/admitad_go_operation_button"/>
+</LinearLayout>

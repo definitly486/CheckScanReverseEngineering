@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iv_placeholder"
+    android:background="@drawable/background_horizontal_stroke"
+    android:paddingTop="@dimen/margin_large_sm"
+    android:paddingBottom="@dimen/margin_little_bit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:contentDescription="@null"
+    android:paddingHorizontal="@dimen/margin_large_sm"/>

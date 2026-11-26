@@ -1,0 +1,55 @@
+package com.warefly.checkscan.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
+import com.warefly.checkscan.R;
+import defpackage.o2;
+
+/* JADX INFO: loaded from: classes5.dex */
+public final class BonusesTitleItemBinding implements ViewBinding {
+    public final TextView btnCheckMore;
+    private final ConstraintLayout rootView;
+    public final TextView tvTitle;
+
+    private BonusesTitleItemBinding(ConstraintLayout constraintLayout, TextView textView, TextView textView2) {
+        this.rootView = constraintLayout;
+        this.btnCheckMore = textView;
+        this.tvTitle = textView2;
+    }
+
+    public static BonusesTitleItemBinding bind(View view) {
+        int i = R.id.btn_check_more;
+        TextView textView = (TextView) ViewBindings.findChildViewById(view, R.id.btn_check_more);
+        if (textView != null) {
+            i = R.id.tv_title;
+            TextView textView2 = (TextView) ViewBindings.findChildViewById(view, R.id.tv_title);
+            if (textView2 != null) {
+                return new BonusesTitleItemBinding((ConstraintLayout) view, textView, textView2);
+            }
+        }
+        o2.d("Missing required view with ID: ".concat(view.getResources().getResourceName(i)));
+        return null;
+    }
+
+    public static BonusesTitleItemBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
+        View viewInflate = layoutInflater.inflate(R.layout.bonuses_title_item, viewGroup, false);
+        if (z) {
+            viewGroup.addView(viewInflate);
+        }
+        return bind(viewInflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    public ConstraintLayout getRoot() {
+        return this.rootView;
+    }
+
+    public static BonusesTitleItemBinding inflate(LayoutInflater layoutInflater) {
+        return inflate(layoutInflater, null, false);
+    }
+}

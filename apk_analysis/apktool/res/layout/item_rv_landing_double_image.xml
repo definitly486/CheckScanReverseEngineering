@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/background_blue_alice_landing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/placeholder_first" android:layout_width="fill_parent" android:layout_height="@dimen/image_banner" android:layout_weight="1.0" android:paddingHorizontal="@dimen/margin_large_sm" android:paddingVertical="@dimen/margin_sm">
+        <com.google.android.material.imageview.ShapeableImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:contentDescription="@null" app:shapeAppearance="@style/ImageView.CornerAll8" />
+        <com.warefly.checkscan.core.ui.CheckBox android:layout_gravity="bottom" android:id="@id/cb_image" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@drawable/chekbox_checked" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/placeholder_second" android:layout_width="fill_parent" android:layout_height="@dimen/image_banner" android:layout_weight="1.0" android:paddingHorizontal="@dimen/margin_large_sm" android:paddingVertical="@dimen/margin_sm">
+        <com.google.android.material.imageview.ShapeableImageView android:id="@id/image_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:contentDescription="@null" app:shapeAppearance="@style/ImageView.CornerAll8" />
+        <com.warefly.checkscan.core.ui.CheckBox android:layout_gravity="bottom" android:id="@id/cb_image_second" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@drawable/chekbox_checked" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+/home/vcore/CheckScanReverseEngineering/tmp/apk/lib/arm64-v8a/libandroidx.graphics.path.so
+/home/vcore/CheckScanReverseEngineering/tmp/apk/lib/arm64-v8a/libbarhopper_v3.so
+/home/vcore/CheckScanReverseEngineering/tmp/apk/lib/arm64-v8a/libconscrypt_jni.so
+/home/vcore/CheckScanReverseEngineering/tmp/apk/lib/arm64-v8a/libdatastore_shared_counter.so
+/home/vcore/CheckScanReverseEngineering/tmp/apk/lib/arm64-v8a/libimage_processing_util_jni.so
+/home/vcore/CheckScanReverseEngineering/tmp/apk/lib/arm64-v8a/libsurface_util_jni.so
+/home/vcore/CheckScanReverseEngineering/tmp/apk/lib/arm64-v8a/libtapjoy.so
+/home/vcore/CheckScanReverseEngineering/tmp/apk/lib/armeabi-v7a/libandroidx.graphics.path.so
+/home/vcore/CheckScanReverseEngineering/tmp/apk/lib/armeabi-v7a/libbarhopper_v3.so
+/home/vcore/CheckScanReverseEngineering/tmp/apk/lib/armeabi-v7a/libconscrypt_jni.so
+/home/vcore/CheckScanReverseEngineering/tmp/apk/lib/armeabi-v7a/libdatastore_shared_counter.so
+/home/vcore/CheckScanReverseEngineering/tmp/apk/lib/armeabi-v7a/libimage_processing_util_jni.so
+/home/vcore/CheckScanReverseEngineering/tmp/apk/lib/armeabi-v7a/libsurface_util_jni.so
+/home/vcore/CheckScanReverseEngineering/tmp/apk/lib/armeabi-v7a/libtapjoy.so

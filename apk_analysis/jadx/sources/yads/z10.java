@@ -1,0 +1,29 @@
+package yads;
+
+/* JADX INFO: loaded from: classes6.dex */
+public final class z10 extends f20 {
+    public final String a;
+
+    public z10(String str) {
+        this.a = str;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof z10) && defpackage.aa4.e(this.a, ((z10) obj).a);
+    }
+
+    public final int hashCode() {
+        String str = this.a;
+        if (str == null) {
+            return 0;
+        }
+        return str.hashCode();
+    }
+
+    public final String toString() {
+        return defpackage.me0.c("AdditionalConsent(value=", this.a, ")");
+    }
+}

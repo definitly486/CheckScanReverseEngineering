@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="cheques_month_name">
+        <item>@string/cheques_january</item>
+        <item>@string/cheques_february</item>
+        <item>@string/cheques_mart</item>
+        <item>@string/cheques_april</item>
+        <item>@string/cheques_may</item>
+        <item>@string/cheques_june</item>
+        <item>@string/cheques_jule</item>
+        <item>@string/cheques_august</item>
+        <item>@string/cheques_september</item>
+        <item>@string/cheques_october</item>
+        <item>@string/cheques_november</item>
+        <item>@string/cheques_december</item>
+    </array>
+    <array name="days_of_week">
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+        <item>Вс</item>
+    </array>
+</resources>

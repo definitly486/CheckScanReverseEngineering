@@ -1,0 +1,62 @@
+package com.warefly.checkscan.offerLanding.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
+import com.warefly.checkscan.R;
+import defpackage.o2;
+
+/* JADX INFO: loaded from: classes5.dex */
+public final class ItemRvOfferLandingBenefitsBlockBinding implements ViewBinding {
+    public final ImageView ivBonus;
+    private final LinearLayout rootView;
+    public final AppCompatTextView tvDescription;
+    public final AppCompatTextView tvTitle;
+
+    private ItemRvOfferLandingBenefitsBlockBinding(LinearLayout linearLayout, ImageView imageView, AppCompatTextView appCompatTextView, AppCompatTextView appCompatTextView2) {
+        this.rootView = linearLayout;
+        this.ivBonus = imageView;
+        this.tvDescription = appCompatTextView;
+        this.tvTitle = appCompatTextView2;
+    }
+
+    public static ItemRvOfferLandingBenefitsBlockBinding bind(View view) {
+        int i = R.id.iv_bonus;
+        ImageView imageView = (ImageView) ViewBindings.findChildViewById(view, R.id.iv_bonus);
+        if (imageView != null) {
+            i = R.id.tv_description;
+            AppCompatTextView appCompatTextView = (AppCompatTextView) ViewBindings.findChildViewById(view, R.id.tv_description);
+            if (appCompatTextView != null) {
+                i = R.id.tv_title;
+                AppCompatTextView appCompatTextView2 = (AppCompatTextView) ViewBindings.findChildViewById(view, R.id.tv_title);
+                if (appCompatTextView2 != null) {
+                    return new ItemRvOfferLandingBenefitsBlockBinding((LinearLayout) view, imageView, appCompatTextView, appCompatTextView2);
+                }
+            }
+        }
+        o2.d("Missing required view with ID: ".concat(view.getResources().getResourceName(i)));
+        return null;
+    }
+
+    public static ItemRvOfferLandingBenefitsBlockBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
+        View viewInflate = layoutInflater.inflate(R.layout.item_rv_offer_landing_benefits_block, viewGroup, false);
+        if (z) {
+            viewGroup.addView(viewInflate);
+        }
+        return bind(viewInflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    public LinearLayout getRoot() {
+        return this.rootView;
+    }
+
+    public static ItemRvOfferLandingBenefitsBlockBinding inflate(LayoutInflater layoutInflater) {
+        return inflate(layoutInflater, null, false);
+    }
+}

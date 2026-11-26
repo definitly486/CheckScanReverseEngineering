@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/rounded_readily_blue_100dp" />
+    <item android:drawable="@drawable/rounded_very_light_blue_100_background" />
+</selector>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextSize14.Manatee"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_field"
+        android:padding="@dimen/dimen_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimen_0"
+        android:paddingEnd="@dimen/dimen_0"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="@dimen/dimen_3"
+        app:boxCornerRadiusBottomStart="@dimen/dimen_3"
+        app:boxCornerRadiusTopEnd="@dimen/dimen_3"
+        app:boxCornerRadiusTopStart="@dimen/dimen_3"
+        app:endIconDrawable="@drawable/ic_rubble"
+        app:endIconMode="custom"
+        app:endIconTint="@color/millionGrey"
+        app:errorIconDrawable="@null"
+        app:hintTextColor="@color/manatee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        style="@style/TextInputLayout.Manatee">
+        <com.google.android.material.textfield.TextInputEditText
+            android:textColor="@color/blueCharcoal"
+            android:textColorHint="@color/manatee"
+            android:id="@+id/et_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/roboto_medium"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

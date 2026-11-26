@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/background_horizontal_stroke" android:paddingTop="@dimen/margin_large_sm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/margin_large_sm"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="@dimen/fill_free_space" android:layout_height="wrap_content" android:lines="2" android:layout_weight="1.0" style="@style/TextSize16" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="viewEnd" android:layout_marginHorizontal="@dimen/margin_small_sm" style="@style/TextSize18.Medium.BlueCharcoal" />
+    <ImageView android:id="@id/iv_icon_placeholder" android:layout_width="@dimen/size" android:layout_height="@dimen/size" android:contentDescription="@null" app:tint="@color/readilyBlue" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/primary_10" app:cardCornerRadius="@dimen/dimen_16" app:cardElevation="@dimen/dimen_0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_title" android:layout_width="@dimen/dimen_0" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextSize18.Medium.Gray100" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="@dimen/dimen_0" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_title">
+            <TextView android:id="@id/tv_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextSize14.Gray60" />
+            <Space android:id="@id/space_prefix" android:layout_width="@dimen/dimen_8" android:layout_height="wrap_content" />
+            <TextView android:id="@id/tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextSize22.Gray100" />
+            <Space android:id="@id/space_suffix" android:layout_width="@dimen/dimen_8" android:layout_height="wrap_content" />
+            <TextView android:id="@id/tv_suffix" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextSize14.Gray60" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

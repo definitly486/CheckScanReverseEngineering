@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="textEnd" style="@style/TextSize16.Medium.Gray100" />
+    <TextView android:id="@id/tv_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="textEnd" style="@style/TextSize16.Gray60" />
+    <Space android:layout_width="fill_parent" android:layout_height="@dimen/dimen_4" />
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/pb_counter" android:padding="@dimen/dimen_0" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_8" app:indicatorColor="@color/readilyBlue" app:trackColor="@color/white" app:trackCornerRadius="@dimen/dimen_8" app:trackThickness="@dimen/dimen_8" />
+</LinearLayout>

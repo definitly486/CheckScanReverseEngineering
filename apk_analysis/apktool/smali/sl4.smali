@@ -1,0 +1,114 @@
+.class public final synthetic Lsl4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lbm3;
+
+
+# instance fields
+.field public final synthetic b:Landroidx/compose/foundation/lazy/grid/GridCells;
+
+.field public final synthetic c:Landroidx/compose/ui/Modifier;
+
+.field public final synthetic d:Landroidx/compose/foundation/lazy/grid/LazyGridState;
+
+.field public final synthetic e:Landroidx/compose/foundation/layout/PaddingValues;
+
+.field public final synthetic f:Z
+
+.field public final synthetic g:Landroidx/compose/foundation/layout/Arrangement$Horizontal;
+
+.field public final synthetic h:Landroidx/compose/foundation/layout/Arrangement$Vertical;
+
+.field public final synthetic i:Landroidx/compose/foundation/gestures/FlingBehavior;
+
+.field public final synthetic j:Z
+
+.field public final synthetic k:Lnl3;
+
+.field public final synthetic l:I
+
+.field public final synthetic m:I
+
+
+# direct methods
+.method public synthetic constructor <init>(IILnl3;Landroidx/compose/foundation/gestures/FlingBehavior;Landroidx/compose/foundation/layout/Arrangement$Horizontal;Landroidx/compose/foundation/layout/Arrangement$Vertical;Landroidx/compose/foundation/layout/PaddingValues;Landroidx/compose/foundation/lazy/grid/GridCells;Landroidx/compose/foundation/lazy/grid/LazyGridState;Landroidx/compose/ui/Modifier;ZZ)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p8, p0, Lsl4;->b:Landroidx/compose/foundation/lazy/grid/GridCells;
+
+    iput-object p10, p0, Lsl4;->c:Landroidx/compose/ui/Modifier;
+
+    iput-object p9, p0, Lsl4;->d:Landroidx/compose/foundation/lazy/grid/LazyGridState;
+
+    iput-object p7, p0, Lsl4;->e:Landroidx/compose/foundation/layout/PaddingValues;
+
+    iput-boolean p11, p0, Lsl4;->f:Z
+
+    iput-object p5, p0, Lsl4;->g:Landroidx/compose/foundation/layout/Arrangement$Horizontal;
+
+    iput-object p6, p0, Lsl4;->h:Landroidx/compose/foundation/layout/Arrangement$Vertical;
+
+    iput-object p4, p0, Lsl4;->i:Landroidx/compose/foundation/gestures/FlingBehavior;
+
+    iput-boolean p12, p0, Lsl4;->j:Z
+
+    iput-object p3, p0, Lsl4;->k:Lnl3;
+
+    iput p1, p0, Lsl4;->l:I
+
+    iput p2, p0, Lsl4;->m:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 14
+
+    move-object v12, p1
+
+    check-cast v12, Landroidx/compose/runtime/Composer;
+
+    move-object/from16 v0, p2
+
+    check-cast v0, Ljava/lang/Integer;
+
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v13
+
+    iget-object v0, p0, Lsl4;->b:Landroidx/compose/foundation/lazy/grid/GridCells;
+
+    iget-object v1, p0, Lsl4;->c:Landroidx/compose/ui/Modifier;
+
+    iget-object v2, p0, Lsl4;->d:Landroidx/compose/foundation/lazy/grid/LazyGridState;
+
+    iget-object v3, p0, Lsl4;->e:Landroidx/compose/foundation/layout/PaddingValues;
+
+    iget-boolean v4, p0, Lsl4;->f:Z
+
+    iget-object v5, p0, Lsl4;->g:Landroidx/compose/foundation/layout/Arrangement$Horizontal;
+
+    iget-object v6, p0, Lsl4;->h:Landroidx/compose/foundation/layout/Arrangement$Vertical;
+
+    iget-object v7, p0, Lsl4;->i:Landroidx/compose/foundation/gestures/FlingBehavior;
+
+    iget-boolean v8, p0, Lsl4;->j:Z
+
+    iget-object v9, p0, Lsl4;->k:Lnl3;
+
+    iget v10, p0, Lsl4;->l:I
+
+    iget v11, p0, Lsl4;->m:I
+
+    invoke-static/range {v0 .. v13}, Landroidx/compose/foundation/lazy/grid/LazyGridDslKt;->d(Landroidx/compose/foundation/lazy/grid/GridCells;Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/lazy/grid/LazyGridState;Landroidx/compose/foundation/layout/PaddingValues;ZLandroidx/compose/foundation/layout/Arrangement$Horizontal;Landroidx/compose/foundation/layout/Arrangement$Vertical;Landroidx/compose/foundation/gestures/FlingBehavior;ZLnl3;IILandroidx/compose/runtime/Composer;I)Lj59;
+
+    move-result-object p0
+
+    return-object p0
+.end method

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tv_product_name"
+        android:layout_width="@dimen/fill_free_space"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textSize="@dimen/check_page_toolbar_interior_text_size_small"
+        android:textColor="@color/colorGreyishBlue"
+        android:id="@+id/tv_shop_place_address"
+        android:layout_width="@dimen/fill_free_space"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_product_name"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/colorDenimBlue"
+        android:id="@+id/tv_datetime"
+        android:layout_width="@dimen/fill_free_space"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_place_address"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tv_price"
+        android:layout_width="@dimen/fill_free_space"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small_sm"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_datetime"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/background_white_16_stroke_gray"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/margin_large_sm"
+    android:paddingVertical="@dimen/margin_top_medium_sm">
+    <com.warefly.checkscan.shimmer.ShimmerFrameLayout
+        android:background="@drawable/background_shimmer_rectangle_placeholder"
+        android:layout_width="@dimen/image_side_width_medium"
+        android:layout_height="@dimen/padding_huge"
+        android:layout_marginTop="@dimen/margin_sm"/>
+    <com.warefly.checkscan.shimmer.ShimmerFrameLayout
+        android:background="@drawable/background_shimmer_rectangle_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_fourty_large"
+        android:layout_marginTop="@dimen/margin_top_medium_sm"/>
+    <com.warefly.checkscan.shimmer.ShimmerFrameLayout
+        android:background="@drawable/background_shimmer_rectangle_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_fourty_large"
+        android:layout_marginTop="@dimen/margin_large_sm"/>
+    <com.warefly.checkscan.shimmer.ShimmerFrameLayout
+        android:background="@drawable/background_shimmer_rectangle_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_fourty_large"
+        android:layout_marginTop="@dimen/margin_large_sm"/>
+</LinearLayout>

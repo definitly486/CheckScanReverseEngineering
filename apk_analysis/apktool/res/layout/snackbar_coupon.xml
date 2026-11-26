@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/background_toast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/margin_top_medium_sm" android:paddingVertical="@dimen/margin_small_2_sm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/white" android:id="@id/tv_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="center" style="@style/TextSize16.Medium.BlueCharcoal" />
+</FrameLayout>

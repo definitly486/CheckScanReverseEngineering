@@ -1,0 +1,104 @@
+.class public final synthetic Luk5;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lnl3;
+
+
+# instance fields
+.field public final synthetic b:I
+
+.field public final synthetic c:Ljava/lang/Object;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+    .locals 0
+
+    iput p2, p0, Luk5;->b:I
+
+    iput-object p1, p0, Luk5;->c:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    iget v0, p0, Luk5;->b:I
+
+    iget-object p0, p0, Luk5;->c:Ljava/lang/Object;
+
+    packed-switch v0, :pswitch_data_0
+
+    check-cast p0, Lfr;
+
+    check-cast p1, Lyads/cn1;
+
+    invoke-static {p0, p1}, Lyads/vq0;->a(Lfr;Lyads/cn1;)Z
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p0
+
+    return-object p0
+
+    :pswitch_0
+    check-cast p0, Ljava/util/List;
+
+    check-cast p1, Ljava/lang/Throwable;
+
+    invoke-static {p0, p1}, Landroidx/camera/camera2/impl/UseCaseSurfaceManager;->a(Ljava/util/List;Ljava/lang/Throwable;)Lj59;
+
+    move-result-object p0
+
+    return-object p0
+
+    :pswitch_1
+    check-cast p0, Landroidx/compose/foundation/text/input/internal/TextFieldDecoratorModifierNode;
+
+    check-cast p1, Landroidx/compose/foundation/text/KeyCommand;
+
+    invoke-static {p0, p1}, Landroidx/compose/foundation/text/input/internal/TextFieldDecoratorModifierNode;->A(Landroidx/compose/foundation/text/input/internal/TextFieldDecoratorModifierNode;Landroidx/compose/foundation/text/KeyCommand;)Lj59;
+
+    move-result-object p0
+
+    return-object p0
+
+    :pswitch_2
+    check-cast p0, Landroidx/compose/foundation/text/TextDragObserver;
+
+    check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputChange;
+
+    invoke-static {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionGesturesKt;->d(Landroidx/compose/foundation/text/TextDragObserver;Landroidx/compose/ui/input/pointer/PointerInputChange;)Lj59;
+
+    move-result-object p0
+
+    return-object p0
+
+    :pswitch_3
+    check-cast p0, Landroidx/compose/runtime/MutableIntState;
+
+    check-cast p1, Landroidx/compose/ui/unit/IntSize;
+
+    invoke-static {p0, p1}, Landroidx/compose/material3/NavigationItemKt;->n(Landroidx/compose/runtime/MutableIntState;Landroidx/compose/ui/unit/IntSize;)Lj59;
+
+    move-result-object p0
+
+    return-object p0
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background_white_16_stroke_gray"
+    android:padding="@dimen/margin_large_sm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.warefly.checkscan.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_header"
+        android:background="@drawable/background_shimmer_rectangle_placeholder"
+        android:layout_width="@dimen/fill_free_space"
+        android:layout_height="@dimen/margin_more_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.warefly.checkscan.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_first"
+        android:background="@drawable/background_shimmer_rectangle_placeholder"
+        android:layout_width="@dimen/fill_free_space"
+        android:layout_height="@dimen/margin_92"
+        android:layout_marginTop="@dimen/margin_sm"
+        android:layout_marginEnd="@dimen/margin_sm"
+        app:layout_constraintEnd_toStartOf="@+id/shimmer_second"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shimmer_header"/>
+    <com.warefly.checkscan.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_second"
+        android:background="@drawable/background_shimmer_rectangle_placeholder"
+        android:layout_width="@dimen/fill_free_space"
+        android:layout_height="@dimen/margin_92"
+        android:layout_marginEnd="@dimen/margin_sm"
+        app:layout_constraintEnd_toStartOf="@+id/shimmer_third"
+        app:layout_constraintStart_toEndOf="@+id/shimmer_first"
+        app:layout_constraintTop_toTopOf="@+id/shimmer_first"/>
+    <com.warefly.checkscan.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_third"
+        android:background="@drawable/background_shimmer_rectangle_placeholder"
+        android:layout_width="@dimen/fill_free_space"
+        android:layout_height="@dimen/margin_92"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shimmer_second"
+        app:layout_constraintTop_toTopOf="@+id/shimmer_first"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

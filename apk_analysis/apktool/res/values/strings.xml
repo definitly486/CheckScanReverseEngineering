@@ -1,0 +1,1527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="INN">ИНН:</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="ad_load_error_message">Нет рекламы</string>
+    <string name="add_email_badge_description">Это нужно для безопасности аккаунта и подтверждения вывода кэшбэка</string>
+    <string name="add_email_badge_title">Добавьте эл.почту</string>
+    <string name="add_email_bottom_sheet_success_button">Отлично</string>
+    <string name="add_email_bottom_sheet_success_text">"Адрес эл.почты успешно
+добавлен!"</string>
+    <string name="add_email_button">Подтвердить почту</string>
+    <string name="add_email_conflict">Указанная почта уже привязана к другому номеру</string>
+    <string name="add_email_description">Вам придет письмо с кодом для подтверждения</string>
+    <string name="add_email_error">Неверный формат адреса эл.почты</string>
+    <string name="add_email_hint">Введите адрес эл.почты</string>
+    <string name="add_email_timeout_error">Недавно вы уже запросили код. Попробуйте снова через пару минут.</string>
+    <string name="add_email_title">Укажите актуальный адрес эл.почты</string>
+    <string name="add_screenshots_bank_description">"где четко видна операция
+оплаты и сумма"</string>
+    <string name="add_screenshots_bank_title">Загрузите скриншот из банка</string>
+    <string name="add_screenshots_button_load_title">Загрузить</string>
+    <string name="add_screenshots_button_upload">Отправить</string>
+    <string name="add_screenshots_help">Как делать скриншоты?</string>
+    <string name="add_screenshots_shop_description">"где будет виден номер и статус
+заказа"</string>
+    <string name="add_screenshots_shop_title">Загрузите скриншот из магазина</string>
+    <string name="add_screenshots_success_button_title">Ок</string>
+    <string name="add_screenshots_success_description">Кэшбэк придет на следующий рабочий день</string>
+    <string name="add_screenshots_success_title">Спасибо, ожидайте</string>
+    <string name="add_screenshots_toolbar_title">Добавить скриншоты</string>
+    <string name="admitad_check_cashback_btn_text">Узнать кэшбэк на товар</string>
+    <string name="admitad_couldnt_load_info">Не удалось загрузить информацию по бонусной программе</string>
+    <string name="admitad_coupon_header">Промокоды и купоны</string>
+    <string name="admitad_full_description">Полные условия</string>
+    <string name="admitad_go_operation_button">Перейти к операциям</string>
+    <string name="admitad_go_shopping">Перейти к покупкам</string>
+    <string name="admitad_hot_header">Популярные товары</string>
+    <string name="admitad_offer_expired">Cрок действия акции истек</string>
+    <string name="admitad_redirect_app">Оформите заказ в мобильном приложении магазина после перехода по синей кнопке</string>
+    <string name="admitad_redirect_web">Оформите заказ на сайте магазина после перехода по синей кнопке</string>
+    <string name="admitad_see_all">Смотреть все</string>
+    <string name="adult_content_agree_description">Этот товар могут рассматривать лица достигшие 18 лет</string>
+    <string name="adult_content_agree_description_new">"Эту акцию могут просматривать
+лица достигшие 18 лет"</string>
+    <string name="adult_content_agree_title_new">Мне есть 18</string>
+    <string name="affiliation_btn_check">Проверить</string>
+    <string name="affiliation_btn_copy_paste">Вставить ссылку</string>
+    <string name="affiliation_info_btn_close">Понятно</string>
+    <string name="affiliation_info_tv_subtitle">Перейдите к нужному товару в приложении Aliexpress, скопируйте ссылку на товар нажатием на кнопку в правом верхнем углу</string>
+    <string name="affiliation_info_tv_title">Где взять ссылку на товар?</string>
+    <string name="affiliation_not_found_error">Данный партнерский товар не найден</string>
+    <string name="affiliation_not_valid_link_error">Неправильный формат ссылки</string>
+    <string name="affiliation_placeholder">Вставить ссылку</string>
+    <string name="affiliation_result_btn_back">В магазин</string>
+    <string name="affiliation_result_btn_more">Проверить другой товар</string>
+    <string name="affiliation_result_cashback">Кэшбэк за этот товар — %s</string>
+    <string name="affiliation_result_description">Для получения кэшбэка переходите по кнопке в магазин, а затем по кнопке перейти к покупкам</string>
+    <string name="affiliation_result_no_cashback">Кэшбэк за этот товар не начисляется, попробуйте проверить другой.</string>
+    <string name="affiliation_toolbar_title">Узнать кэшбэк</string>
+    <string name="affiliation_tv_subtitle">чтобы узнать, какой кэшбэк вы получите за его покупку. </string>
+    <string name="affiliation_tv_subtitle_clicable"><font color="#3085FF"><b>Где взять ссылку на товар?</b></font></string>
+    <string name="affiliation_tv_title">Вставьте ссылку на товар</string>
+    <string name="affiliation_unexpected_error">Произошла ошибка, повторите позже</string>
+    <string name="agreement_dialog_text">Нажимая продолжить я соглашаюсь на обработку персональных данных в соответствии [с Пользовательским соглашением](https://scan.com.ru/privacy)</string>
+    <string name="alfa_download_android_apk">https://alfabank.ru/everyday/online/androidmobileapp/</string>
+    <string name="alfa_item_about_cashback">Подробнее о начислении средств</string>
+    <string name="alfa_item_management_card_subtitle">Управление картой</string>
+    <string name="analytics_time_format">HH:mm:ss</string>
+    <string name="androidx_compose_foundation_autofill">Autofill</string>
+    <string name="androidx_compose_ui_autofill">Autofill</string>
+    <string name="androidx_startup">androidx.startup</string>
+    <string name="anon_disclaimer">"Зарегистрируйтесь,
+чтобы получать кэшбэк"</string>
+    <string name="app_name">ЧекCкан</string>
+    <string name="app_version_placeholder">Версия: %s</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="auth_agreement_dialog_title">Правовая информация</string>
+    <string name="auth_button_next">Далее</string>
+    <string name="auth_error_default">Что-то пошло не так, пожалуйста попробуйте позже</string>
+    <string name="auth_header_title">"Добро пожаловать
+в ЧекСкан! 👋"</string>
+    <string name="auth_invite_code_field_error">Введен неверный формат кода</string>
+    <string name="auth_invite_code_field_hint">Введите код</string>
+    <string name="auth_invite_code_field_show_button">Ввести промокод</string>
+    <string name="auth_invite_code_field_title">Пригласительный код или промокод</string>
+    <string name="auth_phone_field_error_text">Введен неверный формат номера</string>
+    <string name="auth_phone_field_hint">999 999 99 99</string>
+    <string name="auth_phone_field_title">Введите номер телефона для получения кода</string>
+    <string name="auth_phone_sign_in_skip_button">Пропустить</string>
+    <string name="auth_support_title">Поддержка</string>
+    <string name="backend_error">Ошибка сервиса - уже решаем проблему. Повторите попытку позже</string>
+    <string name="badge_ads_title">Реклама</string>
+    <string name="balance_actual_cashback">Накоплено %d ₽</string>
+    <string name="balance_actual_cashback_button_title">Закрыть карту</string>
+    <string name="balance_actual_cashback_description">"Закройте карту ЧекСкана, чтобы
+вывести средства"</string>
+    <string name="balance_alfa_loading">"Данные загружаются...
+Пожалуйста, подождите"</string>
+    <string name="balance_all_operations">Все</string>
+    <string name="balance_expand_off">Свернуть</string>
+    <string name="balance_expand_on">Развернуть</string>
+    <string name="balance_info_dialog_default_button_title">Понятно</string>
+    <string name="balance_item_apply_for_card_subtitle">"Выводите кэшбэк
+на карту банка-партнера"</string>
+    <string name="balance_item_apply_for_card_title">Не хотите ждать?</string>
+    <string name="balance_management_block_description">Баланс, реквизиты и пополнение</string>
+    <string name="balance_management_block_title">Мои карты</string>
+    <string name="balance_new_withdraw_description">"Скоро появится новый способ
+вывода кэшбэка без ограничений"</string>
+    <string name="balance_new_withdraw_title">Вывод средств</string>
+    <string name="balance_no_operations">Нет операций</string>
+    <string name="balance_promocode_button_activate">Активировать</string>
+    <string name="balance_promocode_hint">Введите промокод</string>
+    <string name="balance_uprid_card_closed">Подробнее</string>
+    <string name="banner_after_scan_cheque_done">Чек успешно загружен</string>
+    <string name="banner_after_scan_cheques_done">Чеки успешно загружены</string>
+    <string name="banner_after_scan_loading">Предложение для вас</string>
+    <string name="banner_after_scan_loadings">Предложение для вас</string>
+    <string name="banner_after_scan_secs">%d сек…</string>
+    <string name="best_shops_error_occurred">Произошла ошибка :(</string>
+    <string name="bonus_program_bonus_title">Бонусы</string>
+    <string name="bonus_program_btn_withdraw">Потратить</string>
+    <string name="bonus_program_couldnt_load_terms">Не удалось загрузить условия программы</string>
+    <string name="bonus_program_term_title">Сумма покупки</string>
+    <string name="bonuses_agreement_header">Условия программы</string>
+    <string name="bonuses_dynamic_link_description">Экономь до 35%% c покупок в интернет-магазинах и бонусных программах с бесплатным приложением ЧекСкан! Укажи при регистрации мой код %s и получай выгоду с ЧекСканом</string>
+    <string name="bonuses_dynamic_link_error">Не удалось получить короткую ссылку - обратитесь в поддержку</string>
+    <string name="bonuses_help_button_title">Как получать кэшбэк?</string>
+    <string name="bonuses_search_hint">Найти магазины и промокоды</string>
+    <string name="bonuses_temp_code">Временный код</string>
+    <string name="bonuses_temp_code_expired">Действие кода истекло, получите новый код</string>
+    <string name="bonuses_temp_code_load">Получить</string>
+    <string name="bonuses_temp_code_load_error">"Не удалось загрузить код -
+ Убедитесь, что вы зарегистрированы в ЧекСкане
+ и имеете положительный баланс"</string>
+    <string name="bonuses_temp_code_time">"Действие кода истекает
+через: %1$d:%02$d"</string>
+    <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="bottomsheet_action_collapse">Collapse</string>
+    <string name="bottomsheet_action_collapse_description">Collapse the bottom sheet</string>
+    <string name="bottomsheet_action_expand">Expand</string>
+    <string name="bottomsheet_action_expand_description">Expand the bottom sheet</string>
+    <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
+    <string name="bottomsheet_action_half_expand_description">Half expand the bottom sheet</string>
+    <string name="bottomsheet_drag_handle_content_description">Drag handle</string>
+    <string name="bottomsheet_state_collapsed">Collapsed</string>
+    <string name="bottomsheet_state_expanded">Expanded</string>
+    <string name="bottomsheet_state_half_expanded">Half expanded</string>
+    <string name="btn_send_cheques_email">Отправить</string>
+    <string name="button_card_description">Подробнее</string>
+    <string name="button_order_card">Оформить карту</string>
+    <string name="call_notification_answer_action">Answer</string>
+    <string name="call_notification_answer_video_action">Video</string>
+    <string name="call_notification_decline_action">Decline</string>
+    <string name="call_notification_hang_up_action">Hang Up</string>
+    <string name="call_notification_incoming_text">Incoming call</string>
+    <string name="call_notification_ongoing_text">Ongoing call</string>
+    <string name="call_notification_screening_text">Screening an incoming call</string>
+    <string name="cancel">Отмена</string>
+    <string name="card_content_descriptor">card</string>
+    <string name="card_not_issued_button">Выбрать банк</string>
+    <string name="card_not_issued_description">"ЧекСкан выводит деньги только
+на одобренные карты наших
+банков-партнеров.
+За оформление карты мы увеличим
+Вам лимит для вывода средств."</string>
+    <string name="card_not_issued_title">"Вы ещё
+не оформили карту"</string>
+    <string name="catalog_search_title">Поиск</string>
+    <string name="catalog_specials_all">Смотреть все</string>
+    <string name="catalog_specials_title">Спецпредложения</string>
+    <string name="categories_dialog_btn_check">Посмотреть</string>
+    <string name="categories_fragment_toolbar_title">Все категории</string>
+    <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
+    <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
+    <string name="character_counter_pattern">%1$d/%2$d</string>
+    <string name="check_your_network">Проверьте соединение с сетью</string>
+    <string name="cheque_category_report_confirm_text">Сообщить о неправильной категории товара?</string>
+    <string name="cheque_category_report_error">Упс, не удалось - Попробуйте чуть позже</string>
+    <string name="cheque_category_report_success">Спасибо! Обязательно проверим и исправим.</string>
+    <string name="cheque_couldnt_load_categories">Не удалось загрузить категории чека</string>
+    <string name="cheque_empty_description">"Смотрите статистику, контролируйте
+бюджет и следите за кэшбэком"</string>
+    <string name="cheque_empty_subtitle">"Чтобы добавить чек, воспользуйтесь
+сканером"</string>
+    <string name="cheque_empty_title">"Здесь будут храниться
+все ваши чеки"</string>
+    <string name="cheque_info_personal_info_name_error">Заполните ФИО в верном формате</string>
+    <string name="cheque_info_personal_info_name_hint">ФИО пациента</string>
+    <string name="cheque_info_personal_info_phone_error">Заполните телефон пациента</string>
+    <string name="cheque_info_personal_info_phone_hint">Телефон пациента</string>
+    <string name="cheque_info_personal_info_send">Отправить</string>
+    <string name="cheque_info_personal_info_title">Добавить данные</string>
+    <string name="cheque_page_no_items_yet">В этом чеке ещё нет продуктов</string>
+    <string name="cheque_page_reject_cashback_sum">0 ₽</string>
+    <string name="cheque_page_reject_cashback_title">Кэшбэк от ЧекСкана</string>
+    <string name="cheque_queue_couldnt_delete">Не удалось удалить чек из очереди</string>
+    <string name="cheque_queue_couldnt_get_info">Не удалось получить информацию о чеке. Попробуйте удалить чек и отсканировать заново</string>
+    <string name="cheque_queue_couldnt_load">Не удалось загрузить чеки в очереди</string>
+    <string name="cheque_queue_couldnt_put">Не удалось поставить чек в очередь для получения</string>
+    <string name="cheque_queue_couldnt_refresh">Не удалось обновить чек. Проверьте интернет</string>
+    <string name="cheque_queue_couldnt_request">Не удалось запросить чек</string>
+    <string name="cheque_queue_title">Непринятые чеки</string>
+    <string name="cheque_request_sum">%1$s ₽</string>
+    <string name="cheque_sum_header">Список покупок</string>
+    <string name="cheque_was_scanned">Чек уже был отсканирован ранее</string>
+    <string name="cheque_was_scanned_description">"Чек уже был отсканирован другим
+пользователем"</string>
+    <string name="cheques_april">апрель</string>
+    <string name="cheques_august">август</string>
+    <string name="cheques_banner_ignored">Данный баннер больше не покажется</string>
+    <string name="cheques_december">декабрь</string>
+    <string name="cheques_export_cheques">Экспорт чеков</string>
+    <string name="cheques_export_date_format">yyyy-MM-dd</string>
+    <string name="cheques_february">февраль</string>
+    <string name="cheques_fragment_dialog_delete_cheque_text">Удалить чек из %1$s на сумму %2$.2f ₽ ?</string>
+    <string name="cheques_january">январь</string>
+    <string name="cheques_jule">июль</string>
+    <string name="cheques_june">июнь</string>
+    <string name="cheques_mart">март</string>
+    <string name="cheques_may">май</string>
+    <string name="cheques_november">ноябрь</string>
+    <string name="cheques_october">октябрь</string>
+    <string name="cheques_september">сентябрь</string>
+    <string name="cheques_spent_for">"Потрачено
+за %1$s"</string>
+    <string name="cheques_you_have_missed">У Вас есть непринятые чеки</string>
+    <string name="choose_region_search_hint">Поиск</string>
+    <string name="choose_region_search_hint2">Найти магазины</string>
+    <string name="choose_region_title">Выбор города</string>
+    <string name="clarification_geolocation_error_text">Произошла ошибка. Попробуйте ещё раз.</string>
+    <string name="clarification_geolocation_no_edit">Нет, изменить</string>
+    <string name="clarification_geolocation_right">Верно</string>
+    <string name="clarification_geolocation_we_show_better">Мы покажем самые актуальные акции и предложения в вашем городе</string>
+    <string name="clarification_geolocation_your_city">Ваш город %1$s?</string>
+    <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="close_drawer">Close navigation menu</string>
+    <string name="close_sheet">Close sheet</string>
+    <string name="cold_start_first_open_message">Для первого включения ЧекСкана нужно интернет-cоединeние. Проверьте подключение и попробуйте ещё раз.</string>
+    <string name="cold_start_first_open_support">Помощь</string>
+    <string name="cold_start_first_open_title">Первое включение</string>
+    <string name="cold_start_first_open_try_again">Попробовать ещё раз</string>
+    <string name="com.google.firebase.crashlytics.mapping_file_id">41094cbb1f4d43a3bde058b600132e60</string>
+    <string name="com.google.firebase.crashlytics.version_control_info">"repositories {
+  system: GIT
+  local_root_path: \"$PROJECT_DIR\"
+  revision: \"657abdcbd908801f52af85e024e9922ae54db786\"
+}
+"</string>
+    <string name="common_google_play_services_enable_button">Enable</string>
+    <string name="common_google_play_services_enable_text">Google Play services must be enabled for %1$s.</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text">Install Google Play services to continue using %1$s.</string>
+    <string name="common_google_play_services_install_title">Install Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_signin_required_text">"%1$s couldn't connect to Google Play services. Please sign-in to your Google account."</string>
+    <string name="common_google_play_services_signin_required_title">Sign-in required</string>
+    <string name="common_google_play_services_try_again_text">"%1$s couldn't connect to Google Play services. Please try again."</string>
+    <string name="common_google_play_services_try_again_title">Please try again</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s can't run because your device doesn't support Google Play services. Please use a supported device."</string>
+    <string name="common_google_play_services_unsupported_title">Device not compatible</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">Update Google Play services to use %1$s.</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_client_title">Google Play services updating</string>
+    <string name="common_google_play_services_updating_text">%1$s will be available once the Google Play services update is complete.</string>
+    <string name="common_google_play_services_wear_update_text">Update Google Play services to use %1$s.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="completed_tasks_title">Завершенные задания</string>
+    <string name="content_description_back">Назад</string>
+    <string name="content_description_choose_category">Выбрать категорию</string>
+    <string name="content_description_close">Закрыть</string>
+    <string name="content_description_favorite">Добавить или убрать из избранных</string>
+    <string name="content_description_info">Подробнее</string>
+    <string name="content_description_qr">Код карточки</string>
+    <string name="content_description_qr_code">QR-код чека</string>
+    <string name="content_description_share_cheque">Поделиться чеком</string>
+    <string name="copy_toast_msg">Link copied to clipboard</string>
+    <string name="coupon_code_copy_button">Использовать</string>
+    <string name="coupon_code_hide">*********</string>
+    <string name="coupon_code_label">Промокод:</string>
+    <string name="coupon_code_title">Ваш промокод:</string>
+    <string name="coupon_hot_item_order_button">Заказать</string>
+    <string name="coupons_error_loading_button_title">Попробовать еще раз</string>
+    <string name="coupons_error_loading_description">Не удалось загрузить акции, попробуйте ещё раз</string>
+    <string name="coupons_from_checkScan">Купоны от ЧекСкан</string>
+    <string name="coupons_toolbar_title">Промокоды и купоны</string>
+    <string name="custom_tab_clip_title">Ваш промокод:</string>
+    <string name="custom_tabs_chrome_no_activity_exception">Ссылка скопирована. Вставьте ее в интернет-браузере</string>
+    <string name="custom_tabs_no_activity_exception">Зайдите на страницу %s в интернет-браузере</string>
+    <string name="daily_task_loading_error">Произошла ошибка</string>
+    <string name="daily_task_loading_error_button">Повторить</string>
+    <string name="date_format">dd.MM.yy</string>
+    <string name="date_format_human">dd.MM.yyyy</string>
+    <string name="date_format_long_year">dd.MM.yyyy</string>
+    <string name="date_format_month_day">EEEE, MMMM d</string>
+    <string name="date_format_server">yyyy-MM-dd</string>
+    <string name="date_format_year_month_day">EEEE, MMMM d yyyy</string>
+    <string name="date_picker_bottom_dialog_cancel">Сбросить</string>
+    <string name="date_picker_bottom_dialog_range_title">Выберите даты</string>
+    <string name="date_picker_bottom_dialog_show">Показать</string>
+    <string name="date_picker_bottom_dialog_single_title">Выберите дату</string>
+    <string name="date_time_format">dd.MM.yy, HH:mm</string>
+    <string name="date_time_format_cheques">dd.MM.yy в HH:mm</string>
+    <string name="date_time_human_month">dd MMMM yyyy, HH:mm</string>
+    <string name="day_and_month_and_year_format">d MMMM yyyy г.</string>
+    <string name="day_and_month_format">dd MMM</string>
+    <string name="debug_panel_ad_unit_format">Format</string>
+    <string name="debug_panel_ad_unit_id">ID</string>
+    <string name="debug_panel_ad_units">Ad Units</string>
+    <string name="debug_panel_ads_sdk_version">SDK Version</string>
+    <string name="debug_panel_advertisement_network_settings">Advertisement Network Settings</string>
+    <string name="debug_panel_age_restricted_user">Age Restricted User</string>
+    <string name="debug_panel_api_level">API Level</string>
+    <string name="debug_panel_app_id">Application ID</string>
+    <string name="debug_panel_app_review_status">App Review Status</string>
+    <string name="debug_panel_app_version">App Version</string>
+    <string name="debug_panel_application_info">Application Info</string>
+    <string name="debug_panel_completed_integration">Completed Integration</string>
+    <string name="debug_panel_do_you_want_to_enable_logging">Do you want to enable logging?</string>
+    <string name="debug_panel_features">Features</string>
+    <string name="debug_panel_has_location_consent">Has Location Consent</string>
+    <string name="debug_panel_has_user_consent">Has User Consent</string>
+    <string name="debug_panel_integrated">Integrated</string>
+    <string name="debug_panel_integration_errors">Integration Errors</string>
+    <string name="debug_panel_invalid_integration">Invalid Integration</string>
+    <string name="debug_panel_invalid_mediation_adapter_version">Invalid mediation adapter version</string>
+    <string name="debug_panel_logging_is_disabled">Logging is disabled</string>
+    <string name="debug_panel_logging_is_enabled">Logging is enabled</string>
+    <string name="debug_panel_missing_integration">Missing Integration</string>
+    <string name="debug_panel_no">No</string>
+    <string name="debug_panel_no_value_set">No value set</string>
+    <string name="debug_panel_not_integrated">Not Integrated</string>
+    <string name="debug_panel_ok">OK</string>
+    <string name="debug_panel_provided">Provided</string>
+    <string name="debug_panel_sdk_integration">SDK Integration</string>
+    <string name="debug_panel_sdk_integration_status">SDK Integration Status</string>
+    <string name="debug_panel_sdk_undefined">SDK Undefined</string>
+    <string name="debug_panel_system">System</string>
+    <string name="debug_panel_tcf_consent">TCF Consent</string>
+    <string name="debug_panel_user_privacy">User Privacy</string>
+    <string name="debug_panel_yes">Yes</string>
+    <string name="deeplink_about">cobrand-about</string>
+    <string name="deeplink_add_email">add-email</string>
+    <string name="deeplink_bank_card_status">bankcard-status</string>
+    <string name="deeplink_bank_landing">bank-card-about</string>
+    <string name="deeplink_brandlink">brandlink</string>
+    <string name="deeplink_category">category</string>
+    <string name="deeplink_checkbox">task-checkbox</string>
+    <string name="deeplink_checkbox_steps">task-checkboxsteps</string>
+    <string name="deeplink_cheques">receipts_list</string>
+    <string name="deeplink_cobrand_categories">cobrand-categories</string>
+    <string name="deeplink_cobrand_create_card">cobrand-create-card</string>
+    <string name="deeplink_completed_tasks">completed-tasks</string>
+    <string name="deeplink_create_red_card">create-red-card</string>
+    <string name="deeplink_daily_task">daily-task</string>
+    <string name="deeplink_electrocheque">mco-partners</string>
+    <string name="deeplink_electrocheque2">elcheck</string>
+    <string name="deeplink_electrocheque_label">Электрочеки</string>
+    <string name="deeplink_favorites">favorites</string>
+    <string name="deeplink_fill_my_data">mydata</string>
+    <string name="deeplink_gift">gift</string>
+    <string name="deeplink_insurance_showcase">insurance</string>
+    <string name="deeplink_insurance_showcase_label">Страхование с кэшбэком</string>
+    <string name="deeplink_landing">landing</string>
+    <string name="deeplink_merchandise">merchandise</string>
+    <string name="deeplink_offer_landing">brandlink_landing</string>
+    <string name="deeplink_online_shop_tutorial">online_shop_tutorial</string>
+    <string name="deeplink_online_shops">online_shop</string>
+    <string name="deeplink_online_shops_categories">online-shops-categories</string>
+    <string name="deeplink_open_external_link_in_checkscan">buy</string>
+    <string name="deeplink_open_external_link_in_checkscan_label">Кэшбэк в ЧекСкане</string>
+    <string name="deeplink_open_external_link_in_checkscan_link_param">url</string>
+    <string name="deeplink_open_url">open_url</string>
+    <string name="deeplink_page_admitad">admitad</string>
+    <string name="deeplink_page_bankcard_options">bankcards</string>
+    <string name="deeplink_page_bankcard_options_label">К тарифам</string>
+    <string name="deeplink_page_bankcards">bankcards</string>
+    <string name="deeplink_page_bankcards_label">К банковским картам</string>
+    <string name="deeplink_page_bonus_program">bonus</string>
+    <string name="deeplink_page_bonuses">bonuses</string>
+    <string name="deeplink_page_camera">camera</string>
+    <string name="deeplink_page_cashback">cashback</string>
+    <string name="deeplink_page_cashback_label">В Кэшбэк</string>
+    <string name="deeplink_page_cheque">receipts</string>
+    <string name="deeplink_page_cheque_label">На страницу чека</string>
+    <string name="deeplink_page_coupon">coupon</string>
+    <string name="deeplink_page_notifications">notifications</string>
+    <string name="deeplink_page_notifications_label">Уведомления</string>
+    <string name="deeplink_page_operations">operations</string>
+    <string name="deeplink_page_operations_label">К операциям</string>
+    <string name="deeplink_page_partner_label">Бонусы</string>
+    <string name="deeplink_page_queue">queue</string>
+    <string name="deeplink_page_queue_label">В очередь ожидания</string>
+    <string name="deeplink_page_request">request</string>
+    <string name="deeplink_page_request_label">ЧекСканить</string>
+    <string name="deeplink_page_scan">scan</string>
+    <string name="deeplink_page_scan_label">ЧекСканить</string>
+    <string name="deeplink_page_sign_up">signup</string>
+    <string name="deeplink_page_sign_up_label">Зарегистрироваться</string>
+    <string name="deeplink_page_transfer_coupon">promocode</string>
+    <string name="deeplink_page_transfer_coupon_label">К покупке купонов</string>
+    <string name="deeplink_products">goods-showcase</string>
+    <string name="deeplink_products_label">К товарам</string>
+    <string name="deeplink_products_merchant">goods-merchant-detail</string>
+    <string name="deeplink_products_offer">goods-offer-detail</string>
+    <string name="deeplink_products_selection">goods-selection-detail</string>
+    <string name="deeplink_profile">profile</string>
+    <string name="deeplink_promocode">promocode</string>
+    <string name="deeplink_scheme">checkscan</string>
+    <string name="deeplink_specials">special_list</string>
+    <string name="deeplink_subscription_landing">pro-landing</string>
+    <string name="deeplink_support_form">support-form</string>
+    <string name="deeplink_task">task</string>
+    <string name="deeplink_task_grouped">grouped-tasks</string>
+    <string name="deeplink_task_promocode">task-promocode</string>
+    <string name="deeplink_task_with_rewarded_subtasks">rewarded-subtasks</string>
+    <string name="deeplink_task_with_subtasks">task-with-subtasks</string>
+    <string name="deeplink_tasks">tasks</string>
+    <string name="deeplink_tasks_label">Задания</string>
+    <string name="deeplink_top_checkscan">top_checkscan</string>
+    <string name="deeplink_track_user">tracking</string>
+    <string name="deeplink_transfer_showcase_promo">transfer-showcase-promo</string>
+    <string name="deeplink_transfer_showcase_promocodes">transfer-promocodes</string>
+    <string name="deeplink_use_desk">support_sdk</string>
+    <string name="deeplink_webview">webview</string>
+    <string name="default_error_message">Invalid input</string>
+    <string name="default_loading_error">Произошла ошибка</string>
+    <string name="default_loading_error_button">Повторить</string>
+    <string name="default_notification_channel_description">ЧекСкан сообщает о новых начислениях кэшбэка и важных сообщениях</string>
+    <string name="default_notification_channel_id">DEFAULT_PUSH_CHANNEL_ID</string>
+    <string name="default_notification_channel_name">Важные уведомления</string>
+    <string name="default_popup_window_title">Pop-Up Window</string>
+    <string name="desktop_partner_shopping_couldnt_load_shortlink">Не удалось загрузить короткую ссылку для покупок на компьютере</string>
+    <string name="desktop_partner_shortlink_copied">Короткая ссылка для покупок на компьютере скопирована!</string>
+    <string name="desktop_tab_balance">Баланс</string>
+    <string name="desktop_tab_bonuses">Бонусы</string>
+    <string name="desktop_tab_games">Игры</string>
+    <string name="desktop_tab_products">Товары</string>
+    <string name="desktop_tab_receipts">Чеки</string>
+    <string name="desktop_tab_tasks">Задания</string>
+    <string name="dest_title">destination title</string>
+    <string name="dialog_cancel_text">Отмена</string>
+    <string name="dialog_confirm_text">Да</string>
+    <string name="dialog_offer_card_button_cancel">Спасибо, в другой раз</string>
+    <string name="dialog_offer_card_button_confirm">Вывести деньги</string>
+    <string name="dialog_offer_card_description">"Чтобы вывести деньги оформите
+бесплатную дебетовую карту ЧекСкан"</string>
+    <string name="dialog_offer_registration_button_cancel">Спасибо, в другой раз</string>
+    <string name="dialog_offer_registration_button_confirm">Зарегистрироваться</string>
+    <string name="dialog_offer_registration_description">"Зарегистрируйтесь,
+чтобы принимать участие в акциях
+и выводить кэшбэк на карту
+бесплатно без СМС."</string>
+    <string name="dialog_offer_registration_title">"Упс, кажется, вы
+не зарегистрированы..("</string>
+    <string name="dialog_permission_push_description">Но только с вашего разрешения</string>
+    <string name="dialog_permission_push_negative">Не хочу получать пуши</string>
+    <string name="dialog_permission_push_positive">Я за!</string>
+    <string name="dialog_permission_push_title">Иногда мы будем отправлять пуши об акциях и кэшбэке</string>
+    <string name="dialog_promo_register_change">Изменить</string>
+    <string name="dialog_promo_register_send">Отправить</string>
+    <string name="dialog_registration">Зарегистрироваться</string>
+    <string name="dialog_review_button_another_time_title">В другой раз</string>
+    <string name="dialog_review_comment_title">Оставьте свой комментарий</string>
+    <string name="dialog_review_description">Ваше мнение очень важно для нас! Вы помогаете сделать приложение еще удобнее и полезнее.</string>
+    <string name="dialog_review_title">Вы вывели кэшбэк! Время оценить приложение.</string>
+    <string name="dialog_status_waiting_cashback_button_title">Буду ждать</string>
+    <string name="dialog_status_waiting_cashback_description">"Заявка на вывод уже выполняется.
+В течение 10 минут вы получите
+СМС о пополнении"</string>
+    <string name="dialog_status_waiting_cashback_title">Немного подождите</string>
+    <string name="dialog_thank_another">Спасибо, в другой раз</string>
+    <string name="dialog_title_description">"Получай кэшбэк за покупку 
+любимых брендов"</string>
+    <string name="dialog_title_registration">"Регистрируйся 
+в программе PG Bonus"</string>
+    <string name="discount_no_discounts">По заданному поисковому запросу ничего не нашлось. Попробуйте другой.</string>
+    <string name="dropdown_menu">Dropdown menu</string>
+    <string name="dynamic_link_event_name_to_log_key">event_name_to_log</string>
+    <string name="dynamic_link_host">deeplink.scan.com.ru</string>
+    <string name="dynamic_link_scheme">https</string>
+    <string name="elecro_cheque_question_fifth_description">Да, но если вы добавите также свой email адрес при регистрации, то вы получите еще больше чеков. Это происходит потому что некоторые чеки привязываются к email-адресу, а не к телефону.</string>
+    <string name="elecro_cheque_question_fifth_title">Достаточно только телефона?</string>
+    <string name="elecro_cheque_question_first_title">В каких магазинах это работает?</string>
+    <string name="elecro_cheque_question_fourth_description">Кэшбэк начисляется за каждый чек из одного магазина в один день покупки. Максимально в месяц можно получить 50 рублей.</string>
+    <string name="elecro_cheque_question_fourth_title">"За какие чеки можно получить
+1 рубль кэшбэка?"</string>
+    <string name="elecro_cheque_question_second_description">Ваша заявка будет обработана за 15 минут. В случае технической ошибки может уйти больше времени на подключение.</string>
+    <string name="elecro_cheque_question_second_title">Сколько времени занимает подключение?</string>
+    <string name="elecro_cheque_question_third_description">Все действующие акции в ЧекСкан собраны в разделе Бонусы.</string>
+    <string name="elecro_cheque_question_third_title">"Где можно найти все акции
+с кэшбэком?"</string>
+    <string name="electro_cheque_instructions_first_description">После подключения электронные чеки будут автоматически попадать в ЧекСкан. Сканировать их вручную не придется, кэшбэк начислится сам.</string>
+    <string name="electro_cheque_instructions_first_title">Чеки не нужно сканировать!</string>
+    <string name="electro_cheque_instructions_second_description">Все чеки за покупки в интернете, если при оплате вы указали номер телефона или email. Например, чеки за такси, маркетплейсы и онлайн-сервисы.</string>
+    <string name="electro_cheque_instructions_second_title">Какие чеки будут загружаться?</string>
+    <string name="electro_cheque_instructions_third_description">"Не нужно искать чеки в почте
+и загружать их вручную. А все покупки сохранятся в ЧекСкане — удобно для возврата товаров и учета расходов."</string>
+    <string name="electro_cheque_instructions_third_title">Зачем это нужно?</string>
+    <string name="electro_cheque_instructions_title">Как это работает?</string>
+    <string name="electro_cheque_questions_title">Вопрос-ответ</string>
+    <string name="electrocheque_congratulations">Поздравляем!</string>
+    <string name="electrocheque_now_you_will">Теперь вы будете получать кэшбэк за электронные чеки автоматически!</string>
+    <string name="email_btn_change_email">Сменить</string>
+    <string name="email_change_mail_prohibited">"Недоступно
+Для смены E-mail обратитесь в Поддержку по адресу: help@scan.com.ru"</string>
+    <string name="email_conflict_mail">Эта почта уже используется</string>
+    <string name="email_post_verification_send">Письмо с подтверждением будет отправлено на новый адрес. Вы должны нажать на ссылку в письме для верификации нового адреса.</string>
+    <string name="email_saving_mail">Сохраняем mail</string>
+    <string name="email_tv_change_email">Изменить e - mail</string>
+    <string name="email_tv_email">E - mail</string>
+    <string name="email_tv_enter_your_email">Введите ваш новый e-mail</string>
+    <string name="empty" />
+    <string name="enter_wrong_code">Введен неверный код авторизации</string>
+    <string name="error_a11y_label">Error: invalid</string>
+    <string name="error_bank_card_options_info_loading">Не удалось загрузить информацию о тарифах этого банка, повторите попытку позже.</string>
+    <string name="error_bank_cards_info_loading">Не удалось загрузить информацию о картах, повторите попытку позже.</string>
+    <string name="error_coupon_promocode_request">Не удалось получить промокод, повторите попытку позже.</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="error_invalid_phone">Неверный формат номера телефона, пожалуйста попробуйте другой номер телефона</string>
+    <string name="error_invalid_transfer_sum">Неверный формат суммы перевода</string>
+    <string name="error_max_transfer_sum_wrong">Неверная сумма</string>
+    <string name="error_min_transfer_sum_not_reached">Минимальная сумма вывода: %1$d,%2$d ₽</string>
+    <string name="error_no_such_user">"Пользователь с такими данными не найден.
+Пройдите регистрацию"</string>
+    <string name="error_un_enable_change_phone">Изменение телефона недоступно после открытия карты.</string>
+    <string name="exo_download_completed">Download completed</string>
+    <string name="exo_download_description">Download</string>
+    <string name="exo_download_downloading">Downloading</string>
+    <string name="exo_download_failed">Download failed</string>
+    <string name="exo_download_notification_channel_name">Downloads</string>
+    <string name="exo_download_paused">Downloads paused</string>
+    <string name="exo_download_paused_for_network">Downloads waiting for network</string>
+    <string name="exo_download_paused_for_wifi">Downloads waiting for WiFi</string>
+    <string name="exo_download_removing">Removing downloads</string>
+    <string name="export_cheques_dialog_btn_ok">Вернуться к чекам</string>
+    <string name="export_cheques_dialog_tv_description">Архив с чеками отправлен</string>
+    <string name="export_cheques_failed">Не получается экспортировать чеки. Попробуйте позже.</string>
+    <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+    <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+    <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="failed_to_get_more">Failed to load more.</string>
+    <string name="failed_to_load">Failed to load.</string>
+    <string name="failed_to_refresh">Failed to refresh.</string>
+    <string name="fallback_menu_item_copy_link">Copy link</string>
+    <string name="fallback_menu_item_open_in_browser">Open in browser</string>
+    <string name="fallback_menu_item_share_link">Share link</string>
+    <string name="favorite_card_add_fail">Не удалось добавить карточку в избранные</string>
+    <string name="favorite_card_added">Карточка добавлена в избранное</string>
+    <string name="favorite_card_remove_fail">Не удалось убрать карточку из избранных</string>
+    <string name="favorite_card_removed">Карточка убрана из избранных</string>
+    <string name="favorite_no_shops">Добавляйте магазины в избранное, чтобы иметь к ним быстрый доступ</string>
+    <string name="favorite_toolbar_title">Избранное</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="fd_hint">ФД №</string>
+    <string name="firebase_database_url">https://checkscan-3ed22.firebaseio.com</string>
+    <string name="firebase_dynamic_links_app_store_id">1329909108</string>
+    <string name="firebase_dynamic_links_domain_uri_prefix">https://checkscan.page.link</string>
+    <string name="firebase_dynamic_links_ios_bundle_id">com.warefly.CheckScan</string>
+    <string name="fn_hint">ФН №</string>
+    <string name="fns_not_responding">Данные по чеку еще не пришли</string>
+    <string name="fns_not_responding_action">Повторить запрос данных</string>
+    <string name="fns_not_responding_description">"В базе данных Федеральной налоговой
+службы или Оператора фискальных
+данных не была найдена информация
+по чеку. Необходимо повторить
+попытку попозже."</string>
+    <string name="fpd_hint">ФП или ФПД №</string>
+    <string name="fragment_brandlink_not_auth_btn">Зарегистрироваться</string>
+    <string name="fragment_brandlink_not_auth_subtitle">"Сканируйте чеки с товарами
+из этого раздела и зарабатывайте дополнительный кэшбэк"</string>
+    <string name="fragment_brandlink_not_auth_title">"Зарегистрируйтесь,
+чтобы получить доступ"</string>
+    <string name="fragment_brandlinks_errro">"Не удалось загрузить акции,
+пожалуйста попробуйте позже"</string>
+    <string name="fragment_change_number_already_taken_error">Номер телефона уже занят другим пользователем</string>
+    <string name="fragment_confirm_number_card_call_title">Уже звоним на номер</string>
+    <string name="fragment_confirm_number_card_sms_title">Введите код из СМС</string>
+    <string name="fragment_confirm_number_card_toolbar_text">Подтверждение номера</string>
+    <string name="fragment_confirm_number_description">"Введите последние&lt;font color=#3085FF>
+%d цифр&lt;/font>
+входящего номера.
+Отвечать не нужно"</string>
+    <string name="fragment_confirm_number_description_default">"Введите последние&lt;font color=#3085FF>
+%d цифры&lt;/font>
+входящего номера.
+Отвечать не нужно"</string>
+    <string name="fragment_confirm_number_hint">"Мы не дозвонились? Проверьте номер
+телефона и повторите звонок"</string>
+    <string name="fragment_confirm_number_sms_btn_repeat_title"><u>Отправить код повторно</u></string>
+    <string name="fragment_confirm_number_sms_not_received">Не приходит СМС? Проверьте номер вашего телефона или запросите <u>обратный звонок.</u></string>
+    <string name="fragment_confirm_number_sms_send_code">Мы отправили код на %s</string>
+    <string name="fragment_confirm_number_sms_send_code_timer" formatted="false">Получить новый код можно через %s:%s</string>
+    <string name="fragment_create_card_button_invalid_number">Изменить номер на российский</string>
+    <string name="fragment_create_card_button_title">Активировать карту</string>
+    <string name="fragment_create_card_error_description">"Карту можно привязать пока только 
+к российскому номеру телефона"</string>
+    <string name="fragment_create_card_error_number_text">"Пока что мы можем привязать только
+российский номер"</string>
+    <string name="fragment_create_card_hint_change_number">Вы можете изменить номер телефона в профиле.</string>
+    <string name="fragment_create_card_time_confirm_error">Запрос на потверждение можно отправить только один раз в две минуты.</string>
+    <string name="fragment_create_card_time_confirm_error_title">"Похоже запрос на подтверждение номера
+ уже был отправлен."</string>
+    <string name="fragment_create_card_title_text">Введите номер, к которому мы привяжем карту</string>
+    <string name="fragment_create_card_title_text_error_number">Пожалуйста, измените номер</string>
+    <string name="fragment_create_card_title_text_have_number">Проверьте ваш номер, мы привяжем к нему карту</string>
+    <string name="fragment_create_card_toolbar_text">Создание карты</string>
+    <string name="fragment_electrocheques_onboarding_btn_connect">Подключить</string>
+    <string name="fragment_electrocheques_onboarding_btn_connect_registered">Вы уже зарегистрированы</string>
+    <string name="fragment_favorite_btn_back_main">Вернуться на главную</string>
+    <string name="fragment_favorite_promocodes_btn_more">Показать все (%d)</string>
+    <string name="fragment_new_search_product_title">Товары из чеков</string>
+    <string name="fragment_new_search_shop_title">Чеки</string>
+    <string name="fragment_offer_card_item_sub_button_title">Подробнее о карте</string>
+    <string name="fragment_online_shops_tv_promocodes">Промокоды и купоны</string>
+    <string name="fragment_online_shops_tv_shops">Интернет-магазины</string>
+    <string name="fragment_rebind_button_title">Обновить привязку</string>
+    <string name="fragment_rebind_description">Кэшбэк выплачивается с помощью сервиса оператора «Юkassa». Для вывода средств необходимо раз в год обновлять привязку карты. Это не займет много времени.</string>
+    <string name="fragment_rebind_title">"Требуется обновить
+привязку карты"</string>
+    <string name="fragment_registration_result_error_description">Попробуйте повторить регистрацию позже</string>
+    <string name="fragment_registration_result_error_title">Возникла ошибка</string>
+    <string name="fragment_uprid_web_btn_back_plastic_text">Вернуться в ЧекСкан</string>
+    <string name="fragment_verification_phone_description_error">Такой телефон уже используется</string>
+    <string name="fragment_verification_phone_support_description_error">Обратитесь в поддержку</string>
+    <string name="fragment_verification_phone_support_title_error">Произошла ошибка</string>
+    <string name="fragment_verification_phone_title_error">Номер телефона занят</string>
+    <string name="games_tab_error_description">Попробуйте ещё раз чуть позже</string>
+    <string name="games_tab_error_title">Не получилось загрузить игры</string>
+    <string name="games_tab_offerwall_unavailable">Игры сейчас недоступны, попробуйте позже</string>
+    <string name="games_tab_play">Играть</string>
+    <string name="games_tab_retry">Попробовать снова</string>
+    <string name="games_tab_title">Игры</string>
+    <string name="gcm_defaultSenderId">370043775805</string>
+    <string name="getting_more">Loading more…</string>
+    <string name="google_api_key">AIzaSyCw4h7RJ6XI6D7pbdGsM9Y5MOY4qCJadoE</string>
+    <string name="google_app_id">1:370043775805:android:7b9b38976a805030</string>
+    <string name="google_storage_bucket">checkscan-3ed22.appspot.com</string>
+    <string name="graph_format">dd MM</string>
+    <string name="graph_format_version_2">dd.MM</string>
+    <string name="help_header">Что-то не так? Поможем и подскажем:</string>
+    <string name="help_telegram_cobrand_bot_link">https://t.me/checkscanbank_bot?start=%s</string>
+    <string name="help_vk_link">https://vk.me/checkscan</string>
+    <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="hint_only_phone_registration">Кэшбэк можно вывести только на номер телефона, указанный в момент регистрации.</string>
+    <string name="history_no_shops">Здесь вы сможете найти магазины и промокоды, которые уже посещали</string>
+    <string name="history_toolbar_title">История</string>
+    <string name="how_get_more_cashback_term_one">1. Зайдите в раздел «Весь ваш кэшбэк» в приложении Альфа-Банка</string>
+    <string name="how_get_more_cashback_term_three">3. Оплачивайте покупки картой ЧекСкан и получайте дополнительный кэшбэк на счет!</string>
+    <string name="how_get_more_cashback_term_two">2. Выберите категорию 5% в ЧекСкане.</string>
+    <string name="how_get_more_cashback_term_two_description">Это специальное предложение только для ЧекСканеров за покупки в супермаркетах, маркетплейсах и продуктовых магазинах.</string>
+    <string name="i_agree_received">Я соглашаюсь на получение электронных чеков через регистрацию на сайте [mco.nalog.ru](mco.nalog.ru)</string>
+    <string name="icon_content_description">Dialog Icon</string>
+    <string name="in_progress">In progress</string>
+    <string name="indeterminate">Partially checked</string>
+    <string name="info_bottom_sheet_all_conditions_title">Полные условия</string>
+    <string name="info_bottom_sheet_close_button">Закрыть</string>
+    <string name="input_time_picker_btn_dismiss">Отмена</string>
+    <string name="input_time_picker_btn_select">Ок</string>
+    <string name="input_time_picker_hour_hint">Час</string>
+    <string name="input_time_picker_minutes_hint">Минуты</string>
+    <string name="input_time_picker_tv_divider">:</string>
+    <string name="input_time_picker_tv_title">Выбор времени</string>
+    <string name="interface_brandlink_dispatch">setTimeout(() => window.dispatchEvent(new CustomEvent(%1$s, {detail: %2$s})), 999);</string>
+    <string name="interface_brandlink_mobile_native_back_button">MobileNativeBackButton</string>
+    <string name="interface_brandlink_mobile_native_scanner_complete">MobileNativeScannerComplete</string>
+    <string name="interface_brandlink_title">Android</string>
+    <string name="item_card_balance_hint">Ваш баланс</string>
+    <string name="item_card_transfer_description">Продолжить оформление</string>
+    <string name="item_card_transfer_title">Вывод на карту</string>
+    <string name="item_my_balance_title_text">Мой баланс</string>
+    <string name="item_my_card_empty_balance_hardcode">%d ₽</string>
+    <string name="item_my_card_limited">Ограничена</string>
+    <string name="item_my_card_plug_mir_pay">"Подключить
+Mir Pay"</string>
+    <string name="item_my_card_requisites">Реквизиты</string>
+    <string name="item_my_card_status_pending_description">Скоро ограничения будут сняты</string>
+    <string name="item_my_card_status_pending_title">Анкета на проверке</string>
+    <string name="item_my_card_status_success_description">Ограничения сняты</string>
+    <string name="item_my_card_status_success_title">Ваша карта прокачана!</string>
+    <string name="item_my_card_title_text">Моя карта</string>
+    <string name="item_my_card_top_up_card">Пополнить</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="just_before">Just before</string>
+    <string name="later">Не сейчас</string>
+    <string name="layout_error_button">Понятно</string>
+    <string name="layout_error_description">Пожалуйста повторите попытку позже</string>
+    <string name="layout_error_title">Что-то пошло не так</string>
+    <string name="layout_powercode_description_bottom_title">Истекает через</string>
+    <string name="lifecycle_sent_sms">Время жизни отправленного sms кода еще не истекло</string>
+    <string name="loading">Loading…</string>
+    <string name="location_by_ip_url">http://ip-api.com/json</string>
+    <string name="login_support_btn">Помощь</string>
+    <string name="m3_exceed_max_badge_text_suffix">%1$s%2$s</string>
+    <string name="m3_loading_indicator_content_description">Loading</string>
+    <string name="m3_overflow_linear_layout_button_content_description">Overflow menu</string>
+    <string name="m3_overflow_linear_layout_button_tooltip_text">More options</string>
+    <string name="m3_ref_typeface_brand_medium">sans-serif-medium</string>
+    <string name="m3_ref_typeface_brand_regular">sans-serif</string>
+    <string name="m3_ref_typeface_plain_medium">sans-serif-medium</string>
+    <string name="m3_ref_typeface_plain_regular">sans-serif</string>
+    <string name="m3_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="m3_sys_motion_easing_emphasized_accelerate">cubic-bezier(0.3, 0, 0.8, 0.2)</string>
+    <string name="m3_sys_motion_easing_emphasized_decelerate">cubic-bezier(0.1, 0.7, 0.1, 1)</string>
+    <string name="m3_sys_motion_easing_emphasized_path_data">M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1</string>
+    <string name="m3_sys_motion_easing_legacy">cubic-bezier(0.4, 0, 0.2, 1)</string>
+    <string name="m3_sys_motion_easing_legacy_accelerate">cubic-bezier(0.4, 0, 1, 1)</string>
+    <string name="m3_sys_motion_easing_legacy_decelerate">cubic-bezier(0, 0, 0.2, 1)</string>
+    <string name="m3_sys_motion_easing_linear">cubic-bezier(0, 0, 1, 1)</string>
+    <string name="m3_sys_motion_easing_standard">cubic-bezier(0.2, 0, 0, 1)</string>
+    <string name="m3_sys_motion_easing_standard_accelerate">cubic-bezier(0.3, 0, 1, 1)</string>
+    <string name="m3_sys_motion_easing_standard_decelerate">cubic-bezier(0, 0, 0, 1)</string>
+    <string name="m3c_bottom_sheet_collapse_description">Collapse bottom sheet</string>
+    <string name="m3c_bottom_sheet_dismiss_description">Dismiss bottom sheet</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">Drag handle</string>
+    <string name="m3c_bottom_sheet_expand_description">Expand bottom sheet</string>
+    <string name="m3c_bottom_sheet_pane_title">Bottom Sheet</string>
+    <string name="m3c_date_input_headline">Entered date</string>
+    <string name="m3c_date_input_headline_description">Entered date: %1$s</string>
+    <string name="m3c_date_input_invalid_for_pattern">Date does not match expected pattern: %1$s</string>
+    <string name="m3c_date_input_invalid_not_allowed">Date not allowed: %1$s</string>
+    <string name="m3c_date_input_invalid_year_range">Date out of expected year range %1$s - %2$s</string>
+    <string name="m3c_date_input_label">Date</string>
+    <string name="m3c_date_input_no_input_description">None</string>
+    <string name="m3c_date_input_title">Select date</string>
+    <string name="m3c_date_picker_headline">Selected date</string>
+    <string name="m3c_date_picker_headline_description">Current selection: %1$s</string>
+    <string name="m3c_date_picker_navigate_to_year_description">Navigate to year %1$s</string>
+    <string name="m3c_date_picker_no_selection_description">None</string>
+    <string name="m3c_date_picker_scroll_to_earlier_years">Scroll to show earlier years</string>
+    <string name="m3c_date_picker_scroll_to_later_years">Scroll to show later years</string>
+    <string name="m3c_date_picker_switch_to_calendar_mode">Switch to calendar input mode</string>
+    <string name="m3c_date_picker_switch_to_day_selection">Swipe to select a year, or tap to switch back to selecting a day</string>
+    <string name="m3c_date_picker_switch_to_input_mode">Switch to text input mode</string>
+    <string name="m3c_date_picker_switch_to_next_month">Change to next month</string>
+    <string name="m3c_date_picker_switch_to_previous_month">Change to previous month</string>
+    <string name="m3c_date_picker_switch_to_year_selection">Switch to selecting a year</string>
+    <string name="m3c_date_picker_title">Select date</string>
+    <string name="m3c_date_picker_today_description">Today</string>
+    <string name="m3c_date_picker_year_picker_pane_title">Year picker visible</string>
+    <string name="m3c_date_range_input_invalid_range_input">Invalid date range input</string>
+    <string name="m3c_date_range_input_title">Enter dates</string>
+    <string name="m3c_date_range_picker_day_in_range">In range</string>
+    <string name="m3c_date_range_picker_end_headline">End date</string>
+    <string name="m3c_date_range_picker_scroll_to_next_month">Scroll to show the next month</string>
+    <string name="m3c_date_range_picker_scroll_to_previous_month">Scroll to show the previous month</string>
+    <string name="m3c_date_range_picker_start_headline">Start date</string>
+    <string name="m3c_date_range_picker_title">Select dates</string>
+    <string name="m3c_dialog">Dialog</string>
+    <string name="m3c_dropdown_menu_collapsed">Collapsed</string>
+    <string name="m3c_dropdown_menu_expanded">Expanded</string>
+    <string name="m3c_dropdown_menu_toggle">Toggle dropdown menu</string>
+    <string name="m3c_floating_toolbar_collapse">Collapse toolbar</string>
+    <string name="m3c_floating_toolbar_expand">Expand toolbar</string>
+    <string name="m3c_search_bar_search">Search</string>
+    <string name="m3c_snackbar_dismiss">Dismiss</string>
+    <string name="m3c_snackbar_pane_title">Alert</string>
+    <string name="m3c_suggestions_available">Suggestions below</string>
+    <string name="m3c_time_input_dialog_title">Enter Time</string>
+    <string name="m3c_time_picker_am">AM</string>
+    <string name="m3c_time_picker_dialog_title">Select Time</string>
+    <string name="m3c_time_picker_hour">Hour</string>
+    <string name="m3c_time_picker_hour_24h_suffix">%1$d hours</string>
+    <string name="m3c_time_picker_hour_selection">Select hour</string>
+    <string name="m3c_time_picker_hour_suffix">"%1$d o'clock"</string>
+    <string name="m3c_time_picker_hour_text_field">for hour</string>
+    <string name="m3c_time_picker_minute">Minute</string>
+    <string name="m3c_time_picker_minute_selection">Select minutes</string>
+    <string name="m3c_time_picker_minute_suffix">%1$d minutes</string>
+    <string name="m3c_time_picker_minute_text_field">for minutes</string>
+    <string name="m3c_time_picker_period_toggle_description">Select AM or PM</string>
+    <string name="m3c_time_picker_pm">PM</string>
+    <string name="m3c_time_picker_toggle_keyboard">Switch to text input mode for the time input</string>
+    <string name="m3c_time_picker_toggle_touch">Switch to clock mode for the time input</string>
+    <string name="m3c_tooltip_long_press_label">Show tooltip</string>
+    <string name="m3c_tooltip_pane_description">Tooltip</string>
+    <string name="m3c_wide_navigation_rail_close_rail">Close rail</string>
+    <string name="m3c_wide_navigation_rail_pane_title">Navigation rail</string>
+    <string name="mail_not_opened_message">Не удалось найти приложение для отправки почты</string>
+    <string name="material_clock_display_divider">:</string>
+    <string name="material_clock_toggle_content_description">Select AM or PM</string>
+    <string name="material_hour_24h_suffix">%1$s hours</string>
+    <string name="material_hour_selection">Select hour</string>
+    <string name="material_hour_suffix">"%1$s o'clock"</string>
+    <string name="material_minute_selection">Select minutes</string>
+    <string name="material_minute_suffix">%1$s minutes</string>
+    <string name="material_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
+    <string name="material_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
+    <string name="material_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="material_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
+    <string name="material_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
+    <string name="material_slider_range_end">Range end</string>
+    <string name="material_slider_range_start">Range start</string>
+    <string name="material_slider_value">Value</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Switch to clock mode for the time input.</string>
+    <string name="material_timepicker_clock_mode_tooltip">Switch to clock mode</string>
+    <string name="material_timepicker_hour">Hour</string>
+    <string name="material_timepicker_hour_error">Hour must be 1–12</string>
+    <string name="material_timepicker_hour_error_24h">Hour must be 0–23</string>
+    <string name="material_timepicker_minute">Minute</string>
+    <string name="material_timepicker_minute_error">Minute must be 0–59</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Select time</string>
+    <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
+    <string name="material_timepicker_text_input_mode_tooltip">Switch to text input mode</string>
+    <string name="mdtp_am">am</string>
+    <item type="string" name="mdtp_ampm_circle_radius_multiplier">0.22</item>
+    <string name="mdtp_cancel">@android:string/cancel</string>
+    <item type="string" name="mdtp_circle_radius_multiplier">0.82</item>
+    <item type="string" name="mdtp_circle_radius_multiplier_24HourMode">0.85</item>
+    <string name="mdtp_date">Date</string>
+    <string name="mdtp_date_v1_monthyear">MMMM yyyy</string>
+    <string name="mdtp_date_v2_daymonthyear">EEE, MMM dd</string>
+    <string name="mdtp_day_of_week_label_typeface">sans-serif-light</string>
+    <string name="mdtp_day_picker_description">Month grid of days</string>
+    <string name="mdtp_deleted_key">%1$s deleted</string>
+    <string name="mdtp_done_label">Done</string>
+    <string name="mdtp_hour_picker_description">Hours circular slider</string>
+    <string name="mdtp_item_is_selected">%1$s selected</string>
+    <string name="mdtp_minute_picker_description">Minutes circular slider</string>
+    <string name="mdtp_next_month_arrow_description">Next Month</string>
+    <item type="string" name="mdtp_numbers_radius_multiplier_inner">0.6</item>
+    <item type="string" name="mdtp_numbers_radius_multiplier_normal">0.81</item>
+    <item type="string" name="mdtp_numbers_radius_multiplier_outer">0.83</item>
+    <string name="mdtp_ok">@android:string/ok</string>
+    <string name="mdtp_pm">pm</string>
+    <string name="mdtp_previous_month_arrow_description">Previous Month</string>
+    <string name="mdtp_radial_numbers_typeface">sans-serif</string>
+    <string name="mdtp_sans_serif">sans-serif</string>
+    <string name="mdtp_second_picker_description">Seconds circular slider</string>
+    <string name="mdtp_select_day">Select month and day</string>
+    <string name="mdtp_select_hours">Select hours</string>
+    <string name="mdtp_select_minutes">Select minutes</string>
+    <string name="mdtp_select_seconds">Select seconds</string>
+    <string name="mdtp_select_year">Select year</string>
+    <item type="string" name="mdtp_selection_radius_multiplier">0.16</item>
+    <item type="string" name="mdtp_text_size_multiplier_inner">0.11</item>
+    <item type="string" name="mdtp_text_size_multiplier_inner_v2">0.08</item>
+    <item type="string" name="mdtp_text_size_multiplier_normal">0.12</item>
+    <item type="string" name="mdtp_text_size_multiplier_outer">0.08</item>
+    <item type="string" name="mdtp_text_size_multiplier_outer_v2">0.11</item>
+    <string name="mdtp_time">Time</string>
+    <string name="mdtp_time_placeholder">00</string>
+    <string name="mdtp_time_separator">:</string>
+    <string name="mdtp_year_picker_description">Year list</string>
+    <string name="modal_content_descriptor">modal</string>
+    <string name="modal_inner_content_descriptor">modal inner</string>
+    <string name="monetization_ads_divkit_div_slider_range_end">Range end</string>
+    <string name="monetization_ads_divkit_div_slider_range_start">Range start</string>
+    <string name="monetization_ads_internal_instream_ad_position">%1$d из %2$d</string>
+    <string name="monetization_ads_internal_instream_feedback">Ещё</string>
+    <string name="monetization_ads_internal_instream_muted">Включить звук</string>
+    <string name="monetization_ads_internal_instream_skip">Пропустить</string>
+    <string name="monetization_ads_internal_instream_unmuted">Выключить звук</string>
+    <string name="monetization_ads_internal_scan_qrcode">Отсканируйте код</string>
+    <string name="monetization_ads_internal_text_divider">·</string>
+    <string name="monetization_ads_internal_text_divider_with_space">·</string>
+    <string name="money_sum_hint">Сумма чека</string>
+    <string name="month_and_year_format">MMM yyyy</string>
+    <string name="mtrl_badge_numberless_content_description">New notification</string>
+    <string name="mtrl_button_collapsed_content_description">Collapsed</string>
+    <string name="mtrl_button_expanded_content_description">Expanded</string>
+    <string name="mtrl_button_overflow_icon_content_description">Overflow menu</string>
+    <string name="mtrl_button_snackbar_close_content_description">Close</string>
+    <string name="mtrl_checkbox_button_icon_path_checked">M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z</string>
+    <string name="mtrl_checkbox_button_icon_path_group_name">icon</string>
+    <string name="mtrl_checkbox_button_icon_path_indeterminate">M13.4,15 11,15 11,17 13.4,17 21,17 21,15z</string>
+    <string name="mtrl_checkbox_button_icon_path_name">icon path</string>
+    <string name="mtrl_checkbox_button_path_checked">M23,7H9C7.9,7,7,7.9,7,9v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V9C25,7.9,24.1,7,23,7z</string>
+    <string name="mtrl_checkbox_button_path_group_name">button</string>
+    <string name="mtrl_checkbox_button_path_name">button path</string>
+    <string name="mtrl_checkbox_button_path_unchecked">M23,7H9C7.9,7,7,7.9,7,9v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V9C25,7.9,24.1,7,23,7z M23,23H9V9h14V23z</string>
+    <string name="mtrl_checkbox_state_description_checked">Checked</string>
+    <string name="mtrl_checkbox_state_description_indeterminate">Partially checked</string>
+    <string name="mtrl_checkbox_state_description_unchecked">Not checked</string>
+    <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">More than %1$d new notifications</string>
+    <string name="mtrl_exceed_max_badge_number_suffix">%1$d%2$s</string>
+    <string name="mtrl_picker_a11y_next_month">Change to next month</string>
+    <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
+    <string name="mtrl_picker_announce_current_range_selection">Start date selection: %1$s – End date selection: %2$s</string>
+    <string name="mtrl_picker_announce_current_selection">Current selection: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection_none">none</string>
+    <string name="mtrl_picker_cancel">Cancel</string>
+    <string name="mtrl_picker_confirm">OK</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Select Date</string>
+    <string name="mtrl_picker_date_header_unselected">Selected date</string>
+    <string name="mtrl_picker_day_of_week_column_header">%1$s</string>
+    <string name="mtrl_picker_end_date_description">End date %1$s</string>
+    <string name="mtrl_picker_invalid_format">Invalid format.</string>
+    <string name="mtrl_picker_invalid_format_example">Example: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Use: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Invalid range.</string>
+    <string name="mtrl_picker_navigate_to_current_year_description">Navigate to current year %1$d</string>
+    <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$d</string>
+    <string name="mtrl_picker_next_month_tooltip">Next month</string>
+    <string name="mtrl_picker_out_of_range">Out of range: %1$s</string>
+    <string name="mtrl_picker_pane_title_calendar_view">Calendar view</string>
+    <string name="mtrl_picker_pane_title_year_view">Year view</string>
+    <string name="mtrl_picker_prev_month_tooltip">Previous month</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Start date – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – End date</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Select Range</string>
+    <string name="mtrl_picker_range_header_unselected">Start date – End date</string>
+    <string name="mtrl_picker_save">Save</string>
+    <string name="mtrl_picker_start_date_description">Start date %1$s</string>
+    <string name="mtrl_picker_text_input_date_hint">Date</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">End date</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Start date</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_today_description">Today %1$s</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to calendar input mode</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode_tooltip">Switch to calendar</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Switch to Calendar view</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode_tooltip">Switch to text input</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Switch to year view</string>
+    <string name="mtrl_switch_thumb_group_name">circle_group</string>
+    <string name="mtrl_switch_thumb_path_checked">M4,16 A12,12 0 0,1 16,4 H16 A12,12 0 0,1 16,28 H16 A12,12 0 0,1 4,16</string>
+    <string name="mtrl_switch_thumb_path_morphing">M0,16 A11,11 0 0,1 11,5 H21 A11,11 0 0,1 21,27 H11 A11,11 0 0,1 0,16</string>
+    <string name="mtrl_switch_thumb_path_name">circle</string>
+    <string name="mtrl_switch_thumb_path_pressed">M2,16 A14,14 0 0,1 16,2 H16 A14,14 0 0,1 16,30 H16 A14,14 0 0,1 2,16</string>
+    <string name="mtrl_switch_thumb_path_unchecked">M8,16 A8,8 0 0,1 16,8 H16 A8,8 0 0,1 16,24 H16 A8,8 0 0,1 8,16</string>
+    <string name="mtrl_switch_track_decoration_path">M1,16 A15,15 0 0,1 16,1 H36 A15,15 0 0,1 36,31 H16 A15,15 0 0,1 1,16</string>
+    <string name="mtrl_switch_track_path">M0,16 A16,16 0 0,1 16,0 H36 A16,16 0 0,1 36,32 H16 A16,16 0 0,1 0,16</string>
+    <string name="mtrl_timepicker_cancel">Cancel</string>
+    <string name="mtrl_timepicker_confirm">OK</string>
+    <string name="nav_app_bar_navigate_up_description">Navigate up</string>
+    <string name="nav_app_bar_open_drawer_description">Open navigation drawer</string>
+    <string name="nav_rail_collapsed_a11y_label">Collapsed</string>
+    <string name="nav_rail_expanded_a11y_label">Expanded</string>
+    <string name="navigation_menu">Navigation menu</string>
+    <string name="network_error">Ошибка сети - повторите попытку позже</string>
+    <string name="new_balance_check_title_description">Как зарабатывать в ЧекСкане</string>
+    <string name="new_balance_copied_continue">Продолжить</string>
+    <string name="new_balance_copied_copied_failed">Ошибка сервиса</string>
+    <string name="new_balance_copied_coupon_copied">Промокод скопирован</string>
+    <string name="new_balance_copied_deciding_problem">Уже решаем проблему</string>
+    <string name="new_balance_copied_flow_card">Перейти к условиям акции</string>
+    <string name="new_balance_copied_indicate_coupon">Укажите его при оформлении заказа</string>
+    <string name="new_balance_dialog_attach_alfa">Привяжите карту</string>
+    <string name="new_balance_dialog_title">О начислении средств</string>
+    <string name="new_balance_my_card">Вывод средств</string>
+    <string name="new_balance_purchase_close">Закрыть</string>
+    <string name="new_balance_purchase_first_case_left_button_title">Отменён</string>
+    <string name="new_balance_purchase_first_case_main_button_title">Отправлен</string>
+    <string name="new_balance_purchase_first_case_right_button_title">Жду отправки</string>
+    <string name="new_balance_purchase_first_case_title">Ваш заказ отправлен?</string>
+    <string name="new_balance_purchase_second_case_left_button_title">Позже</string>
+    <string name="new_balance_purchase_second_case_right_button_title">Отправить</string>
+    <string name="new_balance_title">Баланс</string>
+    <string name="new_balance_title_all_operations">Все</string>
+    <string name="new_balance_title_transfer_phone">На телефон</string>
+    <string name="new_balance_title_user_cards">Мои карты</string>
+    <string name="new_balance_toolbar_support_title">Поддержка</string>
+    <string name="new_balance_transfer_card_dialog_card_hint">Номер карты</string>
+    <string name="new_balance_transfer_card_dialog_title">Вывод на карту</string>
+    <string name="new_balance_transfer_card_options_title">Выбрать карту</string>
+    <string name="new_balance_transfer_coupon">За %1$.2f ₽ вы получите скидку в %2$d ₽!</string>
+    <string name="new_balance_transfer_coupon_dialog_balance">Ваш баланс %1$.2f ₽</string>
+    <string name="new_balance_transfer_coupon_get">Получить скидку</string>
+    <string name="new_balance_transfer_coupon_order_with_promocode">Заказать с промокодом</string>
+    <string name="new_balance_transfer_coupon_select">Выберите размер скидки:</string>
+    <string name="new_feature_dialog_button_text">В магазин приложений</string>
+    <string name="new_feature_dialog_description">"Данный функционал доступен пользователям с более новой версией приложения.
+Возможно, обновление для вашего устройства уже готово.
+Доступность можно проверить в магазине приложений."</string>
+    <string name="new_feature_dialog_title">Новый функционал</string>
+    <string name="no">No</string>
+    <string name="no_internet">Нет интернета</string>
+    <string name="no_places_nearby_1">"Ни одного магазина рядом?
+Станьте первопроходцем!"</string>
+    <string name="no_places_nearby_2">"Отсканируйте чек в одном из местных магазинов.
+Расширим границы Чек Скана вместе!"</string>
+    <string name="no_products_in_place_1">Ещё не ступала нога ЧекСканщика на это место …</string>
+    <string name="no_products_in_place_2">"Отсканируйте чек из этого заведения,
+чтобы другие пользователи знали актуальные цены!"</string>
+    <string name="no_products_nearby_1">"Ни одного такого продукта рядом?
+Станьте первопроходцем!"</string>
+    <string name="no_products_nearby_2">"Купите данный продукт в одном из местных магазинов и отсканируйте чек,
+чтобы другие пользователи знали актуальные цены!"</string>
+    <string name="no_shop_received">Магазин определится автоматически</string>
+    <string name="no_shop_received_action">Обновить</string>
+    <string name="not_available_for">"Недоступно
+Для смены E-mail обратитесь в Поддержку по адресу: help@scan.com.ru"</string>
+    <string name="not_correct_format">Неверный формат данных чека</string>
+    <string name="not_correct_format_action">Ввести данные вручную</string>
+    <string name="not_correct_format_description">"Чек корректен по формату данных,
+но значения некоторых параметров
+некорректны:"</string>
+    <string name="not_selected">Not selected</string>
+    <string name="not_valid_according_fns">Чек не валиден</string>
+    <string name="not_valid_according_fns_description">"Чек корректен по формату данных,
+но не является корректным по базе
+Федеральной налоговой службы
+и Оператора фискальных данных.
+Если Вы ввели чек вручную, то удалите
+данный чек, проверьте правильность
+ввода всех параметров и повторите
+попытку."</string>
+    <string name="ofd_base_url">https://ofd.ru</string>
+    <string name="offer_landing_error_loading">Что-то пошло не так, попробуйте еще раз</string>
+    <string name="offer_landing_error_loading_button_title">Повторить</string>
+    <string name="offer_landing_try_again_button_title">Повторить попытку</string>
+    <string name="offer_landing_try_again_title">Произошла ошибка</string>
+    <string name="offer_link_error_loading">Попробуйте позже</string>
+    <string name="offer_link_error_loading_button">Ок</string>
+    <string name="ok">OK</string>
+    <string name="only_month_format">MMMM</string>
+    <string name="operations_expand_title">Развернуть</string>
+    <string name="operations_filters_name">Все операции</string>
+    <string name="operations_filters_title">Сортировать</string>
+    <string name="operations_load_more_operations">Далее</string>
+    <string name="operations_no_btn_retry">Обновить операции</string>
+    <string name="operations_no_results">"Упс…
+Таких операций пока не нашлось.
+
+Сканируйте чеки и получайте кэшбэк!"</string>
+    <string name="operations_no_results_error">"Упс…
+Не удалось загрузить операции"</string>
+    <string name="operations_title">История операций</string>
+    <string name="operations_unexpand_title">Свернуть</string>
+    <string name="ord_button_add_text">Реклама</string>
+    <string name="other">Остальное</string>
+    <string name="page_five_title"><b>Кэшбэк поступит на баланс</b> в ЧекСкане в течение 40 дней</string>
+    <string name="page_four_title"><b>Ваш заказ отобразится</b>" в истории операций со статусом «в ожидании» "</string>
+    <string name="page_one_title"><b>Выберите магазин,</b>в котором хотите совершить покупку</string>
+    <string name="page_three_title"><b>Перейдите в магазин</b> через синюю кнопку и оформите заказ в открывшемся окне</string>
+    <string name="page_two_title"><b>Ознакомьтесь</b> со ставками кэшбэка и правилами начисления</string>
+    <string name="partner_couldnt_load_info">Не удалось загрузить информацию</string>
+    <string name="partner_shopping_open_app_suggestion">Открыть эту ссылку в приложениии %s?</string>
+    <string name="password_toggle_content_description">Show password</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="personal_data_edit_number">Сменить номер</string>
+    <string name="personal_form_field_default_error">Поле не может быть пустым</string>
+    <string name="personal_form_save_default_error">Произошла ошибка, повторите позже</string>
+    <string name="personal_form_toolbar_button_text">Сохранить</string>
+    <string name="personal_form_toolbar_title">Мои данные</string>
+    <string name="phone_save_new_number">Сохранение нового номера</string>
+    <string name="phone_slots">+7 (___) ___ __ __</string>
+    <string name="phone_tv_change_phone">Изменить номер</string>
+    <string name="phone_tv_enter_your_phone">Введите ваш новый номер</string>
+    <string name="phone_tv_number_phone">Номер телефона</string>
+    <string name="phone_when_edit_number">При смене номера будет доступен новый функционал. ЧекСкан является партнером сервиса ФНС России «Мои чеки онлайн». Сервис хранит и позволяет нам получать электронные чеки от ваших покупок автоматически.</string>
+    <string name="picker_am">ДП</string>
+    <string name="picker_approve">Подтвердить</string>
+    <string name="picker_cancel">Отмена</string>
+    <string name="picker_pm">ПП</string>
+    <string name="picker_today">Сегодня</string>
+    <string name="placeholder_cheque_price_units">%1$.2f x %2$.2f ₽</string>
+    <string name="placeholder_ruble_price">%1$.2f ₽</string>
+    <string name="placeholder_transfer_sum">%1$.2f</string>
+    <string name="places_nearby_title">• Места рядом с вами •</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="polls_complete">Готово</string>
+    <string name="posthog_host">https://posthog.checkscan.ru</string>
+    <string name="posthog_key">phc_p6dq93WxaDzbZTrgoi8jeoAfsT7NMSTMnTJ2gtWeiV9d</string>
+    <string name="products_add_receipt_button">Добавить чек</string>
+    <string name="products_all">Смотреть все товары</string>
+    <string name="products_all_button">"Смотреть
+все товары"</string>
+    <string name="products_bullet_point_condition">• %1$s</string>
+    <string name="products_hide_all_shops_button">Свернуть</string>
+    <string name="products_note_add_product">Добавить товар</string>
+    <string name="products_placeholder_description">"Мы уже подбираем лучшие предложения
+в популярных магазинах"</string>
+    <string name="products_placeholder_title">"Пока здесь
+нет доступных акций"</string>
+    <string name="products_show_all_shops_button">Посмотреть все</string>
+    <string name="products_tab_title">Товары</string>
+    <string name="products_with_cashback">Товары с кэшбэком</string>
+    <string name="profile_add_email_badge_description">Это нужно для безопасности аккаунта и подтверждения вывода кэшбэка</string>
+    <string name="profile_add_email_badge_title">Добавьте эл.почту</string>
+    <string name="profile_invite_promo_code_copied">Пригласительный код скопирован!</string>
+    <string name="profile_item_activate_promocode">Активировать промокод</string>
+    <string name="profile_item_electro_cheques">Автозагрузка чеков</string>
+    <string name="profile_item_faq">FAQ</string>
+    <string name="profile_item_favorites">Избранные магазины</string>
+    <string name="profile_item_history_shop">Просмотренные магазины</string>
+    <string name="profile_item_support">Написать в техподдержку</string>
+    <string name="profile_logout_warning_delete_dialog_bottom_button_title">Удалить</string>
+    <string name="profile_logout_warning_delete_dialog_description">Кэшбэк сгорит без возможности восстановления. Процесс удаления займет 30 дней. До этого момента аккаунт будет заблокирован.</string>
+    <string name="profile_logout_warning_delete_dialog_title">Удалить аккаунт?</string>
+    <string name="profile_logout_warning_delete_dialog_top_button_title">Отмена</string>
+    <string name="profile_logout_warning_dialog_bottom_button_title">Выйти</string>
+    <string name="profile_logout_warning_dialog_description">Ваш кэшбэк не пропадет, но чтобы войти заново, придется вводить телефон и пароль.</string>
+    <string name="profile_logout_warning_dialog_title">"Вы уверены, что хотите
+выйти из аккаунта?"</string>
+    <string name="profile_logout_warning_dialog_top_button_title">Остаться в аккаунте</string>
+    <string name="profile_network_error">Ошибка сети - повторите попытку позже</string>
+    <string name="profile_page_couldnt_delete">Не получилось удалить аккаунт. Попробуйте позже…</string>
+    <string name="profile_page_couldnt_logout">Ошибка разлогирования. Попробуйте позже…</string>
+    <string name="profile_page_delete_btn_text">Удалить аккаунт</string>
+    <string name="profile_page_large_file">Изображение должно быть 75х75 и не превышать 5 Мб.</string>
+    <string name="profile_page_logging_out">Выход…</string>
+    <string name="profile_page_logout_btn_text">Выйти</string>
+    <string name="profile_promo_code_label">Промокод для друзей</string>
+    <string name="profile_promocode_currency">₽</string>
+    <string name="profile_promocode_currency_format">%s ₽</string>
+    <string name="profile_promocode_enter_button">Активировать</string>
+    <string name="profile_promocode_enter_description">"Введите промокод ЧекСкана,
+чтобы получить бонус"</string>
+    <string name="profile_promocode_enter_error">Такого промокода не существует</string>
+    <string name="profile_promocode_enter_title">Активировать промокод</string>
+    <string name="profile_promocode_error_button">Окей</string>
+    <string name="profile_promocode_error_description">"Для начисления награды введите
+действующий промокод"</string>
+    <string name="profile_promocode_error_title">Промокода не существует</string>
+    <string name="profile_referral_share_title">Поделиться</string>
+    <string name="profile_toolbar_title">Профиль</string>
+    <string name="progress_bar_default_text">Загрузка…</string>
+    <string name="project_id">checkscan-3ed22</string>
+    <string name="promo_code_copied_new">Промокод скопирован</string>
+    <string name="promocode_code_hide">*********</string>
+    <string name="promocode_code_title">Ваш промокод:</string>
+    <string name="promocode_copied">Промокод скопирован</string>
+    <string name="pull_down_to_load">Pull down to load.</string>
+    <string name="pull_down_to_refresh">Pull down to refresh.</string>
+    <string name="pull_up_to_get_more">Pull up to load more.</string>
+    <string name="qr_code_format_1">"yyyyMMdd'T'HHmmss"</string>
+    <string name="qr_code_format_2">"yyyyMMdd'T'HHmm"</string>
+    <string name="qr_manual_button_send_title">Отправить</string>
+    <string name="qr_manual_date_error">Введите дату и время</string>
+    <string name="qr_manual_date_time_helper_text">Данные указаны в начале или в конце чека</string>
+    <string name="qr_manual_date_time_hint">Дата и время покупки</string>
+    <string name="qr_manual_date_time_placeholder">Укажите дату и время покупки</string>
+    <string name="qr_manual_fd_blank_error">Введите номер ФД</string>
+    <string name="qr_manual_fd_helper_text">3-10 цифр в конце чека</string>
+    <string name="qr_manual_fd_invalid_error">Должно быть 3-10 цифр</string>
+    <string name="qr_manual_fn_blank_error">Введите ФН</string>
+    <string name="qr_manual_fn_helper_text">16 цифр в начале или в конце чека</string>
+    <string name="qr_manual_fn_invalid_error">Должно быть 16 цифр</string>
+    <string name="qr_manual_fp_blank_error">Введите номер ФП или ФПД</string>
+    <string name="qr_manual_fp_invalid_error">Должно быть 8-10 цифр</string>
+    <string name="qr_manual_fp_or_fpd_helper_text">8-10 цифр в конце чека</string>
+    <string name="qr_manual_help_button_title">Как найти данные в чеке</string>
+    <string name="qr_manual_sum_error">Введите сумму чека</string>
+    <string name="qr_manual_sum_helper_text">Введите сумму с копейками через запятую</string>
+    <string name="qr_manual_title">Введите данные чека</string>
+    <string name="qr_manual_type_title">Добавить вручную</string>
+    <string name="queue_cheque_ready"><b>Чек получен!</b> – Чек был сохранен в Вашем списке чеков.</string>
+    <string name="queue_cheque_was_scanned"><b>Чек уже был отсканирован ранее</b> – Чек уже был отсканирован другим пользователем</string>
+    <string name="queue_delete_cheque">Удалить</string>
+    <string name="queue_disclaimer_dialog_header">О статусах чеков</string>
+    <string name="queue_disclaimer_not_correct_format_1">1.</string>
+    <string name="queue_disclaimer_not_correct_format_2">2.</string>
+    <string name="queue_fns_not_responding"><b>Данные по чеку еще не пришли</b> – В базе данных Федеральной налоговой службы или Оператора фискальных данных не была найдена информация по чеку. Необходимо повторить попытку попозже.</string>
+    <string name="queue_fragment_tv_no_receipts">Сканируйте чеки, чтобы пополнить очередь</string>
+    <string name="queue_not_correct_format"><b>Неверный формат данных чека</b>" – Чек корректен по формату данных, но значения некоторых параметров некорректны: "</string>
+    <string name="queue_not_correct_format_reason1">Если вы вводили данные чека вручную, то проверьте правильность ввода всех параметров и повторите попытку.</string>
+    <string name="queue_not_correct_format_reason2">В QR-коде отсканированного чека могла быть допущена опечатка, которая мешает чеку пройти валидацию. Попробуйте ввести данные из чека вручную.</string>
+    <string name="queue_not_correct_qr"><b>Некорректный QR-код</b> – QR-код, который был отсканирован, не содержит информацию о покупке (не является чеком).</string>
+    <string name="queue_not_valid_cheque"><b>Чек не валиден</b> – означает, что чек корректен по формату данных, но не является корректным по базе Федеральной налоговой службы и Оператора фискальных данных. Если Вы ввели чек вручную, то удалите данный чек, проверьте правильность ввода всех параметров и повторите попытку.</string>
+    <string name="queue_receipt_data_title">Данные чека</string>
+    <string name="queue_wait_for_shop_response"><b>Ждем данные от магазина… </b>– Идет процесс получения чека.</string>
+    <string name="range_end">Range end</string>
+    <string name="range_start">Range start</string>
+    <string name="redirect_dialog_button_continue_app">Продолжить на смартфоне</string>
+    <string name="redirect_dialog_button_continue_computer">Продолжить в браузере</string>
+    <string name="redirect_dialog_button_copy">Скопировать</string>
+    <string name="redirect_dialog_button_share">Поделиться</string>
+    <string name="redirect_dialog_cashback_charged_just_app">Кэшбэк выплачивается только за покупки в приложении</string>
+    <string name="redirect_dialog_cashback_charged_just_web">Кэшбэк выплачивается только за покупки на сайте</string>
+    <string name="redirect_dialog_expiration_text">Переход к покупкам на смартфоне через %d</string>
+    <string name="redirect_dialog_link_description">"Введите этот адрес
+в браузере вашего компьютера:"</string>
+    <string name="redirect_dialog_link_expiration_time">Ссылка действительна 24 часа</string>
+    <string name="redirect_dialog_or">или</string>
+    <string name="redirect_dialog_title">Кэшбэк активирован!</string>
+    <string name="redirect_dialog_title_attention">Обратите внимание!</string>
+    <string name="referral_intent_deeplink">checkscan://buy?url=%s</string>
+    <string name="referral_share_title">Поделиться</string>
+    <string name="refresh">Refresh</string>
+    <string name="registration_promotion_button_title">Зарегистрироваться в акции</string>
+    <string name="rejected_cheque">Непринятый чек</string>
+    <string name="release_to_get_more">Release to load more.</string>
+    <string name="release_to_load">Release to load.</string>
+    <string name="release_to_refresh">Release to refresh.</string>
+    <string name="replenishment_fragment_card_balance_hint">Баланс карты</string>
+    <string name="replenishment_fragment_card_title">Пополнить</string>
+    <string name="replenishment_fragment_item_failed_withdraw">Повторить попытку</string>
+    <string name="replenishment_fragment_item_pending_withdraw">В ожидании</string>
+    <string name="replenishment_label">Пополнение</string>
+    <string name="request_cheque_already_scanned">Чек уже был отсканирован ранее</string>
+    <string name="request_cheque_invalid">Чек не валиден</string>
+    <string name="request_cheque_not_accepted">Непринятый чек</string>
+    <string name="request_cheque_valid">Данные о чеке получены</string>
+    <string name="request_fns_not_responding">Данные по чеку ещё не пришли</string>
+    <string name="sans_serif">sans-serif</string>
+    <string name="save_files_format">dd.MM.yy HH.mm.ss</string>
+    <string name="save_share_format">dd.MM.yy HH:mm</string>
+    <string name="sbp_banks_hint">Выберите банк</string>
+    <string name="sbp_phone_number_hint">Номер телефона</string>
+    <string name="sbp_sum_hint">Сумма вывода</string>
+    <string name="sbp_withdraw_amount_error">Неверная сумма</string>
+    <string name="sbp_withdraw_button">Вывести</string>
+    <string name="scanned_first_check_button_title">Перейти к чеку</string>
+    <string name="scanned_first_check_counter">%s сек.</string>
+    <string name="scanned_first_check_description">Вам начислен 1 ₽ за чек</string>
+    <string name="scanned_first_check_sub_description">Переход к чеку через</string>
+    <string name="scanned_first_check_title">Чек успешно загружен!</string>
+    <string name="scanner_add_to_manual">Добавить вручную</string>
+    <string name="scanner_analyze_error">Упсс…Анализатор чеков не хочет работать, пожалуйста введите чек в ручную</string>
+    <string name="scanner_button_load_title">Загрузить чек</string>
+    <string name="scanner_button_load_title_many">В список чеков</string>
+    <string name="scanner_by_hand">Ввести чек вручную</string>
+    <string name="scanner_camera_permission_rationale">"Разрешите приложению доступ к камере,
+чтобы отсканировать QR-код на чеке"</string>
+    <string name="scanner_camera_permission_rationale_btn">Разрешить</string>
+    <string name="scanner_camera_use_description">Наведите камеру на QR код</string>
+    <string name="scanner_cheque_not_recognized">Чек не распознан</string>
+    <string name="scanner_cheque_title">Чек на сумму: %.2f ₽</string>
+    <string name="scanner_flash">Вспышка</string>
+    <string name="scanner_info_description_date_time">"Если прошло больше месяца,
+а чек так и не пришел, сообщите ФНС [nalog.ru](nalog.ru) о задержке."</string>
+    <string name="scanner_info_description_incorrect_qr">"Если на экране сканера появляется сообщение
+о неверном формате – скорее всего, этот QR-код не содержит информацию о чеке."</string>
+    <string name="scanner_info_description_queque_time">Чек может находиться в очереди до нескольких недель из-за неполадок в системе отправки чеков.</string>
+    <string name="scanner_info_description_scanner_dont_see_qr">Попробуйте сфокусировать камеру, зафиксировать чек, включить вспышку и подождать несколько секунд. Если ничего не помогает, попробуйте сфотографировать чек и загрузить его в ЧекСкан через галерею.</string>
+    <string name="scanner_info_description_speed_time">Скорость обработки чека зависит не от ЧекСкана, а от магазина, в котором была совершена покупка.</string>
+    <string name="scanner_info_subtitle_qr">Неверный формат</string>
+    <string name="scanner_info_title_qr">Почему QR-код не сканируется?</string>
+    <string name="scanner_info_title_scanner_dont_see_qr">Сканер не видит QR-код</string>
+    <string name="scanner_info_title_time">Почему чеки долго обрабатываются?</string>
+    <string name="scanner_info_toolbar_title">Вопросы о сканере</string>
+    <string name="scanner_onboarding_button_title">Сканировать чеки</string>
+    <string name="scanner_onboarding_description">После распознавания чека вы увидите сумму и дату покупки. Чтобы завершить сканирование нажмите «Загрузить чеки»</string>
+    <string name="scanner_onboarding_gallery_button_title">Выбрать из галереи</string>
+    <string name="scanner_onboarding_gallery_description">"Выберите фото бумажного чека
+или скриншот электронного чека
+прямо из галереи"</string>
+    <string name="scanner_onboarding_gallery_title">Загружайте из галереи</string>
+    <string name="scanner_onboarding_title">"Наведите камеру
+на QR-код в чеке"</string>
+    <string name="scanner_onboarding_toolbar_title">О сканере</string>
+    <string name="scanner_photo">Из фото</string>
+    <string name="scanner_try_new_scanner">Попробовать новый сканер</string>
+    <string name="search_btn_cancel_title">Отменить</string>
+    <string name="search_hint">Search</string>
+    <string name="search_menu_title">Search</string>
+    <string name="search_product_search_hint">Поиск товара</string>
+    <string name="searchbar_scrolling_view_behavior">com.google.android.material.search.SearchBar$ScrollingViewBehavior</string>
+    <string name="searchview_clear_text_content_description">Clear text</string>
+    <string name="searchview_navigation_content_description">Back</string>
+    <string name="select_promocode_copy_button_title">Скопировать код</string>
+    <string name="select_promocode_promocode_copied_error">Не удалось скопировать</string>
+    <string name="select_promocode_promocode_copied_label">Промокод:</string>
+    <string name="select_promocode_promocode_copied_text">Ваш промокод скопирован</string>
+    <string name="select_promocode_toolbar_title">Промокоды</string>
+    <string name="selected">Selected</string>
+    <string name="selections_tab_title">Подборки</string>
+    <string name="send_as_excel_format">Отправить как Excel</string>
+    <string name="send_as_json_format">Отправить как JSON-файл</string>
+    <string name="send_as_qrcode">Скопировать данные QR-кода</string>
+    <string name="server_format">"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"</string>
+    <string name="server_format_only_date">yyyy-MM-dd</string>
+    <string name="server_format_version_2">"yyyy-MM-dd'T'HH:mm:ss"</string>
+    <string name="server_format_without_time_zone">"yyyy-MM-dd'T'HH:mm:ss"</string>
+    <string name="server_host">https://api.checkscan.org</string>
+    <string name="session_expired_description">Пожалуйста, авторизуйтесь в ЧекСкане заново</string>
+    <string name="session_expired_title">Сессия данного аккаунта истекла</string>
+    <string name="settings">Settings</string>
+    <string name="settings_button_activate">Активировать</string>
+    <string name="settings_button_text">Настройки</string>
+    <string name="settings_page_couldnt_logout">Ошибка разлогирования. Попробуйте позже…</string>
+    <string name="settings_page_sign_up_first">Сначала войдите в аккаунт</string>
+    <string name="settings_promocode_hint">Введите промокод</string>
+    <string name="share_check_title">Поделиться чеком</string>
+    <string name="share_cheque_address">Адрес</string>
+    <string name="share_cheque_as_message_item">"%1$d) %2$s
+%3$.2f₽ x %4$.2f = %5$.2f₽
+
+"</string>
+    <string name="share_cheque_as_message_title">"Чек на сумму: %1$.2f₽
+
+Место покупки: %2$s
+
+Товары:
+
+"</string>
+    <string name="share_cheque_date">Дата покупки</string>
+    <string name="share_cheque_item_category">Категория</string>
+    <string name="share_cheque_item_price">Цена</string>
+    <string name="share_cheque_item_quantity">Количество</string>
+    <string name="share_cheque_item_sum">Стоимость</string>
+    <string name="share_cheque_item_title">Товар</string>
+    <string name="share_cheque_shop">Место покупки</string>
+    <string name="share_shortlink_exception_message">Используйте короткую ссылку %s для покупок с кэшбэком на компьютере</string>
+    <string name="share_title">Поделиться</string>
+    <string name="shortlink_label">Короткая ссылка для покупок</string>
+    <string name="showcase_insurance_time_format" formatted="false">"%d д. %d ч.
+%d м. %d с."</string>
+    <string name="showcase_insurance_timeout">Время вышло</string>
+    <string name="side_sheet_accessibility_pane_title">Side Sheet</string>
+    <string name="side_sheet_behavior">com.google.android.material.sidesheet.SideSheetBehavior</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_up_email_app_not_found">Почтовый клиент не найден</string>
+    <string name="sign_out">Sign out</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_up_go">Вперёд!</string>
+    <string name="snackbar_pane_title">Alert</string>
+    <string name="some_error">Что-то пошло не так, попробуйте еще раз</string>
+    <string name="sort_dialog_tv_dialog_header">Сортировать</string>
+    <string name="sort_end_sum_error">Укажите конечную сумму</string>
+    <string name="sort_start_sum_error">Укажите начальную сумму</string>
+    <string name="splash_seconds">%s сек…</string>
+    <string name="state_empty">Empty</string>
+    <string name="state_off">Off</string>
+    <string name="state_on">On</string>
+    <string name="statistics_cost_statistics">Статистика расходов</string>
+    <string name="statistics_expenses_title">потрачено</string>
+    <string name="statistics_expenses_value">0 ₽</string>
+    <string name="statistics_shops">Магазины</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="stocks_back">Назад</string>
+    <string name="stocks_continue">Продолжить</string>
+    <string name="success_geolocation_continue">Продолжить</string>
+    <string name="success_geolocation_hooray_now_we">Ура! Теперь мы сможем показывать самые актуальные акции в вашем городе</string>
+    <string name="sum_sort_btn_discard">Сбросить</string>
+    <string name="sum_sort_btn_show">Показать</string>
+    <string name="sum_sort_til_form_hint">От</string>
+    <string name="sum_sort_til_under_hint">До</string>
+    <string name="sum_sort_tv_dialog_header">Сумма</string>
+    <string name="support_form_button_text">Отправить</string>
+    <string name="support_form_description_error">Опишите проблему</string>
+    <string name="support_form_description_field_hint_title">Опишите подробнее, с какой проблемой вы столкнулись в приложении</string>
+    <string name="support_form_description_hint_title">Проблема</string>
+    <string name="support_form_email_checkbox_text">Мой адрес почты введен верно</string>
+    <string name="support_form_email_error">Неверный формат адреса эл.почты</string>
+    <string name="support_form_email_field_hint_title">example@mail.ru</string>
+    <string name="support_form_email_hint_title">Email</string>
+    <string name="support_form_header_title">"Нужна помощь?
+Напишите нам"</string>
+    <string name="support_form_name_field_hint_title">Укажите ваше имя</string>
+    <string name="support_form_name_hint_title">Имя</string>
+    <string name="support_form_send_error_button">Ок</string>
+    <string name="support_form_send_error_description">Повторите позже</string>
+    <string name="support_form_send_error_title">Произошла ошибка</string>
+    <string name="support_sections_header_title">"С чем связан
+ваш вопрос?"</string>
+    <string name="support_url">https://scan.com.ru/help</string>
+    <string name="survey_banner_button_title">Перейти к опросу</string>
+    <string name="switch_role">Switch</string>
+    <string name="tab">Tab</string>
+    <string name="task_card_take_reward_button">Забрать награду</string>
+    <string name="task_default_error">Произошла ошибка, повторите позже</string>
+    <string name="tasks_timer_format" formatted="false">%02d:%02d:%02d</string>
+    <string name="telegram_package">org.telegram.messenger</string>
+    <string name="telegram_x_package">org.thunderdog.challegram</string>
+    <string name="template_percent">%1$d percent.</string>
+    <string name="til_choose_date">Выберите период</string>
+    <string name="til_export_choose_date_error">Укажите период</string>
+    <string name="til_export_email">E-mail адрес</string>
+    <string name="til_export_email_error">Укажите e-mail</string>
+    <string name="time_format">HH:mm</string>
+    <string name="timer_days_format">d д. HH ч. mm мин.</string>
+    <string name="title_couldnt_delete_cheque">"Чек не удалось удалить.
+Проверьте интернет соединение."</string>
+    <string name="title_couldnt_load_cheques">Чеки не удалось обновить</string>
+    <string name="title_crop_image">Выделите QR-код</string>
+    <string name="title_error_crop_image">Ошибка обрезки изображения</string>
+    <string name="title_my_cheques">Чеки</string>
+    <string name="title_my_cheques_tab">Мои чеки</string>
+    <string name="title_notifications">Уведомления</string>
+    <string name="title_products">Товары</string>
+    <string name="title_tasks">Задания</string>
+    <string name="title_today">Сегодня</string>
+    <string name="title_yesterday">Вчера</string>
+    <string name="today">Сегодня</string>
+    <string name="tooltip_description">tooltip</string>
+    <string name="tooltip_label">show tooltip</string>
+    <string name="tracking_link_base">redirect.appmetrica.yandex.com</string>
+    <string name="transfer_cashback_btn">Вывести</string>
+    <string name="transfer_cashback_btn_retry">Повторить попытку</string>
+    <string name="transfer_cashback_couldnt_load_info">"Не удалось загрузить информацию по кэшбэку
+Повторите попытку"</string>
+    <string name="transfer_cashback_couldnt_load_promo_code">"Не удалось загрузить информацию по промокодам
+Повторите попытку"</string>
+    <string name="transfer_cashback_phone_hint">Номер телефона</string>
+    <string name="transfer_cashback_phone_title">Вывод на телефон</string>
+    <string name="transfer_cashback_sum_hint">Сумма вывода</string>
+    <string name="transfer_cashback_transfer_failed">Операция не удалась</string>
+    <string name="try_again">Попробовать еще раз</string>
+    <string name="try_again_btn">Повторить попытку</string>
+    <string name="try_again_title">Не удалось выполнить запрос</string>
+    <string name="tutorial_categories_cat_name">Овощи и фрукты</string>
+    <string name="tutorial_categories_cat_sum">127,80 P</string>
+    <string name="tutorial_categories_prod_name">Апельсиновый сок</string>
+    <string name="tutorial_categories_text">"ЧекСкан сам категоризует товары, но иногда может ошибаться.
+
+Сообщите ЧекСкану об ошибке - зажмите товар с неверной категорией."</string>
+    <string name="tutorial_categories_title">Категории в ЧекСкане</string>
+    <string name="tv_choose_parameters">Выберите нужные параметры</string>
+    <string name="tv_export_description">"Чеки за выбранный период будут
+отправлены Вам на почту архивом
+в Excel формате"</string>
+    <string name="ucrop_crop">Crop</string>
+    <string name="ucrop_error_input_data_is_absent">Both input and output Uri must be specified</string>
+    <string name="ucrop_label_edit_photo">Edit Photo</string>
+    <string name="ucrop_label_original">Original</string>
+    <string name="ucrop_menu_crop">Crop</string>
+    <string name="ucrop_mutate_exception_hint">Therefore, override color resource (ucrop_color_toolbar_widget) in your app to make it work on pre-L devices</string>
+    <string name="ucrop_rotate">Rotate</string>
+    <string name="ucrop_scale">Scale</string>
+    <string name="unity_offerwall_no_connection_close">Закрыть</string>
+    <string name="unity_offerwall_no_connection_retry">Повторить</string>
+    <string name="unity_offerwall_no_connection_title">Нет подключения к интернету</string>
+    <string name="universal_web_view_app_not_found">Не найдено приложение, чтобы открыть ссылку</string>
+    <string name="universal_web_view_download_failed">Не удалось скачать файл</string>
+    <string name="universal_web_view_download_started">Загрузка началась</string>
+    <string name="unknown_category_placeholder">Не определена</string>
+    <string name="update_app_dialog_button_feedback">Обратиться в поддержку</string>
+    <string name="update_app_dialog_button_update">В магазин приложений</string>
+    <string name="update_app_dialog_major_description">Установленная на устройстве версия приложения или часть его функционала не может быть поддержана. Пожалуйста, обновите приложение в магазине приложений.</string>
+    <string name="update_app_dialog_major_title">"Обновляем
+ЧекСкан"</string>
+    <string name="update_app_dialog_minor_description">Доступна новая версия ЧекСкана. Обновите приложение, чтобы получить новые функции.</string>
+    <string name="update_app_dialog_minor_title">Пора обновиться</string>
+    <string name="update_error_description">Приложение установлено из неофициального источника. Удалите его и загрузите из официального магазина: Google Play, RuStore, GetApps или AppGallery</string>
+    <string name="update_error_neutral_button">Ок</string>
+    <string name="update_error_positive_button">Перейти на сайт</string>
+    <string name="update_error_title">Произошла ошибка</string>
+    <string name="update_error_website">https://checkscan.org</string>
+    <string name="updating">Updating…</string>
+    <string name="url_not_opened_message">Требуется браузер, чтобы открыть страницу</string>
+    <string name="verification_button_phone_retry"><u>Запросить повторный звонок</u></string>
+    <string name="verification_button_sms_retry"><u>Отправить код повторно</u></string>
+    <string name="verification_button_try_call"><font color="#666D7A">Не получили СМС?</font> <u><font color="#0069FF">Запросите звонок</font></u></string>
+    <string name="verification_button_try_sms">Мы не дозвонились? <u><font color="#0069FF">Запросите код по СМС</font></u>"
+или проверьте номер вашего телефона
+и попробуйте снова"</string>
+    <string name="verification_call_button">Позвонить бесплатно</string>
+    <string name="verification_call_description" formatted="false">"Совершите звонок на %s
+с указанного номера (%s).
+Вызов сбросится автоматически."</string>
+    <string name="verification_call_try_email"><u>или Получить код на эл. почту</u></string>
+    <string name="verification_email_button_text">Подтвердить</string>
+    <string name="verification_email_subtitle">"Мы уже отправили его на
+"<b>%s</b></string>
+    <string name="verification_email_title">Введите код из письма</string>
+    <string name="verification_otp_error">Неверный код</string>
+    <string name="verification_phone_hint">Введите последние <font color="#0069FF">4 цифры</font>" 
+входящего номера."</string>
+    <string name="verification_phone_timer_format">Запросить повторный звонок %s</string>
+    <string name="verification_phone_title">Уже звоним на номер</string>
+    <string name="verification_phone_typed">Мы отправили код на %s</string>
+    <string name="verification_sms_title">Введите код из СМС</string>
+    <string name="verification_timer_format">Получить новый код можно через %s</string>
+    <string name="via_feedback_mail">Написать на почту</string>
+    <string name="via_feedback_tg">Написать в Telegram</string>
+    <string name="via_feedback_vk">Написать в VK</string>
+    <string name="wait_layout_tv_subtitle">Пожалуйста, подождите.</string>
+    <string name="wait_layout_tv_title">Данные загружаются...</string>
+    <string name="web_view_google_play_link">https://play.google.com/store/apps/details?id=com.google.android.webview</string>
+    <string name="web_view_update_text">"Для продолжения работы необходимо обновить программное обеспечение. Нажмите 'Ок' для перехода на страницу обновления"</string>
+    <string name="web_view_update_title">Обновление ПО</string>
+    <string name="webpage_copy_link">Скопировать ссылку</string>
+    <string name="webpage_copy_share">Поделиться ссылкой</string>
+    <string name="webpage_copy_share_exception">Не удалось поделиться. Скопируйте ссылку самостоятельно.</string>
+    <string name="webpage_copy_share_placeholder">Кэшбэк в ЧекСкане: %s</string>
+    <string name="webview_cashback_path" formatted="false">https://checkscan.org/redirect/?userId=%d&amp;url=%s</string>
+    <string name="webview_label">МОИ ЧЕКИ ОНЛАЙН</string>
+    <string name="webview_url_clipboard_label">Ссылка в ЧекСкане</string>
+    <string name="webview_url_copied_to_clipboard">Ссылка скопирована</string>
+    <string name="welcome_to_notifications">Здесь мы будем собирать для Вас сообщения о важном: о начислении кэшбэка за покупки, о выгодных акциях, о бонусах и о многом другом!</string>
+    <string name="welcome_to_notifications_title">Добро пожаловать в новый раздел! 😎</string>
+    <string name="withdraw_bank_partners_description">"Мы работаем над запуском удобного и простого способа вывода кэшбэка.
+
+Если вы не готовы ждать, оформите карту 
+у одного из банков-партнеров. В таком случае вы сможете выводить кэшбэк прямо на карту.
+
+Оформить карту нужно через переход из приложения ЧекСкан. Каждая карта имеет свои условия, выберите подходящую для себя."</string>
+    <string name="withdraw_bank_partners_no_cards">"Упсс… Кажется у нас не нашлось карт
+подходящих для вас. Пожалуйста попробуйте позже."</string>
+    <string name="withdraw_bank_partners_title">Вывод кэшбэка на карту</string>
+    <string name="withdraw_bank_partners_toolbar_title">Вывод кэшбэка</string>
+    <string name="withdrawal_add_email_button">Добавить</string>
+    <string name="withdrawal_add_email_description">Чтобы подтвердить вывод денег</string>
+    <string name="withdrawal_add_email_title">Добавьте эл. почту</string>
+    <string name="wordy_date_format">d MMMM</string>
+    <string name="wordy_date_format_with_time">%1$s в %2$s</string>
+    <string name="yandex_app_metrica_api_key">fafacf84-5365-48c6-812d-824ea17bf5be</string>
+    <string name="yandex_cobrand_form_feedback_url" formatted="false">https://forms.yandex.ru/cloud/629616dcaeaf5d200970ff65/?user_id=%s&amp;email=%s</string>
+    <string name="yes">Yes</string>
+    <string name="yesterday">Вчера</string>
+    <string name="your_electrocheque_loading">Ваши электрочеки загружаются…</string>
+</resources>

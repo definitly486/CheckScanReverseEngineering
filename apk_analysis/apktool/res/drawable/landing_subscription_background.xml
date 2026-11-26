@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="589.0dip" android:width="375.0dip" android:viewportWidth="375.0" android:viewportHeight="589.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$landing_subscription_background__0" android:pathData="M-333,0h1041v589h-1041z" />
+</vector>

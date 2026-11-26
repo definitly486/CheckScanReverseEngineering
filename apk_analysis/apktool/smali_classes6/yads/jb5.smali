@@ -1,0 +1,36 @@
+.class public final Lyads/jb5;
+.super Lyads/rf6;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>(Landroid/view/View;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lyads/rf6;-><init>(Landroid/view/View;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/view/View;)V
+    .locals 0
+
+    .line 2
+    return-void
+.end method
+
+.method public final a(Landroid/view/View;Ljava/lang/Object;)Z
+    .locals 0
+
+    const/4 p0, 0x1
+
+    return p0
+.end method
+
+.method public final b(Landroid/view/View;Ljava/lang/Object;)V
+    .locals 0
+
+    return-void
+.end method

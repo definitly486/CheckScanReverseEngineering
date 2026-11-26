@@ -1,0 +1,151 @@
+package com.google.android.gms.common.api;
+
+import android.app.Activity;
+import android.app.ActivityOptions;
+import android.app.PendingIntent;
+import android.content.IntentSender;
+import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.IntentSenderRequest;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.internal.Objects;
+import com.google.android.gms.common.internal.Preconditions;
+import com.google.android.gms.common.internal.ReflectedParcelable;
+import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
+import com.google.android.gms.common.util.PlatformVersion;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final class Status extends AbstractSafeParcelable implements Result, ReflectedParcelable {
+    public final int b;
+    public final String c;
+    public final PendingIntent d;
+    public final ConnectionResult e;
+    public static final Status RESULT_SUCCESS_CACHE = new Status(-1);
+    public static final Status RESULT_SUCCESS = new Status(0);
+    public static final Status RESULT_INTERRUPTED = new Status(14);
+    public static final Status RESULT_INTERNAL_ERROR = new Status(8);
+    public static final Status RESULT_TIMEOUT = new Status(15);
+    public static final Status RESULT_CANCELED = new Status(16);
+    public static final Status RESULT_API_NOT_CONNECTED = new Status(17);
+    public static final Status RESULT_DEAD_CLIENT = new Status(18);
+    public static final Parcelable.Creator<Status> CREATOR = new zze();
+
+    public Status(int i, String str, PendingIntent pendingIntent, ConnectionResult connectionResult) {
+        this.b = i;
+        this.c = str;
+        this.d = pendingIntent;
+        this.e = connectionResult;
+    }
+
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Status)) {
+            return false;
+        }
+        Status status = (Status) obj;
+        return this.b == status.b && Objects.equal(this.c, status.c) && Objects.equal(this.d, status.d) && Objects.equal(this.e, status.e);
+    }
+
+    public ConnectionResult getConnectionResult() {
+        return this.e;
+    }
+
+    public PendingIntent getResolution() {
+        return this.d;
+    }
+
+    @Override // com.google.android.gms.common.api.Result
+    public Status getStatus() {
+        return this;
+    }
+
+    public int getStatusCode() {
+        return this.b;
+    }
+
+    public String getStatusMessage() {
+        return this.c;
+    }
+
+    public boolean hasResolution() {
+        return this.d != null;
+    }
+
+    public int hashCode() {
+        return Objects.hashCode(Integer.valueOf(this.b), this.c, this.d, this.e);
+    }
+
+    public boolean isCanceled() {
+        return this.b == 16;
+    }
+
+    public boolean isInterrupted() {
+        return this.b == 14;
+    }
+
+    public boolean isSuccess() {
+        return this.b <= 0;
+    }
+
+    public void startResolutionForResult(Activity activity, int i) throws IntentSender.SendIntentException {
+        if (hasResolution()) {
+            Bundle bundle = PlatformVersion.isAtLeastU() ? ActivityOptions.makeBasic().setPendingIntentBackgroundActivityStartMode(1).toBundle() : null;
+            PendingIntent pendingIntent = this.d;
+            Preconditions.checkNotNull(pendingIntent);
+            activity.startIntentSenderForResult(pendingIntent.getIntentSender(), i, null, 0, 0, 0, bundle);
+        }
+    }
+
+    public String toString() {
+        Objects.ToStringHelper stringHelper = Objects.toStringHelper(this);
+        stringHelper.add("statusCode", zza());
+        stringHelper.add("resolution", this.d);
+        return stringHelper.toString();
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i) {
+        int iBeginObjectHeader = SafeParcelWriter.beginObjectHeader(parcel);
+        SafeParcelWriter.writeInt(parcel, 1, getStatusCode());
+        SafeParcelWriter.writeString(parcel, 2, getStatusMessage(), false);
+        SafeParcelWriter.writeParcelable(parcel, 3, this.d, i, false);
+        SafeParcelWriter.writeParcelable(parcel, 4, getConnectionResult(), i, false);
+        SafeParcelWriter.finishObjectHeader(parcel, iBeginObjectHeader);
+    }
+
+    public final String zza() {
+        String str = this.c;
+        return str != null ? str : CommonStatusCodes.getStatusCodeString(this.b);
+    }
+
+    public Status(int i) {
+        this(i, (String) null);
+    }
+
+    public Status(ConnectionResult connectionResult, String str) {
+        this(connectionResult, str, 17);
+    }
+
+    public Status(int i, String str) {
+        this(i, str, (PendingIntent) null);
+    }
+
+    @Deprecated
+    public Status(ConnectionResult connectionResult, String str, int i) {
+        this(i, str, connectionResult.getResolution(), connectionResult);
+    }
+
+    public Status(int i, String str, PendingIntent pendingIntent) {
+        this(i, str, pendingIntent, null);
+    }
+
+    public void startResolutionForResult(ActivityResultLauncher<IntentSenderRequest> activityResultLauncher) {
+        if (hasResolution()) {
+            PendingIntent pendingIntent = this.d;
+            Preconditions.checkNotNull(pendingIntent);
+            activityResultLauncher.launch(new IntentSenderRequest.Builder(pendingIntent.getIntentSender()).build());
+        }
+    }
+}

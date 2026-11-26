@@ -1,0 +1,17 @@
+package defpackage;
+
+import android.os.Parcelable;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.common.api.Scope;
+import java.util.Comparator;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final /* synthetic */ class sia implements Comparator {
+    public static final /* synthetic */ sia b = new sia();
+
+    @Override // java.util.Comparator
+    public final /* synthetic */ int compare(Object obj, Object obj2) {
+        Parcelable.Creator<GoogleSignInAccount> creator = GoogleSignInAccount.CREATOR;
+        return ((Scope) obj).getScopeUri().compareTo(((Scope) obj2).getScopeUri());
+    }
+}

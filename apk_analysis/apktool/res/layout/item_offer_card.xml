@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/card_block_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/margin_large_sm" android:paddingVertical="@dimen/margin_top_medium_sm"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_balance_my_card" style="@style/DialogUpridTextTitle" />
+    <ImageView android:id="@id/iv_card_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big_sm" android:contentDescription="@null" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_card_options" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_average_sm" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <TextView android:id="@id/btn_issue_card_offer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_medium_sm" android:paddingVertical="@dimen/margin_medium_sm" style="@style/FragmentOfferCardButton" />
+    <TextView android:id="@id/btn_info_about_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big_sm" android:text="@string/fragment_offer_card_item_sub_button_title" style="@style/FragmentOfferCardButtonAbout" />
+    <include android:id="@id/layout_transfer_phone_my_card" android:visibility="gone" layout="@layout/item_transfer_phone_my_card" />
+</LinearLayout>

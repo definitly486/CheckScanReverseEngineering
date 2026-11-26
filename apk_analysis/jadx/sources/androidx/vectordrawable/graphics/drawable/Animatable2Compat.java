@@ -1,0 +1,45 @@
+package androidx.vectordrawable.graphics.drawable;
+
+import android.graphics.drawable.Animatable;
+import android.graphics.drawable.Animatable2;
+import android.graphics.drawable.Drawable;
+
+/* JADX INFO: loaded from: classes3.dex */
+public interface Animatable2Compat extends Animatable {
+
+    public static abstract class AnimationCallback {
+        Animatable2.AnimationCallback mPlatformCallback;
+
+        public Animatable2.AnimationCallback getPlatformCallback() {
+            Animatable2.AnimationCallback animationCallback = this.mPlatformCallback;
+            if (animationCallback != null) {
+                return animationCallback;
+            }
+            Animatable2.AnimationCallback animationCallback2 = new Animatable2.AnimationCallback() { // from class: androidx.vectordrawable.graphics.drawable.Animatable2Compat.AnimationCallback.1
+                @Override // android.graphics.drawable.Animatable2.AnimationCallback
+                public void onAnimationEnd(Drawable drawable) {
+                    AnimationCallback.this.onAnimationEnd(drawable);
+                }
+
+                @Override // android.graphics.drawable.Animatable2.AnimationCallback
+                public void onAnimationStart(Drawable drawable) {
+                    AnimationCallback.this.onAnimationStart(drawable);
+                }
+            };
+            this.mPlatformCallback = animationCallback2;
+            return animationCallback2;
+        }
+
+        public void onAnimationEnd(Drawable drawable) {
+        }
+
+        public void onAnimationStart(Drawable drawable) {
+        }
+    }
+
+    void clearAnimationCallbacks();
+
+    void registerAnimationCallback(AnimationCallback animationCallback);
+
+    boolean unregisterAnimationCallback(AnimationCallback animationCallback);
+}

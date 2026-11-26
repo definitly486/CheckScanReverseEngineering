@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_16"
+    android:paddingHorizontal="@dimen/dimen_16">
+    <include
+        android:id="@+id/first_shop"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_116"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/dimen_4"
+        layout="@layout/layout_offline_online_shop"/>
+    <include
+        android:id="@+id/second_shop"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_116"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/dimen_4"
+        layout="@layout/layout_offline_online_shop"/>
+</LinearLayout>

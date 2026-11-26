@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.warefly.checkscan.core.ui.LoadingButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:enabled="false"
+    android:id="@+id/btn_claim_reward"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/dimen_16"
+    app:loadingDrawableResource="@drawable/loading_circles_8dp"
+    app:regularDrawableResource="@drawable/regular_button_8dp"
+    style="@style/Button.Blue.8dp"/>

@@ -1,0 +1,17 @@
+package defpackage;
+
+/* JADX INFO: loaded from: classes5.dex */
+public enum qy5 {
+    UNKNOWN,
+    CHECKSCAN_CASHBACK,
+    FRIEND_CASHBACK,
+    CHECKSCAN_BONUS,
+    WITHDRAWAL,
+    PURCHASE_CASHBACK,
+    PARTNER_BONUS,
+    LOYALTY_PROGRAM,
+    LIMIT_CHANGE,
+    CARD_OPERATION,
+    POWERCODE_CASHBACK,
+    POWERCODE_HOT_CASHBACK
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="589dp"
+    android:width="375dp"
+    android:viewportWidth="375"
+    android:viewportHeight="589">
+    <path
+        android:fillColor="@drawable/_landing_subscription_background__0_res_0x7f080020"
+        android:pathData="M-333,0h1041v589h-1041z"/>
+</vector>

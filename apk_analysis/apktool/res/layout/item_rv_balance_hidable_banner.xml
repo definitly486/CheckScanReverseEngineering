@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dimen_16" app:cardElevation="@dimen/dimen_0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_banner" android:layout_width="@dimen/dimen_0" android:layout_height="@dimen/dimen_0" android:scaleType="fitXY" android:adjustViewBounds="true" android:importantForAccessibility="no" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="359:280" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/btn_hide" android:padding="@dimen/dimen_6" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_40" android:layout_marginTop="@dimen/dimen_12" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/dimen_12" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_white_close" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

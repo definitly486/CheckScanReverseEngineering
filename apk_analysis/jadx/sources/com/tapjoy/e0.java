@@ -1,0 +1,23 @@
+package com.tapjoy;
+
+/* JADX INFO: loaded from: classes4.dex */
+public abstract /* synthetic */ class e0 {
+    public static final /* synthetic */ int[] a;
+
+    static {
+        int[] iArr = new int[TJSegment.values().length];
+        a = iArr;
+        try {
+            iArr[TJSegment.NON_PAYER.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            a[TJSegment.PAYER.ordinal()] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            a[TJSegment.VIP.ordinal()] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+    }
+}

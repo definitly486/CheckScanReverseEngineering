@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:textColorLink="@color/readilyBlue" android:gravity="fill" android:id="@id/cb_i_agree_program" android:paddingBottom="@dimen/change_phone_cb_i_agree_received_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/chekbox_checked" android:text="@string/i_agree_received" android:foregroundGravity="fill" android:fontFamily="@font/roboto_reg" android:paddingStart="@dimen/change_phone_cb_i_agree_received_padding_start" android:buttonTint="@color/white" android:buttonTintMode="multiply" />
+</FrameLayout>

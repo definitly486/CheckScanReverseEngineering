@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_athens_gray"
+    android:padding="@dimen/margin_large_sm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pending"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_sum"
+        android:layout_width="@dimen/fill_free_space"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small_2_sm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/CardStatusTitleText"/>
+    <TextView
+        android:id="@+id/tv_description_pending"
+        android:layout_width="@dimen/fill_free_space"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_more_little_bit"
+        android:layout_marginStart="@dimen/margin_small_2_sm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sum"
+        style="@style/CardHintText"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

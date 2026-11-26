@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/coupon_metro_cv_height"
+    android:layout_marginBottom="@dimen/margin_1"
+    app:cardBackgroundColor="@color/greyBlue"
+    app:cardCornerRadius="@dimen/coupon_metro_cv_radius"
+    app:cardElevation="@dimen/coupon_metro_cv_elevation">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingTop="@dimen/coupon_metro_padding_top_bottom"
+        android:paddingBottom="@dimen/coupon_metro_padding_top_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/coupon_metro_padding_start_end"
+        android:paddingEnd="@dimen/coupon_metro_padding_start_end">
+        <TextView
+            android:textColor="@color/darkCharcoal"
+            android:id="@+id/tv_withdraw_shop"
+            android:layout_width="@dimen/coupon_metro_tv_size"
+            android:layout_height="@dimen/coupon_metro_tv_size"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_marginEnd="@dimen/coupon_metro_tv_margin_end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/iv_ic_withdraw_metro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/iv_ic_withdraw_metro"
+            android:layout_width="@dimen/coupon_metro_iv_ic_size"
+            android:layout_height="@dimen/coupon_metro_iv_ic_size"
+            android:contentDescription="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_calendar"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

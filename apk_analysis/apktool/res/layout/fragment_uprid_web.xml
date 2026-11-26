@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/top_web_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:layout_gravity="bottom" android:id="@id/btn_back_plastic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_fourty_large" android:text="@string/fragment_uprid_web_btn_back_plastic_text" android:layout_marginHorizontal="@dimen/margin_large_sm" style="@style/BlueButtonRadius8" />
+    <include android:id="@id/view_loading" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_previews_loading" />
+</FrameLayout>

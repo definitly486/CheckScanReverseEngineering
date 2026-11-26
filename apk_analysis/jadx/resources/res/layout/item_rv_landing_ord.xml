@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:ellipsize="marquee"
+    android:id="@+id/tv_ofd"
+    android:padding="@dimen/margin_more_little_bit"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollHorizontally="true"
+    android:singleLine="true"
+    android:drawablePadding="@dimen/margin_large_sm"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:textAlignment="center"
+    app:drawableEndCompat="@drawable/ic_info_gray_14"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/iv_picture"
+    style="@style/TextSize12.ShuttleGray"/>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:name="vector" android:height="60.0dip" android:width="60.0dip" android:viewportWidth="100.0" android:viewportHeight="100.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="fade_animation">
+        <path android:name="pin_fade1" android:fillColor="#20ffc107" android:pathData="M 50 20 C 37.59 20 27.5 30.09 27.5 42.5 C 27.5 58.098 47.809 78.586 48.672 79.453 C 49.039 79.816 49.52 80 50 80 C 50.48 80 50.961 79.816 51.328 79.453 C 52.191 78.586 72.5 58.098 72.5 42.5 C 72.5 30.09 62.41 20 50 20 Z M 50 20" android:strokeWidth="1.0" />
+    </group>
+    <group android:name="bounce">
+        <path android:name="pin_fade2" android:fillColor="#40ffc107" android:pathData="M 50 20 C 37.59 20 27.5 30.09 27.5 42.5 C 27.5 58.098 47.809 78.586 48.672 79.453 C 49.039 79.816 49.52 80 50 80 C 50.48 80 50.961 79.816 51.328 79.453 C 52.191 78.586 72.5 58.098 72.5 42.5 C 72.5 30.09 62.41 20 50 20 Z M 50 20" android:strokeWidth="1.0" />
+    </group>
+    <path android:name="pin" android:fillColor="#ffffc107" android:pathData="M 50 20 C 37.59 20 27.5 30.09 27.5 42.5 C 27.5 58.098 47.809 78.586 48.672 79.453 C 49.039 79.816 49.52 80 50 80 C 50.48 80 50.961 79.816 51.328 79.453 C 52.191 78.586 72.5 58.098 72.5 42.5 C 72.5 30.09 62.41 20 50 20 Z M 50 20" android:strokeWidth="1.0" />
+    <path android:name="circle" android:fillColor="#fffafafa" android:pathData="M 61.25 42.5 C 61.25 48.715 56.215 53.75 50 53.75 C 43.785 53.75 38.75 48.715 38.75 42.5 C 38.75 36.285 43.785 31.25 50 31.25 C 56.215 31.25 61.25 36.285 61.25 42.5 Z M 61.25 42.5" android:strokeWidth="1.0" />
+</vector>

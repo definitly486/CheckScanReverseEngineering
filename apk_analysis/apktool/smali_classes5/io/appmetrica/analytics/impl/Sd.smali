@@ -1,0 +1,58 @@
+.class public final Lio/appmetrica/analytics/impl/Sd;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/appmetrica/analytics/impl/tl;
+
+
+# instance fields
+.field public final a:I
+
+
+# direct methods
+.method public constructor <init>(I)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p1, p0, Lio/appmetrica/analytics/impl/Sd;->a:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic a(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 12
+    check-cast p1, Ljava/lang/String;
+
+    invoke-virtual {p0, p1}, Lio/appmetrica/analytics/impl/Sd;->a(Ljava/lang/String;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final a(Ljava/lang/String;)Z
+    .locals 0
+
+    iget p0, p0, Lio/appmetrica/analytics/impl/Sd;->a:I
+
+    invoke-static {}, Landroid/os/Process;->myPid()I
+
+    move-result p1
+
+    if-eq p0, p1, :cond_0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method

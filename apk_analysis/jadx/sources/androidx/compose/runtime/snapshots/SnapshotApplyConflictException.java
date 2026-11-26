@@ -1,0 +1,15 @@
+package androidx.compose.runtime.snapshots;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class SnapshotApplyConflictException extends Exception {
+    public static final int $stable = 8;
+    private final Snapshot snapshot;
+
+    public SnapshotApplyConflictException(Snapshot snapshot) {
+        this.snapshot = snapshot;
+    }
+
+    public final Snapshot getSnapshot() {
+        return this.snapshot;
+    }
+}

@@ -1,0 +1,50 @@
+.class public final Lvu5;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ltn5;
+
+
+# static fields
+.field public static final a:Lvu5;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lvu5;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lvu5;->a:Lvu5;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final f()Ljava/lang/Object;
+    .locals 0
+
+    const p0, 0x7fffffff
+
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final id()Ljava/lang/Object;
+    .locals 0
+
+    const p0, 0x7fffffff
+
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    return-object p0
+.end method

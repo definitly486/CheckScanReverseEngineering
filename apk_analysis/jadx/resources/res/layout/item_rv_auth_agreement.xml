@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dimen_8"
+    android:paddingEnd="@dimen/dimen_0"
+    android:paddingVertical="@dimen/dimen_8">
+    <CheckBox
+        android:layout_gravity="top"
+        android:id="@+id/cb_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:button="@drawable/checkbox_square_selector"
+        android:minWidth="@dimen/dimen_0"
+        android:minHeight="@dimen/dimen_0"
+        android:buttonTint="@color/white"
+        android:buttonTintMode="multiply"/>
+    <TextView
+        android:textColor="@color/black"
+        android:textColorLink="@color/readilyBlue"
+        android:id="@+id/tv_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_reg"
+        android:textAlignment="textStart"
+        android:layout_marginStart="@dimen/dimen_10"
+        style="@style/TextSize14"/>
+</LinearLayout>

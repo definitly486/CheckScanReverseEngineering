@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/darkBlue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.warefly.checkscan.core.ui.slides.SlidesProgressView android:id="@id/pb_slides" android:layout_width="fill_parent" android:layout_height="@dimen/margin_small_sm" android:layout_marginTop="@dimen/margin_sm" android:layout_marginHorizontal="@dimen/margin_large_sm" />
+    <ImageView android:layout_gravity="end" android:id="@id/iv_close" android:background="@drawable/background_transparent_8_border_white" android:padding="@dimen/margin_small_sm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_big_sm" android:src="@drawable/ic_close_dear" android:contentDescription="@null" android:layout_marginEnd="@dimen/margin_large_sm" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/primary_10" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/toolbar" android:layout_width="@dimen/dimen_0" android:layout_height="wrap_content" android:text="@string/title_tasks" android:textAlignment="center" android:paddingVertical="@dimen/dimen_10" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextSize18.Medium.BlueCharcoal" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_to_refresh" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_content" android:paddingTop="@dimen/dimen_4" android:paddingBottom="@dimen/dimen_64" android:clipToPadding="false" android:layout_width="@dimen/dimen_0" android:layout_height="@dimen/dimen_0" android:paddingHorizontal="@dimen/dimen_16" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include android:id="@id/incld_try_again" android:visibility="gone" layout="@layout/layout_simple_try_again" />
+</androidx.constraintlayout.widget.ConstraintLayout>

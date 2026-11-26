@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="@dimen/fill_free_space"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/margin_large_sm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextSize22.BlueCharcoal"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_help_button"
+        android:background="@drawable/background_yellow10_12"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_sm"
+        android:text="@string/bonuses_help_button_title"
+        android:drawablePadding="@dimen/margin_more_little_bit"
+        android:drawableStart="@drawable/ic_yellow_question_24"
+        android:layout_marginStart="@dimen/margin_large_sm"
+        android:paddingHorizontal="@dimen/margin_sm"
+        android:paddingVertical="@dimen/margin_end_sm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        style="@style/TextSize16.Medium.Gamboge"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:gravity="center"
+        android:id="@+id/tv_favorite_previews_all_button"
+        android:visibility="gone"
+        android:layout_width="@dimen/fill_free_space"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_large_sm"
+        android:paddingHorizontal="@dimen/margin_large_sm"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_help_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_help_button"
+        style="@style/TextSize16.Medium.ReadilyBlue"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/margin_large_sm">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_large_sm"
+        style="@style/TextSize18.Medium.BlueCharcoal"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small_2_sm"
+        android:layout_marginHorizontal="@dimen/margin_large_sm"
+        style="@style/TextSize16.BlueCharcoal"/>
+    <View
+        android:id="@+id/divider"
+        android:background="@color/athensGray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:layout_marginTop="@dimen/margin_top_medium_sm"/>
+    <TextView
+        android:id="@+id/btn_action"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large_sm"
+        android:textAlignment="center"
+        style="@style/TextSize18.ReadilyBlue"/>
+</LinearLayout>

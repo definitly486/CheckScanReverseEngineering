@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/blueCharcoal"
+        android:ellipsize="none"
+        android:id="@+id/tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dimen_32"
+        android:maxLines="1"
+        app:autoSizeMaxTextSize="@dimen/text_size_48"
+        app:autoSizeMinTextSize="@dimen/text_size_28"
+        app:autoSizeStepGranularity="@dimen/text_size_1"
+        app:autoSizeTextType="uniform"
+        style="@style/TextSize48"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/btn_transfer_card"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/dimen_100"
+        android:maxLines="2"
+        android:paddingHorizontal="@dimen/dimen_12"
+        android:paddingVertical="@dimen/dimen_8"
+        style="@style/ButtonFreeVeticalPadding.Blue"/>
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow_helper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv_balance, btn_transfer_card"
+        app:flow_horizontalBias="0"
+        app:flow_horizontalGap="@dimen/dimen_10"
+        app:flow_horizontalStyle="spread_inside"
+        app:flow_verticalBias="0"
+        app:flow_verticalGap="@dimen/dimen_16"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_pending_sum"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flow_helper"
+        style="@style/TextSize14.ShuttleGray"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

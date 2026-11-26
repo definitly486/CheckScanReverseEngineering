@@ -1,0 +1,36 @@
+.class public final synthetic Lqo9;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lyads/ut5;
+
+
+# instance fields
+.field public final synthetic b:I
+
+
+# direct methods
+.method public synthetic constructor <init>(I)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p1, p0, Lqo9;->b:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 0
+
+    iget p0, p0, Lqo9;->b:I
+
+    invoke-static {p0}, Lyads/bl;->a(I)Landroid/os/HandlerThread;
+
+    move-result-object p0
+
+    return-object p0
+.end method

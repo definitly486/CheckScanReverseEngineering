@@ -1,0 +1,56 @@
+package com.warefly.checkscan.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
+import com.warefly.checkscan.R;
+import defpackage.o2;
+
+/* JADX INFO: loaded from: classes5.dex */
+public final class ItemBadgeProductOffersPlaceholderBinding implements ViewBinding {
+    public final ImageView ivShopsGif;
+    private final ConstraintLayout rootView;
+    public final TextView tvLoadingTitle;
+
+    private ItemBadgeProductOffersPlaceholderBinding(ConstraintLayout constraintLayout, ImageView imageView, TextView textView) {
+        this.rootView = constraintLayout;
+        this.ivShopsGif = imageView;
+        this.tvLoadingTitle = textView;
+    }
+
+    public static ItemBadgeProductOffersPlaceholderBinding bind(View view) {
+        int i = R.id.iv_shops_gif;
+        ImageView imageView = (ImageView) ViewBindings.findChildViewById(view, R.id.iv_shops_gif);
+        if (imageView != null) {
+            i = R.id.tv_loading_title;
+            TextView textView = (TextView) ViewBindings.findChildViewById(view, R.id.tv_loading_title);
+            if (textView != null) {
+                return new ItemBadgeProductOffersPlaceholderBinding((ConstraintLayout) view, imageView, textView);
+            }
+        }
+        o2.d("Missing required view with ID: ".concat(view.getResources().getResourceName(i)));
+        return null;
+    }
+
+    public static ItemBadgeProductOffersPlaceholderBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
+        View viewInflate = layoutInflater.inflate(R.layout.item_badge_product_offers_placeholder, viewGroup, false);
+        if (z) {
+            viewGroup.addView(viewInflate);
+        }
+        return bind(viewInflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    public ConstraintLayout getRoot() {
+        return this.rootView;
+    }
+
+    public static ItemBadgeProductOffersPlaceholderBinding inflate(LayoutInflater layoutInflater) {
+        return inflate(layoutInflater, null, false);
+    }
+}

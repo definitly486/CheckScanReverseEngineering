@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/white" android:id="@id/btn_ord_ad" android:background="@drawable/ord_button_background" android:paddingTop="@dimen/margin_more_little_bit" android:paddingBottom="@dimen/margin_more_little_bit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ord_button_add_text" android:drawablePadding="@dimen/margin_more_little_bit" android:alpha="0.7" android:drawableStart="@drawable/ic_ord_info" android:paddingStart="@dimen/margin_more_little_bit" android:paddingEnd="@dimen/margin_more_little_bit"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

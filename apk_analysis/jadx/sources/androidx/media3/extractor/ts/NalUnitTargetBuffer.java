@@ -1,0 +1,64 @@
+package androidx.media3.extractor.ts;
+
+import defpackage.o8;
+import java.util.Arrays;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class NalUnitTargetBuffer {
+    private boolean isCompleted;
+    private boolean isFilling;
+    public byte[] nalData;
+    public int nalLength;
+    private final int targetType;
+
+    public NalUnitTargetBuffer(int i, int i2) {
+        this.targetType = i;
+        byte[] bArr = new byte[i2 + 3];
+        this.nalData = bArr;
+        bArr[2] = 1;
+    }
+
+    public void appendToNalUnit(byte[] bArr, int i, int i2) {
+        if (this.isFilling) {
+            int i3 = i2 - i;
+            byte[] bArrCopyOf = this.nalData;
+            int length = bArrCopyOf.length;
+            int i4 = this.nalLength;
+            if (length < i4 + i3) {
+                bArrCopyOf = Arrays.copyOf(bArrCopyOf, (i4 + i3) * 2);
+                this.nalData = bArrCopyOf;
+            }
+            System.arraycopy(bArr, i, bArrCopyOf, this.nalLength, i3);
+            this.nalLength += i3;
+        }
+    }
+
+    public boolean endNalUnit(int i) {
+        if (!this.isFilling) {
+            return false;
+        }
+        this.nalLength -= i;
+        this.isFilling = false;
+        this.isCompleted = true;
+        return true;
+    }
+
+    public boolean isCompleted() {
+        return this.isCompleted;
+    }
+
+    public void reset() {
+        this.isFilling = false;
+        this.isCompleted = false;
+    }
+
+    public void startNalUnit(int i) {
+        o8.r(!this.isFilling);
+        boolean z = i == this.targetType;
+        this.isFilling = z;
+        if (z) {
+            this.nalLength = 3;
+            this.isCompleted = false;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="@color/red"
+    android:id="@+id/btn_delete"
+    android:padding="@dimen/dimen_13"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_24"
+    android:minHeight="@dimen/dimen_0"
+    android:text="@string/profile_page_delete_btn_text"
+    style="@style/Button.Red.8dp.Outlined"/>

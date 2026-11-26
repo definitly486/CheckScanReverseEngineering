@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eightbitlab.com.blurview.BlurView android:id="@id/blurView" android:background="@drawable/background_white_50_opacity_80" android:layout_width="fill_parent" android:layout_height="wrap_content" app:blurOverlayColor="#80ffffff"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dimen_8" android:paddingVertical="@dimen/dimen_4">
+        <TextView android:id="@id/tv_ads_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/badge_ads_title" style="@style/TextSize12.ShuttleGray.Height20" />
+        <Space android:layout_width="@dimen/dimen_4" android:layout_height="wrap_content" />
+        <ImageView android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:importantForAccessibility="no" app:srcCompat="@drawable/ic_info_gray_14" />
+    </LinearLayout>
+</eightbitlab.com.blurview.BlurView>

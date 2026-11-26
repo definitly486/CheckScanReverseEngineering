@@ -1,0 +1,224 @@
+.class public final Landroidx/compose/foundation/gestures/AndroidConfig;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/compose/foundation/gestures/ScrollConfig;
+
+
+# static fields
+.field public static final $stable:I = 0x8
+
+
+# instance fields
+.field private final viewConfiguration:Landroid/view/ViewConfiguration;
+
+
+# direct methods
+.method public constructor <init>(Landroid/view/ViewConfiguration;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/AndroidConfig;->viewConfiguration:Landroid/view/ViewConfiguration;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public calculateMouseWheelScroll-8xgXZGE(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/input/pointer/PointerEvent;J)J
+    .locals 6
+
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/AndroidConfig;->getVerticalScrollFactor$foundation(Landroidx/compose/ui/unit/Density;)F
+
+    move-result p3
+
+    neg-float p3, p3
+
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/AndroidConfig;->getHorizontalScrollFactor$foundation(Landroidx/compose/ui/unit/Density;)F
+
+    move-result p0
+
+    neg-float p0, p0
+
+    invoke-virtual {p2}, Landroidx/compose/ui/input/pointer/PointerEvent;->getChanges()Ljava/util/List;
+
+    move-result-object p1
+
+    sget-object p2, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
+
+    invoke-virtual {p2}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Offset;->box-impl(J)Landroidx/compose/ui/geometry/Offset;
+
+    move-result-object p2
+
+    move-object p4, p1
+
+    check-cast p4, Ljava/util/Collection;
+
+    invoke-interface {p4}, Ljava/util/Collection;->size()I
+
+    move-result p4
+
+    const/4 v0, 0x0
+
+    :goto_0
+    if-ge v0, p4, :cond_0
+
+    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/compose/ui/input/pointer/PointerInputChange;
+
+    invoke-virtual {p2}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
+
+    move-result-wide v2
+
+    invoke-virtual {v1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getScrollDelta-F1C5BW0()J
+
+    move-result-wide v4
+
+    invoke-static {v2, v3, v4, v5}, Landroidx/compose/ui/geometry/Offset;->plus-MK-Hz9U(JJ)J
+
+    move-result-wide v1
+
+    invoke-static {v1, v2}, Landroidx/compose/ui/geometry/Offset;->box-impl(J)Landroidx/compose/ui/geometry/Offset;
+
+    move-result-object p2
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p2}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
+
+    move-result-wide p1
+
+    const/16 p4, 0x20
+
+    shr-long v0, p1, p4
+
+    long-to-int v0, v0
+
+    invoke-static {v0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result v0
+
+    mul-float/2addr v0, p0
+
+    const-wide v1, 0xffffffffL
+
+    and-long p0, p1, v1
+
+    long-to-int p0, p0
+
+    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result p0
+
+    mul-float/2addr p0, p3
+
+    invoke-static {v0}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    move-result p1
+
+    int-to-long p1, p1
+
+    invoke-static {p0}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    move-result p0
+
+    int-to-long v3, p0
+
+    shl-long p0, p1, p4
+
+    and-long p2, v3, v1
+
+    or-long/2addr p0, p2
+
+    invoke-static {p0, p1}, Landroidx/compose/ui/geometry/Offset;->constructor-impl(J)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method public final getHorizontalScrollFactor$foundation(Landroidx/compose/ui/unit/Density;)F
+    .locals 2
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1a
+
+    if-le v0, v1, :cond_0
+
+    sget-object p1, Landroidx/compose/foundation/gestures/ViewConfigurationApi26Impl;->INSTANCE:Landroidx/compose/foundation/gestures/ViewConfigurationApi26Impl;
+
+    iget-object p0, p0, Landroidx/compose/foundation/gestures/AndroidConfig;->viewConfiguration:Landroid/view/ViewConfiguration;
+
+    invoke-virtual {p1, p0}, Landroidx/compose/foundation/gestures/ViewConfigurationApi26Impl;->getHorizontalScrollFactor(Landroid/view/ViewConfiguration;)F
+
+    move-result p0
+
+    return p0
+
+    :cond_0
+    const/high16 p0, 0x42800000    # 64.0f
+
+    invoke-static {p0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
+
+    move-result p0
+
+    invoke-interface {p1, p0}, Landroidx/compose/ui/unit/Density;->toPx-0680j_4(F)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final getVerticalScrollFactor$foundation(Landroidx/compose/ui/unit/Density;)F
+    .locals 2
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1a
+
+    if-le v0, v1, :cond_0
+
+    sget-object p1, Landroidx/compose/foundation/gestures/ViewConfigurationApi26Impl;->INSTANCE:Landroidx/compose/foundation/gestures/ViewConfigurationApi26Impl;
+
+    iget-object p0, p0, Landroidx/compose/foundation/gestures/AndroidConfig;->viewConfiguration:Landroid/view/ViewConfiguration;
+
+    invoke-virtual {p1, p0}, Landroidx/compose/foundation/gestures/ViewConfigurationApi26Impl;->getVerticalScrollFactor(Landroid/view/ViewConfiguration;)F
+
+    move-result p0
+
+    return p0
+
+    :cond_0
+    const/high16 p0, 0x42800000    # 64.0f
+
+    invoke-static {p0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
+
+    move-result p0
+
+    invoke-interface {p1, p0}, Landroidx/compose/ui/unit/Density;->toPx-0680j_4(F)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final getViewConfiguration()Landroid/view/ViewConfiguration;
+    .locals 0
+
+    iget-object p0, p0, Landroidx/compose/foundation/gestures/AndroidConfig;->viewConfiguration:Landroid/view/ViewConfiguration;
+
+    return-object p0
+.end method

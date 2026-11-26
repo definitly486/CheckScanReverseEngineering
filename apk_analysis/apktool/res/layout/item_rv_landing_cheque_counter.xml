@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background_babe_blue_stroke" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginVertical="@dimen/margin_large_sm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextSize18.Medium.BlueCharcoal" />
+    <com.warefly.checkscan.core.ui.progressBar.HorizontalStepProgressbar android:id="@id/pb_counter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small_sm" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small_sm">
+        <TextView android:id="@id/tv_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="textStart" style="@style/TextSize14" />
+        <TextView android:id="@id/tv_next_level" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="textEnd" style="@style/TextSize16.Medium.ReadilyBlue" />
+    </LinearLayout>
+</LinearLayout>

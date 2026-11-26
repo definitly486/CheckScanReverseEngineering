@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_sm" android:paddingEnd="@dimen/fill_free_space" android:paddingVertical="@dimen/margin_sm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:layout_gravity="top" android:id="@id/cb_agreement" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/chekbox_checked" android:minWidth="@dimen/fill_free_space" android:minHeight="@dimen/fill_free_space" android:buttonTint="@color/white" android:buttonTintMode="multiply" />
+    <TextView android:textColor="@color/black" android:textColorLink="@color/readilyBlue" android:id="@id/tv_agreement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="@font/roboto_reg" android:textAlignment="textStart" android:layout_marginStart="@dimen/margin_small_2_sm" />
+</LinearLayout>

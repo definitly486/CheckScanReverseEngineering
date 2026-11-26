@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/recycler_view_statistics_tag_layout_padding_bottom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/recycler_view_statistics_view_group_padding_end_right">
+    <LinearLayout
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:id="@+id/tag_wrapper"
+        android:background="@drawable/statistics_tag_filled_background"
+        android:paddingLeft="@dimen/recycler_view_statistics_view_group_padding_end_right"
+        android:paddingTop="@dimen/recycler_view_statistics_tag_wrapper_padding_top"
+        android:paddingRight="@dimen/recycler_view_statistics_view_group_padding_end_right"
+        android:paddingBottom="@dimen/recycler_view_statistics_tag_wrapper_padding_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/tv_tag_expenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:fontFamily="@font/roboto_medium"
+            android:layoutDirection="ltr"
+            android:layout_marginStart="@dimen/recycler_view_statistics_tv_tag_expenses_margin_start"/>
+        <TextView
+            android:textSize="@dimen/recycler_view_statistics_tv_tag_name_text_size"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/tv_tag_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layoutDirection="ltr"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+package com.google.android.gms.internal.mlkit_common;
+
+import com.google.firebase.encoders.EncodingException;
+import com.google.firebase.encoders.ObjectEncoder;
+import com.google.firebase.encoders.ObjectEncoderContext;
+import com.google.firebase.encoders.ValueEncoder;
+import com.google.firebase.encoders.config.EncoderConfig;
+import java.util.HashMap;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final class zzbg implements EncoderConfig {
+    public static final zzbf d = new ObjectEncoder() { // from class: com.google.android.gms.internal.mlkit_common.zzbf
+        @Override // com.google.firebase.encoders.Encoder
+        public final void encode(Object obj, ObjectEncoderContext objectEncoderContext) {
+            zzbf zzbfVar = zzbg.d;
+            throw new EncodingException("Couldn't find encoder for type ".concat(String.valueOf(obj.getClass().getCanonicalName())));
+        }
+    };
+    public static final /* synthetic */ int zza = 0;
+    public final HashMap a = new HashMap();
+    public final HashMap b = new HashMap();
+    public final zzbf c = d;
+
+    @Override // com.google.firebase.encoders.config.EncoderConfig
+    public final /* bridge */ /* synthetic */ EncoderConfig registerEncoder(Class cls, ObjectEncoder objectEncoder) {
+        this.a.put(cls, objectEncoder);
+        this.b.remove(cls);
+        return this;
+    }
+
+    public final zzbh zza() {
+        return new zzbh(new HashMap(this.a), new HashMap(this.b), this.c);
+    }
+
+    @Override // com.google.firebase.encoders.config.EncoderConfig
+    public final /* bridge */ /* synthetic */ EncoderConfig registerEncoder(Class cls, ValueEncoder valueEncoder) {
+        this.b.put(cls, valueEncoder);
+        this.a.remove(cls);
+        return this;
+    }
+}

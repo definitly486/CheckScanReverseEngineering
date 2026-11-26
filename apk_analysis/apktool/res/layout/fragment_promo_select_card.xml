@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/blueAlice" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_title_18_transparent" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_content" android:layout_width="@dimen/dimen_0" android:layout_height="@dimen/dimen_0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar_motivation" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="@dimen/dimen_0">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:titleEnabled="false">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_motivation_banner" android:paddingTop="@dimen/dimen_8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/tv_motivation_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/dimen_16" style="@style/TextSize22.Gray100" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_motivation_info" android:background="@drawable/background_primary10_16_outlined_primary20" android:padding="@dimen/dimen_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_marginHorizontal="@dimen/dimen_16">
+                        <TextView android:id="@id/tv_motivation_description" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextSize16.Gray80" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_full_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10">
+                            <TextView android:id="@id/tv_full_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextSize16.Primary60" />
+                            <ImageView android:layout_width="@dimen/dimen_16" android:layout_height="@dimen/dimen_16" android:importantForAccessibility="no" android:layout_marginStart="@dimen/dimen_4" app:srcCompat="@drawable/ic_right" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@drawable/background_primary10_top_16" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_24" />
+                </LinearLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_content" android:background="@color/blue_10" android:paddingBottom="@dimen/dimen_100" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include android:id="@id/incld_loading" android:visibility="gone" layout="@layout/layout_spinner_loading" />
+    <include android:id="@id/incld_error" android:visibility="gone" layout="@layout/layout_simple_try_again" />
+</androidx.constraintlayout.widget.ConstraintLayout>

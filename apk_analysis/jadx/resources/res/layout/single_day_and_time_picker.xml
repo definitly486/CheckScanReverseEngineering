@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="#d5d7dc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.warefly.checkscan.calendarspinner.widgets.WheelDayPicker
+            android:id="@+id/daysPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:wheel_atmospheric="true"
+            app:wheel_item_align="right"/>
+        <com.warefly.checkscan.calendarspinner.widgets.WheelHourPicker
+            android:id="@+id/hoursPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:wheel_atmospheric="true"
+            app:wheel_item_align="center"/>
+        <com.warefly.checkscan.calendarspinner.widgets.WheelMinutePicker
+            android:id="@+id/minutesPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:wheel_atmospheric="true"
+            app:wheel_item_align="center"/>
+    </LinearLayout>
+    <View
+        android:layout_gravity="center"
+        android:id="@+id/dtSelector"
+        android:background="@drawable/background_spinner_selector"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wheelSelectorHeight"
+        android:alpha="0.2"
+        android:layout_marginHorizontal="@dimen/WheelSelectorHorizontalMargin"/>
+</FrameLayout>
