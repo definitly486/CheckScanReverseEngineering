@@ -358,6 +358,7 @@ public class ViewDragHelper {
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     private void reportNewEdgeDrags(float f, float f2, int i) {
+        int i2;
         boolean zCheckNewEdgeDrag = checkNewEdgeDrag(f, f2, i, 1);
         ?? r0 = zCheckNewEdgeDrag;
         if (checkNewEdgeDrag(f2, f, i, 4)) {
@@ -369,13 +370,16 @@ public class ViewDragHelper {
         }
         ?? r2 = r1;
         if (checkNewEdgeDrag(f2, f, i, 8)) {
-            r2 = (r1 == true ? 1 : 0) | 8;
+            i2 = (r1 == true ? 1 : 0) | 8;
         }
-        if (r2 != 0) {
-            int[] iArr = this.mEdgeDragsInProgress;
-            iArr[i] = (iArr[i] | r2) == true ? 1 : 0;
-            this.mCallback.onEdgeDragStarted(r2, i);
+        if (r2 == 0) {
+            r2 = i2;
+            return;
         }
+        r2 = i2;
+        int[] iArr = this.mEdgeDragsInProgress;
+        iArr[i] = (iArr[i] | r2) == true ? 1 : 0;
+        this.mCallback.onEdgeDragStarted(r2, i);
     }
 
     private static <T> T requireNonNull(T t, String str) {

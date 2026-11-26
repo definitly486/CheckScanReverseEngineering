@@ -74,7 +74,9 @@ public final class MappedInteractionSource implements InteractionSource {
                 @Override // defpackage.id3
                 public final Object emit(Object obj, e02 e02Var) {
                     AnonymousClass1 anonymousClass1;
-                    Object release;
+                    PressInteraction.Release release;
+                    PressInteraction.Cancel cancel;
+                    Object release2;
                     if (e02Var instanceof AnonymousClass1) {
                         anonymousClass1 = (AnonymousClass1) e02Var;
                         int i = anonymousClass1.label;
@@ -96,28 +98,29 @@ public final class MappedInteractionSource implements InteractionSource {
                         if (interaction instanceof PressInteraction.Press) {
                             PressInteraction.Press pressMapPress = this.this$0.mapPress((PressInteraction.Press) interaction);
                             this.this$0.mappedPresses.put(interaction, pressMapPress);
-                            release = pressMapPress;
+                            release2 = pressMapPress;
                         } else if (interaction instanceof PressInteraction.Cancel) {
-                            PressInteraction.Cancel cancel = (PressInteraction.Cancel) interaction;
+                            cancel = (PressInteraction.Cancel) interaction;
                             PressInteraction.Press press = (PressInteraction.Press) this.this$0.mappedPresses.remove(cancel.getPress());
-                            release = cancel;
                             if (press != null) {
-                                release = new PressInteraction.Cancel(press);
+                                release2 = cancel;
+                                release2 = new PressInteraction.Cancel(press);
                             }
-                        } else {
-                            boolean z = interaction instanceof PressInteraction.Release;
-                            release = interaction;
-                            if (z) {
-                                PressInteraction.Release release2 = (PressInteraction.Release) interaction;
-                                PressInteraction.Press press2 = (PressInteraction.Press) this.this$0.mappedPresses.remove(release2.getPress());
-                                release = release2;
-                                if (press2 != null) {
-                                    release = new PressInteraction.Release(press2);
-                                }
+                        } else if (interaction instanceof PressInteraction.Release) {
+                            release = (PressInteraction.Release) interaction;
+                            PressInteraction.Press press2 = (PressInteraction.Press) this.this$0.mappedPresses.remove(release.getPress());
+                            if (press2 != null) {
+                                release2 = interaction;
+                                release2 = release;
+                                release2 = new PressInteraction.Release(press2);
                             }
                         }
+                        release2 = interaction;
+                        release2 = release;
+                        release2 = interaction;
+                        release2 = cancel;
                         anonymousClass1.label = 1;
-                        if (id3Var.emit(release, anonymousClass1) == a32Var) {
+                        if (id3Var.emit(release2, anonymousClass1) == a32Var) {
                             return a32Var;
                         }
                     } else {

@@ -62,25 +62,25 @@ public final class teb extends jfb {
                 zzfeVar.addAll(zzfeVar.size(), (zzhe) list4);
                 pnb.g(j, obj, zzfeVar);
                 list = zzfeVar;
-            } else {
-                boolean z = list4 instanceof mib;
-                list2 = list4;
-                if (z) {
-                    boolean z2 = list4 instanceof zzez;
+            } else if ((list4 instanceof mib) && (list4 instanceof zzez)) {
+                zzez zzezVar = (zzez) list4;
+                if (!zzezVar.zzc()) {
                     list2 = list4;
-                    if (z2) {
-                        zzez zzezVar = (zzez) list4;
-                        list2 = list4;
-                        if (!zzezVar.zzc()) {
-                            zzez zzezVarZzd = zzezVar.zzd(list4.size() + size);
-                            pnb.g(j, obj, zzezVarZzd);
-                            list2 = zzezVarZzd;
-                        }
-                    }
+                    list2 = list4;
+                    list2 = list4;
+                    zzez zzezVarZzd = zzezVar.zzd(list4.size() + size);
+                    pnb.g(j, obj, zzezVarZzd);
+                    list2 = zzezVarZzd;
                 }
             }
             list2 = list;
         }
+        list2 = list4;
+        list2 = list4;
+        list2 = list4;
+        list2 = list4;
+        list2 = list4;
+        list2 = list4;
         int size2 = list2.size();
         int size3 = list3.size();
         if (size2 > 0 && size3 > 0) {

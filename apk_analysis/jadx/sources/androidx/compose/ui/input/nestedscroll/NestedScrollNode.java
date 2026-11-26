@@ -214,69 +214,81 @@ public final class NestedScrollNode extends Modifier.Node implements Traversable
     /* JADX INFO: renamed from: onPreFling-QWom1Mo */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public Object mo2130onPreFlingQWom1Mo(long j, e02<? super Velocity> e02Var) {
-        NestedScrollNode$onPreFling$1 nestedScrollNode$onPreFling$1;
-        long jM9291getZero9UxMQ8M;
-        long j2;
-        if (e02Var instanceof NestedScrollNode$onPreFling$1) {
-            nestedScrollNode$onPreFling$1 = (NestedScrollNode$onPreFling$1) e02Var;
-            int i = nestedScrollNode$onPreFling$1.label;
-            if ((i & Integer.MIN_VALUE) != 0) {
-                nestedScrollNode$onPreFling$1.label = i - Integer.MIN_VALUE;
-            } else {
-                nestedScrollNode$onPreFling$1 = new NestedScrollNode$onPreFling$1(this, e02Var);
-            }
-        } else {
-            nestedScrollNode$onPreFling$1 = new NestedScrollNode$onPreFling$1(this, e02Var);
-        }
-        Object objMo2130onPreFlingQWom1Mo = nestedScrollNode$onPreFling$1.result;
-        a32 a32Var = a32.COROUTINE_SUSPENDED;
-        int i2 = nestedScrollNode$onPreFling$1.label;
-        if (i2 != 0) {
-            if (i2 == 1) {
-                j = nestedScrollNode$onPreFling$1.J$0;
-                r57.b(objMo2130onPreFlingQWom1Mo);
-            } else {
-                if (i2 != 2) {
-                    ah.f("call to 'resume' before 'invoke' with coroutine");
-                    return null;
-                }
-                j2 = nestedScrollNode$onPreFling$1.J$0;
-                r57.b(objMo2130onPreFlingQWom1Mo);
-            }
-            return Velocity.m9271boximpl(Velocity.m9284plusAH228Gc(j2, ((Velocity) objMo2130onPreFlingQWom1Mo).m9289unboximpl()));
-        }
-        r57.b(objMo2130onPreFlingQWom1Mo);
-        NestedScrollConnection parentConnection = getParentConnection();
-        if (parentConnection != null) {
-            nestedScrollNode$onPreFling$1.J$0 = j;
-            nestedScrollNode$onPreFling$1.label = 1;
-            objMo2130onPreFlingQWom1Mo = parentConnection.mo2130onPreFlingQWom1Mo(j, nestedScrollNode$onPreFling$1);
-        } else {
-            jM9291getZero9UxMQ8M = Velocity.Companion.m9291getZero9UxMQ8M();
-            NestedScrollConnection nestedScrollConnection = this.connection;
-            long jM9283minusAH228Gc = Velocity.m9283minusAH228Gc(j, jM9291getZero9UxMQ8M);
-            nestedScrollNode$onPreFling$1.J$0 = jM9291getZero9UxMQ8M;
-            nestedScrollNode$onPreFling$1.label = 2;
-            objMo2130onPreFlingQWom1Mo = nestedScrollConnection.mo2130onPreFlingQWom1Mo(jM9283minusAH228Gc, nestedScrollNode$onPreFling$1);
-            if (objMo2130onPreFlingQWom1Mo != a32Var) {
-                j2 = jM9291getZero9UxMQ8M;
-                return Velocity.m9271boximpl(Velocity.m9284plusAH228Gc(j2, ((Velocity) objMo2130onPreFlingQWom1Mo).m9289unboximpl()));
-            }
-        }
-        return a32Var;
-        jM9291getZero9UxMQ8M = ((Velocity) objMo2130onPreFlingQWom1Mo).m9289unboximpl();
-        NestedScrollConnection nestedScrollConnection2 = this.connection;
-        long jM9283minusAH228Gc2 = Velocity.m9283minusAH228Gc(j, jM9291getZero9UxMQ8M);
-        nestedScrollNode$onPreFling$1.J$0 = jM9291getZero9UxMQ8M;
-        nestedScrollNode$onPreFling$1.label = 2;
-        objMo2130onPreFlingQWom1Mo = nestedScrollConnection2.mo2130onPreFlingQWom1Mo(jM9283minusAH228Gc2, nestedScrollNode$onPreFling$1);
-        if (objMo2130onPreFlingQWom1Mo != a32Var) {
-            j2 = jM9291getZero9UxMQ8M;
-            return Velocity.m9271boximpl(Velocity.m9284plusAH228Gc(j2, ((Velocity) objMo2130onPreFlingQWom1Mo).m9289unboximpl()));
-        }
-        return a32Var;
+    public java.lang.Object mo2130onPreFlingQWom1Mo(long r7, defpackage.e02<? super androidx.compose.ui.unit.Velocity> r9) {
+        /*
+            r6 = this;
+            boolean r0 = r9 instanceof androidx.compose.ui.input.nestedscroll.NestedScrollNode$onPreFling$1
+            if (r0 == 0) goto L13
+            r0 = r9
+            androidx.compose.ui.input.nestedscroll.NestedScrollNode$onPreFling$1 r0 = (androidx.compose.ui.input.nestedscroll.NestedScrollNode$onPreFling$1) r0
+            int r1 = r0.label
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.label = r1
+            goto L18
+        L13:
+            androidx.compose.ui.input.nestedscroll.NestedScrollNode$onPreFling$1 r0 = new androidx.compose.ui.input.nestedscroll.NestedScrollNode$onPreFling$1
+            r0.<init>(r6, r9)
+        L18:
+            java.lang.Object r9 = r0.result
+            a32 r1 = defpackage.a32.COROUTINE_SUSPENDED
+            int r2 = r0.label
+            r3 = 2
+            r4 = 1
+            if (r2 == 0) goto L39
+            if (r2 == r4) goto L33
+            if (r2 != r3) goto L2c
+            long r6 = r0.J$0
+            defpackage.r57.b(r9)
+            goto L6c
+        L2c:
+            java.lang.String r6 = "call to 'resume' before 'invoke' with coroutine"
+            defpackage.ah.f(r6)
+            r6 = 0
+            return r6
+        L33:
+            long r7 = r0.J$0
+            defpackage.r57.b(r9)
+            goto L4d
+        L39:
+            defpackage.r57.b(r9)
+            androidx.compose.ui.input.nestedscroll.NestedScrollConnection r9 = r6.getParentConnection()
+            if (r9 == 0) goto L54
+            r0.J$0 = r7
+            r0.label = r4
+            java.lang.Object r9 = r9.mo2130onPreFlingQWom1Mo(r7, r0)
+            if (r9 != r1) goto L4d
+            goto L6a
+        L4d:
+            androidx.compose.ui.unit.Velocity r9 = (androidx.compose.ui.unit.Velocity) r9
+            long r4 = r9.m9289unboximpl()
+            goto L5a
+        L54:
+            androidx.compose.ui.unit.Velocity$Companion r9 = androidx.compose.ui.unit.Velocity.Companion
+            long r4 = r9.m9291getZero9UxMQ8M()
+        L5a:
+            androidx.compose.ui.input.nestedscroll.NestedScrollConnection r6 = r6.connection
+            long r7 = androidx.compose.ui.unit.Velocity.m9283minusAH228Gc(r7, r4)
+            r0.J$0 = r4
+            r0.label = r3
+            java.lang.Object r9 = r6.mo2130onPreFlingQWom1Mo(r7, r0)
+            if (r9 != r1) goto L6b
+        L6a:
+            return r1
+        L6b:
+            r6 = r4
+        L6c:
+            androidx.compose.ui.unit.Velocity r9 = (androidx.compose.ui.unit.Velocity) r9
+            long r8 = r9.m9289unboximpl()
+            long r6 = androidx.compose.ui.unit.Velocity.m9284plusAH228Gc(r6, r8)
+            androidx.compose.ui.unit.Velocity r6 = androidx.compose.ui.unit.Velocity.m9271boximpl(r6)
+            return r6
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.compose.ui.input.nestedscroll.NestedScrollNode.mo2130onPreFlingQWom1Mo(long, e02):java.lang.Object");
     }
 
     @Override // androidx.compose.ui.input.nestedscroll.NestedScrollConnection

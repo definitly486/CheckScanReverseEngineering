@@ -1,0 +1,24 @@
+package yads;
+
+import android.content.Context;
+
+/* JADX INFO: loaded from: classes6.dex */
+public final class ie4 extends defpackage.f02 {
+    public ee4 b;
+    public /* synthetic */ Object c;
+    public final /* synthetic */ le4 d;
+    public int e;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ie4(le4 le4Var, defpackage.f02 f02Var) {
+        super(f02Var);
+        this.d = le4Var;
+    }
+
+    @Override // defpackage.cd0
+    public final Object invokeSuspend(Object obj) {
+        this.c = obj;
+        this.e |= Integer.MIN_VALUE;
+        return this.d.a((Context) null, (ee4) null, this);
+    }
+}

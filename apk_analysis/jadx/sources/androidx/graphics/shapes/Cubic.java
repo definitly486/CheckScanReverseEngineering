@@ -51,8 +51,6 @@ public class Cubic {
     /* JADX WARN: Code duplicated, block: B:66:0x01ce  */
     /* JADX WARN: Code duplicated, block: B:72:0x01ee  */
     /* JADX WARN: Code duplicated, block: B:75:0x01f3  */
-    /* JADX WARN: Code duplicated, block: B:78:0x01ff  */
-    /* JADX WARN: Code duplicated, block: B:80:0x0203  */
     /* JADX WARN: Code duplicated, block: B:82:0x020f  */
     /* JADX WARN: Code duplicated, block: B:85:0x0214  */
     /* JADX WARN: Multi-variable type inference failed */
@@ -154,21 +152,21 @@ public class Cubic {
                     }
                     fSqrt2 = (f6 - ((float) Math.sqrt(d2))) / f7;
                     r23 = z3;
-                    if (0.0f <= fSqrt2) {
-                        r23 = z3;
-                        if (fSqrt2 <= 1.0f) {
-                            fM9325getYDnnuFBc = PointKt.m9325getYDnnuFBc(m9312pointOnCurveOOQOV4g$graphics_shapes_release(fSqrt2));
-                            if (fM9325getYDnnuFBc < fMin2) {
-                                fMin2 = fM9325getYDnnuFBc;
-                            }
+                    if (0.0f <= fSqrt2 && fSqrt2 <= 1.0f) {
+                        fM9325getYDnnuFBc = PointKt.m9325getYDnnuFBc(m9312pointOnCurveOOQOV4g$graphics_shapes_release(fSqrt2));
+                        if (fM9325getYDnnuFBc < fMin2) {
                             r23 = z3;
-                            if (fM9325getYDnnuFBc > fMax2) {
-                                fMax2 = fM9325getYDnnuFBc;
-                                r23 = z3;
-                            }
+                            fMin2 = fM9325getYDnnuFBc;
+                        }
+                        r23 = z3;
+                        r23 = z3;
+                        if (fM9325getYDnnuFBc > fMax2) {
+                            fMax2 = fM9325getYDnnuFBc;
+                            r23 = z3;
                         }
                     }
                 }
+                r23 = z3;
                 fArr[r23] = fMin;
                 fArr[c3] = fMin2;
                 fArr[c2] = fMax;
@@ -187,6 +185,7 @@ public class Cubic {
                 }
             }
             r23 = z2;
+            r23 = z3;
             fArr[r23] = fMin;
             fArr[c3] = fMin2;
             fArr[c2] = fMax;
@@ -231,20 +230,20 @@ public class Cubic {
                 fSqrt2 = (f9 - ((float) Math.sqrt(d3))) / f10;
                 r23 = z3;
                 if (0.0f <= fSqrt2) {
-                    r23 = z3;
-                    if (fSqrt2 <= 1.0f) {
-                        fM9325getYDnnuFBc = PointKt.m9325getYDnnuFBc(m9312pointOnCurveOOQOV4g$graphics_shapes_release(fSqrt2));
-                        if (fM9325getYDnnuFBc < fMin2) {
-                            fMin2 = fM9325getYDnnuFBc;
-                        }
+                    fM9325getYDnnuFBc = PointKt.m9325getYDnnuFBc(m9312pointOnCurveOOQOV4g$graphics_shapes_release(fSqrt2));
+                    if (fM9325getYDnnuFBc < fMin2) {
                         r23 = z3;
-                        if (fM9325getYDnnuFBc > fMax2) {
-                            fMax2 = fM9325getYDnnuFBc;
-                            r23 = z3;
-                        }
+                        fMin2 = fM9325getYDnnuFBc;
+                    }
+                    r23 = z3;
+                    r23 = z3;
+                    if (fM9325getYDnnuFBc > fMax2) {
+                        fMax2 = fM9325getYDnnuFBc;
+                        r23 = z3;
                     }
                 }
             }
+            r23 = z3;
             fArr[r23] = fMin;
             fArr[c3] = fMin2;
             fArr[c2] = fMax;
@@ -263,6 +262,7 @@ public class Cubic {
             }
         }
         r23 = z2;
+        r23 = z3;
         fArr[r23] = fMin;
         fArr[c3] = fMin2;
         fArr[c2] = fMax;

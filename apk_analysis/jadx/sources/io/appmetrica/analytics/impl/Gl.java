@@ -38,30 +38,25 @@ public final class Gl implements Dn {
         List<Bl> list;
         try {
             List<Bl> list2 = (List) this.c.getData();
-            if (list2 != null) {
-                boolean zIsEmpty = list2.isEmpty();
-                list = list2;
-                if (zIsEmpty) {
-                    list = list2;
-                    if (this.c.shouldUpdateData()) {
-                        arrayList = new ArrayList();
-                        if (Fa.I.u.a().n.d) {
-                            if (AndroidUtils.isApiAchieved(23)) {
-                                if (this.b.hasPermission(this.a, "android.permission.READ_PHONE_STATE")) {
-                                    arrayList.addAll(Hl.a(this.a));
-                                }
-                                if (arrayList.size() == 0) {
-                                    arrayList.add(b());
-                                }
-                            } else {
-                                arrayList.add(b());
-                            }
+            if (list2 == null) {
+                arrayList = new ArrayList();
+                if (Fa.I.u.a().n.d) {
+                    if (AndroidUtils.isApiAchieved(23)) {
+                        if (this.b.hasPermission(this.a, "android.permission.READ_PHONE_STATE")) {
+                            arrayList.addAll(Hl.a(this.a));
                         }
-                        this.c.setData(arrayList);
-                        list = arrayList;
+                        if (arrayList.size() == 0) {
+                            arrayList.add(b());
+                        }
+                    } else {
+                        arrayList.add(b());
                     }
                 }
-            } else {
+                this.c.setData(arrayList);
+                list = arrayList;
+            } else if (list2.isEmpty() && this.c.shouldUpdateData()) {
+                list = list2;
+                list = list2;
                 arrayList = new ArrayList();
                 if (Fa.I.u.a().n.d) {
                     if (AndroidUtils.isApiAchieved(23)) {

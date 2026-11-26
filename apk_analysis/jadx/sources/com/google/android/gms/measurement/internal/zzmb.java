@@ -4,10 +4,8 @@ import android.os.Bundle;
 import androidx.media3.extractor.text.ttml.TtmlNode;
 import com.google.android.gms.common.internal.Preconditions;
 import com.google.android.gms.internal.measurement.zzdd;
-import com.google.firebase.analytics.FirebaseAnalytics;
 import defpackage.c9c;
 import defpackage.dyb;
-import defpackage.i3c;
 import defpackage.jza;
 import defpackage.k3c;
 import defpackage.n3c;
@@ -192,117 +190,31 @@ public final class zzmb extends qhb {
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public final void zzj(Bundle bundle, long j, long j2) {
-        synchronized (this.l) {
-            try {
-                if (!this.k) {
-                    this.a.zzaW().zzh().zza("Cannot log screen view event when the app is in the background.");
-                    return;
-                }
-                String string = bundle.getString(FirebaseAnalytics.Param.SCREEN_NAME);
-                if (string != null) {
-                    if (string.length() > 0) {
-                        int length = string.length();
-                        this.a.zzc().getClass();
-                    }
-                    this.a.zzaW().zzh().zzb("Invalid screen name length for screen view. Length", Integer.valueOf(string.length()));
-                    return;
-                }
-                String string2 = bundle.getString(FirebaseAnalytics.Param.SCREEN_CLASS);
-                if (string2 != null) {
-                    if (string2.length() > 0) {
-                        int length2 = string2.length();
-                        this.a.zzc().getClass();
-                    }
-                    this.a.zzaW().zzh().zzb("Invalid screen class length for screen view. Length", Integer.valueOf(string2.length()));
-                    return;
-                }
-                if (string2 == null) {
-                    zzdd zzddVar = this.g;
-                    string2 = zzddVar != null ? b(zzddVar.zzb) : "Activity";
-                }
-                String str = string2;
-                zzlu zzluVar = this.c;
-                if (this.h && zzluVar != null) {
-                    this.h = false;
-                    boolean zEquals = Objects.equals(zzluVar.zzb, str);
-                    boolean zEquals2 = Objects.equals(zzluVar.zza, string);
-                    if (zEquals && zEquals2) {
-                        this.a.zzaW().zzh().zza("Ignoring call to log screen view event with duplicate parameters.");
-                        return;
-                    }
-                }
-                zzic zzicVar = this.a;
-                zzicVar.zzaW().zzk().zzc("Logging screen view with name, class", string == null ? "null" : string, str);
-                zzlu zzluVar2 = this.c == null ? this.d : this.c;
-                zzlu zzluVar3 = new zzlu(string, str, zzicVar.zzk().zzd(), true, j, j2);
-                this.c = zzluVar3;
-                this.d = zzluVar2;
-                this.i = zzluVar3;
-                zzicVar.zzaX().zzj(new i3c(this, bundle, zzluVar3, zzluVar2, zzicVar.zzba().elapsedRealtime()));
-            } catch (Throwable th) {
-                throw th;
-            }
-        }
+    public final void zzj(android.os.Bundle r13, long r14, long r16) {
+        /*
+            Method dump skipped, instruction units count: 280
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.measurement.internal.zzmb.zzj(android.os.Bundle, long, long):void");
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0083, code lost:
     
         if (r4 > 500) goto L27;
      */
-    @Deprecated
+    @java.lang.Deprecated
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public final void zzk(zzdd zzddVar, String str, String str2) {
-        zzic zzicVar = this.a;
-        if (!zzicVar.zzc().zzv()) {
-            zzicVar.zzaW().zzh().zza("setCurrentScreen cannot be called while screen reporting is disabled.");
-            return;
-        }
-        zzlu zzluVar = this.c;
-        if (zzluVar == null) {
-            zzicVar.zzaW().zzh().zza("setCurrentScreen cannot be called while no activity active");
-            return;
-        }
-        ConcurrentHashMap concurrentHashMap = this.f;
-        Integer numValueOf = Integer.valueOf(zzddVar.zza);
-        if (concurrentHashMap.get(numValueOf) == null) {
-            zzicVar.zzaW().zzh().zza("setCurrentScreen must be called with an activity in the activity lifecycle");
-            return;
-        }
-        if (str2 == null) {
-            str2 = b(zzddVar.zzb);
-        }
-        String str3 = zzluVar.zzb;
-        String str4 = zzluVar.zza;
-        boolean zEquals = Objects.equals(str3, str2);
-        boolean zEquals2 = Objects.equals(str4, str);
-        if (zEquals && zEquals2) {
-            zzicVar.zzaW().zzh().zza("setCurrentScreen cannot be called with the same class and name");
-            return;
-        }
-        if (str != null) {
-            if (str.length() > 0) {
-                int length = str.length();
-                zzicVar.zzc().getClass();
-            }
-            zzicVar.zzaW().zzh().zzb("Invalid screen name length in setCurrentScreen. Length", Integer.valueOf(str.length()));
-            return;
-        }
-        if (str2.length() > 0) {
-            int length2 = str2.length();
-            zzicVar.zzc().getClass();
-            if (length2 <= 500) {
-                zzicVar.zzaW().zzk().zzc("Setting current screen to name, class", str == null ? "null" : str, str2);
-                zzlu zzluVar2 = new zzlu(str, str2, zzicVar.zzk().zzd());
-                concurrentHashMap.put(numValueOf, zzluVar2);
-                d(zzddVar.zzb, zzluVar2, true);
-                return;
-            }
-        }
-        zzicVar.zzaW().zzh().zzb("Invalid class name length in setCurrentScreen. Length", Integer.valueOf(str2.length()));
+    public final void zzk(com.google.android.gms.internal.measurement.zzdd r7, java.lang.String r8, java.lang.String r9) {
+        /*
+            Method dump skipped, instruction units count: 239
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.measurement.internal.zzmb.zzk(com.google.android.gms.internal.measurement.zzdd, java.lang.String, java.lang.String):void");
     }
 
     public final zzlu zzl() {

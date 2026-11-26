@@ -22,7 +22,7 @@ public final /* synthetic */ class ru implements Runnable {
         Object obj = this.d;
         switch (i) {
             case 0:
-                AudioSource.lambda$notifySilenced$9((AudioSource.AudioSourceCallback) obj, z);
+                ((AudioSource.AudioSourceCallback) obj).onSilenceStateChanged(z);
                 break;
             default:
                 ((nm) obj).a(z);

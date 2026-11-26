@@ -73,16 +73,12 @@ public final class o2 implements Runnable {
                 if (this.a) {
                     this.e.a(5);
                     this.e.c();
-                    this.c.unregisterReceiver(this.d);
-                    a();
                     return;
                 }
                 String str2 = this.b;
                 if (str2 != null && !str2.isEmpty()) {
                     this.e.a(6);
                     this.e.b(-1, this.b);
-                    this.c.unregisterReceiver(this.d);
-                    a();
                     return;
                 }
                 this.e.c(3, "Failed to connect");
@@ -94,10 +90,9 @@ public final class o2 implements Runnable {
                 p2Var3.g = Math.min(p2Var3.g, 3600000L);
                 p2 p2Var4 = this.e;
                 p2Var4.a(p2Var4.g);
-            } catch (Throwable th) {
+            } finally {
                 this.c.unregisterReceiver(this.d);
                 a();
-                throw th;
             }
         }
     }

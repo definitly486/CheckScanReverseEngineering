@@ -205,28 +205,54 @@ public final class ResourcesCompat {
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    private static ColorStateList getCachedColorStateList(ColorStateListCacheKey colorStateListCacheKey, int i) {
-        ColorStateListCacheEntry colorStateListCacheEntry;
-        synchronized (sColorStateCacheLock) {
-            try {
-                SparseArray<ColorStateListCacheEntry> sparseArray = sColorStateCaches.get(colorStateListCacheKey);
-                if (sparseArray != null && sparseArray.size() > 0 && (colorStateListCacheEntry = sparseArray.get(i)) != null) {
-                    if (colorStateListCacheEntry.mConfiguration.equals(colorStateListCacheKey.mResources.getConfiguration())) {
-                        Resources.Theme theme = colorStateListCacheKey.mTheme;
-                        if (theme != null || colorStateListCacheEntry.mThemeHash != 0) {
-                            if (theme != null) {
-                            }
-                        }
-                        return colorStateListCacheEntry.mValue;
-                    }
-                    sparseArray.remove(i);
-                }
-                return null;
-            } catch (Throwable th) {
-                throw th;
-            }
-        }
+    private static android.content.res.ColorStateList getCachedColorStateList(androidx.core.content.res.ResourcesCompat.ColorStateListCacheKey r5, int r6) {
+        /*
+            java.lang.Object r0 = androidx.core.content.res.ResourcesCompat.sColorStateCacheLock
+            monitor-enter(r0)
+            java.util.WeakHashMap<androidx.core.content.res.ResourcesCompat$ColorStateListCacheKey, android.util.SparseArray<androidx.core.content.res.ResourcesCompat$ColorStateListCacheEntry>> r1 = androidx.core.content.res.ResourcesCompat.sColorStateCaches     // Catch: java.lang.Throwable -> L32
+            java.lang.Object r1 = r1.get(r5)     // Catch: java.lang.Throwable -> L32
+            android.util.SparseArray r1 = (android.util.SparseArray) r1     // Catch: java.lang.Throwable -> L32
+            if (r1 == 0) goto L45
+            int r2 = r1.size()     // Catch: java.lang.Throwable -> L32
+            if (r2 <= 0) goto L45
+            java.lang.Object r2 = r1.get(r6)     // Catch: java.lang.Throwable -> L32
+            androidx.core.content.res.ResourcesCompat$ColorStateListCacheEntry r2 = (androidx.core.content.res.ResourcesCompat.ColorStateListCacheEntry) r2     // Catch: java.lang.Throwable -> L32
+            if (r2 == 0) goto L45
+            android.content.res.Configuration r3 = r2.mConfiguration     // Catch: java.lang.Throwable -> L32
+            android.content.res.Resources r4 = r5.mResources     // Catch: java.lang.Throwable -> L32
+            android.content.res.Configuration r4 = r4.getConfiguration()     // Catch: java.lang.Throwable -> L32
+            boolean r3 = r3.equals(r4)     // Catch: java.lang.Throwable -> L32
+            if (r3 == 0) goto L42
+            android.content.res.Resources$Theme r5 = r5.mTheme     // Catch: java.lang.Throwable -> L32
+            if (r5 != 0) goto L34
+            int r3 = r2.mThemeHash     // Catch: java.lang.Throwable -> L32
+            if (r3 == 0) goto L3e
+            goto L34
+        L32:
+            r5 = move-exception
+            goto L48
+        L34:
+            if (r5 == 0) goto L42
+            int r3 = r2.mThemeHash     // Catch: java.lang.Throwable -> L32
+            int r5 = r5.hashCode()     // Catch: java.lang.Throwable -> L32
+            if (r3 != r5) goto L42
+        L3e:
+            android.content.res.ColorStateList r5 = r2.mValue     // Catch: java.lang.Throwable -> L32
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L32
+            return r5
+        L42:
+            r1.remove(r6)     // Catch: java.lang.Throwable -> L32
+        L45:
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L32
+            r5 = 0
+            return r5
+        L48:
+            monitor-exit(r0)     // Catch: java.lang.Throwable -> L32
+            throw r5
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.core.content.res.ResourcesCompat.getCachedColorStateList(androidx.core.content.res.ResourcesCompat$ColorStateListCacheKey, int):android.content.res.ColorStateList");
     }
 
     public static Typeface getCachedFont(Context context, int i) {

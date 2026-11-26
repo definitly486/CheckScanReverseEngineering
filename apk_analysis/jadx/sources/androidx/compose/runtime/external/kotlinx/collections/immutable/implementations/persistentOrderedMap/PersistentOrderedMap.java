@@ -139,17 +139,19 @@ public final class PersistentOrderedMap<K, V> extends x0<K, V> implements Persis
     /* JADX WARN: Type inference failed for: r5v9 */
     @Override // defpackage.x0, java.util.Map, androidx.compose.runtime.external.kotlinx.collections.immutable.PersistentMap
     public PersistentOrderedMap<K, V> remove(K k) {
+        ?? r5;
         LinkedValue<V> linkedValue = this.hashMap.get(k);
         if (linkedValue == null) {
             return this;
         }
         PersistentHashMap<K, LinkedValue<V>> persistentHashMapRemove = this.hashMap.remove((Object) k);
-        ?? r5 = persistentHashMapRemove;
         if (linkedValue.getHasPrevious()) {
+            r5 = persistentHashMapRemove;
             Object obj = persistentHashMapRemove.get(linkedValue.getPrevious());
             obj.getClass();
             r5 = (PersistentHashMap<K, LinkedValue<V>>) persistentHashMapRemove.put(linkedValue.getPrevious(), ((LinkedValue) obj).withNext(linkedValue.getNext()));
         }
+        r5 = persistentHashMapRemove;
         ?? Put = r5;
         if (linkedValue.getHasNext()) {
             Object obj2 = r5.get(linkedValue.getNext());

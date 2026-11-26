@@ -46,47 +46,83 @@ final class SequentialExecutor implements Executor {
          */
         /*
             Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
         */
         private void workOnQueue() {
-            Runnable runnablePoll;
-            boolean z = false;
-            boolean zInterrupted = false;
-            while (true) {
-                try {
-                    synchronized (SequentialExecutor.this.mQueue) {
-                        if (z) {
-                            runnablePoll = SequentialExecutor.this.mQueue.poll();
-                            if (runnablePoll == null) {
-                                SequentialExecutor.this.mWorkerRunningState = WorkerRunningState.IDLE;
-                            }
-                        } else {
-                            SequentialExecutor sequentialExecutor = SequentialExecutor.this;
-                            WorkerRunningState workerRunningState = sequentialExecutor.mWorkerRunningState;
-                            WorkerRunningState workerRunningState2 = WorkerRunningState.RUNNING;
-                            if (workerRunningState != workerRunningState2) {
-                                sequentialExecutor.mWorkerRunCount++;
-                                sequentialExecutor.mWorkerRunningState = workerRunningState2;
-                                z = true;
-                                runnablePoll = SequentialExecutor.this.mQueue.poll();
-                                if (runnablePoll == null) {
-                                    SequentialExecutor.this.mWorkerRunningState = WorkerRunningState.IDLE;
-                                }
-                            }
-                        }
-                    }
-                    if (zInterrupted) {
-                        break;
-                    } else {
-                        return;
-                    }
-                } catch (Throwable th) {
-                    if (zInterrupted) {
-                        Thread.currentThread().interrupt();
-                    }
-                    throw th;
-                }
-            }
-            Thread.currentThread().interrupt();
+            /*
+                r9 = this;
+                r0 = 0
+                r1 = r0
+            L2:
+                androidx.camera.core.impl.utils.executor.SequentialExecutor r2 = androidx.camera.core.impl.utils.executor.SequentialExecutor.this     // Catch: java.lang.Throwable -> L49
+                java.util.Deque<java.lang.Runnable> r2 = r2.mQueue     // Catch: java.lang.Throwable -> L49
+                monitor-enter(r2)     // Catch: java.lang.Throwable -> L49
+                if (r0 != 0) goto L28
+                androidx.camera.core.impl.utils.executor.SequentialExecutor r0 = androidx.camera.core.impl.utils.executor.SequentialExecutor.this     // Catch: java.lang.Throwable -> L1c
+                androidx.camera.core.impl.utils.executor.SequentialExecutor$WorkerRunningState r3 = r0.mWorkerRunningState     // Catch: java.lang.Throwable -> L1c
+                androidx.camera.core.impl.utils.executor.SequentialExecutor$WorkerRunningState r4 = androidx.camera.core.impl.utils.executor.SequentialExecutor.WorkerRunningState.RUNNING     // Catch: java.lang.Throwable -> L1c
+                if (r3 != r4) goto L1e
+                monitor-exit(r2)     // Catch: java.lang.Throwable -> L1c
+                if (r1 == 0) goto L3e
+            L14:
+                java.lang.Thread r9 = java.lang.Thread.currentThread()
+                r9.interrupt()
+                goto L3e
+            L1c:
+                r9 = move-exception
+                goto L63
+            L1e:
+                long r5 = r0.mWorkerRunCount     // Catch: java.lang.Throwable -> L1c
+                r7 = 1
+                long r5 = r5 + r7
+                r0.mWorkerRunCount = r5     // Catch: java.lang.Throwable -> L1c
+                r0.mWorkerRunningState = r4     // Catch: java.lang.Throwable -> L1c
+                r0 = 1
+            L28:
+                androidx.camera.core.impl.utils.executor.SequentialExecutor r3 = androidx.camera.core.impl.utils.executor.SequentialExecutor.this     // Catch: java.lang.Throwable -> L1c
+                java.util.Deque<java.lang.Runnable> r3 = r3.mQueue     // Catch: java.lang.Throwable -> L1c
+                java.lang.Object r3 = r3.poll()     // Catch: java.lang.Throwable -> L1c
+                java.lang.Runnable r3 = (java.lang.Runnable) r3     // Catch: java.lang.Throwable -> L1c
+                if (r3 != 0) goto L3f
+                androidx.camera.core.impl.utils.executor.SequentialExecutor r9 = androidx.camera.core.impl.utils.executor.SequentialExecutor.this     // Catch: java.lang.Throwable -> L1c
+                androidx.camera.core.impl.utils.executor.SequentialExecutor$WorkerRunningState r0 = androidx.camera.core.impl.utils.executor.SequentialExecutor.WorkerRunningState.IDLE     // Catch: java.lang.Throwable -> L1c
+                r9.mWorkerRunningState = r0     // Catch: java.lang.Throwable -> L1c
+                monitor-exit(r2)     // Catch: java.lang.Throwable -> L1c
+                if (r1 == 0) goto L3e
+                goto L14
+            L3e:
+                return
+            L3f:
+                monitor-exit(r2)     // Catch: java.lang.Throwable -> L1c
+                boolean r2 = java.lang.Thread.interrupted()     // Catch: java.lang.Throwable -> L49
+                r1 = r1 | r2
+                r3.run()     // Catch: java.lang.Throwable -> L49 java.lang.RuntimeException -> L4b
+                goto L2
+            L49:
+                r9 = move-exception
+                goto L65
+            L4b:
+                r2 = move-exception
+                java.lang.String r4 = "SequentialExecutor"
+                java.lang.StringBuilder r5 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L49
+                r5.<init>()     // Catch: java.lang.Throwable -> L49
+                java.lang.String r6 = "Exception while executing runnable "
+                r5.append(r6)     // Catch: java.lang.Throwable -> L49
+                r5.append(r3)     // Catch: java.lang.Throwable -> L49
+                java.lang.String r3 = r5.toString()     // Catch: java.lang.Throwable -> L49
+                androidx.camera.core.Logger.e(r4, r3, r2)     // Catch: java.lang.Throwable -> L49
+                goto L2
+            L63:
+                monitor-exit(r2)     // Catch: java.lang.Throwable -> L1c
+                throw r9     // Catch: java.lang.Throwable -> L49
+            L65:
+                if (r1 == 0) goto L6e
+                java.lang.Thread r0 = java.lang.Thread.currentThread()
+                r0.interrupt()
+            L6e:
+                throw r9
+            */
+            throw new UnsupportedOperationException("Method not decompiled: androidx.camera.core.impl.utils.executor.SequentialExecutor.QueueWorker.workOnQueue():void");
         }
 
         @Override // java.lang.Runnable

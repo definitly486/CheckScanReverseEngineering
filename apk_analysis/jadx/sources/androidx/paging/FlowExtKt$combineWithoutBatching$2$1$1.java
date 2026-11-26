@@ -51,43 +51,63 @@ public final class FlowExtKt$combineWithoutBatching$2$1$1 extends pg8 implements
         @Override // defpackage.id3
         /*
             Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
         */
-        public final Object emit(Object obj, e02<? super j59> e02Var) {
-            FlowExtKt$combineWithoutBatching$2$1$1$1$emit$1 flowExtKt$combineWithoutBatching$2$1$1$1$emit$1;
-            if (e02Var instanceof FlowExtKt$combineWithoutBatching$2$1$1$1$emit$1) {
-                flowExtKt$combineWithoutBatching$2$1$1$1$emit$1 = (FlowExtKt$combineWithoutBatching$2$1$1$1$emit$1) e02Var;
-                int i = flowExtKt$combineWithoutBatching$2$1$1$1$emit$1.label;
-                if ((i & Integer.MIN_VALUE) != 0) {
-                    flowExtKt$combineWithoutBatching$2$1$1$1$emit$1.label = i - Integer.MIN_VALUE;
-                } else {
-                    flowExtKt$combineWithoutBatching$2$1$1$1$emit$1 = new FlowExtKt$combineWithoutBatching$2$1$1$1$emit$1(this, e02Var);
-                }
-            } else {
-                flowExtKt$combineWithoutBatching$2$1$1$1$emit$1 = new FlowExtKt$combineWithoutBatching$2$1$1$1$emit$1(this, e02Var);
-            }
-            Object obj2 = flowExtKt$combineWithoutBatching$2$1$1$1$emit$1.result;
-            a32 a32Var = a32.COROUTINE_SUSPENDED;
-            int i2 = flowExtKt$combineWithoutBatching$2$1$1$1$emit$1.label;
-            if (i2 == 0) {
-                r57.b(obj2);
-                UnbatchedFlowCombiner<T1, T2> unbatchedFlowCombiner = this.$unbatchedFlowCombiner;
-                int i3 = this.$index;
-                flowExtKt$combineWithoutBatching$2$1$1$1$emit$1.label = 1;
-                if (unbatchedFlowCombiner.onNext(i3, obj, flowExtKt$combineWithoutBatching$2$1$1$1$emit$1) != a32Var) {
-                }
-                return a32Var;
-            }
-            if (i2 == 1) {
-                r57.b(obj2);
-            } else {
-                if (i2 != 2) {
-                    ah.f("call to 'resume' before 'invoke' with coroutine");
-                    return null;
-                }
-                r57.b(obj2);
-            }
-            return j59.a;
-            flowExtKt$combineWithoutBatching$2$1$1$1$emit$1.label = 2;
+        public final java.lang.Object emit(java.lang.Object r6, defpackage.e02<? super defpackage.j59> r7) {
+            /*
+                r5 = this;
+                boolean r0 = r7 instanceof androidx.paging.FlowExtKt$combineWithoutBatching$2$1$1$1$emit$1
+                if (r0 == 0) goto L13
+                r0 = r7
+                androidx.paging.FlowExtKt$combineWithoutBatching$2$1$1$1$emit$1 r0 = (androidx.paging.FlowExtKt$combineWithoutBatching$2$1$1$1$emit$1) r0
+                int r1 = r0.label
+                r2 = -2147483648(0xffffffff80000000, float:-0.0)
+                r3 = r1 & r2
+                if (r3 == 0) goto L13
+                int r1 = r1 - r2
+                r0.label = r1
+                goto L18
+            L13:
+                androidx.paging.FlowExtKt$combineWithoutBatching$2$1$1$1$emit$1 r0 = new androidx.paging.FlowExtKt$combineWithoutBatching$2$1$1$1$emit$1
+                r0.<init>(r5, r7)
+            L18:
+                java.lang.Object r7 = r0.result
+                a32 r1 = defpackage.a32.COROUTINE_SUSPENDED
+                int r2 = r0.label
+                r3 = 2
+                r4 = 1
+                if (r2 == 0) goto L35
+                if (r2 == r4) goto L31
+                if (r2 != r3) goto L2a
+                defpackage.r57.b(r7)
+                goto L4e
+            L2a:
+                java.lang.String r5 = "call to 'resume' before 'invoke' with coroutine"
+                defpackage.ah.f(r5)
+                r5 = 0
+                return r5
+            L31:
+                defpackage.r57.b(r7)
+                goto L45
+            L35:
+                defpackage.r57.b(r7)
+                androidx.paging.UnbatchedFlowCombiner<T1, T2> r7 = r5.$unbatchedFlowCombiner
+                int r5 = r5.$index
+                r0.label = r4
+                java.lang.Object r5 = r7.onNext(r5, r6, r0)
+                if (r5 != r1) goto L45
+                goto L4d
+            L45:
+                r0.label = r3
+                java.lang.Object r5 = defpackage.h.g(r0)
+                if (r5 != r1) goto L4e
+            L4d:
+                return r1
+            L4e:
+                j59 r5 = defpackage.j59.a
+                return r5
+            */
+            throw new UnsupportedOperationException("Method not decompiled: androidx.paging.FlowExtKt$combineWithoutBatching$2$1$1.AnonymousClass1.emit(java.lang.Object, e02):java.lang.Object");
         }
     }
 

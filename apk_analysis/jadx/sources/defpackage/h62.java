@@ -19,7 +19,7 @@ public final /* synthetic */ class h62 implements qx1 {
         gh4 gh4Var = this.c;
         switch (i) {
             case 0:
-                CreateCardPresenter.onIssueClick$lambda$1((CreateCardPresenter.i) gh4Var, obj);
+                ((CreateCardPresenter.i) gh4Var).invoke(obj);
                 break;
             default:
                 ((PointsProgramPresenter.c) gh4Var).invoke(obj);

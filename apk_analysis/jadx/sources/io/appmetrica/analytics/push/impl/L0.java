@@ -1,17 +1,7 @@
 package io.appmetrica.analytics.push.impl;
 
 import android.content.Context;
-import android.location.Location;
-import android.location.LocationManager;
-import androidx.core.content.ContextCompat;
-import com.google.firebase.analytics.FirebaseAnalytics;
-import io.appmetrica.analytics.push.location.DetailedLocation;
 import io.appmetrica.analytics.push.location.LocationProvider;
-import io.appmetrica.analytics.push.location.LocationStatus;
-import io.appmetrica.analytics.push.location.LocationVerifier;
-import io.appmetrica.analytics.push.logger.internal.PublicLogger;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 /* JADX INFO: loaded from: classes5.dex */
 public final class L0 implements LocationProvider {
@@ -41,36 +31,103 @@ public final class L0 implements LocationProvider {
     @Override // io.appmetrica.analytics.push.location.LocationProvider
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public final DetailedLocation getLocation(String str, long j, LocationVerifier locationVerifier) {
-        LocationManager locationManager;
-        PublicLogger publicLogger = PublicLogger.INSTANCE;
-        publicLogger.info("Trying request new location from %s provider", str);
-        Context context = this.a;
-        if (str == null) {
-            List list = I1.a;
-        } else if (I1.a.contains(str)) {
-        }
-        if (ContextCompat.checkSelfPermission(context, "android.permission.ACCESS_FINE_LOCATION") != 0) {
-        }
-        try {
-            locationManager = (LocationManager) this.a.getSystemService(FirebaseAnalytics.Param.LOCATION);
-        } catch (Throwable th) {
-            PublicLogger.INSTANCE.error(th, "Failed to get location manager", new Object[0]);
-            locationManager = null;
-        }
-        if (locationManager == null) {
-            publicLogger.info("LocationManager is null", new Object[0]);
-            return new DetailedLocation(null, new LocationStatus.LocationManagerIsNull());
-        }
-        new m2(new J0(this, locationManager, locationVerifier, str), F0.b().a()).a(j, TimeUnit.SECONDS);
-        K0 k0 = this.b;
-        Location location = k0 != null ? k0.c : null;
-        K0 k1 = this.b;
-        if (k1 != null) {
-            locationManager.removeUpdates(k1);
-        }
-        this.b = null;
-        return location != null ? new DetailedLocation(location, new LocationStatus.Success()) : new DetailedLocation(null, new LocationStatus.LocationProviderReturnedNull("ForceScanLocationProvider"));
+    public final io.appmetrica.analytics.push.location.DetailedLocation getLocation(java.lang.String r8, long r9, io.appmetrica.analytics.push.location.LocationVerifier r11) {
+        /*
+            r7 = this;
+            io.appmetrica.analytics.push.logger.internal.PublicLogger r0 = io.appmetrica.analytics.push.logger.internal.PublicLogger.INSTANCE
+            java.lang.Object[] r1 = new java.lang.Object[]{r8}
+            java.lang.String r2 = "Trying request new location from %s provider"
+            r0.info(r2, r1)
+            android.content.Context r1 = r7.a
+            java.lang.String r2 = "android.permission.ACCESS_FINE_LOCATION"
+            r3 = 0
+            if (r8 == 0) goto L21
+            java.util.List r4 = io.appmetrica.analytics.push.impl.I1.a
+            boolean r4 = r4.contains(r8)
+            if (r4 == 0) goto L23
+            int r1 = androidx.core.content.ContextCompat.checkSelfPermission(r1, r2)
+            if (r1 != 0) goto L9f
+            goto L32
+        L21:
+            java.util.List r4 = io.appmetrica.analytics.push.impl.I1.a
+        L23:
+            int r2 = androidx.core.content.ContextCompat.checkSelfPermission(r1, r2)
+            if (r2 != 0) goto L2a
+            goto L32
+        L2a:
+            java.lang.String r2 = "android.permission.ACCESS_COARSE_LOCATION"
+            int r1 = androidx.core.content.ContextCompat.checkSelfPermission(r1, r2)
+            if (r1 != 0) goto L9f
+        L32:
+            android.content.Context r1 = r7.a
+            r2 = 0
+            java.lang.String r4 = "location"
+            java.lang.Object r1 = r1.getSystemService(r4)     // Catch: java.lang.Throwable -> L3e
+            android.location.LocationManager r1 = (android.location.LocationManager) r1     // Catch: java.lang.Throwable -> L3e
+            goto L49
+        L3e:
+            r1 = move-exception
+            io.appmetrica.analytics.push.logger.internal.PublicLogger r4 = io.appmetrica.analytics.push.logger.internal.PublicLogger.INSTANCE
+            java.lang.Object[] r5 = new java.lang.Object[r2]
+            java.lang.String r6 = "Failed to get location manager"
+            r4.error(r1, r6, r5)
+            r1 = r3
+        L49:
+            if (r1 != 0) goto L5d
+            java.lang.Object[] r7 = new java.lang.Object[r2]
+            java.lang.String r8 = "LocationManager is null"
+            r0.info(r8, r7)
+            io.appmetrica.analytics.push.location.DetailedLocation r7 = new io.appmetrica.analytics.push.location.DetailedLocation
+            io.appmetrica.analytics.push.location.LocationStatus$LocationManagerIsNull r8 = new io.appmetrica.analytics.push.location.LocationStatus$LocationManagerIsNull
+            r8.<init>()
+            r7.<init>(r3, r8)
+            return r7
+        L5d:
+            io.appmetrica.analytics.push.impl.m2 r0 = new io.appmetrica.analytics.push.impl.m2
+            io.appmetrica.analytics.push.impl.J0 r2 = new io.appmetrica.analytics.push.impl.J0
+            r2.<init>(r7, r1, r11, r8)
+            io.appmetrica.analytics.push.impl.F0 r8 = io.appmetrica.analytics.push.impl.F0.b()
+            io.appmetrica.analytics.push.impl.E0 r8 = r8.a()
+            r0.<init>(r2, r8)
+            java.util.concurrent.TimeUnit r8 = java.util.concurrent.TimeUnit.SECONDS
+            r0.a(r9, r8)
+            io.appmetrica.analytics.push.impl.K0 r8 = r7.b
+            if (r8 == 0) goto L7b
+            android.location.Location r8 = r8.c
+            goto L7c
+        L7b:
+            r8 = r3
+        L7c:
+            io.appmetrica.analytics.push.impl.K0 r9 = r7.b
+            if (r9 == 0) goto L83
+            r1.removeUpdates(r9)
+        L83:
+            r7.b = r3
+            if (r8 == 0) goto L92
+            io.appmetrica.analytics.push.location.DetailedLocation r7 = new io.appmetrica.analytics.push.location.DetailedLocation
+            io.appmetrica.analytics.push.location.LocationStatus$Success r9 = new io.appmetrica.analytics.push.location.LocationStatus$Success
+            r9.<init>()
+            r7.<init>(r8, r9)
+            return r7
+        L92:
+            io.appmetrica.analytics.push.location.DetailedLocation r7 = new io.appmetrica.analytics.push.location.DetailedLocation
+            io.appmetrica.analytics.push.location.LocationStatus$LocationProviderReturnedNull r8 = new io.appmetrica.analytics.push.location.LocationStatus$LocationProviderReturnedNull
+            java.lang.String r9 = "ForceScanLocationProvider"
+            r8.<init>(r9)
+            r7.<init>(r3, r8)
+            return r7
+        L9f:
+            java.lang.Object[] r7 = new java.lang.Object[]{r8}
+            java.lang.String r9 = "Location permissions is not granted for %s"
+            r0.info(r9, r7)
+            io.appmetrica.analytics.push.location.DetailedLocation r7 = new io.appmetrica.analytics.push.location.DetailedLocation
+            io.appmetrica.analytics.push.location.LocationStatus$PermissionIsNotGranted r9 = new io.appmetrica.analytics.push.location.LocationStatus$PermissionIsNotGranted
+            r9.<init>(r8)
+            r7.<init>(r3, r9)
+            return r7
+        */
+        throw new UnsupportedOperationException("Method not decompiled: io.appmetrica.analytics.push.impl.L0.getLocation(java.lang.String, long, io.appmetrica.analytics.push.location.LocationVerifier):io.appmetrica.analytics.push.location.DetailedLocation");
     }
 }

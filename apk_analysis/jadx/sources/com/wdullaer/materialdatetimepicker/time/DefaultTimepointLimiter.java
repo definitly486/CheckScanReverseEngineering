@@ -180,84 +180,14 @@ class DefaultTimepointLimiter implements TimepointLimiter {
     @Override // com.wdullaer.materialdatetimepicker.time.TimepointLimiter
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public Timepoint roundToNearest(Timepoint timepoint, Timepoint.TYPE type, Timepoint.TYPE type2) {
-        Timepoint timepoint2 = this.mMinTime;
-        if (timepoint2 != null && timepoint2.compareTo(timepoint) > 0) {
-            return this.mMinTime;
-        }
-        Timepoint timepoint3 = this.mMaxTime;
-        if (timepoint3 != null && timepoint3.compareTo(timepoint) < 0) {
-            return this.mMaxTime;
-        }
-        Timepoint.TYPE type3 = Timepoint.TYPE.SECOND;
-        if (type != type3) {
-            if (!this.exclusiveSelectableTimes.isEmpty()) {
-                Timepoint timepointFloor = this.exclusiveSelectableTimes.floor(timepoint);
-                Timepoint timepointCeiling = this.exclusiveSelectableTimes.ceiling(timepoint);
-                if (timepointFloor == null || timepointCeiling == null) {
-                    if (timepointFloor == null) {
-                        timepointFloor = timepointCeiling;
-                    }
-                    if (type == null) {
-                        return timepointFloor;
-                    }
-                    return (timepointFloor.getHour() == timepoint.getHour() && (type != Timepoint.TYPE.MINUTE || timepointFloor.getMinute() == timepoint.getMinute())) ? timepointFloor : timepoint;
-                }
-                if (type == Timepoint.TYPE.HOUR) {
-                    if (timepointFloor.getHour() == timepoint.getHour() || timepointCeiling.getHour() != timepoint.getHour()) {
-                        if (timepointFloor.getHour() != timepoint.getHour() || timepointCeiling.getHour() == timepoint.getHour()) {
-                            if (timepointFloor.getHour() != timepoint.getHour() && timepointCeiling.getHour() != timepoint.getHour()) {
-                                return timepoint;
-                            }
-                        }
-                        return timepointFloor;
-                    }
-                    return timepointCeiling;
-                }
-                if (type == Timepoint.TYPE.MINUTE) {
-                    if (timepointFloor.getHour() == timepoint.getHour() || timepointCeiling.getHour() == timepoint.getHour()) {
-                        if (timepointFloor.getHour() == timepoint.getHour() || timepointCeiling.getHour() != timepoint.getHour()) {
-                            if (timepointFloor.getHour() != timepoint.getHour() || timepointCeiling.getHour() == timepoint.getHour()) {
-                                if (timepointFloor.getMinute() == timepoint.getMinute() || timepointCeiling.getMinute() != timepoint.getMinute()) {
-                                    if (timepointFloor.getMinute() != timepoint.getMinute() || timepointCeiling.getMinute() == timepoint.getMinute()) {
-                                        if (timepointFloor.getMinute() != timepoint.getMinute()) {
-                                        }
-                                    }
-                                    return timepointFloor;
-                                }
-                                return timepointCeiling;
-                            }
-                            if (timepointFloor.getMinute() == timepoint.getMinute()) {
-                                return timepointFloor;
-                            }
-                        } else if (timepointCeiling.getMinute() == timepoint.getMinute()) {
-                            return timepointCeiling;
-                        }
-                    }
-                    return timepoint;
-                }
-                if (Math.abs(timepoint.compareTo(timepointFloor)) < Math.abs(timepoint.compareTo(timepointCeiling))) {
-                    return timepointFloor;
-                }
-                return timepointCeiling;
-            }
-            if (!this.mDisabledTimes.isEmpty() && (type == null || type != type2)) {
-                if (type2 != type3) {
-                    Timepoint.TYPE type4 = Timepoint.TYPE.MINUTE;
-                    if (type2 == type4) {
-                        return (timepoint.equals(this.mDisabledTimes.ceiling(timepoint), type4) || timepoint.equals(this.mDisabledTimes.floor(timepoint), type4)) ? searchValidTimePoint(timepoint, type, type2) : timepoint;
-                    }
-                    Timepoint.TYPE type5 = Timepoint.TYPE.HOUR;
-                    if (type2 == type5) {
-                        return (timepoint.equals(this.mDisabledTimes.ceiling(timepoint), type5) || timepoint.equals(this.mDisabledTimes.floor(timepoint), type5)) ? searchValidTimePoint(timepoint, type, type2) : timepoint;
-                    }
-                } else if (this.mDisabledTimes.contains(timepoint)) {
-                    return searchValidTimePoint(timepoint, type, type2);
-                }
-            }
-        }
-        return timepoint;
+    public com.wdullaer.materialdatetimepicker.time.Timepoint roundToNearest(com.wdullaer.materialdatetimepicker.time.Timepoint r4, com.wdullaer.materialdatetimepicker.time.Timepoint.TYPE r5, com.wdullaer.materialdatetimepicker.time.Timepoint.TYPE r6) {
+        /*
+            Method dump skipped, instruction units count: 444
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.wdullaer.materialdatetimepicker.time.DefaultTimepointLimiter.roundToNearest(com.wdullaer.materialdatetimepicker.time.Timepoint, com.wdullaer.materialdatetimepicker.time.Timepoint$TYPE, com.wdullaer.materialdatetimepicker.time.Timepoint$TYPE):com.wdullaer.materialdatetimepicker.time.Timepoint");
     }
 
     public void setDisabledTimes(Timepoint[] timepointArr) {

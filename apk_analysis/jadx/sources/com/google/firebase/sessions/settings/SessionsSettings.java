@@ -5,15 +5,11 @@ import com.google.firebase.FirebaseKt;
 import com.google.firebase.sessions.FirebaseSessionsComponent;
 import com.google.firebase.sessions.LocalOverrideSettingsProvider;
 import com.google.firebase.sessions.RemoteSettingsProvider;
-import defpackage.a32;
-import defpackage.ah;
 import defpackage.au2;
 import defpackage.bd2;
 import defpackage.e02;
 import defpackage.f02;
-import defpackage.j59;
 import defpackage.jh2;
-import defpackage.r57;
 import defpackage.wt2;
 import defpackage.yt2;
 
@@ -116,43 +112,63 @@ public final class SessionsSettings {
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public final Object updateSettings(e02<? super j59> e02Var) {
-        AnonymousClass1 anonymousClass1;
-        if (e02Var instanceof AnonymousClass1) {
-            anonymousClass1 = (AnonymousClass1) e02Var;
-            int i = anonymousClass1.label;
-            if ((i & Integer.MIN_VALUE) != 0) {
-                anonymousClass1.label = i - Integer.MIN_VALUE;
-            } else {
-                anonymousClass1 = new AnonymousClass1(e02Var);
-            }
-        } else {
-            anonymousClass1 = new AnonymousClass1(e02Var);
-        }
-        Object obj = anonymousClass1.result;
-        a32 a32Var = a32.COROUTINE_SUSPENDED;
-        int i2 = anonymousClass1.label;
-        if (i2 == 0) {
-            r57.b(obj);
-            SettingsProvider settingsProvider = this.localOverrideSettings;
-            anonymousClass1.label = 1;
-            if (settingsProvider.updateSettings(anonymousClass1) != a32Var) {
-            }
-            return a32Var;
-        }
-        if (i2 == 1) {
-            r57.b(obj);
-        } else {
-            if (i2 != 2) {
-                ah.f("call to 'resume' before 'invoke' with coroutine");
-                return null;
-            }
-            r57.b(obj);
-        }
-        return j59.a;
-        SettingsProvider settingsProvider2 = this.remoteSettings;
-        anonymousClass1.label = 2;
+    public final java.lang.Object updateSettings(defpackage.e02<? super defpackage.j59> r6) {
+        /*
+            r5 = this;
+            boolean r0 = r6 instanceof com.google.firebase.sessions.settings.SessionsSettings.AnonymousClass1
+            if (r0 == 0) goto L13
+            r0 = r6
+            com.google.firebase.sessions.settings.SessionsSettings$updateSettings$1 r0 = (com.google.firebase.sessions.settings.SessionsSettings.AnonymousClass1) r0
+            int r1 = r0.label
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.label = r1
+            goto L18
+        L13:
+            com.google.firebase.sessions.settings.SessionsSettings$updateSettings$1 r0 = new com.google.firebase.sessions.settings.SessionsSettings$updateSettings$1
+            r0.<init>(r6)
+        L18:
+            java.lang.Object r6 = r0.result
+            a32 r1 = defpackage.a32.COROUTINE_SUSPENDED
+            int r2 = r0.label
+            r3 = 2
+            r4 = 1
+            if (r2 == 0) goto L35
+            if (r2 == r4) goto L31
+            if (r2 != r3) goto L2a
+            defpackage.r57.b(r6)
+            goto L4e
+        L2a:
+            java.lang.String r5 = "call to 'resume' before 'invoke' with coroutine"
+            defpackage.ah.f(r5)
+            r5 = 0
+            return r5
+        L31:
+            defpackage.r57.b(r6)
+            goto L43
+        L35:
+            defpackage.r57.b(r6)
+            com.google.firebase.sessions.settings.SettingsProvider r6 = r5.localOverrideSettings
+            r0.label = r4
+            java.lang.Object r6 = r6.updateSettings(r0)
+            if (r6 != r1) goto L43
+            goto L4d
+        L43:
+            com.google.firebase.sessions.settings.SettingsProvider r5 = r5.remoteSettings
+            r0.label = r3
+            java.lang.Object r5 = r5.updateSettings(r0)
+            if (r5 != r1) goto L4e
+        L4d:
+            return r1
+        L4e:
+            j59 r5 = defpackage.j59.a
+            return r5
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.google.firebase.sessions.settings.SessionsSettings.updateSettings(e02):java.lang.Object");
     }
 
     public static final class Companion {

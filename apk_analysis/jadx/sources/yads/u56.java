@@ -142,7 +142,7 @@ public abstract class u56 {
                 }
                 /*  JADX ERROR: Method code generation error
                     java.lang.NullPointerException: Switch insn not found in header
-                    	at java.base/java.util.Objects.requireNonNull(Objects.java:259)
+                    	at java.base/java.util.Objects.requireNonNull(Objects.java:235)
                     	at jadx.core.codegen.RegionGen.makeSwitch(RegionGen.java:246)
                     	at jadx.core.dex.regions.SwitchRegion.generate(SwitchRegion.java:90)
                     	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:66)
@@ -173,10 +173,10 @@ public abstract class u56 {
                     	at jadx.core.codegen.ClassGen.addMethodCode(ClassGen.java:420)
                     	at jadx.core.codegen.ClassGen.addMethod(ClassGen.java:345)
                     	at jadx.core.codegen.ClassGen.lambda$addInnerClsAndMethods$3(ClassGen.java:299)
-                    	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
-                    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+                    	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+                    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
                     	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
-                    	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+                    	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
                     */
                 /*
                     Method dump skipped, instruction units count: 280

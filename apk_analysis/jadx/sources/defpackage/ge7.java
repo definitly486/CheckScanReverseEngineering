@@ -113,7 +113,7 @@ public final class ge7 extends AtomicReferenceArray<Object> implements Runnable,
         if (obj7 != obj4 && compareAndSet(0, obj7, obj5) && obj7 != null) {
             ((fp2) obj7).a(this);
         }
-        while (r2 != obj3 && r2 != obj2 && !compareAndSet(1, get(i), obj5)) {
+        while (r2 != obj3 && r2 != obj2 && !compareAndSet(1, get(1), obj5)) {
         }
     }
 }

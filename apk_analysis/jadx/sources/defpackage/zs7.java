@@ -83,114 +83,14 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     /* JADX WARN: Multi-variable type inference failed */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public static a32 m(zs7 zs7Var, id3 id3Var, e02 e02Var) throws Throwable {
-        at7 at7Var;
-        zs7 zs7Var2;
-        Throwable th;
-        ct7 ct7Var;
-        id3 id3Var2;
-        mb4 mb4Var;
-        id3 id3Var3;
-        if (e02Var instanceof at7) {
-            at7Var = (at7) e02Var;
-            int i = at7Var.r;
-            if ((i & Integer.MIN_VALUE) != 0) {
-                at7Var.r = i - Integer.MIN_VALUE;
-            } else {
-                at7Var = new at7(zs7Var, e02Var);
-            }
-        } else {
-            at7Var = new at7(zs7Var, e02Var);
-        }
-        Object obj = at7Var.p;
-        a32 a32Var = a32.COROUTINE_SUSPENDED;
-        int i2 = at7Var.r;
-        if (i2 != 0) {
-            if (i2 == 1) {
-                ct7Var = at7Var.n;
-                id3 id3Var4 = at7Var.m;
-                zs7 zs7Var3 = at7Var.l;
-                try {
-                    r57.b(obj);
-                    id3Var2 = id3Var4;
-                    zs7Var = zs7Var3;
-                    try {
-                        mb4Var = (mb4) at7Var.getContext().get(mb4.a.b);
-                        id3Var3 = id3Var2;
-                    } catch (Throwable th2) {
-                        zs7Var2 = zs7Var;
-                        th = th2;
-                    }
-                } catch (Throwable th3) {
-                    th = th3;
-                    zs7Var2 = zs7Var3;
-                }
-            } else {
-                if (i2 != 2 && i2 != 3) {
-                    ah.f("call to 'resume' before 'invoke' with coroutine");
-                    return null;
-                }
-                mb4 mb4Var2 = at7Var.o;
-                ct7Var = at7Var.n;
-                id3 id3Var5 = at7Var.m;
-                zs7Var2 = at7Var.l;
-                try {
-                    r57.b(obj);
-                    id3Var3 = id3Var5;
-                    mb4Var = mb4Var2;
-                    zs7Var = zs7Var2;
-                } catch (Throwable th4) {
-                    th = th4;
-                }
-            }
-            zs7Var2.j(ct7Var);
-            throw th;
-        }
-        r57.b(obj);
-        ct7 ct7VarG = zs7Var.g();
-        try {
-            if (id3Var instanceof ub8) {
-                at7Var.l = zs7Var;
-                at7Var.m = id3Var;
-                at7Var.n = ct7VarG;
-                at7Var.r = 1;
-            }
-            id3Var2 = id3Var;
-            ct7Var = ct7VarG;
-            mb4Var = (mb4) at7Var.getContext().get(mb4.a.b);
-            id3Var3 = id3Var2;
-        } catch (Throwable th5) {
-            zs7Var2 = zs7Var;
-            th = th5;
-            ct7Var = ct7VarG;
-        }
-        while (true) {
-            Object objU = zs7Var.u(ct7Var);
-            if (objU == bt7.b) {
-                at7Var.l = zs7Var;
-                at7Var.m = id3Var3;
-                at7Var.n = ct7Var;
-                at7Var.o = mb4Var;
-                at7Var.r = 2;
-                if (zs7Var.k(ct7Var, at7Var) == a32Var) {
-                    break;
-                }
-            } else {
-                if (mb4Var != null && !mb4Var.isActive()) {
-                    throw mb4Var.y();
-                }
-                at7Var.l = zs7Var;
-                at7Var.m = id3Var3;
-                at7Var.n = ct7Var;
-                at7Var.o = mb4Var;
-                at7Var.r = 3;
-                if (id3Var3.emit(objU, at7Var) == a32Var) {
-                    break;
-                }
-            }
-        }
-        return a32Var;
+    public static defpackage.a32 m(defpackage.zs7 r8, defpackage.id3 r9, defpackage.e02 r10) throws java.lang.Throwable {
+        /*
+            Method dump skipped, instruction units count: 207
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: defpackage.zs7.m(zs7, id3, e02):a32");
     }
 
     @Override // defpackage.vg5
@@ -416,15 +316,18 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
         if (this.c != 0 && (objArr = this.b) != null) {
             int length2 = objArr.length;
             int i = 0;
-            e02VarArr = e02VarArr;
             while (i < length2) {
                 Object obj = objArr[i];
-                if (obj != null && (c31Var = (ct7Var = (ct7) obj).b) != null && t(ct7Var) >= 0) {
-                    int length3 = e02VarArr.length;
+                if (obj == null || (c31Var = (ct7Var = (ct7) obj).b) == null || t(ct7Var) < 0) {
                     e02VarArr = e02VarArr;
-                    if (length >= length3) {
+                } else {
+                    if (length >= e02VarArr.length) {
+                        e02VarArr = e02VarArr;
+                        e02VarArr = e02VarArr;
                         e02VarArr = Arrays.copyOf((Object[]) e02VarArr, Math.max(2, e02VarArr.length * 2));
                     }
+                    e02VarArr = e02VarArr;
+                    e02VarArr = e02VarArr;
                     ((e02[]) e02VarArr)[length] = c31Var;
                     ct7Var.b = null;
                     length++;
@@ -432,6 +335,7 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
                 i++;
                 e02VarArr = e02VarArr;
             }
+            e02VarArr = e02VarArr;
         }
         return (e02[]) e02VarArr;
     }
@@ -577,10 +481,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r12v2 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r12v2 ??, new type: long
@@ -589,10 +500,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r12v3 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r12v3 ??, new type: long
@@ -601,10 +519,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r12v5 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r12v5 ??, new type: long
@@ -613,10 +538,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r12v6 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r12v6 ??, new type: long
@@ -625,10 +557,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r12v7 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r12v7 ??, new type: long
@@ -637,10 +576,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r12v8 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r12v8 ??, new type: long
@@ -649,10 +595,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r14v0 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r14v0 ??, new type: long
@@ -661,10 +614,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r14v6 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r14v6 ??, new type: long
@@ -673,10 +633,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r19v0 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r19v0 ??, new type: long
@@ -685,10 +652,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r19v1 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r19v1 ??, new type: long
@@ -697,10 +671,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r19v3 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r19v3 ??, new type: long
@@ -709,10 +690,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r19v6 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r19v6 ??, new type: long
@@ -721,10 +709,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r1v1 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r1v1 ??, new type: long
@@ -733,10 +728,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r2v3 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v3 ??, new type: long
@@ -745,10 +747,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r2v5 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v5 ??, new type: long
@@ -757,10 +766,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r3v2 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r3v2 ??, new type: long
@@ -771,7 +787,14 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.deduceType(FixTypesVisitor.java:241)
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryDeduceTypes(FixTypesVisitor.java:224)
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 6 more
      */
     /* JADX WARN: Failed to calculate best type for var: r3v2 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r3v2 ??, new type: long
@@ -780,10 +803,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r3v4 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r3v4 ??, new type: long
@@ -792,10 +822,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r3v5 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r3v5 ??, new type: long
@@ -804,10 +841,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r3v6 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r3v6 ??, new type: long
@@ -816,10 +860,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r5v1 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v1 ??, new type: long
@@ -828,10 +879,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r5v10 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v10 ??, new type: long
@@ -840,10 +898,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r5v12 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v12 ??, new type: long
@@ -852,10 +917,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r5v13 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v13 ??, new type: long
@@ -864,10 +936,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r5v14 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v14 ??, new type: long
@@ -876,10 +955,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r5v15 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v15 ??, new type: long
@@ -888,10 +974,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r5v16 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v16 ??, new type: long
@@ -900,10 +993,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r5v17 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v17 ??, new type: long
@@ -912,10 +1012,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r5v2 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v2 ??, new type: long
@@ -924,10 +1031,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r5v3 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v3 ??, new type: long
@@ -936,10 +1050,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r5v4 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v4 ??, new type: long
@@ -948,10 +1069,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r5v6 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v6 ??, new type: long
@@ -960,10 +1088,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r5v9 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v9 ??, new type: long
@@ -972,10 +1107,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r7v1 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r7v1 ??, new type: long
@@ -984,10 +1126,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r7v2 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r7v2 ??, new type: long
@@ -996,10 +1145,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r7v3 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r7v3 ??, new type: long
@@ -1008,10 +1164,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r8v2 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r8v2 ??, new type: long
@@ -1020,10 +1183,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r8v3 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r8v3 ??, new type: long
@@ -1032,10 +1202,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r8v4 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r8v4 ??, new type: long
@@ -1044,10 +1221,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r8v5 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r8v5 ??, new type: long
@@ -1056,10 +1240,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /* JADX WARN: Failed to calculate best type for var: r8v7 ??
     jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r8v7 ??, new type: long
@@ -1068,10 +1259,17 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
-    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
     	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
-    Caused by: java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+    	... 7 more
      */
     /*  JADX ERROR: Types fix failed
         jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r3v2 ??, new type: long
@@ -1081,7 +1279,14 @@ public class zs7<T> extends p1<ct7> implements vg5<T>, hd3, wm3<T> {
         	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.deduceType(FixTypesVisitor.java:245)
         	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryDeduceTypes(FixTypesVisitor.java:224)
         	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
-        Caused by: java.lang.NullPointerException
+        Caused by: java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.getType()" because "arg" is null
+        	at jadx.core.dex.visitors.typeinference.TypeUpdate.verifyType(TypeUpdate.java:210)
+        	at jadx.core.dex.visitors.typeinference.TypeUpdate.queueTypeUpdate(TypeUpdate.java:171)
+        	at jadx.core.dex.visitors.typeinference.TypeUpdate.sameFirstArgListener(TypeUpdate.java:454)
+        	at jadx.core.dex.visitors.typeinference.TypeUpdate.requestUpdate(TypeUpdate.java:310)
+        	at jadx.core.dex.visitors.typeinference.TypeUpdate.runUpdate(TypeUpdate.java:124)
+        	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:91)
+        	... 5 more
         */
     public final defpackage.e02<defpackage.j59>[] w(long r22) {
         /*

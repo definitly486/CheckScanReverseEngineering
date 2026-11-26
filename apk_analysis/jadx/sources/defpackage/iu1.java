@@ -220,6 +220,10 @@ public final class iu1 extends m1 {
         o(g, i2, null, 0);
     }
 
+    /* JADX WARN: Code restructure failed: missing block: B:26:0x005c, code lost:
+    
+        r1 = r1;
+     */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r0v2 */
     /* JADX WARN: Type inference failed for: r0v3, types: [dy6] */
@@ -238,57 +242,75 @@ public final class iu1 extends m1 {
     /* JADX WARN: Type inference failed for: r1v6 */
     /* JADX WARN: Type inference failed for: r1v7 */
     @Override // defpackage.dy6
-    public final dy6 t(int i2) throws IOException {
-        dy6 dy6VarT;
-        int i3;
-        dy6 dy6VarT2;
-        ?? r1;
-        ?? r0;
-        if (i2 <= 0) {
-            return ey6.a;
-        }
-        a(i2);
-        this.d -= i2;
-        ?? r2 = 0;
-        ?? iu1Var = 0;
-        while (true) {
-            ArrayDeque arrayDeque = this.b;
-            dy6 dy6Var = (dy6) arrayDeque.peek();
-            int iQ = dy6Var.q();
-            if (iQ > i2) {
-                dy6VarT2 = dy6Var.t(i2);
-                i3 = 0;
-            } else {
-                if (this.e) {
-                    dy6VarT = dy6Var.t(iQ);
-                    m();
-                } else {
-                    dy6VarT = (dy6) arrayDeque.poll();
-                }
-                dy6 dy6Var2 = dy6VarT;
-                i3 = i2 - iQ;
-                dy6VarT2 = dy6Var2;
-            }
-            if (r2 == 0) {
-                r0 = dy6VarT2;
-                r1 = iu1Var;
-            } else {
-                if (iu1Var == 0) {
-                    iu1Var = new iu1(i3 != 0 ? Math.min(arrayDeque.size() + 2, 16) : 2);
-                    iu1Var.b(r2);
-                    r2 = iu1Var;
-                }
-                iu1Var.b(dy6VarT2);
-                r0 = r2;
-                r1 = iu1Var;
-            }
-            if (i3 <= 0) {
-                return r0;
-            }
-            i2 = i3;
-            r2 = r0;
-            iu1Var = r1;
-        }
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final defpackage.dy6 t(int r8) throws java.io.IOException {
+        /*
+            r7 = this;
+            if (r8 > 0) goto L5
+            ey6$b r7 = defpackage.ey6.a
+            return r7
+        L5:
+            r7.a(r8)
+            int r0 = r7.d
+            int r0 = r0 - r8
+            r7.d = r0
+            r0 = 0
+            r1 = r0
+        Lf:
+            java.util.ArrayDeque r2 = r7.b
+            java.lang.Object r3 = r2.peek()
+            dy6 r3 = (defpackage.dy6) r3
+            int r4 = r3.q()
+            if (r4 <= r8) goto L23
+            dy6 r8 = r3.t(r8)
+            r3 = 0
+            goto L39
+        L23:
+            boolean r5 = r7.e
+            if (r5 == 0) goto L2f
+            dy6 r3 = r3.t(r4)
+            r7.m()
+            goto L35
+        L2f:
+            java.lang.Object r3 = r2.poll()
+            dy6 r3 = (defpackage.dy6) r3
+        L35:
+            int r8 = r8 - r4
+            r6 = r3
+            r3 = r8
+            r8 = r6
+        L39:
+            if (r0 != 0) goto L3d
+            r0 = r8
+            goto L5a
+        L3d:
+            if (r1 != 0) goto L57
+            iu1 r1 = new iu1
+            r4 = 2
+            if (r3 != 0) goto L45
+            goto L50
+        L45:
+            int r2 = r2.size()
+            int r2 = r2 + r4
+            r4 = 16
+            int r4 = java.lang.Math.min(r2, r4)
+        L50:
+            r1.<init>(r4)
+            r1.b(r0)
+            r0 = r1
+        L57:
+            r1.b(r8)
+        L5a:
+            if (r3 > 0) goto L5d
+            return r0
+        L5d:
+            r8 = r3
+            goto Lf
+        */
+        throw new UnsupportedOperationException("Method not decompiled: defpackage.iu1.t(int):dy6");
     }
 
     public iu1(int i2) {

@@ -6,7 +6,6 @@ import androidx.webkit.ProxyConfig;
 import com.google.firebase.annotations.concurrent.Blocking;
 import com.google.firebase.sessions.ApplicationInfo;
 import defpackage.a32;
-import defpackage.ah;
 import defpackage.av0;
 import defpackage.bd2;
 import defpackage.bm3;
@@ -15,16 +14,9 @@ import defpackage.j59;
 import defpackage.jh2;
 import defpackage.o22;
 import defpackage.pg8;
-import defpackage.r07;
-import defpackage.r57;
 import defpackage.y22;
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.net.URL;
-import java.net.URLConnection;
 import java.util.Map;
-import javax.net.ssl.HttpsURLConnection;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: classes4.dex */
@@ -75,64 +67,14 @@ public final class RemoteSettingsFetcher implements CrashlyticsSettingsFetcher {
         @Override // defpackage.cd0
         /*
             Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
         */
-        public final Object invokeSuspend(Object obj) {
-            a32 a32Var = a32.COROUTINE_SUSPENDED;
-            int i = this.label;
-            try {
-                if (i == 0) {
-                    r57.b(obj);
-                    URLConnection uRLConnectionOpenConnection = RemoteSettingsFetcher.this.settingsUrl().openConnection();
-                    uRLConnectionOpenConnection.getClass();
-                    HttpsURLConnection httpsURLConnection = (HttpsURLConnection) uRLConnectionOpenConnection;
-                    httpsURLConnection.setRequestMethod("GET");
-                    httpsURLConnection.setRequestProperty("Accept", "application/json");
-                    for (Map.Entry<String, String> entry : this.$headerOptions.entrySet()) {
-                        httpsURLConnection.setRequestProperty(entry.getKey(), entry.getValue());
-                    }
-                    int responseCode = httpsURLConnection.getResponseCode();
-                    if (responseCode == 200) {
-                        InputStream inputStream = httpsURLConnection.getInputStream();
-                        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-                        StringBuilder sb = new StringBuilder();
-                        r07 r07Var = new r07();
-                        while (true) {
-                            ?? line = bufferedReader.readLine();
-                            r07Var.b = line;
-                            if (line == 0) {
-                                break;
-                            }
-                            sb.append((String) line);
-                        }
-                        bufferedReader.close();
-                        inputStream.close();
-                        JSONObject jSONObject = new JSONObject(sb.toString());
-                        bm3<JSONObject, e02<? super j59>, Object> bm3Var = this.$onSuccess;
-                        this.label = 1;
-                        if (bm3Var.invoke(jSONObject, this) == a32Var) {
-                            return a32Var;
-                        }
-                    } else {
-                        bm3<String, e02<? super j59>, Object> bm3Var2 = this.$onFailure;
-                        String str = "Bad response code: " + responseCode;
-                        this.label = 2;
-                    }
-                } else {
-                    if (i != 1 && i != 2 && i != 3) {
-                        ah.f("call to 'resume' before 'invoke' with coroutine");
-                        return null;
-                    }
-                    r57.b(obj);
-                }
-            } catch (Exception e) {
-                bm3<String, e02<? super j59>, Object> bm3Var3 = this.$onFailure;
-                String message = e.getMessage();
-                if (message == null) {
-                    message = e.toString();
-                }
-                this.label = 3;
-            }
-            return j59.a;
+        public final java.lang.Object invokeSuspend(java.lang.Object r8) {
+            /*
+                Method dump skipped, instruction units count: 225
+                To view this dump add '--comments-level debug' option
+            */
+            throw new UnsupportedOperationException("Method not decompiled: com.google.firebase.sessions.settings.RemoteSettingsFetcher.AnonymousClass2.invokeSuspend(java.lang.Object):java.lang.Object");
         }
     }
 

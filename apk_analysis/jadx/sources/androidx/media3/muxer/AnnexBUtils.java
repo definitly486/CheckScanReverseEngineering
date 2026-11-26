@@ -32,34 +32,61 @@ final class AnnexBUtils {
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    private static int findNalEndIndex(ByteBuffer byteBuffer, int i) {
-        while (i <= byteBuffer.limit() - 4) {
-            int i2 = byteBuffer.getInt(i);
-            int i3 = i2 & (-256);
-            if (i3 == 0 || i3 == 256) {
-                return i;
-            }
-            int i4 = 16777215 & i2;
-            if (i4 == 0 || i4 == 1) {
-                return i + 1;
-            }
-            if ((65535 & i2) == 0) {
-                i += 2;
-            } else {
-                i = (i2 & 255) == 0 ? i + 3 : i + 4;
-            }
-        }
-        if (i == byteBuffer.limit() - 3) {
-            short s = byteBuffer.getShort(i);
-            byte b = byteBuffer.get(i + 2);
-            if (s == 0) {
-                if (b != 0) {
-                }
-                return i;
-            }
-        }
-        return byteBuffer.limit();
+    private static int findNalEndIndex(java.nio.ByteBuffer r4, int r5) {
+        /*
+        L0:
+            int r0 = r4.limit()
+            int r0 = r0 + (-4)
+            r1 = 1
+            if (r5 > r0) goto L34
+            int r0 = r4.getInt(r5)
+            r2 = r0 & (-256(0xffffffffffffff00, float:NaN))
+            if (r2 == 0) goto L4c
+            r3 = 256(0x100, float:3.59E-43)
+            if (r2 != r3) goto L16
+            goto L4c
+        L16:
+            r2 = 16777215(0xffffff, float:2.3509886E-38)
+            r2 = r2 & r0
+            if (r2 == 0) goto L32
+            if (r2 != r1) goto L1f
+            goto L32
+        L1f:
+            r1 = 65535(0xffff, float:9.1834E-41)
+            r1 = r1 & r0
+            if (r1 != 0) goto L28
+            int r5 = r5 + 2
+            goto L0
+        L28:
+            r0 = r0 & 255(0xff, float:3.57E-43)
+            if (r0 != 0) goto L2f
+            int r5 = r5 + 3
+            goto L0
+        L2f:
+            int r5 = r5 + 4
+            goto L0
+        L32:
+            int r5 = r5 + r1
+            return r5
+        L34:
+            int r0 = r4.limit()
+            int r0 = r0 + (-3)
+            if (r5 != r0) goto L4d
+            short r0 = r4.getShort(r5)
+            int r2 = r5 + 2
+            byte r2 = r4.get(r2)
+            if (r0 != 0) goto L4d
+            if (r2 == 0) goto L4c
+            if (r2 != r1) goto L4d
+        L4c:
+            return r5
+        L4d:
+            int r4 = r4.limit()
+            return r4
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.media3.muxer.AnnexBUtils.findNalEndIndex(java.nio.ByteBuffer, int):int");
     }
 
     public static j<ByteBuffer> findNalUnits(ByteBuffer byteBuffer) {

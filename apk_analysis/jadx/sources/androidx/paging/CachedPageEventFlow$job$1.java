@@ -1,7 +1,5 @@
 package androidx.paging;
 
-import defpackage.a32;
-import defpackage.ah;
 import defpackage.bd2;
 import defpackage.bm3;
 import defpackage.e02;
@@ -10,8 +8,6 @@ import defpackage.id3;
 import defpackage.j44;
 import defpackage.j59;
 import defpackage.pg8;
-import defpackage.r57;
-import defpackage.vg5;
 import defpackage.y22;
 
 /* JADX INFO: loaded from: classes3.dex */
@@ -105,46 +101,69 @@ public final class CachedPageEventFlow$job$1 extends pg8 implements bm3<y22, e02
          */
         /*
             Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
         */
-        public final Object emit(j44<? extends PageEvent<T>> j44Var, e02<? super j59> e02Var) {
-            CachedPageEventFlow$job$1$1$emit$1 cachedPageEventFlow$job$1$1$emit$1;
-            if (e02Var instanceof CachedPageEventFlow$job$1$1$emit$1) {
-                cachedPageEventFlow$job$1$1$emit$1 = (CachedPageEventFlow$job$1$1$emit$1) e02Var;
-                int i = cachedPageEventFlow$job$1$1$emit$1.label;
-                if ((i & Integer.MIN_VALUE) != 0) {
-                    cachedPageEventFlow$job$1$1$emit$1.label = i - Integer.MIN_VALUE;
-                } else {
-                    cachedPageEventFlow$job$1$1$emit$1 = new CachedPageEventFlow$job$1$1$emit$1(this, e02Var);
-                }
-            } else {
-                cachedPageEventFlow$job$1$1$emit$1 = new CachedPageEventFlow$job$1$1$emit$1(this, e02Var);
-            }
-            Object obj = cachedPageEventFlow$job$1$1$emit$1.result;
-            a32 a32Var = a32.COROUTINE_SUSPENDED;
-            int i2 = cachedPageEventFlow$job$1$1$emit$1.label;
-            if (i2 == 0) {
-                r57.b(obj);
-                vg5 vg5Var = ((CachedPageEventFlow) this.this$0).mutableSharedSrc;
-                cachedPageEventFlow$job$1$1$emit$1.L$0 = j44Var;
-                cachedPageEventFlow$job$1$1$emit$1.label = 1;
-                if (vg5Var.emit(j44Var, cachedPageEventFlow$job$1$1$emit$1) != a32Var) {
-                }
-                return a32Var;
-            }
-            if (i2 == 1) {
-                j44Var = (j44) cachedPageEventFlow$job$1$1$emit$1.L$0;
-                r57.b(obj);
-            } else {
-                if (i2 != 2) {
-                    ah.f("call to 'resume' before 'invoke' with coroutine");
-                    return null;
-                }
-                r57.b(obj);
-            }
-            return j59.a;
-            FlattenedPageController flattenedPageController = ((CachedPageEventFlow) this.this$0).pageController;
-            cachedPageEventFlow$job$1$1$emit$1.L$0 = null;
-            cachedPageEventFlow$job$1$1$emit$1.label = 2;
+        public final java.lang.Object emit(defpackage.j44<? extends androidx.paging.PageEvent<T>> r7, defpackage.e02<? super defpackage.j59> r8) {
+            /*
+                r6 = this;
+                boolean r0 = r8 instanceof androidx.paging.CachedPageEventFlow$job$1$1$emit$1
+                if (r0 == 0) goto L13
+                r0 = r8
+                androidx.paging.CachedPageEventFlow$job$1$1$emit$1 r0 = (androidx.paging.CachedPageEventFlow$job$1$1$emit$1) r0
+                int r1 = r0.label
+                r2 = -2147483648(0xffffffff80000000, float:-0.0)
+                r3 = r1 & r2
+                if (r3 == 0) goto L13
+                int r1 = r1 - r2
+                r0.label = r1
+                goto L18
+            L13:
+                androidx.paging.CachedPageEventFlow$job$1$1$emit$1 r0 = new androidx.paging.CachedPageEventFlow$job$1$1$emit$1
+                r0.<init>(r6, r8)
+            L18:
+                java.lang.Object r8 = r0.result
+                a32 r1 = defpackage.a32.COROUTINE_SUSPENDED
+                int r2 = r0.label
+                r3 = 0
+                r4 = 2
+                r5 = 1
+                if (r2 == 0) goto L39
+                if (r2 == r5) goto L31
+                if (r2 != r4) goto L2b
+                defpackage.r57.b(r8)
+                goto L5e
+            L2b:
+                java.lang.String r6 = "call to 'resume' before 'invoke' with coroutine"
+                defpackage.ah.f(r6)
+                return r3
+            L31:
+                java.lang.Object r7 = r0.L$0
+                j44 r7 = (defpackage.j44) r7
+                defpackage.r57.b(r8)
+                goto L4d
+            L39:
+                defpackage.r57.b(r8)
+                androidx.paging.CachedPageEventFlow<T> r8 = r6.this$0
+                vg5 r8 = androidx.paging.CachedPageEventFlow.access$getMutableSharedSrc$p(r8)
+                r0.L$0 = r7
+                r0.label = r5
+                java.lang.Object r8 = r8.emit(r7, r0)
+                if (r8 != r1) goto L4d
+                goto L5d
+            L4d:
+                androidx.paging.CachedPageEventFlow<T> r6 = r6.this$0
+                androidx.paging.FlattenedPageController r6 = androidx.paging.CachedPageEventFlow.access$getPageController$p(r6)
+                r0.L$0 = r3
+                r0.label = r4
+                java.lang.Object r6 = r6.record(r7, r0)
+                if (r6 != r1) goto L5e
+            L5d:
+                return r1
+            L5e:
+                j59 r6 = defpackage.j59.a
+                return r6
+            */
+            throw new UnsupportedOperationException("Method not decompiled: androidx.paging.CachedPageEventFlow$job$1.AnonymousClass1.emit(j44, e02):java.lang.Object");
         }
 
         @Override // defpackage.id3

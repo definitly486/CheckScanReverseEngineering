@@ -945,12 +945,6 @@ public class ConstraintWidget {
     /* JADX WARN: Code duplicated, block: B:271:0x049b  */
     /* JADX WARN: Code duplicated, block: B:272:0x049d  */
     /* JADX WARN: Code duplicated, block: B:274:0x04a0  */
-    /* JADX WARN: Code duplicated, block: B:296:0x04d8  */
-    /* JADX WARN: Code duplicated, block: B:298:0x04de  */
-    /* JADX WARN: Code duplicated, block: B:300:0x04f8  */
-    /* JADX WARN: Code duplicated, block: B:302:0x0505  */
-    /* JADX WARN: Code duplicated, block: B:304:0x0509  */
-    /* JADX WARN: Code duplicated, block: B:305:0x0511  */
     /* JADX WARN: Code duplicated, block: B:311:0x0578  */
     /* JADX WARN: Code duplicated, block: B:313:0x057f  */
     /* JADX WARN: Code duplicated, block: B:315:0x0588  */
@@ -995,7 +989,6 @@ public class ConstraintWidget {
         Metrics metrics;
         int i11;
         float f;
-        ConstraintAnchor constraintAnchor;
         boolean z10;
         VerticalWidgetRun verticalWidgetRun;
         HorizontalWidgetRun horizontalWidgetRun;
@@ -1229,9 +1222,9 @@ public class ConstraintWidget {
                             boolean z20 = this.isTerminalWidget[0];
                             DimensionBehaviour[] dimensionBehaviourArr2 = this.mListDimensionBehaviors;
                             DimensionBehaviour dimensionBehaviour6 = dimensionBehaviourArr2[0];
-                            ConstraintAnchor constraintAnchor2 = this.mLeft;
+                            ConstraintAnchor constraintAnchor = this.mLeft;
                             i6 = i2;
-                            ConstraintAnchor constraintAnchor3 = this.mRight;
+                            ConstraintAnchor constraintAnchor2 = this.mRight;
                             z4 = z4;
                             z9 = z3;
                             int i26 = this.mX;
@@ -1251,7 +1244,7 @@ public class ConstraintWidget {
                             solverVariable = solverVariable8;
                             solverVariable2 = solverVariableCreateObjectVariable3;
                             linearSystem3 = linearSystem;
-                            applyConstraints(linearSystem3, true, z9, z2, z20, solverVariable9, solverVariableCreateObjectVariable6, dimensionBehaviour6, z6, constraintAnchor2, constraintAnchor3, i26, i4, i27, i28, f4, z21, z22, z8, z7, z18, i6, i3, this.mMatchConstraintMinWidth, this.mMatchConstraintMaxWidth, this.mMatchConstraintPercentWidth, z17);
+                            applyConstraints(linearSystem3, true, z9, z2, z20, solverVariable9, solverVariableCreateObjectVariable6, dimensionBehaviour6, z6, constraintAnchor, constraintAnchor2, i26, i4, i27, i28, f4, z21, z22, z8, z7, z18, i6, i3, this.mMatchConstraintMinWidth, this.mMatchConstraintMaxWidth, this.mMatchConstraintPercentWidth, z17);
                         }
                         if (z || (verticalWidgetRun = this.mVerticalRun) == null) {
                             solverVariable3 = solverVariable2;
@@ -1310,28 +1303,10 @@ public class ConstraintWidget {
                             SolverVariable solverVariableCreateObjectVariable8 = constraintWidget7 != null ? linearSystem3.createObjectVariable(constraintWidget7.mBottom) : null;
                             ConstraintWidget constraintWidget8 = this.mParent;
                             SolverVariable solverVariableCreateObjectVariable9 = constraintWidget8 != null ? linearSystem3.createObjectVariable(constraintWidget8.mTop) : null;
-                            if (this.mBaselineDistance <= 0) {
+                            if (this.mBaselineDistance > 0 || this.mVisibility == i8) {
                                 z10 = z17;
-                                if (this.mVisibility == i8) {
-                                    constraintAnchor = this.mBaseline;
-                                    if (constraintAnchor.mTarget != null) {
-                                        linearSystem3.addEquality(solverVariable5, solverVariable3, getBaselineDistance(), i8);
-                                        linearSystem3.addEquality(solverVariable5, linearSystem3.createObjectVariable(this.mBaseline.mTarget), this.mBaseline.getMargin(), i8);
-                                        if (z2) {
-                                            linearSystem3.addGreaterThan(solverVariableCreateObjectVariable8, linearSystem3.createObjectVariable(this.mBottom), i7, 5);
-                                        }
-                                        z10 = i7;
-                                    } else if (this.mVisibility == i8) {
-                                        linearSystem3.addEquality(solverVariable5, solverVariable3, constraintAnchor.getMargin(), i8);
-                                        z10 = z17;
-                                    } else {
-                                        linearSystem3.addEquality(solverVariable5, solverVariable3, getBaselineDistance(), i8);
-                                        z10 = z17;
-                                    }
-                                }
-                            } else {
-                                constraintAnchor = this.mBaseline;
-                                if (constraintAnchor.mTarget != null) {
+                                ConstraintAnchor constraintAnchor3 = this.mBaseline;
+                                if (constraintAnchor3.mTarget != null) {
                                     linearSystem3.addEquality(solverVariable5, solverVariable3, getBaselineDistance(), i8);
                                     linearSystem3.addEquality(solverVariable5, linearSystem3.createObjectVariable(this.mBaseline.mTarget), this.mBaseline.getMargin(), i8);
                                     if (z2) {
@@ -1339,13 +1314,14 @@ public class ConstraintWidget {
                                     }
                                     z10 = i7;
                                 } else if (this.mVisibility == i8) {
-                                    linearSystem3.addEquality(solverVariable5, solverVariable3, constraintAnchor.getMargin(), i8);
+                                    linearSystem3.addEquality(solverVariable5, solverVariable3, constraintAnchor3.getMargin(), i8);
                                     z10 = z17;
                                 } else {
                                     linearSystem3.addEquality(solverVariable5, solverVariable3, getBaselineDistance(), i8);
                                     z10 = z17;
                                 }
                             }
+                            z10 = z17;
                             boolean z24 = this.isTerminalWidget[c];
                             DimensionBehaviour[] dimensionBehaviourArr3 = this.mListDimensionBehaviors;
                             int i31 = i7;

@@ -84,10 +84,10 @@ public final class fe3<T> implements id3 {
             	at jadx.core.codegen.ClassGen.addMethodCode(ClassGen.java:420)
             	at jadx.core.codegen.ClassGen.addMethod(ClassGen.java:345)
             	at jadx.core.codegen.ClassGen.lambda$addInnerClsAndMethods$3(ClassGen.java:299)
-            	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
-            	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+            	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+            	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
             	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
-            	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+            	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
             */
         /*
             this = this;

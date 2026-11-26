@@ -1,6 +1,5 @@
 package androidx.room;
 
-import androidx.room.util.DBUtil;
 import defpackage.a32;
 import defpackage.ah;
 import defpackage.bd2;
@@ -9,14 +8,10 @@ import defpackage.e02;
 import defpackage.id3;
 import defpackage.j59;
 import defpackage.pg8;
-import defpackage.qn1;
 import defpackage.r07;
 import defpackage.r57;
 import defpackage.y22;
-import defpackage.yr;
-import java.util.ArrayList;
 import java.util.Set;
-import kotlin.KotlinNothingValueException;
 
 /* JADX INFO: loaded from: classes3.dex */
 @bd2(c = "androidx.room.TriggerBasedInvalidationTracker$createFlow$1", f = "InvalidationTracker.kt", l = {239, 239, 243}, m = "invokeSuspend")
@@ -104,62 +99,106 @@ public final class TriggerBasedInvalidationTracker$createFlow$1 extends pg8 impl
     @Override // defpackage.cd0
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public final Object invokeSuspend(Object obj) {
-        id3 id3Var;
-        id3 id3Var2;
-        a32 a32Var = a32.COROUTINE_SUSPENDED;
-        int i = this.label;
-        try {
-            if (i != 0) {
-                if (i == 1) {
-                    id3Var2 = (id3) this.L$0;
-                    r57.b(obj);
-                } else if (i == 2) {
-                    id3Var2 = (id3) this.L$0;
-                    r57.b(obj);
-                    id3Var = id3Var2;
-                    r07 r07Var = new r07();
-                    ObservedTableVersions observedTableVersions = this.this$0.observedTableVersions;
-                    AnonymousClass2 anonymousClass2 = new AnonymousClass2(r07Var, this.$emitInitialState, id3Var, this.$resolvedTableNames, this.$tableIds);
-                    this.L$0 = null;
-                    this.label = 3;
-                } else {
-                    if (i != 3) {
-                        ah.f("call to 'resume' before 'invoke' with coroutine");
-                        return null;
-                    }
-                    r57.b(obj);
-                }
-                throw new KotlinNothingValueException();
-            }
-            r57.b(obj);
-            id3 id3Var3 = (id3) this.L$0;
-            if (this.this$0.observedTableStates.onObserverAdded$room_runtime(this.$tableIds)) {
-                RoomDatabase roomDatabase = this.this$0.database;
-                this.L$0 = id3Var3;
-                this.label = 1;
-                Object coroutineContext = DBUtil.getCoroutineContext(roomDatabase, false, this);
-                if (coroutineContext != a32Var) {
-                    id3Var2 = id3Var3;
-                    obj = coroutineContext;
-                }
-            } else {
-                id3Var = id3Var3;
-                r07 r07Var2 = new r07();
-                ObservedTableVersions observedTableVersions2 = this.this$0.observedTableVersions;
-                AnonymousClass2 anonymousClass3 = new AnonymousClass2(r07Var2, this.$emitInitialState, id3Var, this.$resolvedTableNames, this.$tableIds);
-                this.L$0 = null;
-                this.label = 3;
-            }
-            return a32Var;
-            AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.this$0, null);
-            this.L$0 = id3Var2;
-            this.label = 2;
-        } catch (Throwable th) {
-            this.this$0.observedTableStates.onObserverRemoved$room_runtime(this.$tableIds);
-            throw th;
-        }
+    public final java.lang.Object invokeSuspend(java.lang.Object r12) {
+        /*
+            r11 = this;
+            a32 r0 = defpackage.a32.COROUTINE_SUSPENDED
+            int r1 = r11.label
+            r2 = 0
+            r3 = 3
+            r4 = 2
+            r5 = 1
+            if (r1 == 0) goto L30
+            if (r1 == r5) goto L28
+            if (r1 == r4) goto L20
+            if (r1 == r3) goto L17
+            java.lang.String r11 = "call to 'resume' before 'invoke' with coroutine"
+            defpackage.ah.f(r11)
+            r11 = 0
+            return r11
+        L17:
+            defpackage.r57.b(r12)     // Catch: java.lang.Throwable -> L1c
+            goto L92
+        L1c:
+            r0 = move-exception
+            r12 = r0
+            goto L98
+        L20:
+            java.lang.Object r1 = r11.L$0
+            id3 r1 = (defpackage.id3) r1
+            defpackage.r57.b(r12)
+            goto L6e
+        L28:
+            java.lang.Object r1 = r11.L$0
+            id3 r1 = (defpackage.id3) r1
+            defpackage.r57.b(r12)
+            goto L5a
+        L30:
+            defpackage.r57.b(r12)
+            java.lang.Object r12 = r11.L$0
+            id3 r12 = (defpackage.id3) r12
+            androidx.room.TriggerBasedInvalidationTracker r1 = r11.this$0
+            androidx.room.ObservedTableStates r1 = androidx.room.TriggerBasedInvalidationTracker.access$getObservedTableStates$p(r1)
+            int[] r6 = r11.$tableIds
+            boolean r1 = r1.onObserverAdded$room_runtime(r6)
+            if (r1 == 0) goto L70
+            androidx.room.TriggerBasedInvalidationTracker r1 = r11.this$0
+            androidx.room.RoomDatabase r1 = androidx.room.TriggerBasedInvalidationTracker.access$getDatabase$p(r1)
+            r11.L$0 = r12
+            r11.label = r5
+            r5 = 0
+            java.lang.Object r1 = androidx.room.util.DBUtil.getCoroutineContext(r1, r5, r11)
+            if (r1 != r0) goto L57
+            goto L91
+        L57:
+            r10 = r1
+            r1 = r12
+            r12 = r10
+        L5a:
+            o22 r12 = (defpackage.o22) r12
+            androidx.room.TriggerBasedInvalidationTracker$createFlow$1$1 r5 = new androidx.room.TriggerBasedInvalidationTracker$createFlow$1$1
+            androidx.room.TriggerBasedInvalidationTracker r6 = r11.this$0
+            r5.<init>(r6, r2)
+            r11.L$0 = r1
+            r11.label = r4
+            java.lang.Object r12 = defpackage.av0.d(r12, r5, r11)
+            if (r12 != r0) goto L6e
+            goto L91
+        L6e:
+            r7 = r1
+            goto L71
+        L70:
+            r7 = r12
+        L71:
+            r07 r5 = new r07     // Catch: java.lang.Throwable -> L1c
+            r5.<init>()     // Catch: java.lang.Throwable -> L1c
+            androidx.room.TriggerBasedInvalidationTracker r12 = r11.this$0     // Catch: java.lang.Throwable -> L1c
+            androidx.room.ObservedTableVersions r12 = androidx.room.TriggerBasedInvalidationTracker.access$getObservedTableVersions$p(r12)     // Catch: java.lang.Throwable -> L1c
+            androidx.room.TriggerBasedInvalidationTracker$createFlow$1$2 r4 = new androidx.room.TriggerBasedInvalidationTracker$createFlow$1$2     // Catch: java.lang.Throwable -> L1c
+            boolean r6 = r11.$emitInitialState     // Catch: java.lang.Throwable -> L1c
+            java.lang.String[] r8 = r11.$resolvedTableNames     // Catch: java.lang.Throwable -> L1c
+            int[] r9 = r11.$tableIds     // Catch: java.lang.Throwable -> L1c
+            r4.<init>(r5, r6, r7, r8, r9)     // Catch: java.lang.Throwable -> L1c
+            r11.L$0 = r2     // Catch: java.lang.Throwable -> L1c
+            r11.label = r3     // Catch: java.lang.Throwable -> L1c
+            java.lang.Object r12 = r12.collect(r4, r11)     // Catch: java.lang.Throwable -> L1c
+            if (r12 != r0) goto L92
+        L91:
+            return r0
+        L92:
+            kotlin.KotlinNothingValueException r12 = new kotlin.KotlinNothingValueException     // Catch: java.lang.Throwable -> L1c
+            r12.<init>()     // Catch: java.lang.Throwable -> L1c
+            throw r12     // Catch: java.lang.Throwable -> L1c
+        L98:
+            androidx.room.TriggerBasedInvalidationTracker r0 = r11.this$0
+            androidx.room.ObservedTableStates r0 = androidx.room.TriggerBasedInvalidationTracker.access$getObservedTableStates$p(r0)
+            int[] r11 = r11.$tableIds
+            r0.onObserverRemoved$room_runtime(r11)
+            throw r12
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.room.TriggerBasedInvalidationTracker$createFlow$1.invokeSuspend(java.lang.Object):java.lang.Object");
     }
 
     @Override // defpackage.bm3
@@ -195,82 +234,113 @@ public final class TriggerBasedInvalidationTracker$createFlow$1 extends pg8 impl
          */
         /* JADX WARN: Code restructure failed: missing block: B:37:0x0099, code lost:
         
+            r14 = r14;
+            r14 = r14;
+            r14 = r14;
             return r1;
          */
         /*
             Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
         */
-        public final Object emit(int[] iArr, e02<? super j59> e02Var) {
-            TriggerBasedInvalidationTracker$createFlow$1$2$emit$1 triggerBasedInvalidationTracker$createFlow$1$2$emit$1;
-            Object obj;
-            if (e02Var instanceof TriggerBasedInvalidationTracker$createFlow$1$2$emit$1) {
-                triggerBasedInvalidationTracker$createFlow$1$2$emit$1 = (TriggerBasedInvalidationTracker$createFlow$1$2$emit$1) e02Var;
-                int i = triggerBasedInvalidationTracker$createFlow$1$2$emit$1.label;
-                if ((i & Integer.MIN_VALUE) != 0) {
-                    triggerBasedInvalidationTracker$createFlow$1$2$emit$1.label = i - Integer.MIN_VALUE;
-                } else {
-                    triggerBasedInvalidationTracker$createFlow$1$2$emit$1 = new TriggerBasedInvalidationTracker$createFlow$1$2$emit$1(this, e02Var);
-                }
-            } else {
-                triggerBasedInvalidationTracker$createFlow$1$2$emit$1 = new TriggerBasedInvalidationTracker$createFlow$1$2$emit$1(this, e02Var);
-            }
-            Object obj2 = triggerBasedInvalidationTracker$createFlow$1$2$emit$1.result;
-            a32 a32Var = a32.COROUTINE_SUSPENDED;
-            int i2 = triggerBasedInvalidationTracker$createFlow$1$2$emit$1.label;
-            if (i2 == 0) {
-                r57.b(obj2);
-                r07<int[]> r07Var = this.$currentVersions;
-                if (r07Var.b == null) {
-                    obj = iArr;
-                    if (this.$emitInitialState) {
-                        id3<Set<String>> id3Var = this.$$this$flow;
-                        Set<String> setK0 = yr.k0(this.$resolvedTableNames);
-                        triggerBasedInvalidationTracker$createFlow$1$2$emit$1.L$0 = iArr;
-                        triggerBasedInvalidationTracker$createFlow$1$2$emit$1.label = 1;
-                        obj = iArr;
-                    }
-                } else {
-                    String[] strArr = this.$resolvedTableNames;
-                    int[] iArr2 = this.$tableIds;
-                    ArrayList arrayList = new ArrayList();
-                    int length = strArr.length;
-                    int i3 = 0;
-                    int i4 = 0;
-                    while (i3 < length) {
-                        String str = strArr[i3];
-                        int i5 = i4 + 1;
-                        int[] iArr3 = r07Var.b;
-                        if (iArr3 == null) {
-                            ah.f("Required value was null.");
-                            return null;
-                        }
-                        int i6 = iArr2[i4];
-                        if (iArr3[i6] != iArr[i6]) {
-                            arrayList.add(str);
-                        }
-                        i3++;
-                        i4 = i5;
-                    }
-                    obj = iArr;
-                    if (!arrayList.isEmpty()) {
-                        id3<Set<String>> id3Var2 = this.$$this$flow;
-                        Set<String> setY0 = qn1.y0(arrayList);
-                        triggerBasedInvalidationTracker$createFlow$1$2$emit$1.L$0 = iArr;
-                        triggerBasedInvalidationTracker$createFlow$1$2$emit$1.label = 2;
-                        obj = iArr;
-                    }
-                }
-            } else {
-                if (i2 != 1 && i2 != 2) {
-                    ah.f("call to 'resume' before 'invoke' with coroutine");
-                    return null;
-                }
-                Object obj3 = (T) ((int[]) triggerBasedInvalidationTracker$createFlow$1$2$emit$1.L$0);
-                r57.b(obj2);
-                obj = obj3;
-            }
-            this.$currentVersions.b = (T) obj;
-            return j59.a;
+        public final java.lang.Object emit(int[] r14, defpackage.e02<? super defpackage.j59> r15) {
+            /*
+                r13 = this;
+                boolean r0 = r15 instanceof androidx.room.TriggerBasedInvalidationTracker$createFlow$1$2$emit$1
+                if (r0 == 0) goto L13
+                r0 = r15
+                androidx.room.TriggerBasedInvalidationTracker$createFlow$1$2$emit$1 r0 = (androidx.room.TriggerBasedInvalidationTracker$createFlow$1$2$emit$1) r0
+                int r1 = r0.label
+                r2 = -2147483648(0xffffffff80000000, float:-0.0)
+                r3 = r1 & r2
+                if (r3 == 0) goto L13
+                int r1 = r1 - r2
+                r0.label = r1
+                goto L18
+            L13:
+                androidx.room.TriggerBasedInvalidationTracker$createFlow$1$2$emit$1 r0 = new androidx.room.TriggerBasedInvalidationTracker$createFlow$1$2$emit$1
+                r0.<init>(r13, r15)
+            L18:
+                java.lang.Object r15 = r0.result
+                a32 r1 = defpackage.a32.COROUTINE_SUSPENDED
+                int r2 = r0.label
+                r3 = 0
+                r4 = 2
+                r5 = 1
+                if (r2 == 0) goto L36
+                if (r2 == r5) goto L2e
+                if (r2 != r4) goto L28
+                goto L2e
+            L28:
+                java.lang.String r13 = "call to 'resume' before 'invoke' with coroutine"
+                defpackage.ah.f(r13)
+                return r3
+            L2e:
+                java.lang.Object r14 = r0.L$0
+                int[] r14 = (int[]) r14
+                defpackage.r57.b(r15)
+                goto L9a
+            L36:
+                defpackage.r57.b(r15)
+                r07<int[]> r15 = r13.$currentVersions
+                T r2 = r15.b
+                if (r2 != 0) goto L56
+                boolean r15 = r13.$emitInitialState
+                if (r15 == 0) goto L9a
+                id3<java.util.Set<java.lang.String>> r15 = r13.$$this$flow
+                java.lang.String[] r2 = r13.$resolvedTableNames
+                java.util.Set r2 = defpackage.yr.k0(r2)
+                r0.L$0 = r14
+                r0.label = r5
+                java.lang.Object r15 = r15.emit(r2, r0)
+                if (r15 != r1) goto L9a
+                goto L99
+            L56:
+                java.lang.String[] r2 = r13.$resolvedTableNames
+                int[] r5 = r13.$tableIds
+                java.util.ArrayList r6 = new java.util.ArrayList
+                r6.<init>()
+                int r7 = r2.length
+                r8 = 0
+                r9 = r8
+            L62:
+                if (r8 >= r7) goto L83
+                r10 = r2[r8]
+                int r11 = r9 + 1
+                T r12 = r15.b
+                if (r12 == 0) goto L7d
+                int[] r12 = (int[]) r12
+                r9 = r5[r9]
+                r12 = r12[r9]
+                r9 = r14[r9]
+                if (r12 == r9) goto L79
+                r6.add(r10)
+            L79:
+                int r8 = r8 + 1
+                r9 = r11
+                goto L62
+            L7d:
+                java.lang.String r13 = "Required value was null."
+                defpackage.ah.f(r13)
+                return r3
+            L83:
+                boolean r15 = r6.isEmpty()
+                if (r15 != 0) goto L9a
+                id3<java.util.Set<java.lang.String>> r15 = r13.$$this$flow
+                java.util.Set r2 = defpackage.qn1.y0(r6)
+                r0.L$0 = r14
+                r0.label = r4
+                java.lang.Object r15 = r15.emit(r2, r0)
+                if (r15 != r1) goto L9a
+            L99:
+                return r1
+            L9a:
+                r07<int[]> r13 = r13.$currentVersions
+                r13.b = r14
+                j59 r13 = defpackage.j59.a
+                return r13
+            */
+            throw new UnsupportedOperationException("Method not decompiled: androidx.room.TriggerBasedInvalidationTracker$createFlow$1.AnonymousClass2.emit(int[], e02):java.lang.Object");
         }
 
         @Override // defpackage.id3

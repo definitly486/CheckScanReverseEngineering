@@ -3,12 +3,9 @@ package androidx.compose.foundation.draganddrop;
 import androidx.compose.foundation.gestures.ForEachGestureKt;
 import androidx.compose.foundation.gestures.PressGestureScope;
 import androidx.compose.foundation.gestures.PressGestureScopeImpl;
-import androidx.compose.foundation.gestures.TapGestureDetectorKt;
 import androidx.compose.ui.geometry.Offset;
 import androidx.compose.ui.input.pointer.AwaitPointerEventScope;
-import androidx.compose.ui.input.pointer.PointerEventPass;
 import androidx.compose.ui.input.pointer.PointerInputChange;
-import androidx.compose.ui.input.pointer.PointerType;
 import androidx.compose.ui.spatial.RectListKt;
 import defpackage.a32;
 import defpackage.ah;
@@ -18,7 +15,6 @@ import defpackage.dm3;
 import defpackage.e02;
 import defpackage.f57;
 import defpackage.j59;
-import defpackage.nl3;
 import defpackage.pg8;
 import defpackage.r57;
 import defpackage.y22;
@@ -136,64 +132,101 @@ public final class DragAndDropSourceDefaults$DefaultStartDetector$1 extends pg8 
             @Override // defpackage.cd0
             /*
                 Code decompiled incorrectly, please refer to instructions dump.
+                To view partially-correct add '--show-bad-code' argument
             */
-            public final Object invokeSuspend(Object obj) {
-                AwaitPointerEventScope awaitPointerEventScope;
-                Object objAwaitFirstDown;
-                a32 a32Var = a32.COROUTINE_SUSPENDED;
-                int i = this.label;
-                if (i == 0) {
-                    r57.b(obj);
-                    awaitPointerEventScope = (AwaitPointerEventScope) this.L$0;
-                    PointerEventPass pointerEventPass = PointerEventPass.Initial;
-                    this.L$0 = awaitPointerEventScope;
-                    this.label = 1;
-                    objAwaitFirstDown = TapGestureDetectorKt.awaitFirstDown(awaitPointerEventScope, false, pointerEventPass, this);
-                    if (objAwaitFirstDown != a32Var) {
-                    }
-                    return a32Var;
-                }
-                if (i == 1) {
-                    awaitPointerEventScope = (AwaitPointerEventScope) this.L$0;
-                    r57.b(obj);
-                    objAwaitFirstDown = obj;
-                } else {
-                    if (i != 2 && i != 3) {
-                        ah.f("call to 'resume' before 'invoke' with coroutine");
-                        return null;
-                    }
-                    r57.b(obj);
-                }
-                return j59.a;
-                PointerInputChange pointerInputChange = (PointerInputChange) objAwaitFirstDown;
-                if (PointerType.m7642equalsimpl0(pointerInputChange.m7572getTypeT8wyACA(), PointerType.Companion.m7647getMouseT8wyACA())) {
-                    a aVar = new a();
-                    final DragAndDropStartDetectorScope dragAndDropStartDetectorScope = this.$this;
-                    dm3 dm3Var = new dm3() { // from class: androidx.compose.foundation.draganddrop.b
-                        @Override // defpackage.dm3
-                        public final Object invoke(Object obj2, Object obj3, Object obj4) {
-                            return DragAndDropSourceDefaults$DefaultStartDetector$1.AnonymousClass1.C00251.invokeSuspend$lambda$1(dragAndDropStartDetectorScope, (PointerInputChange) obj2, (PointerInputChange) obj3, (Offset) obj4);
-                        }
-                    };
-                    c cVar = new c();
-                    d dVar = new d();
-                    e eVar = new e();
-                    this.L$0 = null;
-                    this.label = 2;
-                } else {
-                    y22 y22Var = this.$$this$coroutineScope;
-                    PressGestureScopeImpl pressGestureScopeImpl = this.$pressScope;
-                    final DragAndDropStartDetectorScope dragAndDropStartDetectorScope2 = this.$this;
-                    nl3 nl3Var = new nl3() { // from class: androidx.compose.foundation.draganddrop.f
-                        @Override // defpackage.nl3
-                        public final Object invoke(Object obj2) {
-                            return DragAndDropSourceDefaults$DefaultStartDetector$1.AnonymousClass1.C00251.invokeSuspend$lambda$5(dragAndDropStartDetectorScope2, (Offset) obj2);
-                        }
-                    };
-                    AnonymousClass7 anonymousClass7 = new AnonymousClass7(null);
-                    this.L$0 = null;
-                    this.label = 3;
-                }
+            public final java.lang.Object invokeSuspend(java.lang.Object r12) {
+                /*
+                    r11 = this;
+                    a32 r9 = defpackage.a32.COROUTINE_SUSPENDED
+                    int r0 = r11.label
+                    r1 = 3
+                    r2 = 2
+                    r3 = 1
+                    r4 = 0
+                    if (r0 == 0) goto L25
+                    if (r0 == r3) goto L1c
+                    if (r0 == r2) goto L17
+                    if (r0 != r1) goto L11
+                    goto L17
+                L11:
+                    java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
+                    defpackage.ah.f(r0)
+                    return r4
+                L17:
+                    defpackage.r57.b(r12)
+                    goto L9a
+                L1c:
+                    java.lang.Object r0 = r11.L$0
+                    androidx.compose.ui.input.pointer.AwaitPointerEventScope r0 = (androidx.compose.ui.input.pointer.AwaitPointerEventScope) r0
+                    defpackage.r57.b(r12)
+                    r3 = r12
+                    goto L3a
+                L25:
+                    defpackage.r57.b(r12)
+                    java.lang.Object r0 = r11.L$0
+                    androidx.compose.ui.input.pointer.AwaitPointerEventScope r0 = (androidx.compose.ui.input.pointer.AwaitPointerEventScope) r0
+                    androidx.compose.ui.input.pointer.PointerEventPass r5 = androidx.compose.ui.input.pointer.PointerEventPass.Initial
+                    r11.L$0 = r0
+                    r11.label = r3
+                    r3 = 0
+                    java.lang.Object r3 = androidx.compose.foundation.gestures.TapGestureDetectorKt.awaitFirstDown(r0, r3, r5, r11)
+                    if (r3 != r9) goto L3a
+                    goto L99
+                L3a:
+                    androidx.compose.ui.input.pointer.PointerInputChange r3 = (androidx.compose.ui.input.pointer.PointerInputChange) r3
+                    int r5 = r3.m7572getTypeT8wyACA()
+                    androidx.compose.ui.input.pointer.PointerType$Companion r6 = androidx.compose.ui.input.pointer.PointerType.Companion
+                    int r6 = r6.m7647getMouseT8wyACA()
+                    boolean r5 = androidx.compose.ui.input.pointer.PointerType.m7642equalsimpl0(r5, r6)
+                    if (r5 == 0) goto L79
+                    androidx.compose.foundation.draganddrop.a r1 = new androidx.compose.foundation.draganddrop.a
+                    r1.<init>()
+                    androidx.compose.foundation.draganddrop.DragAndDropStartDetectorScope r5 = r11.$this
+                    androidx.compose.foundation.draganddrop.b r6 = new androidx.compose.foundation.draganddrop.b
+                    r6.<init>()
+                    androidx.compose.foundation.draganddrop.c r5 = new androidx.compose.foundation.draganddrop.c
+                    r5.<init>()
+                    r8 = r6
+                    androidx.compose.foundation.draganddrop.d r6 = new androidx.compose.foundation.draganddrop.d
+                    r6.<init>()
+                    androidx.compose.foundation.draganddrop.e r10 = new androidx.compose.foundation.draganddrop.e
+                    r10.<init>()
+                    r11.L$0 = r4
+                    r11.label = r2
+                    r2 = r1
+                    r1 = r3
+                    r3 = 0
+                    r4 = r8
+                    r7 = r10
+                    r8 = r11
+                    java.lang.Object r0 = androidx.compose.foundation.gestures.DragGestureDetectorKt.processDragGesture(r0, r1, r2, r3, r4, r5, r6, r7, r8)
+                    if (r0 != r9) goto L9a
+                    goto L99
+                L79:
+                    y22 r2 = r11.$$this$coroutineScope
+                    r3 = r2
+                    androidx.compose.foundation.gestures.PressGestureScopeImpl r2 = r11.$pressScope
+                    androidx.compose.foundation.draganddrop.DragAndDropStartDetectorScope r5 = r11.$this
+                    androidx.compose.foundation.draganddrop.f r6 = new androidx.compose.foundation.draganddrop.f
+                    r6.<init>()
+                    androidx.compose.foundation.draganddrop.DragAndDropSourceDefaults$DefaultStartDetector$1$1$1$7 r5 = new androidx.compose.foundation.draganddrop.DragAndDropSourceDefaults$DefaultStartDetector$1$1$1$7
+                    r5.<init>(r4)
+                    r11.L$0 = r4
+                    r11.label = r1
+                    r1 = r3
+                    r3 = 0
+                    r4 = r6
+                    r6 = 0
+                    r7 = r11
+                    java.lang.Object r0 = androidx.compose.foundation.gestures.TapGestureDetectorKt.processTapGesture(r0, r1, r2, r3, r4, r5, r6, r7)
+                    if (r0 != r9) goto L9a
+                L99:
+                    return r9
+                L9a:
+                    j59 r0 = defpackage.j59.a
+                    return r0
+                */
+                throw new UnsupportedOperationException("Method not decompiled: androidx.compose.foundation.draganddrop.DragAndDropSourceDefaults$DefaultStartDetector$1.AnonymousClass1.C00251.invokeSuspend(java.lang.Object):java.lang.Object");
             }
         }
 

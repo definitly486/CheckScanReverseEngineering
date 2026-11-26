@@ -1,16 +1,10 @@
 package androidx.compose.foundation.text.input.internal;
 
-import androidx.compose.runtime.MonotonicFrameClockKt;
-import defpackage.a32;
-import defpackage.ah;
 import defpackage.bd2;
 import defpackage.bm3;
 import defpackage.e02;
-import defpackage.h8;
-import defpackage.id3;
 import defpackage.j59;
 import defpackage.pg8;
-import defpackage.r57;
 import defpackage.vg5;
 import defpackage.y22;
 
@@ -50,42 +44,51 @@ public final class AndroidTextInputSession_androidKt$platformSpecificTextInputSe
     @Override // defpackage.cd0
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public final Object invokeSuspend(Object obj) {
-        a32 a32Var = a32.COROUTINE_SUSPENDED;
-        int i = this.label;
-        if (i == 0) {
-            r57.b(obj);
-            d dVar = new d();
-            this.label = 1;
-            if (MonotonicFrameClockKt.withFrameMillis(dVar, this) != a32Var) {
-            }
-            return a32Var;
-        }
-        if (i == 1) {
-            r57.b(obj);
-        } else {
-            if (i != 2) {
-                ah.f("call to 'resume' before 'invoke' with coroutine");
-                return null;
-            }
-            r57.b(obj);
-        }
-        h8.d();
-        return null;
-        vg5<j59> vg5Var = this.$it;
-        final ComposeInputMethodManager composeInputMethodManager = this.$composeImm;
-        id3<? super j59> id3Var = new id3() { // from class: androidx.compose.foundation.text.input.internal.AndroidTextInputSession_androidKt$platformSpecificTextInputSession$3$2$1.2
-            public final Object emit(j59 j59Var, e02<? super j59> e02Var) {
-                composeInputMethodManager.startStylusHandwriting();
-                return j59.a;
-            }
-
-            @Override // defpackage.id3
-            public /* bridge */ /* synthetic */ Object emit(Object obj2, e02 e02Var) {
-                return emit((j59) obj2, (e02<? super j59>) e02Var);
-            }
-        };
-        this.label = 2;
+    public final java.lang.Object invokeSuspend(java.lang.Object r5) {
+        /*
+            r4 = this;
+            a32 r0 = defpackage.a32.COROUTINE_SUSPENDED
+            int r1 = r4.label
+            r2 = 2
+            r3 = 1
+            if (r1 == 0) goto L1b
+            if (r1 == r3) goto L17
+            if (r1 == r2) goto L13
+            java.lang.String r4 = "call to 'resume' before 'invoke' with coroutine"
+            defpackage.ah.f(r4)
+        L11:
+            r4 = 0
+            return r4
+        L13:
+            defpackage.r57.b(r5)
+            goto L3e
+        L17:
+            defpackage.r57.b(r5)
+            goto L2c
+        L1b:
+            defpackage.r57.b(r5)
+            androidx.compose.foundation.text.input.internal.d r5 = new androidx.compose.foundation.text.input.internal.d
+            r5.<init>()
+            r4.label = r3
+            java.lang.Object r5 = androidx.compose.runtime.MonotonicFrameClockKt.withFrameMillis(r5, r4)
+            if (r5 != r0) goto L2c
+            goto L3d
+        L2c:
+            vg5<j59> r5 = r4.$it
+            androidx.compose.foundation.text.input.internal.AndroidTextInputSession_androidKt$platformSpecificTextInputSession$3$2$1$2 r1 = new androidx.compose.foundation.text.input.internal.AndroidTextInputSession_androidKt$platformSpecificTextInputSession$3$2$1$2
+            androidx.compose.foundation.text.input.internal.ComposeInputMethodManager r3 = r4.$composeImm
+            r1.<init>()
+            r4.label = r2
+            java.lang.Object r4 = r5.collect(r1, r4)
+            if (r4 != r0) goto L3e
+        L3d:
+            return r0
+        L3e:
+            defpackage.h8.d()
+            goto L11
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.compose.foundation.text.input.internal.AndroidTextInputSession_androidKt$platformSpecificTextInputSession$3$2$1.invokeSuspend(java.lang.Object):java.lang.Object");
     }
 }

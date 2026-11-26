@@ -33,56 +33,85 @@ public final class NestedScrollDispatcher {
     /* JADX INFO: renamed from: dispatchPostFling-RZ2iAVY, reason: not valid java name */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public final Object m7419dispatchPostFlingRZ2iAVY(long j, long j2, e02<? super Velocity> e02Var) {
-        NestedScrollDispatcher$dispatchPostFling$1 nestedScrollDispatcher$dispatchPostFling$1;
-        long jM9291getZero9UxMQ8M;
-        if (e02Var instanceof NestedScrollDispatcher$dispatchPostFling$1) {
-            nestedScrollDispatcher$dispatchPostFling$1 = (NestedScrollDispatcher$dispatchPostFling$1) e02Var;
-            int i = nestedScrollDispatcher$dispatchPostFling$1.label;
-            if ((i & Integer.MIN_VALUE) != 0) {
-                nestedScrollDispatcher$dispatchPostFling$1.label = i - Integer.MIN_VALUE;
-            } else {
-                nestedScrollDispatcher$dispatchPostFling$1 = new NestedScrollDispatcher$dispatchPostFling$1(this, e02Var);
-            }
-        } else {
-            nestedScrollDispatcher$dispatchPostFling$1 = new NestedScrollDispatcher$dispatchPostFling$1(this, e02Var);
-        }
-        NestedScrollDispatcher$dispatchPostFling$1 nestedScrollDispatcher$dispatchPostFling$2 = nestedScrollDispatcher$dispatchPostFling$1;
-        Object objMo1601onPostFlingRZ2iAVY = nestedScrollDispatcher$dispatchPostFling$2.result;
-        a32 a32Var = a32.COROUTINE_SUSPENDED;
-        int i2 = nestedScrollDispatcher$dispatchPostFling$2.label;
-        if (i2 == 0) {
-            r57.b(objMo1601onPostFlingRZ2iAVY);
-            if (getParent$ui() == null) {
-                NestedScrollNode nestedScrollNode = this.lastKnownParentNode;
-                if (nestedScrollNode != null) {
-                    nestedScrollDispatcher$dispatchPostFling$2.label = 1;
-                    objMo1601onPostFlingRZ2iAVY = nestedScrollNode.mo1601onPostFlingRZ2iAVY(j, j2, nestedScrollDispatcher$dispatchPostFling$2);
-                } else {
-                    jM9291getZero9UxMQ8M = Velocity.Companion.m9291getZero9UxMQ8M();
-                }
-            } else {
-                NestedScrollConnection parent$ui = getParent$ui();
-                if (parent$ui != null) {
-                    nestedScrollDispatcher$dispatchPostFling$2.label = 2;
-                    objMo1601onPostFlingRZ2iAVY = parent$ui.mo1601onPostFlingRZ2iAVY(j, j2, nestedScrollDispatcher$dispatchPostFling$2);
-                } else {
-                    jM9291getZero9UxMQ8M = Velocity.Companion.m9291getZero9UxMQ8M();
-                }
-            }
-        } else if (i2 == 1) {
-            r57.b(objMo1601onPostFlingRZ2iAVY);
-            jM9291getZero9UxMQ8M = ((Velocity) objMo1601onPostFlingRZ2iAVY).m9289unboximpl();
-        } else {
-            if (i2 != 2) {
-                ah.f("call to 'resume' before 'invoke' with coroutine");
-                return null;
-            }
-            r57.b(objMo1601onPostFlingRZ2iAVY);
-            jM9291getZero9UxMQ8M = ((Velocity) objMo1601onPostFlingRZ2iAVY).m9289unboximpl();
-        }
-        return Velocity.m9271boximpl(jM9291getZero9UxMQ8M);
+    public final java.lang.Object m7419dispatchPostFlingRZ2iAVY(long r6, long r8, defpackage.e02<? super androidx.compose.ui.unit.Velocity> r10) {
+        /*
+            r5 = this;
+            boolean r0 = r10 instanceof androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher$dispatchPostFling$1
+            if (r0 == 0) goto L14
+            r0 = r10
+            androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher$dispatchPostFling$1 r0 = (androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher$dispatchPostFling$1) r0
+            int r1 = r0.label
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L14
+            int r1 = r1 - r2
+            r0.label = r1
+        L12:
+            r10 = r0
+            goto L1a
+        L14:
+            androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher$dispatchPostFling$1 r0 = new androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher$dispatchPostFling$1
+            r0.<init>(r5, r10)
+            goto L12
+        L1a:
+            java.lang.Object r0 = r10.result
+            a32 r1 = defpackage.a32.COROUTINE_SUSPENDED
+            int r2 = r10.label
+            r3 = 2
+            r4 = 1
+            if (r2 == 0) goto L37
+            if (r2 == r4) goto L33
+            if (r2 != r3) goto L2c
+            defpackage.r57.b(r0)
+            goto L6a
+        L2c:
+            java.lang.String r5 = "call to 'resume' before 'invoke' with coroutine"
+            defpackage.ah.f(r5)
+            r5 = 0
+            return r5
+        L33:
+            defpackage.r57.b(r0)
+            goto L4d
+        L37:
+            defpackage.r57.b(r0)
+            androidx.compose.ui.input.nestedscroll.NestedScrollConnection r0 = r5.getParent$ui()
+            if (r0 != 0) goto L5b
+            androidx.compose.ui.input.nestedscroll.NestedScrollNode r5 = r5.lastKnownParentNode
+            if (r5 == 0) goto L54
+            r10.label = r4
+            java.lang.Object r0 = r5.mo1601onPostFlingRZ2iAVY(r6, r8, r10)
+            if (r0 != r1) goto L4d
+            goto L69
+        L4d:
+            androidx.compose.ui.unit.Velocity r0 = (androidx.compose.ui.unit.Velocity) r0
+            long r5 = r0.m9289unboximpl()
+            goto L77
+        L54:
+            androidx.compose.ui.unit.Velocity$Companion r5 = androidx.compose.ui.unit.Velocity.Companion
+            long r5 = r5.m9291getZero9UxMQ8M()
+            goto L77
+        L5b:
+            androidx.compose.ui.input.nestedscroll.NestedScrollConnection r5 = r5.getParent$ui()
+            if (r5 == 0) goto L71
+            r10.label = r3
+            java.lang.Object r0 = r5.mo1601onPostFlingRZ2iAVY(r6, r8, r10)
+            if (r0 != r1) goto L6a
+        L69:
+            return r1
+        L6a:
+            androidx.compose.ui.unit.Velocity r0 = (androidx.compose.ui.unit.Velocity) r0
+            long r5 = r0.m9289unboximpl()
+            goto L77
+        L71:
+            androidx.compose.ui.unit.Velocity$Companion r5 = androidx.compose.ui.unit.Velocity.Companion
+            long r5 = r5.m9291getZero9UxMQ8M()
+        L77:
+            androidx.compose.ui.unit.Velocity r5 = androidx.compose.ui.unit.Velocity.m9271boximpl(r5)
+            return r5
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher.m7419dispatchPostFlingRZ2iAVY(long, long, e02):java.lang.Object");
     }
 
     /* JADX INFO: renamed from: dispatchPostScroll-DzOQY0M, reason: not valid java name */

@@ -61,49 +61,95 @@ final class SequentialExecutor implements Executor {
          */
         /*
             Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
         */
         private void workOnQueue() {
-            Runnable runnable;
-            boolean z = false;
-            boolean zInterrupted = false;
-            while (true) {
-                try {
-                    synchronized (SequentialExecutor.this.queue) {
-                        if (z) {
-                            runnable = (Runnable) SequentialExecutor.this.queue.poll();
-                            this.task = runnable;
-                            if (runnable == null) {
-                                SequentialExecutor.this.workerRunningState = WorkerRunningState.IDLE;
-                            }
-                        } else {
-                            WorkerRunningState workerRunningState = SequentialExecutor.this.workerRunningState;
-                            WorkerRunningState workerRunningState2 = WorkerRunningState.RUNNING;
-                            if (workerRunningState != workerRunningState2) {
-                                SequentialExecutor.access$308(SequentialExecutor.this);
-                                SequentialExecutor.this.workerRunningState = workerRunningState2;
-                                z = true;
-                                runnable = (Runnable) SequentialExecutor.this.queue.poll();
-                                this.task = runnable;
-                                if (runnable == null) {
-                                    SequentialExecutor.this.workerRunningState = WorkerRunningState.IDLE;
-                                }
-                            }
-                        }
-                    }
-                    if (zInterrupted) {
-                        break;
-                    } else {
-                        return;
-                    }
-                    this.task = null;
-                } catch (Throwable th) {
-                    if (zInterrupted) {
-                        Thread.currentThread().interrupt();
-                    }
-                    throw th;
-                }
-            }
-            Thread.currentThread().interrupt();
+            /*
+                r8 = this;
+                r0 = 0
+                r1 = r0
+            L2:
+                com.google.firebase.concurrent.SequentialExecutor r2 = com.google.firebase.concurrent.SequentialExecutor.this     // Catch: java.lang.Throwable -> L58
+                java.util.Deque r2 = com.google.firebase.concurrent.SequentialExecutor.access$100(r2)     // Catch: java.lang.Throwable -> L58
+                monitor-enter(r2)     // Catch: java.lang.Throwable -> L58
+                if (r0 != 0) goto L2d
+                com.google.firebase.concurrent.SequentialExecutor r0 = com.google.firebase.concurrent.SequentialExecutor.this     // Catch: java.lang.Throwable -> L20
+                com.google.firebase.concurrent.SequentialExecutor$WorkerRunningState r0 = com.google.firebase.concurrent.SequentialExecutor.access$200(r0)     // Catch: java.lang.Throwable -> L20
+                com.google.firebase.concurrent.SequentialExecutor$WorkerRunningState r3 = com.google.firebase.concurrent.SequentialExecutor.WorkerRunningState.RUNNING     // Catch: java.lang.Throwable -> L20
+                if (r0 != r3) goto L22
+                monitor-exit(r2)     // Catch: java.lang.Throwable -> L20
+                if (r1 == 0) goto L48
+            L18:
+                java.lang.Thread r8 = java.lang.Thread.currentThread()
+                r8.interrupt()
+                goto L48
+            L20:
+                r8 = move-exception
+                goto L7d
+            L22:
+                com.google.firebase.concurrent.SequentialExecutor r0 = com.google.firebase.concurrent.SequentialExecutor.this     // Catch: java.lang.Throwable -> L20
+                com.google.firebase.concurrent.SequentialExecutor.access$308(r0)     // Catch: java.lang.Throwable -> L20
+                com.google.firebase.concurrent.SequentialExecutor r0 = com.google.firebase.concurrent.SequentialExecutor.this     // Catch: java.lang.Throwable -> L20
+                com.google.firebase.concurrent.SequentialExecutor.access$202(r0, r3)     // Catch: java.lang.Throwable -> L20
+                r0 = 1
+            L2d:
+                com.google.firebase.concurrent.SequentialExecutor r3 = com.google.firebase.concurrent.SequentialExecutor.this     // Catch: java.lang.Throwable -> L20
+                java.util.Deque r3 = com.google.firebase.concurrent.SequentialExecutor.access$100(r3)     // Catch: java.lang.Throwable -> L20
+                java.lang.Object r3 = r3.poll()     // Catch: java.lang.Throwable -> L20
+                java.lang.Runnable r3 = (java.lang.Runnable) r3     // Catch: java.lang.Throwable -> L20
+                r8.task = r3     // Catch: java.lang.Throwable -> L20
+                if (r3 != 0) goto L49
+                com.google.firebase.concurrent.SequentialExecutor r8 = com.google.firebase.concurrent.SequentialExecutor.this     // Catch: java.lang.Throwable -> L20
+                com.google.firebase.concurrent.SequentialExecutor$WorkerRunningState r0 = com.google.firebase.concurrent.SequentialExecutor.WorkerRunningState.IDLE     // Catch: java.lang.Throwable -> L20
+                com.google.firebase.concurrent.SequentialExecutor.access$202(r8, r0)     // Catch: java.lang.Throwable -> L20
+                monitor-exit(r2)     // Catch: java.lang.Throwable -> L20
+                if (r1 == 0) goto L48
+                goto L18
+            L48:
+                return
+            L49:
+                monitor-exit(r2)     // Catch: java.lang.Throwable -> L20
+                boolean r2 = java.lang.Thread.interrupted()     // Catch: java.lang.Throwable -> L58
+                r1 = r1 | r2
+                r2 = 0
+                java.lang.Runnable r3 = r8.task     // Catch: java.lang.Throwable -> L5a java.lang.RuntimeException -> L5c
+                r3.run()     // Catch: java.lang.Throwable -> L5a java.lang.RuntimeException -> L5c
+            L55:
+                r8.task = r2     // Catch: java.lang.Throwable -> L58
+                goto L2
+            L58:
+                r8 = move-exception
+                goto L7f
+            L5a:
+                r0 = move-exception
+                goto L7a
+            L5c:
+                r3 = move-exception
+                java.util.logging.Logger r4 = com.google.firebase.concurrent.SequentialExecutor.access$400()     // Catch: java.lang.Throwable -> L5a
+                java.util.logging.Level r5 = java.util.logging.Level.SEVERE     // Catch: java.lang.Throwable -> L5a
+                java.lang.StringBuilder r6 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L5a
+                r6.<init>()     // Catch: java.lang.Throwable -> L5a
+                java.lang.String r7 = "Exception while executing runnable "
+                r6.append(r7)     // Catch: java.lang.Throwable -> L5a
+                java.lang.Runnable r7 = r8.task     // Catch: java.lang.Throwable -> L5a
+                r6.append(r7)     // Catch: java.lang.Throwable -> L5a
+                java.lang.String r6 = r6.toString()     // Catch: java.lang.Throwable -> L5a
+                r4.log(r5, r6, r3)     // Catch: java.lang.Throwable -> L5a
+                goto L55
+            L7a:
+                r8.task = r2     // Catch: java.lang.Throwable -> L58
+                throw r0     // Catch: java.lang.Throwable -> L58
+            L7d:
+                monitor-exit(r2)     // Catch: java.lang.Throwable -> L20
+                throw r8     // Catch: java.lang.Throwable -> L58
+            L7f:
+                if (r1 == 0) goto L88
+                java.lang.Thread r0 = java.lang.Thread.currentThread()
+                r0.interrupt()
+            L88:
+                throw r8
+            */
+            throw new UnsupportedOperationException("Method not decompiled: com.google.firebase.concurrent.SequentialExecutor.QueueWorker.workOnQueue():void");
         }
 
         @Override // java.lang.Runnable

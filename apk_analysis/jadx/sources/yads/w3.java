@@ -7,8 +7,6 @@ import android.webkit.RenderProcessGoneDetail;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import defpackage.ra8;
-import java.util.regex.Pattern;
 
 /* JADX INFO: loaded from: classes6.dex */
 public final class w3 extends WebViewClient {
@@ -64,23 +62,56 @@ public final class w3 extends WebViewClient {
     @Override // android.webkit.WebViewClient
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public final boolean shouldOverrideUrlLoading(WebView webView, String str) {
-        if (str != null && str.length() > 0) {
-            if (str.length() != 0) {
-                Pattern patternCompile = Pattern.compile("http(s?)://");
-                patternCompile.getClass();
-                String strReplaceFirst = patternCompile.matcher(str).replaceFirst("");
-                strReplaceFirst.getClass();
-                d56.c.getClass();
-                d56[] d56VarArr = {d56.GOOGLE_MARKET_SCHEME, d56.GOOGLE_PLAY_SCHEME, d56.GOOGLE_MARKET_HOST, d56.GOOGLE_PLAY_HOST};
-                for (int i = 0; i < 4; i++) {
-                    if (!ra8.C(strReplaceFirst, d56VarArr[i].b, false)) {
-                    }
-                }
-            }
-            return this.c.a(webView.getContext(), str);
-        }
-        return false;
+    public final boolean shouldOverrideUrlLoading(android.webkit.WebView r7, java.lang.String r8) {
+        /*
+            r6 = this;
+            r0 = 0
+            if (r8 == 0) goto L5a
+            int r1 = r8.length()
+            if (r1 <= 0) goto L5a
+            int r1 = r8.length()
+            if (r1 != 0) goto L10
+            goto L49
+        L10:
+            java.lang.String r1 = "http(s?)://"
+            java.util.regex.Pattern r1 = java.util.regex.Pattern.compile(r1)
+            r1.getClass()
+            java.lang.String r2 = ""
+            java.util.regex.Matcher r1 = r1.matcher(r8)
+            java.lang.String r1 = r1.replaceFirst(r2)
+            r1.getClass()
+            yads.c56 r2 = yads.d56.c
+            r2.getClass()
+            yads.d56 r2 = yads.d56.GOOGLE_MARKET_SCHEME
+            yads.d56 r3 = yads.d56.GOOGLE_PLAY_SCHEME
+            yads.d56 r4 = yads.d56.GOOGLE_MARKET_HOST
+            yads.d56 r5 = yads.d56.GOOGLE_PLAY_HOST
+            yads.d56[] r2 = new yads.d56[]{r2, r3, r4, r5}
+            r3 = r0
+        L38:
+            r4 = 4
+            if (r3 >= r4) goto L49
+            r4 = r2[r3]
+            java.lang.String r4 = r4.b
+            boolean r4 = defpackage.ra8.C(r1, r4, r0)
+            if (r4 == 0) goto L46
+            goto L4f
+        L46:
+            int r3 = r3 + 1
+            goto L38
+        L49:
+            boolean r1 = android.webkit.URLUtil.isNetworkUrl(r8)
+            if (r1 != 0) goto L5a
+        L4f:
+            yads.q56 r6 = r6.c
+            android.content.Context r7 = r7.getContext()
+            boolean r6 = r6.a(r7, r8)
+            return r6
+        L5a:
+            return r0
+        */
+        throw new UnsupportedOperationException("Method not decompiled: yads.w3.shouldOverrideUrlLoading(android.webkit.WebView, java.lang.String):boolean");
     }
 }

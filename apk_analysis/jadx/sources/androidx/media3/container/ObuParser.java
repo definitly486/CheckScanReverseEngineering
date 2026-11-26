@@ -162,17 +162,17 @@ public final class ObuParser {
                     parsableBitArray.skipBits(12);
                     if (i == 0) {
                         bits7 = parsableBitArray.readBits(5);
-                        bit = z;
                         if (bits7 > 7) {
+                            bit = z;
                             bit = parsableBitArray.readBit();
                         }
-                    } else {
+                    } else if (parsableBitArray.readBits(5) > 7) {
                         bit = z;
-                        if (parsableBitArray.readBits(5) > 7) {
-                            parsableBitArray.skipBit();
-                            bit = z;
-                        }
+                        parsableBitArray.skipBit();
+                        bit = z;
                     }
+                    bit = z;
+                    bit = z;
                     if (this.decoderModelInfoPresentFlag) {
                         parsableBitArray.skipBit();
                     }

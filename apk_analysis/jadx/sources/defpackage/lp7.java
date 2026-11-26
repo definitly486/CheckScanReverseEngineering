@@ -75,50 +75,97 @@ public final class lp7 implements Executor {
          */
         /*
             Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
         */
         public final void a() {
-            Runnable runnable;
-            boolean z = false;
-            boolean zInterrupted = false;
-            while (true) {
-                try {
-                    synchronized (lp7.this.c) {
-                        if (z) {
-                            runnable = (Runnable) lp7.this.c.poll();
-                            this.b = runnable;
-                            if (runnable == null) {
-                                lp7.this.d = c.IDLE;
-                            }
-                        } else {
-                            lp7 lp7Var = lp7.this;
-                            c cVar = lp7Var.d;
-                            c cVar2 = c.RUNNING;
-                            if (cVar != cVar2) {
-                                lp7Var.e++;
-                                lp7Var.d = cVar2;
-                                z = true;
-                                runnable = (Runnable) lp7.this.c.poll();
-                                this.b = runnable;
-                                if (runnable == null) {
-                                    lp7.this.d = c.IDLE;
-                                }
-                            }
-                        }
-                    }
-                    if (zInterrupted) {
-                        break;
-                    } else {
-                        return;
-                    }
-                    this.b = null;
-                } catch (Throwable th) {
-                    if (zInterrupted) {
-                        Thread.currentThread().interrupt();
-                    }
-                    throw th;
-                }
-            }
-            Thread.currentThread().interrupt();
+            /*
+                r9 = this;
+                r0 = 0
+                r1 = r0
+            L2:
+                lp7 r2 = defpackage.lp7.this     // Catch: java.lang.Throwable -> L50
+                java.util.ArrayDeque r2 = r2.c     // Catch: java.lang.Throwable -> L50
+                monitor-enter(r2)     // Catch: java.lang.Throwable -> L50
+                if (r0 != 0) goto L28
+                lp7 r0 = defpackage.lp7.this     // Catch: java.lang.Throwable -> L1c
+                lp7$c r3 = r0.d     // Catch: java.lang.Throwable -> L1c
+                lp7$c r4 = lp7.c.RUNNING     // Catch: java.lang.Throwable -> L1c
+                if (r3 != r4) goto L1e
+                monitor-exit(r2)     // Catch: java.lang.Throwable -> L1c
+                if (r1 == 0) goto L40
+            L14:
+                java.lang.Thread r9 = java.lang.Thread.currentThread()
+                r9.interrupt()
+                goto L40
+            L1c:
+                r9 = move-exception
+                goto L77
+            L1e:
+                long r5 = r0.e     // Catch: java.lang.Throwable -> L1c
+                r7 = 1
+                long r5 = r5 + r7
+                r0.e = r5     // Catch: java.lang.Throwable -> L1c
+                r0.d = r4     // Catch: java.lang.Throwable -> L1c
+                r0 = 1
+            L28:
+                lp7 r3 = defpackage.lp7.this     // Catch: java.lang.Throwable -> L1c
+                java.util.ArrayDeque r3 = r3.c     // Catch: java.lang.Throwable -> L1c
+                java.lang.Object r3 = r3.poll()     // Catch: java.lang.Throwable -> L1c
+                java.lang.Runnable r3 = (java.lang.Runnable) r3     // Catch: java.lang.Throwable -> L1c
+                r9.b = r3     // Catch: java.lang.Throwable -> L1c
+                if (r3 != 0) goto L41
+                lp7 r9 = defpackage.lp7.this     // Catch: java.lang.Throwable -> L1c
+                lp7$c r0 = lp7.c.IDLE     // Catch: java.lang.Throwable -> L1c
+                r9.d = r0     // Catch: java.lang.Throwable -> L1c
+                monitor-exit(r2)     // Catch: java.lang.Throwable -> L1c
+                if (r1 == 0) goto L40
+                goto L14
+            L40:
+                return
+            L41:
+                monitor-exit(r2)     // Catch: java.lang.Throwable -> L1c
+                boolean r2 = java.lang.Thread.interrupted()     // Catch: java.lang.Throwable -> L50
+                r1 = r1 | r2
+                r2 = 0
+                java.lang.Runnable r3 = r9.b     // Catch: java.lang.Throwable -> L52 java.lang.Exception -> L54
+                r3.run()     // Catch: java.lang.Throwable -> L52 java.lang.Exception -> L54
+            L4d:
+                r9.b = r2     // Catch: java.lang.Throwable -> L50
+                goto L2
+            L50:
+                r9 = move-exception
+                goto L79
+            L52:
+                r0 = move-exception
+                goto L74
+            L54:
+                r3 = move-exception
+                wn4 r4 = defpackage.lp7.g     // Catch: java.lang.Throwable -> L52
+                java.util.logging.Logger r4 = r4.a()     // Catch: java.lang.Throwable -> L52
+                java.util.logging.Level r5 = java.util.logging.Level.SEVERE     // Catch: java.lang.Throwable -> L52
+                java.lang.StringBuilder r6 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L52
+                r6.<init>()     // Catch: java.lang.Throwable -> L52
+                java.lang.String r7 = "Exception while executing runnable "
+                r6.append(r7)     // Catch: java.lang.Throwable -> L52
+                java.lang.Runnable r7 = r9.b     // Catch: java.lang.Throwable -> L52
+                r6.append(r7)     // Catch: java.lang.Throwable -> L52
+                java.lang.String r6 = r6.toString()     // Catch: java.lang.Throwable -> L52
+                r4.log(r5, r6, r3)     // Catch: java.lang.Throwable -> L52
+                goto L4d
+            L74:
+                r9.b = r2     // Catch: java.lang.Throwable -> L50
+                throw r0     // Catch: java.lang.Throwable -> L50
+            L77:
+                monitor-exit(r2)     // Catch: java.lang.Throwable -> L1c
+                throw r9     // Catch: java.lang.Throwable -> L50
+            L79:
+                if (r1 == 0) goto L82
+                java.lang.Thread r0 = java.lang.Thread.currentThread()
+                r0.interrupt()
+            L82:
+                throw r9
+            */
+            throw new UnsupportedOperationException("Method not decompiled: lp7.b.a():void");
         }
 
         @Override // java.lang.Runnable

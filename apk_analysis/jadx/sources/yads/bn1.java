@@ -207,46 +207,51 @@ public class bn1 extends st5 implements wh1 {
                 contentDescription2 = getContentDescription();
             } else {
                 CharSequence contentDescription3 = getContentDescription();
-                contentDescription2 = str;
-                if (contentDescription3 != null) {
-                    contentDescription2 = str;
-                    if (contentDescription3.length() != 0) {
-                        char[] cArr = {'.'};
-                        int length = str.length() - 1;
-                        if (length < 0) {
-                            charSequenceSubSequence = "";
-                            break;
-                        }
+                if (contentDescription3 != null && contentDescription3.length() != 0) {
+                    char[] cArr = {'.'};
+                    int length = str.length() - 1;
+                    if (length < 0) {
+                        contentDescription2 = str;
+                        contentDescription2 = str;
+                        charSequenceSubSequence = "";
+                        break;
+                    }
+                    while (true) {
+                        contentDescription2 = str;
+                        contentDescription2 = str;
+                        int i = length - 1;
+                        char cCharAt = str.charAt(length);
+                        int i2 = 0;
                         while (true) {
-                            int i = length - 1;
-                            char cCharAt = str.charAt(length);
-                            int i2 = 0;
-                            while (true) {
-                                if (i2 >= 1) {
-                                    i2 = -1;
-                                    break;
-                                } else if (cCharAt == cArr[i2]) {
-                                    break;
-                                } else {
-                                    i2++;
-                                }
-                            }
-                            if (i2 < 0) {
-                                charSequenceSubSequence = str.subSequence(0, length + 1);
+                            if (i2 >= 1) {
+                                i2 = -1;
+                                break;
+                            } else if (cCharAt == cArr[i2]) {
                                 break;
                             } else {
-                                if (i < 0) {
-                                    charSequenceSubSequence = "";
-                                    break;
-                                }
-                                length = i;
+                                i2++;
                             }
                         }
-                        contentDescription2 = charSequenceSubSequence.toString() + ". " + ((Object) getContentDescription());
+                        if (i2 < 0) {
+                            charSequenceSubSequence = str.subSequence(0, length + 1);
+                            break;
+                        } else {
+                            if (i < 0) {
+                                contentDescription2 = str;
+                                contentDescription2 = str;
+                                charSequenceSubSequence = "";
+                                break;
+                            }
+                            length = i;
+                        }
                     }
+                    contentDescription2 = charSequenceSubSequence.toString() + ". " + ((Object) getContentDescription());
                 }
             }
         }
+        contentDescription2 = str;
+        contentDescription2 = str;
+        contentDescription2 = str;
         setHint(contentDescription2);
     }
 

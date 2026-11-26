@@ -1,14 +1,7 @@
 package androidx.camera.video.internal.utils;
 
-import android.net.Uri;
-import android.os.Environment;
 import android.os.StatFs;
-import androidx.camera.core.Logger;
-import com.google.firebase.analytics.FirebaseAnalytics;
-import defpackage.aa4;
 import defpackage.fg;
-import defpackage.j2;
-import defpackage.rk3;
 import defpackage.ta8;
 import java.io.File;
 import java.text.DecimalFormat;
@@ -81,28 +74,70 @@ public final class StorageUtil {
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public static final long getAvailableBytesForMediaStoreUri(Uri uri) {
-        uri.getClass();
-        if (!aa4.e(uri.getScheme(), FirebaseAnalytics.Param.CONTENT)) {
-            j2.d(rk3.c(uri, "Not a content uri: "));
-            return 0L;
-        }
-        String str = uri.getPathSegments().get(0);
-        if (str != null) {
-            int iHashCode = str.hashCode();
-            if (iHashCode != -1921573490) {
-                if (iHashCode != -1820761141) {
-                    if (iHashCode == 570410685 && str.equals("internal")) {
-                        File dataDirectory = Environment.getDataDirectory();
-                        dataDirectory.getClass();
-                        return getAvailableBytes(dataDirectory);
-                    }
-                }
-            }
-        }
-        Logger.w(TAG, "Unknown MediaStore URI: " + uri);
-        return Long.MAX_VALUE;
+    public static final long getAvailableBytesForMediaStoreUri(android.net.Uri r3) {
+        /*
+            r3.getClass()
+            java.lang.String r0 = r3.getScheme()
+            java.lang.String r1 = "content"
+            boolean r0 = defpackage.aa4.e(r0, r1)
+            if (r0 == 0) goto L7b
+            java.util.List r0 = r3.getPathSegments()
+            r1 = 0
+            java.lang.Object r0 = r0.get(r1)
+            java.lang.String r0 = (java.lang.String) r0
+            if (r0 == 0) goto L62
+            int r1 = r0.hashCode()
+            r2 = -1921573490(0xffffffff8d771d8e, float:-7.6148327E-31)
+            if (r1 == r2) goto L4e
+            r2 = -1820761141(0xffffffff937963cb, float:-3.147742E-27)
+            if (r1 == r2) goto L45
+            r2 = 570410685(0x21ffc6bd, float:1.7332078E-18)
+            if (r1 == r2) goto L30
+            goto L62
+        L30:
+            java.lang.String r1 = "internal"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L39
+            goto L62
+        L39:
+            java.io.File r3 = android.os.Environment.getDataDirectory()
+            r3.getClass()
+            long r0 = getAvailableBytes(r3)
+            return r0
+        L45:
+            java.lang.String r1 = "external"
+            boolean r0 = r0.equals(r1)
+            if (r0 != 0) goto L56
+            goto L62
+        L4e:
+            java.lang.String r1 = "external_primary"
+            boolean r0 = r0.equals(r1)
+            if (r0 == 0) goto L62
+        L56:
+            java.io.File r3 = android.os.Environment.getExternalStorageDirectory()
+            r3.getClass()
+            long r0 = getAvailableBytes(r3)
+            return r0
+        L62:
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            java.lang.String r1 = "Unknown MediaStore URI: "
+            r0.<init>(r1)
+            r0.append(r3)
+            java.lang.String r3 = r0.toString()
+            java.lang.String r0 = "StorageUtil"
+            androidx.camera.core.Logger.w(r0, r3)
+            r0 = 9223372036854775807(0x7fffffffffffffff, double:NaN)
+            return r0
+        L7b:
+            java.lang.String r0 = "Not a content uri: "
+            java.lang.String r3 = defpackage.rk3.c(r3, r0)
+            defpackage.j2.d(r3)
+            r0 = 0
+            return r0
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.camera.video.internal.utils.StorageUtil.getAvailableBytesForMediaStoreUri(android.net.Uri):long");
     }
 
     public static final boolean isStorageFullException(Throwable th) {

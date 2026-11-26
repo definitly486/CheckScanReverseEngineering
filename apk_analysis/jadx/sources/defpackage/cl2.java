@@ -479,31 +479,55 @@ public class cl2<ReqT, RespT> extends rl1<ReqT, RespT> {
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
     public final void i() {
-        g<RespT> gVar;
-        List<Runnable> list;
-        List<Runnable> arrayList = new ArrayList<>();
-        while (true) {
-            synchronized (this) {
-                if (this.j.isEmpty()) {
-                    break;
-                }
-                list = this.j;
-                this.j = arrayList;
-            }
-            if (gVar != null) {
-                this.c.execute(new a(this, gVar));
-            }
-            list.clear();
-            arrayList = list;
-        }
-        this.j = null;
-        this.e = true;
-        gVar = this.k;
-        if (gVar != null) {
-            this.c.execute(new a(this, gVar));
-        }
+        /*
+            r3 = this;
+            java.util.ArrayList r0 = new java.util.ArrayList
+            r0.<init>()
+        L5:
+            monitor-enter(r3)
+            java.util.List<java.lang.Runnable> r1 = r3.j     // Catch: java.lang.Throwable -> L24
+            boolean r1 = r1.isEmpty()     // Catch: java.lang.Throwable -> L24
+            if (r1 == 0) goto L26
+            r0 = 0
+            r3.j = r0     // Catch: java.lang.Throwable -> L24
+            r0 = 1
+            r3.e = r0     // Catch: java.lang.Throwable -> L24
+            cl2$g<RespT> r0 = r3.k     // Catch: java.lang.Throwable -> L24
+            monitor-exit(r3)     // Catch: java.lang.Throwable -> L24
+            if (r0 == 0) goto L23
+            java.util.concurrent.Executor r1 = r3.c
+            cl2$a r2 = new cl2$a
+            r2.<init>(r3, r0)
+            r1.execute(r2)
+        L23:
+            return
+        L24:
+            r0 = move-exception
+            goto L44
+        L26:
+            java.util.List<java.lang.Runnable> r1 = r3.j     // Catch: java.lang.Throwable -> L24
+            r3.j = r0     // Catch: java.lang.Throwable -> L24
+            monitor-exit(r3)     // Catch: java.lang.Throwable -> L24
+            java.util.Iterator r0 = r1.iterator()
+        L2f:
+            boolean r2 = r0.hasNext()
+            if (r2 == 0) goto L3f
+            java.lang.Object r2 = r0.next()
+            java.lang.Runnable r2 = (java.lang.Runnable) r2
+            r2.run()
+            goto L2f
+        L3f:
+            r1.clear()
+            r0 = r1
+            goto L5
+        L44:
+            monitor-exit(r3)     // Catch: java.lang.Throwable -> L24
+            throw r0
+        */
+        throw new UnsupportedOperationException("Method not decompiled: defpackage.cl2.i():void");
     }
 
     public final String toString() {

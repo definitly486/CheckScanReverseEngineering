@@ -24,7 +24,6 @@ import android.print.pdf.PrintedPdfDocument;
 import android.util.Log;
 import defpackage.fg;
 import defpackage.rg;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -138,81 +137,57 @@ public final class PrintHelper {
         @Override // android.print.PrintDocumentAdapter
         /*
             Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
         */
-        public void onLayout(final PrintAttributes printAttributes, final PrintAttributes printAttributes2, final CancellationSignal cancellationSignal, final PrintDocumentAdapter.LayoutResultCallback layoutResultCallback, Bundle bundle) throws Throwable {
-            synchronized (this) {
-                try {
-                    this.mAttributes = printAttributes2;
-                } catch (Throwable th) {
-                    th = th;
-                    while (true) {
-                        throw th;
-                    }
-                }
-            }
-            if (cancellationSignal.isCanceled()) {
-                layoutResultCallback.onLayoutCancelled();
-            } else if (this.mBitmap != null) {
-                layoutResultCallback.onLayoutFinished(new PrintDocumentInfo.Builder(this.mJobName).setContentType(1).setPageCount(1).build(), true ^ printAttributes2.equals(printAttributes));
-            } else {
-                this.mLoadBitmap = new AsyncTask<Uri, Boolean, Bitmap>() { // from class: androidx.print.PrintHelper.PrintUriAdapter.1
-                    @Override // android.os.AsyncTask
-                    public Bitmap doInBackground(Uri... uriArr) {
-                        try {
-                            PrintUriAdapter printUriAdapter = PrintUriAdapter.this;
-                            return PrintHelper.this.loadConstrainedBitmap(printUriAdapter.mImageFile);
-                        } catch (FileNotFoundException unused) {
-                            return null;
-                        }
-                    }
-
-                    @Override // android.os.AsyncTask
-                    public void onCancelled(Bitmap bitmap) {
-                        layoutResultCallback.onLayoutCancelled();
-                        PrintUriAdapter.this.mLoadBitmap = null;
-                    }
-
-                    /* JADX WARN: Code duplicated, block: B:9:0x0012  */
-                    @Override // android.os.AsyncTask
-                    public void onPostExecute(Bitmap bitmap) {
-                        Bitmap bitmapCreateBitmap;
-                        PrintAttributes.MediaSize mediaSize;
-                        super.onPostExecute(bitmap);
-                        if (bitmap == null || (PrintHelper.PRINT_ACTIVITY_RESPECTS_ORIENTATION && PrintHelper.this.mOrientation != 0)) {
-                            bitmapCreateBitmap = bitmap;
-                        } else {
-                            synchronized (this) {
-                                mediaSize = PrintUriAdapter.this.mAttributes.getMediaSize();
-                            }
-                            if (mediaSize == null || mediaSize.isPortrait() == PrintHelper.isPortrait(bitmap)) {
-                                bitmapCreateBitmap = bitmap;
-                            } else {
-                                Matrix matrix = new Matrix();
-                                matrix.postRotate(90.0f);
-                                bitmapCreateBitmap = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
-                            }
-                        }
-                        PrintUriAdapter.this.mBitmap = bitmapCreateBitmap;
-                        if (bitmapCreateBitmap != null) {
-                            layoutResultCallback.onLayoutFinished(new PrintDocumentInfo.Builder(PrintUriAdapter.this.mJobName).setContentType(1).setPageCount(1).build(), true ^ printAttributes2.equals(printAttributes));
-                        } else {
-                            layoutResultCallback.onLayoutFailed(null);
-                        }
-                        PrintUriAdapter.this.mLoadBitmap = null;
-                    }
-
-                    @Override // android.os.AsyncTask
-                    public void onPreExecute() {
-                        cancellationSignal.setOnCancelListener(new CancellationSignal.OnCancelListener() { // from class: androidx.print.PrintHelper.PrintUriAdapter.1.1
-                            @Override // android.os.CancellationSignal.OnCancelListener
-                            public void onCancel() {
-                                PrintUriAdapter.this.cancelLoad();
-                                cancel(false);
-                            }
-                        });
-                    }
-                }.execute(new Uri[0]);
-            }
+        public void onLayout(final android.print.PrintAttributes r7, final android.print.PrintAttributes r8, final android.os.CancellationSignal r9, final android.print.PrintDocumentAdapter.LayoutResultCallback r10, android.os.Bundle r11) throws java.lang.Throwable {
+            /*
+                r6 = this;
+                monitor-enter(r6)
+                r6.mAttributes = r8     // Catch: java.lang.Throwable -> L43
+                monitor-exit(r6)     // Catch: java.lang.Throwable -> L43
+                boolean r11 = r9.isCanceled()
+                if (r11 == 0) goto Le
+                r10.onLayoutCancelled()
+                return
+            Le:
+                android.graphics.Bitmap r11 = r6.mBitmap
+                if (r11 == 0) goto L2f
+                android.print.PrintDocumentInfo$Builder r9 = new android.print.PrintDocumentInfo$Builder
+                java.lang.String r6 = r6.mJobName
+                r9.<init>(r6)
+                r6 = 1
+                android.print.PrintDocumentInfo$Builder r9 = r9.setContentType(r6)
+                android.print.PrintDocumentInfo$Builder r9 = r9.setPageCount(r6)
+                android.print.PrintDocumentInfo r9 = r9.build()
+                boolean r7 = r8.equals(r7)
+                r6 = r6 ^ r7
+                r10.onLayoutFinished(r9, r6)
+                return
+            L2f:
+                androidx.print.PrintHelper$PrintUriAdapter$1 r0 = new androidx.print.PrintHelper$PrintUriAdapter$1
+                r1 = r6
+                r4 = r7
+                r3 = r8
+                r2 = r9
+                r5 = r10
+                r0.<init>()
+                r6 = 0
+                android.net.Uri[] r6 = new android.net.Uri[r6]
+                android.os.AsyncTask r6 = r0.execute(r6)
+                r1.mLoadBitmap = r6
+                return
+            L43:
+                r0 = move-exception
+                r1 = r6
+            L45:
+                r6 = r0
+                monitor-exit(r1)     // Catch: java.lang.Throwable -> L48
+                throw r6
+            L48:
+                r0 = move-exception
+                goto L45
+            */
+            throw new UnsupportedOperationException("Method not decompiled: androidx.print.PrintHelper.PrintUriAdapter.onLayout(android.print.PrintAttributes, android.print.PrintAttributes, android.os.CancellationSignal, android.print.PrintDocumentAdapter$LayoutResultCallback, android.os.Bundle):void");
         }
 
         @Override // android.print.PrintDocumentAdapter

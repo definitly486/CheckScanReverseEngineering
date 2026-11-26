@@ -15,17 +15,21 @@ public final class yk0 {
     public final ws2 a(Object... objArr) {
         Constructor constructorA;
         synchronized (this.b) {
-            if (!this.b.get()) {
-                try {
-                    constructorA = this.a.a();
-                } catch (ClassNotFoundException unused) {
-                    this.b.set(true);
-                    constructorA = null;
-                } catch (Exception e) {
-                    throw new RuntimeException("Error instantiating extension", e);
+            try {
+                if (!this.b.get()) {
+                    try {
+                        constructorA = this.a.a();
+                    } catch (ClassNotFoundException unused) {
+                        this.b.set(true);
+                        constructorA = null;
+                    } catch (Exception e) {
+                        throw new RuntimeException("Error instantiating extension", e);
+                    }
                 }
+                constructorA = null;
+            } catch (Throwable th) {
+                throw th;
             }
-            constructorA = null;
         }
         if (constructorA == null) {
             return null;

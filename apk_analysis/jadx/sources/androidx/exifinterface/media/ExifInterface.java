@@ -974,7 +974,7 @@ public class ExifInterface {
     /* JADX WARN: Failed to find 'out' block for switch in B:33:0x00a8. Please report as an issue. */
     /*  JADX ERROR: UnsupportedOperationException in pass: RegionMakerVisitor
         java.lang.UnsupportedOperationException
-        	at java.base/java.util.Collections$UnmodifiableCollection.add(Collections.java:1092)
+        	at java.base/java.util.Collections$UnmodifiableCollection.add(Collections.java:1068)
         	at jadx.core.dex.visitors.regions.maker.SwitchRegionMaker$1.leaveRegion(SwitchRegionMaker.java:419)
         	at jadx.core.dex.visitors.regions.DepthRegionTraversal.traverseInternal(DepthRegionTraversal.java:91)
         	at jadx.core.dex.visitors.regions.DepthRegionTraversal.traverse(DepthRegionTraversal.java:31)

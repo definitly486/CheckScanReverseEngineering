@@ -222,49 +222,45 @@ public final class op0 implements xv {
 
     @Override // yads.xv
     public final synchronized void a() {
-        try {
-            File file = this.c.a;
-            if (!file.exists()) {
-                if (!file.mkdirs()) {
-                    file.getAbsolutePath();
-                    boolean z = li6.a;
-                }
-                return;
+        File file = this.c.a;
+        if (!file.exists()) {
+            if (!file.mkdirs()) {
+                file.getAbsolutePath();
+                boolean z = li6.a;
             }
-            File[] fileArrListFiles = file.listFiles();
-            if (fileArrListFiles == null) {
-                return;
-            }
-            for (File file2 : fileArrListFiles) {
+            return;
+        }
+        File[] fileArrListFiles = file.listFiles();
+        if (fileArrListFiles == null) {
+            return;
+        }
+        for (File file2 : fileArrListFiles) {
+            try {
                 try {
+                    long length = file2.length();
+                    np0 np0Var = new np0(new BufferedInputStream(new FileInputStream(file2)), length);
                     try {
-                        long length = file2.length();
-                        np0 np0Var = new np0(new BufferedInputStream(new FileInputStream(file2)), length);
-                        try {
-                            mp0 mp0VarA = mp0.a(np0Var);
-                            mp0VarA.a = length;
-                            String str = mp0VarA.b;
-                            if (this.a.containsKey(str)) {
-                                this.b = (mp0VarA.a - ((mp0) this.a.get(str)).a) + this.b;
-                            } else {
-                                this.b += mp0VarA.a;
-                            }
-                            this.a.put(str, mp0VarA);
-                            np0Var.close();
-                        } catch (Throwable th) {
-                            np0Var.close();
-                            throw th;
+                        mp0 mp0VarA = mp0.a(np0Var);
+                        mp0VarA.a = length;
+                        String str = mp0VarA.b;
+                        if (this.a.containsKey(str)) {
+                            this.b = (mp0VarA.a - ((mp0) this.a.get(str)).a) + this.b;
+                        } else {
+                            this.b += mp0VarA.a;
                         }
-                    } catch (Throwable unused) {
+                        this.a.put(str, mp0VarA);
+                        np0Var.close();
+                    } catch (Throwable th) {
+                        np0Var.close();
+                        throw th;
                     }
-                } catch (IOException unused2) {
-                    file2.delete();
-                } catch (Throwable unused3) {
-                    file2.delete();
+                } catch (Throwable unused) {
                 }
+            } catch (IOException unused2) {
+                file2.delete();
+            } catch (Throwable unused3) {
+                file2.delete();
             }
-        } catch (Throwable th2) {
-            throw th2;
         }
     }
 

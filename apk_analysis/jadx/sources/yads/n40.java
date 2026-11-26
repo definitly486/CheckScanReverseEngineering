@@ -9,7 +9,6 @@ import java.util.AbstractMap;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
@@ -240,152 +239,14 @@ public final class n40 extends AbstractMap implements Serializable {
     @Override // java.util.AbstractMap, java.util.Map
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public final Object put(Object obj, Object obj2) {
-        int i;
-        int i2;
-        Object obj3;
-        int i3 = 32;
-        if (b()) {
-            if (!b()) {
-                defpackage.ah.f("Arrays already allocated");
-                return null;
-            }
-            int i4 = this.f;
-            int iMax = Math.max(i4 + 1, 2);
-            int iHighestOneBit = Integer.highestOneBit(iMax);
-            if (iMax > ((int) (((double) iHighestOneBit) * 1.0d)) && (iHighestOneBit = iHighestOneBit << 1) <= 0) {
-                iHighestOneBit = 1073741824;
-            }
-            int iMax2 = Math.max(4, iHighestOneBit);
-            if (iMax2 < 2 || iMax2 > 1073741824 || Integer.highestOneBit(iMax2) != iMax2) {
-                defpackage.fg.c(vx4.a(iMax2, "must be power of 2 between 2^1 and 2^30: "));
-                return null;
-            }
-            if (iMax2 <= 256) {
-                obj3 = new byte[iMax2];
-            } else {
-                obj3 = iMax2 <= 65536 ? new short[iMax2] : new int[iMax2];
-            }
-            this.b = obj3;
-            this.f = ((32 - Integer.numberOfLeadingZeros(iMax2 - 1)) & 31) | (this.f & (-32));
-            this.c = new int[i4];
-            this.d = new Object[i4];
-            this.e = new Object[i4];
-        }
-        Map mapA = a();
-        if (mapA != null) {
-            return mapA.put(obj, obj2);
-        }
-        int[] iArr = this.c;
-        Objects.requireNonNull(iArr);
-        int[] iArr2 = iArr;
-        Object[] objArr = this.d;
-        Objects.requireNonNull(objArr);
-        Object[] objArr2 = objArr;
-        Object[] objArr3 = this.e;
-        Objects.requireNonNull(objArr3);
-        Object[] objArr4 = objArr3;
-        int i5 = this.g;
-        int i6 = i5 + 1;
-        int iA = p83.a(obj == null ? 0 : obj.hashCode());
-        int i7 = 1 << (this.f & 31);
-        int iA2 = i7 - 1;
-        int i8 = iA & iA2;
-        Object obj4 = this.b;
-        Objects.requireNonNull(obj4);
-        int iA3 = o40.a(i8, obj4);
-        if (iA3 == 0) {
-            if (i6 > iA2) {
-                iA2 = a(iA2, i7 * (iA2 < 32 ? 4 : 2), iA, i5);
-            } else {
-                Object obj5 = this.b;
-                Objects.requireNonNull(obj5);
-                o40.a(i8, i6, obj5);
-            }
-            i = 1;
-        } else {
-            int i9 = ~iA2;
-            i = 1;
-            int i10 = iA & i9;
-            int i11 = 0;
-            while (true) {
-                int i12 = iA3 - 1;
-                int i13 = iArr2[i12];
-                int i14 = i3;
-                int i15 = i13 & i9;
-                if (i15 == i10 && ep4.a(obj, objArr2[i12])) {
-                    Object obj6 = objArr4[i12];
-                    objArr4[i12] = obj2;
-                    return obj6;
-                }
-                int i16 = i13 & iA2;
-                int[] iArr3 = iArr2;
-                int i17 = i11 + 1;
-                if (i16 != 0) {
-                    i11 = i17;
-                    iA3 = i16;
-                    iArr2 = iArr3;
-                    i3 = i14;
-                } else {
-                    if (i17 < 9) {
-                        if (i6 <= iA2) {
-                            iArr3[i12] = (i6 & iA2) | i15;
-                            break;
-                        }
-                        iA2 = a(iA2, i7 * (iA2 < i14 ? 4 : 2), iA, i5);
-                        break;
-                    }
-                    LinkedHashMap linkedHashMap = new LinkedHashMap(1 << (this.f & 31), 1.0f);
-                    if (!isEmpty()) {
-                        i2 = 0;
-                        while (i2 >= 0) {
-                            linkedHashMap.put(a(i2), b(i2));
-                            i2++;
-                            if (i2 >= this.g) {
-                                i2 = -1;
-                            }
-                        }
-                        this.b = linkedHashMap;
-                        this.c = null;
-                        this.d = null;
-                        this.e = null;
-                        this.f += 32;
-                        return linkedHashMap.put(obj, obj2);
-                    }
-                    i2 = -1;
-                }
-            }
-        }
-        int[] iArr4 = this.c;
-        Objects.requireNonNull(iArr4);
-        int length = iArr4.length;
-        if (i6 > length) {
-            int i18 = i;
-            int iMin = Math.min(1073741823, (Math.max(i18, length >>> 1) + length) | i18);
-            if (iMin != length) {
-                int[] iArr5 = this.c;
-                Objects.requireNonNull(iArr5);
-                this.c = Arrays.copyOf(iArr5, iMin);
-                Object[] objArr5 = this.d;
-                Objects.requireNonNull(objArr5);
-                this.d = Arrays.copyOf(objArr5, iMin);
-                Object[] objArr6 = this.e;
-                Objects.requireNonNull(objArr6);
-                this.e = Arrays.copyOf(objArr6, iMin);
-            }
-        }
-        int i19 = (~iA2) & iA;
-        int[] iArr6 = this.c;
-        Objects.requireNonNull(iArr6);
-        iArr6[i5] = i19;
-        Object[] objArr7 = this.d;
-        Objects.requireNonNull(objArr7);
-        objArr7[i5] = obj;
-        a(i5, obj2);
-        this.g = i6;
-        this.f += 32;
-        return null;
+    public final java.lang.Object put(java.lang.Object r23, java.lang.Object r24) {
+        /*
+            Method dump skipped, instruction units count: 470
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: yads.n40.put(java.lang.Object, java.lang.Object):java.lang.Object");
     }
 
     @Override // java.util.AbstractMap, java.util.Map

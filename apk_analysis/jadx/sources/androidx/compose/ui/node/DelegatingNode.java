@@ -25,6 +25,7 @@ public abstract class DelegatingNode extends Modifier.Node {
     /* JADX WARN: Type inference failed for: r2v7 */
     /* JADX WARN: Type inference failed for: r2v8 */
     private final void updateNodeKindSet(int i, boolean z) {
+        ?? parent$ui;
         Modifier.Node child$ui;
         int kindSet$ui = getKindSet$ui();
         setKindSet$ui(i);
@@ -34,15 +35,14 @@ public abstract class DelegatingNode extends Modifier.Node {
             }
             if (isAttached()) {
                 Modifier.Node node = getNode();
-                ?? parent$ui = this;
                 while (parent$ui != 0) {
                     i |= parent$ui.getKindSet$ui();
                     parent$ui.setKindSet$ui(i);
                     if (parent$ui == node) {
                         break;
-                    } else {
-                        parent$ui = parent$ui.getParent$ui();
                     }
+                    this = this;
+                    parent$ui = parent$ui.getParent$ui();
                 }
                 if (z && parent$ui == node) {
                     i = NodeKindKt.calculateNodeKindSetFromIncludingDelegates(node);

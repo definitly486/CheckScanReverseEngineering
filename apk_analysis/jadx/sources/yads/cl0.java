@@ -1,8 +1,5 @@
 package yads;
 
-import defpackage.r57;
-import defpackage.yv8;
-
 /* JADX INFO: loaded from: classes6.dex */
 public final class cl0 {
     public final g1 a;
@@ -22,60 +19,93 @@ public final class cl0 {
     /* JADX WARN: Type inference failed for: r10v2, types: [bm3, qm3] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public final Object a(n8 n8Var, long j, defpackage.f02 f02Var) {
-        bl0 bl0Var;
-        if (f02Var instanceof bl0) {
-            bl0Var = (bl0) f02Var;
-            int i = bl0Var.f;
-            if ((i & Integer.MIN_VALUE) != 0) {
-                bl0Var.f = i - Integer.MIN_VALUE;
-            } else {
-                bl0Var = new bl0(this, f02Var);
-            }
-        } else {
-            bl0Var = new bl0(this, f02Var);
-        }
-        Object objInvoke = bl0Var.d;
-        defpackage.a32 a32Var = defpackage.a32.COROUTINE_SUSPENDED;
-        int i2 = bl0Var.f;
-        if (i2 == 0) {
-            r57.b(objInvoke);
-            ?? r10 = this.b;
-            bl0Var.b = n8Var;
-            bl0Var.c = j;
-            bl0Var.f = 1;
-            objInvoke = r10.invoke(n8Var, bl0Var);
-            if (objInvoke != a32Var) {
-            }
-            return a32Var;
-        }
-        if (i2 == 1) {
-            j = bl0Var.c;
-            n8Var = bl0Var.b;
-            r57.b(objInvoke);
-        } else {
-            if (i2 != 2) {
-                defpackage.ah.f("call to 'resume' before 'invoke' with coroutine");
-                return null;
-            }
-            r57.b(objInvoke);
-        }
-        if (objInvoke == null) {
-            return null;
-        }
-        return objInvoke;
-        if (objInvoke != null) {
-            return objInvoke;
-        }
-        g1 g1Var = this.a;
-        if (!g1Var.a.containsKey(g1Var.b.a(n8Var))) {
-            return null;
-        }
-        g1 g1Var2 = this.a;
-        bl0Var.b = null;
-        bl0Var.f = 2;
-        defpackage.xp1 xp1Var = (defpackage.xp1) g1Var2.a.get(g1Var2.b.a(n8Var));
-        objInvoke = xp1Var == null ? null : yv8.c(j, new f1(xp1Var, null), bl0Var);
+    public final java.lang.Object a(yads.n8 r7, long r8, defpackage.f02 r10) {
+        /*
+            r6 = this;
+            boolean r0 = r10 instanceof yads.bl0
+            if (r0 == 0) goto L13
+            r0 = r10
+            yads.bl0 r0 = (yads.bl0) r0
+            int r1 = r0.f
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.f = r1
+            goto L18
+        L13:
+            yads.bl0 r0 = new yads.bl0
+            r0.<init>(r6, r10)
+        L18:
+            java.lang.Object r10 = r0.d
+            a32 r1 = defpackage.a32.COROUTINE_SUSPENDED
+            int r2 = r0.f
+            r3 = 2
+            r4 = 1
+            r5 = 0
+            if (r2 == 0) goto L39
+            if (r2 == r4) goto L31
+            if (r2 != r3) goto L2b
+            defpackage.r57.b(r10)
+            goto L84
+        L2b:
+            java.lang.String r6 = "call to 'resume' before 'invoke' with coroutine"
+            defpackage.ah.f(r6)
+            return r5
+        L31:
+            long r8 = r0.c
+            yads.n8 r7 = r0.b
+            defpackage.r57.b(r10)
+            goto L4b
+        L39:
+            defpackage.r57.b(r10)
+            qm3 r10 = r6.b
+            r0.b = r7
+            r0.c = r8
+            r0.f = r4
+            java.lang.Object r10 = r10.invoke(r7, r0)
+            if (r10 != r1) goto L4b
+            goto L83
+        L4b:
+            if (r10 == 0) goto L4e
+            return r10
+        L4e:
+            yads.g1 r10 = r6.a
+            java.util.concurrent.ConcurrentHashMap r2 = r10.a
+            yads.l13 r10 = r10.b
+            java.lang.String r10 = r10.a(r7)
+            boolean r10 = r2.containsKey(r10)
+            if (r10 != 0) goto L5f
+            return r5
+        L5f:
+            yads.g1 r6 = r6.a
+            r0.b = r5
+            r0.f = r3
+            java.util.concurrent.ConcurrentHashMap r10 = r6.a
+            yads.l13 r6 = r6.b
+            java.lang.String r6 = r6.a(r7)
+            java.lang.Object r6 = r10.get(r6)
+            xp1 r6 = (defpackage.xp1) r6
+            if (r6 != 0) goto L77
+            r10 = r5
+            goto L81
+        L77:
+            yads.f1 r7 = new yads.f1
+            r7.<init>(r6, r5)
+            java.lang.Object r6 = defpackage.yv8.c(r8, r7, r0)
+            r10 = r6
+        L81:
+            if (r10 != r1) goto L84
+        L83:
+            return r1
+        L84:
+            if (r10 != 0) goto L87
+            return r5
+        L87:
+            return r10
+        */
+        throw new UnsupportedOperationException("Method not decompiled: yads.cl0.a(yads.n8, long, f02):java.lang.Object");
     }
 }

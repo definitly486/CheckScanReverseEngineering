@@ -556,6 +556,7 @@ public class mu0<E> implements x81<E> {
 
     public final void E(bm7 bm7Var) {
         q91<E> q91Var;
+        Object obj;
         q91<E> q91Var2 = (q91) pz0.a.getObjectVolatile(this, p);
         while (!this.w()) {
             long andIncrement = f.getAndIncrement(this);
@@ -575,12 +576,15 @@ public class mu0<E> implements x81<E> {
             Object objJ = this.J(q91Var, i2, andIncrement, bm7Var);
             q91Var2 = q91Var;
             if (objJ == su0.m) {
-                lf9 lf9Var = bm7Var instanceof lf9 ? (lf9) bm7Var : null;
-                if (lf9Var != null) {
+                lf9 lf9Var = bm7Var instanceof lf9 ? (lf9) obj : null;
+                if (lf9Var == null) {
+                    obj = bm7Var;
+                    return;
+                } else {
+                    obj = bm7Var;
                     lf9Var.a(q91Var2, i2);
                     return;
                 }
-                return;
             }
             if (objJ != su0.o) {
                 if (objJ == su0.n) {

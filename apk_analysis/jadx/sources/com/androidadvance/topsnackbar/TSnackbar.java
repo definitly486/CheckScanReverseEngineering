@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.os.Handler;
 import android.os.Looper;
-import android.os.Message;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -43,50 +42,92 @@ public final class TSnackbar {
         @Override // android.os.Handler.Callback
         /*
             Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
         */
-        public final boolean handleMessage(Message message) {
-            int i = message.what;
-            if (i != 0) {
-                if (i != 1) {
-                    return false;
-                }
-                TSnackbar tSnackbar = (TSnackbar) message.obj;
-                int i2 = message.arg1;
-                SnackbarLayout snackbarLayout = tSnackbar.b;
-                if (snackbarLayout.getVisibility() == 0) {
-                    ViewGroup.LayoutParams layoutParams = snackbarLayout.getLayoutParams();
-                    if (layoutParams instanceof CoordinatorLayout.LayoutParams) {
-                        CoordinatorLayout.Behavior behavior = ((CoordinatorLayout.LayoutParams) layoutParams).getBehavior();
-                        if (behavior instanceof SwipeDismissBehavior) {
-                        }
-                    }
-                    ViewCompat.animate(snackbarLayout).translationY(-snackbarLayout.getHeight()).setInterpolator(sm.a).setDuration(250L).setListener(new e(tSnackbar, i2)).start();
-                    return true;
-                }
-                tSnackbar.d();
-                return true;
-            }
-            TSnackbar tSnackbar2 = (TSnackbar) message.obj;
-            SnackbarLayout snackbarLayout2 = tSnackbar2.b;
-            if (snackbarLayout2.getParent() == null) {
-                ViewGroup.LayoutParams layoutParams2 = snackbarLayout2.getLayoutParams();
-                if (layoutParams2 instanceof CoordinatorLayout.LayoutParams) {
-                    d dVar = tSnackbar2.new d();
-                    dVar.setStartAlphaSwipeDistance(0.1f);
-                    dVar.setEndAlphaSwipeDistance(0.6f);
-                    dVar.setSwipeDirection(0);
-                    dVar.setListener(new com.androidadvance.topsnackbar.b(tSnackbar2));
-                    ((CoordinatorLayout.LayoutParams) layoutParams2).setBehavior(dVar);
-                }
-                tSnackbar2.a.addView(snackbarLayout2);
-            }
-            snackbarLayout2.setOnAttachStateChangeListener(new com.androidadvance.topsnackbar.c(tSnackbar2));
-            if (ViewCompat.isLaidOut(snackbarLayout2)) {
-                tSnackbar2.a();
-                return true;
-            }
-            snackbarLayout2.setOnLayoutChangeListener(new com.androidadvance.topsnackbar.d(tSnackbar2));
-            return true;
+        public final boolean handleMessage(android.os.Message r6) {
+            /*
+                r5 = this;
+                int r5 = r6.what
+                r0 = 0
+                r1 = 1
+                if (r5 == 0) goto L5d
+                if (r5 == r1) goto L9
+                return r0
+            L9:
+                java.lang.Object r5 = r6.obj
+                com.androidadvance.topsnackbar.TSnackbar r5 = (com.androidadvance.topsnackbar.TSnackbar) r5
+                int r6 = r6.arg1
+                com.androidadvance.topsnackbar.TSnackbar$SnackbarLayout r0 = r5.b
+                int r2 = r0.getVisibility()
+                if (r2 != 0) goto L59
+                android.view.ViewGroup$LayoutParams r2 = r0.getLayoutParams()
+                boolean r3 = r2 instanceof androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams
+                if (r3 == 0) goto L32
+                androidx.coordinatorlayout.widget.CoordinatorLayout$LayoutParams r2 = (androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams) r2
+                androidx.coordinatorlayout.widget.CoordinatorLayout$Behavior r2 = r2.getBehavior()
+                boolean r3 = r2 instanceof com.google.android.material.behavior.SwipeDismissBehavior
+                if (r3 == 0) goto L32
+                com.google.android.material.behavior.SwipeDismissBehavior r2 = (com.google.android.material.behavior.SwipeDismissBehavior) r2
+                int r2 = r2.getDragState()
+                if (r2 == 0) goto L32
+                goto L59
+            L32:
+                androidx.core.view.ViewPropertyAnimatorCompat r2 = androidx.core.view.ViewCompat.animate(r0)
+                int r0 = r0.getHeight()
+                int r0 = -r0
+                float r0 = (float) r0
+                androidx.core.view.ViewPropertyAnimatorCompat r0 = r2.translationY(r0)
+                androidx.interpolator.view.animation.FastOutSlowInInterpolator r2 = defpackage.sm.a
+                androidx.core.view.ViewPropertyAnimatorCompat r0 = r0.setInterpolator(r2)
+                r2 = 250(0xfa, double:1.235E-321)
+                androidx.core.view.ViewPropertyAnimatorCompat r0 = r0.setDuration(r2)
+                com.androidadvance.topsnackbar.e r2 = new com.androidadvance.topsnackbar.e
+                r2.<init>(r5, r6)
+                androidx.core.view.ViewPropertyAnimatorCompat r5 = r0.setListener(r2)
+                r5.start()
+                return r1
+            L59:
+                r5.d()
+                return r1
+            L5d:
+                java.lang.Object r5 = r6.obj
+                com.androidadvance.topsnackbar.TSnackbar r5 = (com.androidadvance.topsnackbar.TSnackbar) r5
+                com.androidadvance.topsnackbar.TSnackbar$SnackbarLayout r6 = r5.b
+                android.view.ViewParent r2 = r6.getParent()
+                if (r2 != 0) goto L97
+                android.view.ViewGroup$LayoutParams r2 = r6.getLayoutParams()
+                boolean r3 = r2 instanceof androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams
+                if (r3 == 0) goto L92
+                com.androidadvance.topsnackbar.TSnackbar$d r3 = new com.androidadvance.topsnackbar.TSnackbar$d
+                r3.<init>()
+                r4 = 1036831949(0x3dcccccd, float:0.1)
+                r3.setStartAlphaSwipeDistance(r4)
+                r4 = 1058642330(0x3f19999a, float:0.6)
+                r3.setEndAlphaSwipeDistance(r4)
+                r3.setSwipeDirection(r0)
+                com.androidadvance.topsnackbar.b r0 = new com.androidadvance.topsnackbar.b
+                r0.<init>(r5)
+                r3.setListener(r0)
+                androidx.coordinatorlayout.widget.CoordinatorLayout$LayoutParams r2 = (androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams) r2
+                r2.setBehavior(r3)
+            L92:
+                android.view.ViewGroup r0 = r5.a
+                r0.addView(r6)
+            L97:
+                com.androidadvance.topsnackbar.c r0 = new com.androidadvance.topsnackbar.c
+                r0.<init>(r5)
+                r6.setOnAttachStateChangeListener(r0)
+                boolean r0 = androidx.core.view.ViewCompat.isLaidOut(r6)
+                if (r0 == 0) goto La9
+                r5.a()
+                return r1
+            La9:
+                com.androidadvance.topsnackbar.d r0 = new com.androidadvance.topsnackbar.d
+                r0.<init>(r5)
+                r6.setOnLayoutChangeListener(r0)
+                return r1
+            */
+            throw new UnsupportedOperationException("Method not decompiled: com.androidadvance.topsnackbar.TSnackbar.a.handleMessage(android.os.Message):boolean");
         }
     }
 

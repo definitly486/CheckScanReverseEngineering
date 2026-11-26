@@ -29,38 +29,34 @@ public final class MultiInstanceInvalidationService extends Service {
             RemoteCallbackList<IMultiInstanceInvalidationCallback> callbackList$room_runtime = this.this$0.getCallbackList$room_runtime();
             MultiInstanceInvalidationService multiInstanceInvalidationService = this.this$0;
             synchronized (callbackList$room_runtime) {
-                try {
-                    String str = multiInstanceInvalidationService.getClientNames$room_runtime().get(Integer.valueOf(i));
-                    if (str == null) {
-                        Log.w(Room.LOG_TAG, "Remote invalidation client ID not registered");
-                        return;
-                    }
-                    int iBeginBroadcast = multiInstanceInvalidationService.getCallbackList$room_runtime().beginBroadcast();
-                    for (int i2 = 0; i2 < iBeginBroadcast; i2++) {
-                        try {
-                            Object broadcastCookie = multiInstanceInvalidationService.getCallbackList$room_runtime().getBroadcastCookie(i2);
-                            broadcastCookie.getClass();
-                            Integer num = (Integer) broadcastCookie;
-                            int iIntValue = num.intValue();
-                            String str2 = multiInstanceInvalidationService.getClientNames$room_runtime().get(num);
-                            if (i != iIntValue && str.equals(str2)) {
-                                try {
-                                    ((IMultiInstanceInvalidationCallback) multiInstanceInvalidationService.getCallbackList$room_runtime().getBroadcastItem(i2)).onInvalidation(strArr);
-                                    j59 j59Var = j59.a;
-                                } catch (RemoteException e) {
-                                    Log.w(Room.LOG_TAG, "Error invoking a remote callback", e);
-                                }
-                            }
-                        } catch (Throwable th) {
-                            multiInstanceInvalidationService.getCallbackList$room_runtime().finishBroadcast();
-                            throw th;
-                        }
-                    }
-                    multiInstanceInvalidationService.getCallbackList$room_runtime().finishBroadcast();
-                    j59 j59Var2 = j59.a;
-                } catch (Throwable th2) {
-                    throw th2;
+                String str = multiInstanceInvalidationService.getClientNames$room_runtime().get(Integer.valueOf(i));
+                if (str == null) {
+                    Log.w(Room.LOG_TAG, "Remote invalidation client ID not registered");
+                    return;
                 }
+                int iBeginBroadcast = multiInstanceInvalidationService.getCallbackList$room_runtime().beginBroadcast();
+                for (int i2 = 0; i2 < iBeginBroadcast; i2++) {
+                    try {
+                        Object broadcastCookie = multiInstanceInvalidationService.getCallbackList$room_runtime().getBroadcastCookie(i2);
+                        broadcastCookie.getClass();
+                        Integer num = (Integer) broadcastCookie;
+                        int iIntValue = num.intValue();
+                        String str2 = multiInstanceInvalidationService.getClientNames$room_runtime().get(num);
+                        if (i != iIntValue && str.equals(str2)) {
+                            try {
+                                ((IMultiInstanceInvalidationCallback) multiInstanceInvalidationService.getCallbackList$room_runtime().getBroadcastItem(i2)).onInvalidation(strArr);
+                                j59 j59Var = j59.a;
+                            } catch (RemoteException e) {
+                                Log.w(Room.LOG_TAG, "Error invoking a remote callback", e);
+                            }
+                        }
+                    } catch (Throwable th) {
+                        multiInstanceInvalidationService.getCallbackList$room_runtime().finishBroadcast();
+                        throw th;
+                    }
+                }
+                multiInstanceInvalidationService.getCallbackList$room_runtime().finishBroadcast();
+                j59 j59Var2 = j59.a;
             }
         }
 

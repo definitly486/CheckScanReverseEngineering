@@ -1,62 +1,113 @@
 package defpackage;
 
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Rect;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import androidx.media3.muxer.MuxerUtil;
-
 /* JADX INFO: loaded from: classes3.dex */
 public final class ss2 {
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0057, code lost:
     
-        if (r3 == 1.0d) goto L16;
+        if (defpackage.rd2.b(r12.getWidth(), r12.getHeight(), (int) (r3 >> 32), (int) (r3 & androidx.media3.muxer.MuxerUtil.UNSIGNED_INT_MAX_VALUE), r20, r7) == 1.0d) goto L16;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public static Bitmap a(Drawable drawable, Bitmap.Config config, t18 t18Var, md7 md7Var, t18 t18Var2, boolean z) {
-        Bitmap.Config config2 = config;
-        md7 md7Var2 = md7Var;
-        t18 t18Var3 = t18Var2;
-        if (drawable instanceof BitmapDrawable) {
-            Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
-            if (bitmap.getConfig() == ((config2 == null || config2 == Bitmap.Config.HARDWARE) ? Bitmap.Config.ARGB_8888 : config2)) {
-                if (!z) {
-                    long jA = rd2.a(bitmap.getWidth(), bitmap.getHeight(), t18Var, md7Var2, t18Var3);
-                    double dB = rd2.b(bitmap.getWidth(), bitmap.getHeight(), (int) (jA >> 32), (int) (jA & MuxerUtil.UNSIGNED_INT_MAX_VALUE), md7Var, t18Var3);
-                    md7Var2 = md7Var;
-                    t18Var3 = t18Var3;
-                }
-                return bitmap;
-            }
-        }
-        Drawable drawableMutate = drawable.mutate();
-        int iB = sb9.b(drawableMutate);
-        if (iB <= 0) {
-            iB = 512;
-        }
-        int iA = sb9.a(drawableMutate);
-        int i = iA > 0 ? iA : 512;
-        long jA2 = rd2.a(iB, i, t18Var, md7Var2, t18Var3);
-        int i2 = i;
-        int i3 = iB;
-        double dB2 = rd2.b(i3, i2, (int) (jA2 >> 32), (int) (jA2 & MuxerUtil.UNSIGNED_INT_MAX_VALUE), md7Var2, t18Var3);
-        int iA2 = w65.a(((double) i3) * dB2);
-        int iA3 = w65.a(dB2 * ((double) i2));
-        if (config2 == null || config2 == Bitmap.Config.HARDWARE) {
-            config2 = Bitmap.Config.ARGB_8888;
-        }
-        Bitmap bitmapCreateBitmap = Bitmap.createBitmap(iA2, iA3, config2);
-        Rect bounds = drawableMutate.getBounds();
-        int i4 = bounds.left;
-        int i5 = bounds.top;
-        int i6 = bounds.right;
-        int i7 = bounds.bottom;
-        drawableMutate.setBounds(0, 0, iA2, iA3);
-        drawableMutate.draw(new Canvas(bitmapCreateBitmap));
-        drawableMutate.setBounds(i4, i5, i6, i7);
-        return bitmapCreateBitmap;
+    public static android.graphics.Bitmap a(android.graphics.drawable.Drawable r17, android.graphics.Bitmap.Config r18, defpackage.t18 r19, defpackage.md7 r20, defpackage.t18 r21, boolean r22) {
+        /*
+            r0 = r17
+            r1 = r18
+            r2 = r19
+            r6 = r20
+            r7 = r21
+            boolean r3 = r0 instanceof android.graphics.drawable.BitmapDrawable
+            r9 = 4294967295(0xffffffff, double:2.1219957905E-314)
+            r11 = 32
+            if (r3 == 0) goto L5a
+            r3 = r0
+            android.graphics.drawable.BitmapDrawable r3 = (android.graphics.drawable.BitmapDrawable) r3
+            android.graphics.Bitmap r12 = r3.getBitmap()
+            android.graphics.Bitmap$Config r3 = r12.getConfig()
+            if (r1 == 0) goto L29
+            android.graphics.Bitmap$Config r4 = android.graphics.Bitmap.Config.HARDWARE
+            if (r1 != r4) goto L27
+            goto L29
+        L27:
+            r4 = r1
+            goto L2b
+        L29:
+            android.graphics.Bitmap$Config r4 = android.graphics.Bitmap.Config.ARGB_8888
+        L2b:
+            if (r3 != r4) goto L5a
+            if (r22 == 0) goto L30
+            goto L59
+        L30:
+            int r3 = r12.getWidth()
+            int r4 = r12.getHeight()
+            long r3 = defpackage.rd2.a(r3, r4, r2, r6, r7)
+            long r13 = r3 >> r11
+            int r5 = (int) r13
+            long r3 = r3 & r9
+            int r3 = (int) r3
+            r6 = r3
+            int r3 = r12.getWidth()
+            int r4 = r12.getHeight()
+            r8 = r7
+            r7 = r20
+            double r3 = defpackage.rd2.b(r3, r4, r5, r6, r7, r8)
+            r6 = r7
+            r7 = r8
+            r13 = 4607182418800017408(0x3ff0000000000000, double:1.0)
+            int r3 = (r3 > r13 ? 1 : (r3 == r13 ? 0 : -1))
+            if (r3 != 0) goto L5a
+        L59:
+            return r12
+        L5a:
+            android.graphics.drawable.Drawable r0 = r0.mutate()
+            int r3 = defpackage.sb9.b(r0)
+            r4 = 512(0x200, float:7.175E-43)
+            if (r3 <= 0) goto L67
+            goto L68
+        L67:
+            r3 = r4
+        L68:
+            int r5 = defpackage.sb9.a(r0)
+            if (r5 <= 0) goto L6f
+            r4 = r5
+        L6f:
+            long r12 = defpackage.rd2.a(r3, r4, r2, r6, r7)
+            long r14 = r12 >> r11
+            int r2 = (int) r14
+            long r8 = r12 & r9
+            int r5 = (int) r8
+            r16 = r4
+            r4 = r2
+            r2 = r3
+            r3 = r16
+            double r4 = defpackage.rd2.b(r2, r3, r4, r5, r6, r7)
+            double r6 = (double) r2
+            double r6 = r6 * r4
+            int r2 = defpackage.w65.a(r6)
+            double r6 = (double) r3
+            double r4 = r4 * r6
+            int r3 = defpackage.w65.a(r4)
+            if (r1 == 0) goto L95
+            android.graphics.Bitmap$Config r4 = android.graphics.Bitmap.Config.HARDWARE
+            if (r1 != r4) goto L97
+        L95:
+            android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.ARGB_8888
+        L97:
+            android.graphics.Bitmap r1 = android.graphics.Bitmap.createBitmap(r2, r3, r1)
+            android.graphics.Rect r4 = r0.getBounds()
+            int r5 = r4.left
+            int r6 = r4.top
+            int r7 = r4.right
+            int r4 = r4.bottom
+            r8 = 0
+            r0.setBounds(r8, r8, r2, r3)
+            android.graphics.Canvas r2 = new android.graphics.Canvas
+            r2.<init>(r1)
+            r0.draw(r2)
+            r0.setBounds(r5, r6, r7, r4)
+            return r1
+        */
+        throw new UnsupportedOperationException("Method not decompiled: defpackage.ss2.a(android.graphics.drawable.Drawable, android.graphics.Bitmap$Config, t18, md7, t18, boolean):android.graphics.Bitmap");
     }
 }

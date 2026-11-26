@@ -59,65 +59,89 @@ public final class le3<T> implements id3 {
     @Override // defpackage.id3
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public final Object emit(T t, e02<? super j59> e02Var) {
-        a aVar;
-        if (e02Var instanceof a) {
-            aVar = (a) e02Var;
-            int i = aVar.o;
-            if ((i & Integer.MIN_VALUE) != 0) {
-                aVar.o = i - Integer.MIN_VALUE;
-            } else {
-                aVar = new a(this, e02Var);
-            }
-        } else {
-            aVar = new a(this, e02Var);
-        }
-        Object objInvoke = aVar.m;
-        a32 a32Var = a32.COROUTINE_SUSPENDED;
-        int i2 = aVar.o;
-        id3<T> id3Var = this.c;
-        n07 n07Var = this.b;
-        if (i2 == 0) {
-            r57.b(objInvoke);
-            if (n07Var.b) {
-                aVar.l = null;
-                aVar.o = 1;
-            } else {
-                aVar.l = t;
-                aVar.o = 2;
-                objInvoke = this.d.invoke(t, aVar);
-                if (objInvoke != a32Var) {
-                    if (!((Boolean) objInvoke).booleanValue()) {
-                        return j59.a;
-                    }
-                    n07Var.b = true;
-                    aVar.l = null;
-                    aVar.o = 3;
-                }
-            }
-            return a32Var;
-        }
-        if (i2 == 1) {
-            r57.b(objInvoke);
-            return j59.a;
-        }
-        if (i2 == 2) {
-            t = (T) aVar.l;
-            r57.b(objInvoke);
-            if (!((Boolean) objInvoke).booleanValue()) {
-                return j59.a;
-            }
-            n07Var.b = true;
-            aVar.l = null;
-            aVar.o = 3;
-        } else {
-            if (i2 != 3) {
-                ah.f("call to 'resume' before 'invoke' with coroutine");
-                return null;
-            }
-            r57.b(objInvoke);
-        }
-        return j59.a;
+    public final java.lang.Object emit(T r10, defpackage.e02<? super defpackage.j59> r11) {
+        /*
+            r9 = this;
+            boolean r0 = r11 instanceof le3.a
+            if (r0 == 0) goto L13
+            r0 = r11
+            le3$a r0 = (le3.a) r0
+            int r1 = r0.o
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.o = r1
+            goto L18
+        L13:
+            le3$a r0 = new le3$a
+            r0.<init>(r9, r11)
+        L18:
+            java.lang.Object r11 = r0.m
+            a32 r1 = defpackage.a32.COROUTINE_SUSPENDED
+            int r2 = r0.o
+            r3 = 0
+            id3<T> r4 = r9.c
+            n07 r5 = r9.b
+            r6 = 3
+            r7 = 2
+            r8 = 1
+            if (r2 == 0) goto L42
+            if (r2 == r8) goto L3e
+            if (r2 == r7) goto L38
+            if (r2 != r6) goto L32
+            defpackage.r57.b(r11)
+            goto L79
+        L32:
+            java.lang.String r9 = "call to 'resume' before 'invoke' with coroutine"
+            defpackage.ah.f(r9)
+            return r3
+        L38:
+            java.lang.Object r10 = r0.l
+            defpackage.r57.b(r11)
+            goto L64
+        L3e:
+            defpackage.r57.b(r11)
+            goto L54
+        L42:
+            defpackage.r57.b(r11)
+            boolean r11 = r5.b
+            if (r11 == 0) goto L57
+            r0.l = r3
+            r0.o = r8
+            java.lang.Object r9 = r4.emit(r10, r0)
+            if (r9 != r1) goto L54
+            goto L78
+        L54:
+            j59 r9 = defpackage.j59.a
+            return r9
+        L57:
+            r0.l = r10
+            r0.o = r7
+            bm3<T, e02<? super java.lang.Boolean>, java.lang.Object> r9 = r9.d
+            java.lang.Object r11 = r9.invoke(r10, r0)
+            if (r11 != r1) goto L64
+            goto L78
+        L64:
+            java.lang.Boolean r11 = (java.lang.Boolean) r11
+            boolean r9 = r11.booleanValue()
+            if (r9 != 0) goto L7c
+            r5.b = r8
+            r0.l = r3
+            r0.o = r6
+            java.lang.Object r9 = r4.emit(r10, r0)
+            if (r9 != r1) goto L79
+        L78:
+            return r1
+        L79:
+            j59 r9 = defpackage.j59.a
+            return r9
+        L7c:
+            j59 r9 = defpackage.j59.a
+            return r9
+        */
+        throw new UnsupportedOperationException("Method not decompiled: defpackage.le3.emit(java.lang.Object, e02):java.lang.Object");
     }
 }

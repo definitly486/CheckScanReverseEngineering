@@ -449,74 +449,84 @@ public class gl2 implements cm1 {
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
     public final void n() {
-        k kVar;
-        List<Runnable> arrayList;
-        Iterator<Runnable> it;
-        List<Runnable> list;
-        List<Runnable> arrayList2 = new ArrayList<>();
-        while (true) {
-            synchronized (this) {
-                if (this.g.isEmpty()) {
-                    break;
-                }
-                list = this.g;
-                this.g = arrayList2;
-            }
-            if (kVar != null) {
-                return;
-            }
-            arrayList = new ArrayList<>();
-            while (true) {
-                synchronized (kVar) {
-                    try {
-                        if (kVar.c.isEmpty()) {
-                            kVar.c = null;
-                            kVar.b = true;
-                            return;
-                        } else {
-                            List<Runnable> list2 = kVar.c;
-                            kVar.c = arrayList;
-                        }
-                    } catch (Throwable th) {
-                        throw th;
-                    }
-                }
-                it = list2.iterator();
-                while (it.hasNext()) {
-                    it.next().run();
-                }
-                list2.clear();
-                arrayList = list2;
-            }
-            list.clear();
-            arrayList2 = list;
-        }
-        this.g = null;
-        this.c = true;
-        kVar = this.h;
-        if (kVar != null) {
-            return;
-        }
-        arrayList = new ArrayList<>();
-        while (true) {
-            synchronized (kVar) {
-                if (kVar.c.isEmpty()) {
-                    kVar.c = null;
-                    kVar.b = true;
-                    return;
-                }
-                List<Runnable> list3 = kVar.c;
-                kVar.c = arrayList;
-                it = list3.iterator();
-                while (it.hasNext()) {
-                    it.next().run();
-                }
-                list3.clear();
-                arrayList = list3;
-            }
-        }
+        /*
+            r5 = this;
+            java.util.ArrayList r0 = new java.util.ArrayList
+            r0.<init>()
+        L5:
+            monitor-enter(r5)
+            java.util.List<java.lang.Runnable> r1 = r5.g     // Catch: java.lang.Throwable -> L50
+            boolean r1 = r1.isEmpty()     // Catch: java.lang.Throwable -> L50
+            if (r1 == 0) goto L52
+            r0 = 0
+            r5.g = r0     // Catch: java.lang.Throwable -> L50
+            r1 = 1
+            r5.c = r1     // Catch: java.lang.Throwable -> L50
+            gl2$k r2 = r5.h     // Catch: java.lang.Throwable -> L50
+            monitor-exit(r5)     // Catch: java.lang.Throwable -> L50
+            if (r2 == 0) goto L4f
+            java.util.ArrayList r5 = new java.util.ArrayList
+            r5.<init>()
+        L1e:
+            monitor-enter(r2)
+            java.util.List<java.lang.Runnable> r3 = r2.c     // Catch: java.lang.Throwable -> L2d
+            boolean r3 = r3.isEmpty()     // Catch: java.lang.Throwable -> L2d
+            if (r3 == 0) goto L2f
+            r2.c = r0     // Catch: java.lang.Throwable -> L2d
+            r2.b = r1     // Catch: java.lang.Throwable -> L2d
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L2d
+            return
+        L2d:
+            r5 = move-exception
+            goto L4d
+        L2f:
+            java.util.List<java.lang.Runnable> r3 = r2.c     // Catch: java.lang.Throwable -> L2d
+            r2.c = r5     // Catch: java.lang.Throwable -> L2d
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L2d
+            java.util.Iterator r5 = r3.iterator()
+        L38:
+            boolean r4 = r5.hasNext()
+            if (r4 == 0) goto L48
+            java.lang.Object r4 = r5.next()
+            java.lang.Runnable r4 = (java.lang.Runnable) r4
+            r4.run()
+            goto L38
+        L48:
+            r3.clear()
+            r5 = r3
+            goto L1e
+        L4d:
+            monitor-exit(r2)     // Catch: java.lang.Throwable -> L2d
+            throw r5
+        L4f:
+            return
+        L50:
+            r0 = move-exception
+            goto L70
+        L52:
+            java.util.List<java.lang.Runnable> r1 = r5.g     // Catch: java.lang.Throwable -> L50
+            r5.g = r0     // Catch: java.lang.Throwable -> L50
+            monitor-exit(r5)     // Catch: java.lang.Throwable -> L50
+            java.util.Iterator r0 = r1.iterator()
+        L5b:
+            boolean r2 = r0.hasNext()
+            if (r2 == 0) goto L6b
+            java.lang.Object r2 = r0.next()
+            java.lang.Runnable r2 = (java.lang.Runnable) r2
+            r2.run()
+            goto L5b
+        L6b:
+            r1.clear()
+            r0 = r1
+            goto L5
+        L70:
+            monitor-exit(r5)     // Catch: java.lang.Throwable -> L50
+            throw r0
+        */
+        throw new UnsupportedOperationException("Method not decompiled: defpackage.gl2.n():void");
     }
 
     public final void o(dm1 dm1Var) {

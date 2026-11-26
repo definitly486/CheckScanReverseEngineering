@@ -31,39 +31,57 @@ public final class gf3 extends pg8 implements dm3<id3<Object>, Object[], e02<? s
     @Override // defpackage.cd0
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public final Object invokeSuspend(Object obj) {
-        id3 id3Var = this.n;
-        Object[] objArr = this.o;
-        a32 a32Var = a32.COROUTINE_SUSPENDED;
-        int i = this.m;
-        if (i != 0) {
-            if (i == 1) {
-                id3Var = this.l;
-                r57.b(obj);
-            } else {
-                if (i != 2) {
-                    ah.f("call to 'resume' before 'invoke' with coroutine");
-                    return null;
-                }
-                r57.b(obj);
-            }
-            return j59.a;
-        }
-        r57.b(obj);
-        Object obj2 = objArr[0];
-        Object obj3 = objArr[1];
-        this.n = null;
-        this.o = null;
-        this.l = id3Var;
-        this.m = 1;
-        obj = this.p.invoke(obj2, obj3, this);
-        if (obj != a32Var) {
-        }
-        return a32Var;
-        this.n = null;
-        this.o = null;
-        this.l = null;
-        this.m = 2;
+    public final java.lang.Object invokeSuspend(java.lang.Object r8) {
+        /*
+            r7 = this;
+            id3 r0 = r7.n
+            java.lang.Object[] r1 = r7.o
+            a32 r2 = defpackage.a32.COROUTINE_SUSPENDED
+            int r3 = r7.m
+            r4 = 2
+            r5 = 1
+            r6 = 0
+            if (r3 == 0) goto L21
+            if (r3 == r5) goto L1b
+            if (r3 != r4) goto L15
+            defpackage.r57.b(r8)
+            goto L49
+        L15:
+            java.lang.String r7 = "call to 'resume' before 'invoke' with coroutine"
+            defpackage.ah.f(r7)
+            return r6
+        L1b:
+            id3 r0 = r7.l
+            defpackage.r57.b(r8)
+            goto L3a
+        L21:
+            defpackage.r57.b(r8)
+            r8 = 0
+            r8 = r1[r8]
+            r1 = r1[r5]
+            r7.n = r6
+            r7.o = r6
+            r7.l = r0
+            r7.m = r5
+            dm3<java.lang.Object, java.lang.Object, e02<java.lang.Object>, java.lang.Object> r3 = r7.p
+            java.lang.Object r8 = r3.invoke(r8, r1, r7)
+            if (r8 != r2) goto L3a
+            goto L48
+        L3a:
+            r7.n = r6
+            r7.o = r6
+            r7.l = r6
+            r7.m = r4
+            java.lang.Object r7 = r0.emit(r8, r7)
+            if (r7 != r2) goto L49
+        L48:
+            return r2
+        L49:
+            j59 r7 = defpackage.j59.a
+            return r7
+        */
+        throw new UnsupportedOperationException("Method not decompiled: defpackage.gf3.invokeSuspend(java.lang.Object):java.lang.Object");
     }
 }

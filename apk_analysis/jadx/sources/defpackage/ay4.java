@@ -154,7 +154,7 @@ public final class ay4 extends od0 implements Choreographer.FrameCallback {
             return 0.0f;
         }
         float f = this.l;
-        return f == 2.1474836E9f ? nw4Var.m : f;
+        return f == 2.14748365E9f ? nw4Var.m : f;
     }
 
     @Override // android.animation.ValueAnimator, android.animation.Animator
@@ -168,7 +168,7 @@ public final class ay4 extends od0 implements Choreographer.FrameCallback {
             return 0.0f;
         }
         float f = this.k;
-        return f == -2.1474836E9f ? nw4Var.l : f;
+        return f == -2.14748365E9f ? nw4Var.l : f;
     }
 
     public final boolean k() {

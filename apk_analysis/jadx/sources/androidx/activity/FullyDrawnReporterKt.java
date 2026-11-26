@@ -60,8 +60,8 @@ public final class FullyDrawnReporterKt {
                 }
                 anonymousClass1.L$0 = fullyDrawnReporter;
                 anonymousClass1.label = 1;
-                fullyDrawnReporter2 = fullyDrawnReporter;
                 if (nl3Var.invoke(anonymousClass1) == a32Var) {
+                    fullyDrawnReporter2 = fullyDrawnReporter;
                     return a32Var;
                 }
             } else {
@@ -73,6 +73,7 @@ public final class FullyDrawnReporterKt {
                 r57.b(obj);
                 fullyDrawnReporter2 = fullyDrawnReporter3;
             }
+            fullyDrawnReporter2 = fullyDrawnReporter;
             fullyDrawnReporter2.removeReporter();
             fullyDrawnReporter = j59.a;
             return fullyDrawnReporter;

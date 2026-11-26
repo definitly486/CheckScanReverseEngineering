@@ -2,8 +2,6 @@ package androidx.compose.foundation;
 
 import android.view.Surface;
 import androidx.media3.extractor.ts.TsExtractor;
-import defpackage.a32;
-import defpackage.ah;
 import defpackage.av0;
 import defpackage.bd2;
 import defpackage.bm3;
@@ -15,8 +13,6 @@ import defpackage.j59;
 import defpackage.mb4;
 import defpackage.nl3;
 import defpackage.pg8;
-import defpackage.qb4;
-import defpackage.r57;
 import defpackage.y22;
 
 /* JADX INFO: loaded from: classes.dex */
@@ -63,44 +59,69 @@ abstract class BaseAndroidExternalSurfaceState implements AndroidExternalSurface
         @Override // defpackage.cd0
         /*
             Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
         */
-        public final Object invokeSuspend(Object obj) {
-            y22 y22Var;
-            a32 a32Var = a32.COROUTINE_SUSPENDED;
-            int i = this.label;
-            if (i != 0) {
-                if (i == 1) {
-                    y22Var = (y22) this.L$0;
-                    r57.b(obj);
-                } else {
-                    if (i != 2) {
-                        ah.f("call to 'resume' before 'invoke' with coroutine");
-                        return null;
-                    }
-                    r57.b(obj);
-                }
-                return j59.a;
-            }
-            r57.b(obj);
-            y22Var = (y22) this.L$0;
-            mb4 mb4Var = BaseAndroidExternalSurfaceState.this.job;
-            if (mb4Var != null) {
-                this.L$0 = y22Var;
-                this.label = 1;
-                if (qb4.c(mb4Var, this) != a32Var) {
-                }
-                return a32Var;
-            }
-            BaseAndroidExternalSurfaceState$dispatchSurfaceCreated$1$receiver$1 baseAndroidExternalSurfaceState$dispatchSurfaceCreated$1$receiver$1 = new BaseAndroidExternalSurfaceState$dispatchSurfaceCreated$1$receiver$1(BaseAndroidExternalSurfaceState.this, y22Var);
-            gm3 gm3Var = BaseAndroidExternalSurfaceState.this.onSurface;
-            if (gm3Var != null) {
-                Surface surface = this.$surface;
-                Integer num = new Integer(this.$width);
-                Integer num2 = new Integer(this.$height);
-                this.L$0 = null;
-                this.label = 2;
-            }
-            return j59.a;
+        public final java.lang.Object invokeSuspend(java.lang.Object r11) {
+            /*
+                r10 = this;
+                a32 r0 = defpackage.a32.COROUTINE_SUSPENDED
+                int r1 = r10.label
+                r2 = 0
+                r3 = 2
+                r4 = 1
+                if (r1 == 0) goto L1f
+                if (r1 == r4) goto L17
+                if (r1 != r3) goto L11
+                defpackage.r57.b(r11)
+                goto L65
+            L11:
+                java.lang.String r10 = "call to 'resume' before 'invoke' with coroutine"
+                defpackage.ah.f(r10)
+                return r2
+            L17:
+                java.lang.Object r1 = r10.L$0
+                y22 r1 = (defpackage.y22) r1
+                defpackage.r57.b(r11)
+                goto L3a
+            L1f:
+                defpackage.r57.b(r11)
+                java.lang.Object r11 = r10.L$0
+                r1 = r11
+                y22 r1 = (defpackage.y22) r1
+                androidx.compose.foundation.BaseAndroidExternalSurfaceState r11 = androidx.compose.foundation.BaseAndroidExternalSurfaceState.this
+                mb4 r11 = androidx.compose.foundation.BaseAndroidExternalSurfaceState.access$getJob$p(r11)
+                if (r11 == 0) goto L3a
+                r10.L$0 = r1
+                r10.label = r4
+                java.lang.Object r11 = defpackage.qb4.c(r11, r10)
+                if (r11 != r0) goto L3a
+                goto L64
+            L3a:
+                androidx.compose.foundation.BaseAndroidExternalSurfaceState$dispatchSurfaceCreated$1$receiver$1 r5 = new androidx.compose.foundation.BaseAndroidExternalSurfaceState$dispatchSurfaceCreated$1$receiver$1
+                androidx.compose.foundation.BaseAndroidExternalSurfaceState r11 = androidx.compose.foundation.BaseAndroidExternalSurfaceState.this
+                r5.<init>(r11, r1)
+                androidx.compose.foundation.BaseAndroidExternalSurfaceState r11 = androidx.compose.foundation.BaseAndroidExternalSurfaceState.this
+                gm3 r4 = androidx.compose.foundation.BaseAndroidExternalSurfaceState.access$getOnSurface$p(r11)
+                if (r4 == 0) goto L65
+                android.view.Surface r6 = r10.$surface
+                int r11 = r10.$width
+                java.lang.Integer r7 = new java.lang.Integer
+                r7.<init>(r11)
+                int r11 = r10.$height
+                java.lang.Integer r8 = new java.lang.Integer
+                r8.<init>(r11)
+                r10.L$0 = r2
+                r10.label = r3
+                r9 = r10
+                java.lang.Object r10 = r4.invoke(r5, r6, r7, r8, r9)
+                if (r10 != r0) goto L65
+            L64:
+                return r0
+            L65:
+                j59 r10 = defpackage.j59.a
+                return r10
+            */
+            throw new UnsupportedOperationException("Method not decompiled: androidx.compose.foundation.BaseAndroidExternalSurfaceState.AnonymousClass1.invokeSuspend(java.lang.Object):java.lang.Object");
         }
     }
 

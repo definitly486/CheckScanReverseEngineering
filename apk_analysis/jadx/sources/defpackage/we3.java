@@ -55,8 +55,8 @@ public final class we3 implements id3<Object> {
             aVar.o = obj;
             aVar.m = 1;
             objInvoke = this.b.invoke(obj, aVar);
-            t = obj;
             if (objInvoke == a32Var) {
+                t = obj;
                 return a32Var;
             }
         } else {
@@ -68,6 +68,7 @@ public final class we3 implements id3<Object> {
             r57.b(objInvoke);
             t = obj2;
         }
+        t = obj;
         if (!((Boolean) objInvoke).booleanValue()) {
             return j59.a;
         }

@@ -1,7 +1,6 @@
 package yads;
 
 import android.content.Context;
-import defpackage.r57;
 
 /* JADX INFO: loaded from: classes6.dex */
 public final class bz2 {
@@ -22,61 +21,90 @@ public final class bz2 {
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public final Object a(c65 c65Var, defpackage.f02 f02Var) throws Throwable {
-        xy2 xy2Var;
-        if (f02Var instanceof xy2) {
-            xy2Var = (xy2) f02Var;
-            int i = xy2Var.e;
-            if ((i & Integer.MIN_VALUE) != 0) {
-                xy2Var.e = i - Integer.MIN_VALUE;
-            } else {
-                xy2Var = new xy2(this, f02Var);
-            }
-        } else {
-            xy2Var = new xy2(this, f02Var);
-        }
-        Object objA = xy2Var.c;
-        defpackage.a32 a32Var = defpackage.a32.COROUTINE_SUSPENDED;
-        int i2 = xy2Var.e;
-        boolean z = false;
-        try {
-            if (i2 == 0) {
-                r57.b(objA);
-                if (this.b.a(c65Var.a()) != null) {
-                    return Boolean.TRUE;
-                }
-                vy2 vy2Var = this.a;
-                String strB = c65Var.b();
-                xy2Var.b = c65Var;
-                xy2Var.e = 1;
-                objA = vy2Var.a(strB, xy2Var);
-                if (objA == a32Var) {
-                }
-                return a32Var;
-            }
-            if (i2 == 1) {
-                c65Var = xy2Var.b;
-                r57.b(objA);
-            } else {
-                if (i2 != 2) {
-                    defpackage.ah.f("call to 'resume' before 'invoke' with coroutine");
-                    return null;
-                }
-                c65Var = xy2Var.b;
-                r57.b(objA);
-            }
-            if (this.b.a(c65Var.a()) != null) {
-                z = true;
-            } else {
-                c65Var.a().name();
-            }
-            return Boolean.valueOf(z);
-            cz2 cz2VarA = c65Var.a();
-            xy2Var.b = c65Var;
-            xy2Var.e = 2;
-            defpackage.oi2 oi2Var = defpackage.qo2.a;
-        } catch (Exception unused) {
-        }
+    public final java.lang.Object a(yads.c65 r9, defpackage.f02 r10) throws java.lang.Throwable {
+        /*
+            r8 = this;
+            boolean r0 = r10 instanceof yads.xy2
+            if (r0 == 0) goto L13
+            r0 = r10
+            yads.xy2 r0 = (yads.xy2) r0
+            int r1 = r0.e
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.e = r1
+            goto L18
+        L13:
+            yads.xy2 r0 = new yads.xy2
+            r0.<init>(r8, r10)
+        L18:
+            java.lang.Object r10 = r0.c
+            a32 r1 = defpackage.a32.COROUTINE_SUSPENDED
+            int r2 = r0.e
+            r3 = 0
+            r4 = 0
+            r5 = 2
+            r6 = 1
+            if (r2 == 0) goto L3a
+            if (r2 == r6) goto L34
+            if (r2 != r5) goto L2e
+            yads.c65 r9 = r0.b
+            defpackage.r57.b(r10)     // Catch: java.lang.Exception -> L8c
+            goto L77
+        L2e:
+            java.lang.String r8 = "call to 'resume' before 'invoke' with coroutine"
+            defpackage.ah.f(r8)
+            return r3
+        L34:
+            yads.c65 r9 = r0.b
+            defpackage.r57.b(r10)     // Catch: java.lang.Exception -> L8c
+            goto L5d
+        L3a:
+            defpackage.r57.b(r10)
+            yads.cz2 r10 = r9.a()
+            yads.rz2 r2 = r8.b
+            android.graphics.Typeface r10 = r2.a(r10)
+            if (r10 == 0) goto L4c
+            java.lang.Boolean r8 = java.lang.Boolean.TRUE
+            return r8
+        L4c:
+            yads.vy2 r10 = r8.a     // Catch: java.lang.Exception -> L8c
+            java.lang.String r2 = r9.b()     // Catch: java.lang.Exception -> L8c
+            r0.b = r9     // Catch: java.lang.Exception -> L8c
+            r0.e = r6     // Catch: java.lang.Exception -> L8c
+            java.lang.Object r10 = r10.a(r2, r0)     // Catch: java.lang.Exception -> L8c
+            if (r10 != r1) goto L5d
+            goto L76
+        L5d:
+            byte[] r10 = (byte[]) r10     // Catch: java.lang.Exception -> L8c
+            yads.cz2 r2 = r9.a()     // Catch: java.lang.Exception -> L8c
+            r0.b = r9     // Catch: java.lang.Exception -> L8c
+            r0.e = r5     // Catch: java.lang.Exception -> L8c
+            oi2 r5 = defpackage.qo2.a     // Catch: java.lang.Exception -> L8c
+            sh2 r5 = defpackage.sh2.c     // Catch: java.lang.Exception -> L8c
+            yads.az2 r7 = new yads.az2     // Catch: java.lang.Exception -> L8c
+            r7.<init>(r10, r8, r2, r3)     // Catch: java.lang.Exception -> L8c
+            java.lang.Object r10 = defpackage.av0.d(r5, r7, r0)     // Catch: java.lang.Exception -> L8c
+            if (r10 != r1) goto L77
+        L76:
+            return r1
+        L77:
+            yads.rz2 r8 = r8.b     // Catch: java.lang.Exception -> L8c
+            yads.cz2 r10 = r9.a()     // Catch: java.lang.Exception -> L8c
+            android.graphics.Typeface r8 = r8.a(r10)     // Catch: java.lang.Exception -> L8c
+            if (r8 == 0) goto L85
+            r4 = r6
+            goto L8c
+        L85:
+            yads.cz2 r8 = r9.a()     // Catch: java.lang.Exception -> L8c
+            r8.name()     // Catch: java.lang.Exception -> L8c
+        L8c:
+            java.lang.Boolean r8 = java.lang.Boolean.valueOf(r4)
+            return r8
+        */
+        throw new UnsupportedOperationException("Method not decompiled: yads.bz2.a(yads.c65, f02):java.lang.Object");
     }
 }

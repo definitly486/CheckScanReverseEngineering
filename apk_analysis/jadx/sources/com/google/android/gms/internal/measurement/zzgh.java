@@ -1,0 +1,64 @@
+package com.google.android.gms.internal.measurement;
+
+import defpackage.lsa;
+import defpackage.msa;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final class zzgh extends zzadu implements zzafd {
+    private static final zzgh zzh;
+    private static volatile zzafj zzi;
+    private int zzb;
+    private String zze = "";
+    private zzaef zzf = lsa.f;
+    private boolean zzg;
+
+    static {
+        zzgh zzghVar = new zzgh();
+        zzh = zzghVar;
+        zzadu.i(zzgh.class, zzghVar);
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzadu
+    public final Object m(int i) {
+        zzafj zzadqVar;
+        int i2 = i - 1;
+        if (i2 == 0) {
+            return (byte) 1;
+        }
+        if (i2 == 2) {
+            return new msa(zzh, "\u0004\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0001\u0000\u0001ဈ\u0000\u0002\u001b\u0003ဇ\u0001", new Object[]{"zzb", "zze", "zzf", zzgr.class, "zzg"});
+        }
+        if (i2 == 3) {
+            return new zzgh();
+        }
+        if (i2 == 4) {
+            return new zzgg(zzh);
+        }
+        if (i2 == 5) {
+            return zzh;
+        }
+        if (i2 != 6) {
+            throw null;
+        }
+        zzafj zzafjVar = zzi;
+        if (zzafjVar != null) {
+            return zzafjVar;
+        }
+        synchronized (zzgh.class) {
+            try {
+                zzadqVar = zzi;
+                if (zzadqVar == null) {
+                    zzadqVar = new zzadq(zzh);
+                    zzi = zzadqVar;
+                }
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+        return zzadqVar;
+    }
+
+    public final String zza() {
+        return this.zze;
+    }
+}

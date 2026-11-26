@@ -1,15 +1,6 @@
 package com.google.firebase.sessions;
 
-import android.util.Log;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.installations.FirebaseInstallationsApi;
-import com.google.firebase.installations.InstallationTokenResult;
-import defpackage.a32;
-import defpackage.ah;
-import defpackage.e02;
 import defpackage.jh2;
-import defpackage.r57;
-import defpackage.yc4;
 
 /* JADX INFO: loaded from: classes4.dex */
 public final class InstallationId {
@@ -60,82 +51,104 @@ public final class InstallationId {
         /* JADX WARN: Type inference failed for: r9v7 */
         /*
             Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
         */
-        public final Object create(FirebaseInstallationsApi firebaseInstallationsApi, e02<? super InstallationId> e02Var) {
-            InstallationId$Companion$create$1 installationId$Companion$create$1;
-            ?? r8;
-            String str;
-            ?? r9;
-            if (e02Var instanceof InstallationId$Companion$create$1) {
-                installationId$Companion$create$1 = (InstallationId$Companion$create$1) e02Var;
-                int i = installationId$Companion$create$1.label;
-                if ((i & Integer.MIN_VALUE) != 0) {
-                    installationId$Companion$create$1.label = i - Integer.MIN_VALUE;
-                } else {
-                    installationId$Companion$create$1 = new InstallationId$Companion$create$1(this, e02Var);
-                }
-            } else {
-                installationId$Companion$create$1 = new InstallationId$Companion$create$1(this, e02Var);
-            }
-            Object objB = installationId$Companion$create$1.result;
-            a32 a32Var = a32.COROUTINE_SUSPENDED;
-            int i2 = installationId$Companion$create$1.label;
-            jh2 jh2Var = null;
-            String str2 = "";
-            try {
-                try {
-                    if (i2 == 0) {
-                        r57.b(objB);
-                        Task<InstallationTokenResult> token = firebaseInstallationsApi.getToken(false);
-                        token.getClass();
-                        installationId$Companion$create$1.L$0 = firebaseInstallationsApi;
-                        installationId$Companion$create$1.label = 1;
-                        objB = yc4.b(token, installationId$Companion$create$1);
-                        firebaseInstallationsApi = firebaseInstallationsApi;
-                        if (objB == a32Var) {
-                        }
-                        return a32Var;
-                    }
-                    if (i2 == 1) {
-                        FirebaseInstallationsApi firebaseInstallationsApi2 = (FirebaseInstallationsApi) installationId$Companion$create$1.L$0;
-                        r57.b(objB);
-                        firebaseInstallationsApi = firebaseInstallationsApi2;
-                    } else {
-                        if (i2 != 2) {
-                            ah.f("call to 'resume' before 'invoke' with coroutine");
-                            return null;
-                        }
-                        String str3 = (String) installationId$Companion$create$1.L$0;
-                        r57.b(objB);
-                        firebaseInstallationsApi = str3;
-                    }
-                    String str4 = (String) objB;
-                    r9 = firebaseInstallationsApi;
-                    if (str4 != null) {
-                        str2 = str4;
-                        r9 = firebaseInstallationsApi;
-                    }
-                    return new InstallationId(str2, r9, jh2Var);
-                    String token2 = ((InstallationTokenResult) objB).getToken();
-                    token2.getClass();
-                    ?? r7 = firebaseInstallationsApi;
-                    str = token2;
-                    r8 = r7;
-                } catch (Exception e) {
-                    Log.w(FirebaseSessions.TAG, "Error getting authentication token.", e);
-                    r8 = firebaseInstallationsApi;
-                    str = "";
-                }
-                Task<String> id = r8.getId();
-                id.getClass();
-                installationId$Companion$create$1.L$0 = str;
-                installationId$Companion$create$1.label = 2;
-                objB = yc4.b(id, installationId$Companion$create$1);
-                firebaseInstallationsApi = str;
-            } catch (Exception e2) {
-                Log.w(FirebaseSessions.TAG, "Error getting Firebase installation id .", e2);
-                r9 = firebaseInstallationsApi;
-            }
+        public final java.lang.Object create(com.google.firebase.installations.FirebaseInstallationsApi r9, defpackage.e02<? super com.google.firebase.sessions.InstallationId> r10) {
+            /*
+                r8 = this;
+                boolean r0 = r10 instanceof com.google.firebase.sessions.InstallationId$Companion$create$1
+                if (r0 == 0) goto L13
+                r0 = r10
+                com.google.firebase.sessions.InstallationId$Companion$create$1 r0 = (com.google.firebase.sessions.InstallationId$Companion$create$1) r0
+                int r1 = r0.label
+                r2 = -2147483648(0xffffffff80000000, float:-0.0)
+                r3 = r1 & r2
+                if (r3 == 0) goto L13
+                int r1 = r1 - r2
+                r0.label = r1
+                goto L18
+            L13:
+                com.google.firebase.sessions.InstallationId$Companion$create$1 r0 = new com.google.firebase.sessions.InstallationId$Companion$create$1
+                r0.<init>(r8, r10)
+            L18:
+                java.lang.Object r8 = r0.result
+                a32 r10 = defpackage.a32.COROUTINE_SUSPENDED
+                int r1 = r0.label
+                r2 = 0
+                java.lang.String r3 = "FirebaseSessions"
+                r4 = 2
+                r5 = 1
+                java.lang.String r6 = ""
+                if (r1 == 0) goto L45
+                if (r1 == r5) goto L3b
+                if (r1 != r4) goto L35
+                java.lang.Object r9 = r0.L$0
+                java.lang.String r9 = (java.lang.String) r9
+                defpackage.r57.b(r8)     // Catch: java.lang.Exception -> L33
+                goto L81
+            L33:
+                r8 = move-exception
+                goto L88
+            L35:
+                java.lang.String r8 = "call to 'resume' before 'invoke' with coroutine"
+                defpackage.ah.f(r8)
+                return r2
+            L3b:
+                java.lang.Object r9 = r0.L$0
+                com.google.firebase.installations.FirebaseInstallationsApi r9 = (com.google.firebase.installations.FirebaseInstallationsApi) r9
+                defpackage.r57.b(r8)     // Catch: java.lang.Exception -> L43
+                goto L5b
+            L43:
+                r8 = move-exception
+                goto L68
+            L45:
+                defpackage.r57.b(r8)
+                r8 = 0
+                com.google.android.gms.tasks.Task r8 = r9.getToken(r8)     // Catch: java.lang.Exception -> L43
+                r8.getClass()     // Catch: java.lang.Exception -> L43
+                r0.L$0 = r9     // Catch: java.lang.Exception -> L43
+                r0.label = r5     // Catch: java.lang.Exception -> L43
+                java.lang.Object r8 = defpackage.yc4.b(r8, r0)     // Catch: java.lang.Exception -> L43
+                if (r8 != r10) goto L5b
+                goto L80
+            L5b:
+                com.google.firebase.installations.InstallationTokenResult r8 = (com.google.firebase.installations.InstallationTokenResult) r8     // Catch: java.lang.Exception -> L43
+                java.lang.String r8 = r8.getToken()     // Catch: java.lang.Exception -> L43
+                r8.getClass()     // Catch: java.lang.Exception -> L43
+                r7 = r9
+                r9 = r8
+                r8 = r7
+                goto L6f
+            L68:
+                java.lang.String r1 = "Error getting authentication token."
+                android.util.Log.w(r3, r1, r8)
+                r8 = r9
+                r9 = r6
+            L6f:
+                com.google.android.gms.tasks.Task r8 = r8.getId()     // Catch: java.lang.Exception -> L33
+                r8.getClass()     // Catch: java.lang.Exception -> L33
+                r0.L$0 = r9     // Catch: java.lang.Exception -> L33
+                r0.label = r4     // Catch: java.lang.Exception -> L33
+                java.lang.Object r8 = defpackage.yc4.b(r8, r0)     // Catch: java.lang.Exception -> L33
+                if (r8 != r10) goto L81
+            L80:
+                return r10
+            L81:
+                java.lang.String r8 = (java.lang.String) r8     // Catch: java.lang.Exception -> L33
+                if (r8 != 0) goto L86
+                goto L8d
+            L86:
+                r6 = r8
+                goto L8d
+            L88:
+                java.lang.String r10 = "Error getting Firebase installation id ."
+                android.util.Log.w(r3, r10, r8)
+            L8d:
+                com.google.firebase.sessions.InstallationId r8 = new com.google.firebase.sessions.InstallationId
+                r8.<init>(r6, r9, r2)
+                return r8
+            */
+            throw new UnsupportedOperationException("Method not decompiled: com.google.firebase.sessions.InstallationId.Companion.create(com.google.firebase.installations.FirebaseInstallationsApi, e02):java.lang.Object");
         }
 
         private Companion() {

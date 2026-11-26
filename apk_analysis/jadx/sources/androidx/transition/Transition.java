@@ -1064,9 +1064,9 @@ public abstract class Transition implements Cloneable {
                     i2 = i3;
                     view = transitionValues3.view;
                     transitionValues = null;
-                    animator = animatorCreateAnimator;
                 }
                 if (animator != null) {
+                    animator = animatorCreateAnimator;
                     TransitionPropagation transitionPropagation = this.mPropagation;
                     if (transitionPropagation != null) {
                         long startDelay = transitionPropagation.getStartDelay(viewGroup, this, transitionValues3, transitionValues4);
@@ -1084,6 +1084,8 @@ public abstract class Transition implements Cloneable {
                     runningAnimators.put(animator3, animationInfo2);
                     this.mAnimators.add(animator3);
                     jMin = j;
+                } else {
+                    animator = animatorCreateAnimator;
                 }
             } else {
                 i = size;

@@ -36,10 +36,11 @@ public final class DataStoreImpl$InitDataStore$doRun$initData$1$api$1<T> impleme
         n07 n07Var;
         r07<T> r07Var;
         DataStoreImpl dataStoreImpl;
+        DataStoreImpl dataStoreImpl2;
         yg5 yg5Var2;
         yg5 yg5Var3;
         r07<T> r07Var2;
-        DataStoreImpl dataStoreImpl2;
+        DataStoreImpl dataStoreImpl3;
         T t;
         if (e02Var instanceof DataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1) {
             dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1 = (DataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1) e02Var;
@@ -61,16 +62,16 @@ public final class DataStoreImpl$InitDataStore$doRun$initData$1$api$1<T> impleme
                 yg5Var = this.$updateLock;
                 n07Var = this.$initializationComplete;
                 r07Var = this.$currentData;
-                DataStoreImpl dataStoreImpl3 = (DataStoreImpl<T>) this.this$0;
+                dataStoreImpl = (DataStoreImpl<T>) this.this$0;
                 dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$0 = bm3Var;
                 dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$1 = yg5Var;
                 dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$2 = n07Var;
                 dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$3 = r07Var;
-                dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$4 = dataStoreImpl3;
+                dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$4 = dataStoreImpl;
                 dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.label = 1;
-                dataStoreImpl = dataStoreImpl3;
                 if (yg5Var.lock(null, dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1) != obj2) {
                 }
+                dataStoreImpl2 = dataStoreImpl;
                 return obj2;
             }
             if (i2 != 1) {
@@ -99,17 +100,18 @@ public final class DataStoreImpl$InitDataStore$doRun$initData$1$api$1<T> impleme
                 yg5Var3 = (yg5) dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$0;
                 try {
                     r57.b(obj);
-                    dataStoreImpl2 = dataStoreImpl4;
+                    dataStoreImpl3 = dataStoreImpl4;
                     if (!aa4.e(obj, r07Var2.b)) {
                         dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$0 = yg5Var3;
                         dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$1 = r07Var2;
                         dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$2 = obj;
                         dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.label = 3;
-                        if (dataStoreImpl2.writeData$datastore_core_release(obj, false, dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1) != obj2) {
+                        if (dataStoreImpl3.writeData$datastore_core_release(obj, false, dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1) != obj2) {
                             t = (T) obj;
                             yg5Var2 = yg5Var3;
                             r07Var2.b = t;
                         }
+                        dataStoreImpl2 = dataStoreImpl;
                         return obj2;
                     }
                     yg5Var2 = yg5Var3;
@@ -132,14 +134,15 @@ public final class DataStoreImpl$InitDataStore$doRun$initData$1$api$1<T> impleme
             r07Var = r07Var3;
             bm3Var = bm3Var2;
             yg5Var = yg5Var4;
-            dataStoreImpl = dataStoreImpl5;
+            dataStoreImpl2 = dataStoreImpl5;
+            dataStoreImpl2 = dataStoreImpl;
             if (n07Var.b) {
                 throw new IllegalStateException("InitializerApi.updateData should not be called after initialization is complete.");
             }
             T t4 = r07Var.b;
             dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$0 = yg5Var;
             dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$1 = r07Var;
-            dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$2 = dataStoreImpl;
+            dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$2 = dataStoreImpl2;
             dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$3 = null;
             dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$4 = null;
             dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.label = 2;
@@ -148,13 +151,13 @@ public final class DataStoreImpl$InitDataStore$doRun$initData$1$api$1<T> impleme
                 yg5Var3 = yg5Var;
                 obj = objInvoke;
                 r07Var2 = r07Var;
-                dataStoreImpl2 = dataStoreImpl;
+                dataStoreImpl3 = dataStoreImpl2;
                 if (!aa4.e(obj, r07Var2.b)) {
                     dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$0 = yg5Var3;
                     dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$1 = r07Var2;
                     dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.L$2 = obj;
                     dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1.label = 3;
-                    if (dataStoreImpl2.writeData$datastore_core_release(obj, false, dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1) != obj2) {
+                    if (dataStoreImpl3.writeData$datastore_core_release(obj, false, dataStoreImpl$InitDataStore$doRun$initData$1$api$1$updateData$1) != obj2) {
                         t = (T) obj;
                         yg5Var2 = yg5Var3;
                         r07Var2.b = t;
@@ -166,6 +169,7 @@ public final class DataStoreImpl$InitDataStore$doRun$initData$1$api$1<T> impleme
                 yg5Var2.unlock(null);
                 return t5;
             }
+            dataStoreImpl2 = dataStoreImpl;
             return obj2;
         } catch (Throwable th3) {
             th = th3;

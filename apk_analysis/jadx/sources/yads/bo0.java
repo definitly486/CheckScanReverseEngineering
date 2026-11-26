@@ -1,10 +1,5 @@
 package yads;
 
-import android.app.UiModeManager;
-import android.content.Context;
-import android.graphics.Point;
-import android.util.DisplayMetrics;
-
 /* JADX INFO: loaded from: classes6.dex */
 public final class bo0 {
     public final ed5 a = new ed5();
@@ -23,40 +18,83 @@ public final class bo0 {
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public final ao0 a(Context context) {
-        boolean zHasSystemFeature;
-        DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
-        Point pointA = this.a.a(context);
-        int i = pointA.x;
-        int i2 = pointA.y;
-        float f = displayMetrics.density;
-        float f2 = i;
-        float f3 = f2 / f;
-        float f4 = i2;
-        float f5 = f4 / f;
-        if (f3 > f5) {
-            f3 = f5;
-        }
-        float f6 = f * 160.0f;
-        float f7 = f2 / f6;
-        float f8 = f4 / f6;
-        double dSqrt = Math.sqrt((f8 * f8) + (f7 * f7));
-        if (za.a(13)) {
-            Object systemService = context.getSystemService("uimode");
-            UiModeManager uiModeManager = systemService instanceof UiModeManager ? (UiModeManager) systemService : null;
-            if (uiModeManager != null) {
-            }
-            return (dSqrt < 7.0d || f3 >= 600.0f) ? ao0.TABLET : ao0.PHONE;
-        }
-        if (dSqrt >= 15.0d) {
-            try {
-                zHasSystemFeature = context.getPackageManager().hasSystemFeature("android.hardware.touchscreen");
-            } catch (Throwable unused) {
-                zHasSystemFeature = false;
-            }
-        }
-        if (dSqrt < 7.0d) {
-        }
+    public final yads.ao0 a(android.content.Context r6) {
+        /*
+            r5 = this;
+            android.content.res.Resources r0 = r6.getResources()
+            android.util.DisplayMetrics r0 = r0.getDisplayMetrics()
+            yads.ed5 r5 = r5.a
+            android.graphics.Point r5 = r5.a(r6)
+            int r1 = r5.x
+            int r5 = r5.y
+            float r0 = r0.density
+            float r1 = (float) r1
+            float r2 = r1 / r0
+            float r5 = (float) r5
+            float r3 = r5 / r0
+            int r4 = (r2 > r3 ? 1 : (r2 == r3 ? 0 : -1))
+            if (r4 <= 0) goto L1f
+            r2 = r3
+        L1f:
+            r3 = 1126170624(0x43200000, float:160.0)
+            float r0 = r0 * r3
+            float r1 = r1 / r0
+            float r5 = r5 / r0
+            float r1 = r1 * r1
+            float r5 = r5 * r5
+            float r5 = r5 + r1
+            double r0 = (double) r5
+            double r0 = java.lang.Math.sqrt(r0)
+            r5 = 13
+            boolean r5 = yads.za.a(r5)
+            if (r5 == 0) goto L4c
+            java.lang.String r5 = "uimode"
+            java.lang.Object r5 = r6.getSystemService(r5)
+            boolean r6 = r5 instanceof android.app.UiModeManager
+            if (r6 == 0) goto L41
+            android.app.UiModeManager r5 = (android.app.UiModeManager) r5
+            goto L42
+        L41:
+            r5 = 0
+        L42:
+            if (r5 == 0) goto L63
+            int r5 = r5.getCurrentModeType()
+            r6 = 4
+            if (r5 != r6) goto L63
+            goto L60
+        L4c:
+            r3 = 4624633867356078080(0x402e000000000000, double:15.0)
+            int r5 = (r0 > r3 ? 1 : (r0 == r3 ? 0 : -1))
+            if (r5 < 0) goto L63
+            java.lang.String r5 = "android.hardware.touchscreen"
+            android.content.pm.PackageManager r6 = r6.getPackageManager()     // Catch: java.lang.Throwable -> L5d
+            boolean r5 = r6.hasSystemFeature(r5)     // Catch: java.lang.Throwable -> L5d
+            goto L5e
+        L5d:
+            r5 = 0
+        L5e:
+            if (r5 != 0) goto L63
+        L60:
+            yads.ao0 r5 = yads.ao0.TV
+            return r5
+        L63:
+            r5 = 4619567317775286272(0x401c000000000000, double:7.0)
+            int r5 = (r0 > r5 ? 1 : (r0 == r5 ? 0 : -1))
+            if (r5 >= 0) goto L73
+            r5 = 1142292480(0x44160000, float:600.0)
+            int r5 = (r2 > r5 ? 1 : (r2 == r5 ? 0 : -1))
+            if (r5 < 0) goto L70
+            goto L73
+        L70:
+            yads.ao0 r5 = yads.ao0.PHONE
+            goto L75
+        L73:
+            yads.ao0 r5 = yads.ao0.TABLET
+        L75:
+            return r5
+        */
+        throw new UnsupportedOperationException("Method not decompiled: yads.bo0.a(android.content.Context):yads.ao0");
     }
 }

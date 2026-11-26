@@ -8,22 +8,17 @@ import org.json.JSONObject;
 public class TJDataFetcher {
     public final JSONObject a = new JSONObject();
 
-    /* JADX WARN: Code duplicated, block: B:11:0x0023  */
     public final JSONObject a(JSONArray jSONArray) throws JSONException {
         Object obj;
         for (int i = 0; i < jSONArray.length(); i++) {
             if (jSONArray.get(i).equals("USER_ID")) {
                 String userID = TJUser.INSTANCE.getUserID();
                 JSONObject jSONObject = this.a;
-                if (userID != null) {
-                    boolean zIsEmpty = userID.isEmpty();
+                if (userID == null || userID.isEmpty()) {
                     obj = userID;
-                    if (zIsEmpty) {
-                        obj = JSONObject.NULL;
-                    }
-                } else {
                     obj = JSONObject.NULL;
                 }
+                obj = userID;
                 jSONObject.put("USER_ID", obj);
             }
         }

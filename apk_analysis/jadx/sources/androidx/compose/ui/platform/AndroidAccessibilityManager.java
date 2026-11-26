@@ -39,16 +39,19 @@ public final class AndroidAccessibilityManager implements AccessibilityManager {
      */
     @Override // androidx.compose.ui.platform.AccessibilityManager
     public long calculateRecommendedTimeoutMillis(long j, boolean z, boolean z2, boolean z3) {
-        int i = z;
+        int i;
+        int i2 = z;
         if (j < SieveCacheKt.NodeLinkMask) {
             if (z2) {
                 i = (z ? 1 : 0) | 2;
             }
             if (z3) {
-                i = (i == true ? 1 : 0) | 4;
+                i2 = i;
+                i2 = (i2 == true ? 1 : 0) | 4;
             }
+            i2 = i;
             if (Build.VERSION.SDK_INT >= 29) {
-                int recommendedTimeoutMillis = Api29Impl.INSTANCE.getRecommendedTimeoutMillis(this.accessibilityManager, (int) j, i);
+                int recommendedTimeoutMillis = Api29Impl.INSTANCE.getRecommendedTimeoutMillis(this.accessibilityManager, (int) j, i2);
                 if (recommendedTimeoutMillis == Integer.MAX_VALUE) {
                     return Long.MAX_VALUE;
                 }

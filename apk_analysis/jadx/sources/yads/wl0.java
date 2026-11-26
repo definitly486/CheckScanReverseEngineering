@@ -101,50 +101,114 @@ public final class wl0 {
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
     */
-    public final synchronized void c(ne neVar) {
-        try {
-            this.e.getClass();
-            if (neVar.b.c()) {
-                return;
-            }
-            vl0 vl0Var = (vl0) this.c.get(this.g);
-            h14 h14Var = neVar.d;
-            if (h14Var != null && vl0Var != null) {
-                long j = vl0Var.c;
-                if (j == -1) {
-                    if (vl0Var.b != neVar.c) {
-                        return;
-                    }
-                }
-            }
-            vl0 vl0VarA = a(neVar.c, h14Var);
-            if (this.g == null) {
-                this.g = vl0VarA.a;
-            }
-            h14 h14Var2 = neVar.d;
-            if (h14Var2 != null && h14Var2.a()) {
-                h14 h14Var3 = neVar.d;
-                vl0 vl0VarA2 = a(neVar.c, new h14(h14Var3.a, h14Var3.d, h14Var3.b));
-                if (!vl0VarA2.e) {
-                    vl0VarA2.e = true;
-                    neVar.b.a(neVar.d.a, this.b);
-                    hx5 hx5Var = this.b;
-                    Math.max(0L, u56.b(this.b.f) + u56.b(hx5Var.h.a(neVar.d.b).b));
-                    this.e.getClass();
-                }
-            }
-            if (!vl0VarA.e) {
-                vl0VarA.e = true;
-                this.e.getClass();
-            }
-            if (vl0VarA.a.equals(this.g) && !vl0VarA.f) {
-                vl0VarA.f = true;
-                this.e.a(neVar, vl0VarA.a);
-            }
-        } catch (Throwable th) {
-            throw th;
-        }
+    public final synchronized void c(yads.ne r8) {
+        /*
+            r7 = this;
+            monitor-enter(r7)
+            yads.w04 r0 = r7.e     // Catch: java.lang.Throwable -> L2f
+            r0.getClass()     // Catch: java.lang.Throwable -> L2f
+            yads.kx5 r0 = r8.b     // Catch: java.lang.Throwable -> L2f
+            boolean r0 = r0.c()     // Catch: java.lang.Throwable -> L2f
+            if (r0 == 0) goto L10
+            monitor-exit(r7)
+            return
+        L10:
+            java.util.HashMap r0 = r7.c     // Catch: java.lang.Throwable -> L2f
+            java.lang.String r1 = r7.g     // Catch: java.lang.Throwable -> L2f
+            java.lang.Object r0 = r0.get(r1)     // Catch: java.lang.Throwable -> L2f
+            yads.vl0 r0 = (yads.vl0) r0     // Catch: java.lang.Throwable -> L2f
+            yads.h14 r1 = r8.d     // Catch: java.lang.Throwable -> L2f
+            if (r1 == 0) goto L3a
+            if (r0 == 0) goto L3a
+            long r2 = r0.c     // Catch: java.lang.Throwable -> L2f
+            r4 = -1
+            int r4 = (r2 > r4 ? 1 : (r2 == r4 ? 0 : -1))
+            if (r4 != 0) goto L32
+            int r0 = r0.b     // Catch: java.lang.Throwable -> L2f
+            int r2 = r8.c     // Catch: java.lang.Throwable -> L2f
+            if (r0 == r2) goto L3a
+            goto L38
+        L2f:
+            r8 = move-exception
+            goto Lc0
+        L32:
+            long r4 = r1.d     // Catch: java.lang.Throwable -> L2f
+            int r0 = (r4 > r2 ? 1 : (r4 == r2 ? 0 : -1))
+            if (r0 >= 0) goto L3a
+        L38:
+            monitor-exit(r7)
+            return
+        L3a:
+            int r0 = r8.c     // Catch: java.lang.Throwable -> L2f
+            yads.vl0 r0 = r7.a(r0, r1)     // Catch: java.lang.Throwable -> L2f
+            java.lang.String r1 = r7.g     // Catch: java.lang.Throwable -> L2f
+            if (r1 != 0) goto L48
+            java.lang.String r1 = r0.a     // Catch: java.lang.Throwable -> L2f
+            r7.g = r1     // Catch: java.lang.Throwable -> L2f
+        L48:
+            yads.h14 r1 = r8.d     // Catch: java.lang.Throwable -> L2f
+            r2 = 1
+            if (r1 == 0) goto L9c
+            boolean r1 = r1.a()     // Catch: java.lang.Throwable -> L2f
+            if (r1 == 0) goto L9c
+            yads.h14 r1 = new yads.h14     // Catch: java.lang.Throwable -> L2f
+            yads.h14 r3 = r8.d     // Catch: java.lang.Throwable -> L2f
+            java.lang.Object r4 = r3.a     // Catch: java.lang.Throwable -> L2f
+            long r5 = r3.d     // Catch: java.lang.Throwable -> L2f
+            int r3 = r3.b     // Catch: java.lang.Throwable -> L2f
+            r1.<init>(r4, r5, r3)     // Catch: java.lang.Throwable -> L2f
+            int r3 = r8.c     // Catch: java.lang.Throwable -> L2f
+            yads.vl0 r1 = r7.a(r3, r1)     // Catch: java.lang.Throwable -> L2f
+            boolean r3 = r1.e     // Catch: java.lang.Throwable -> L2f
+            if (r3 != 0) goto L9c
+            r1.e = r2     // Catch: java.lang.Throwable -> L2f
+            yads.kx5 r1 = r8.b     // Catch: java.lang.Throwable -> L2f
+            yads.h14 r3 = r8.d     // Catch: java.lang.Throwable -> L2f
+            java.lang.Object r3 = r3.a     // Catch: java.lang.Throwable -> L2f
+            yads.hx5 r4 = r7.b     // Catch: java.lang.Throwable -> L2f
+            r1.a(r3, r4)     // Catch: java.lang.Throwable -> L2f
+            yads.hx5 r1 = r7.b     // Catch: java.lang.Throwable -> L2f
+            yads.h14 r3 = r8.d     // Catch: java.lang.Throwable -> L2f
+            int r3 = r3.b     // Catch: java.lang.Throwable -> L2f
+            yads.a6 r1 = r1.h     // Catch: java.lang.Throwable -> L2f
+            yads.z5 r1 = r1.a(r3)     // Catch: java.lang.Throwable -> L2f
+            long r3 = r1.b     // Catch: java.lang.Throwable -> L2f
+            long r3 = yads.u56.b(r3)     // Catch: java.lang.Throwable -> L2f
+            yads.hx5 r1 = r7.b     // Catch: java.lang.Throwable -> L2f
+            long r5 = r1.f     // Catch: java.lang.Throwable -> L2f
+            long r5 = yads.u56.b(r5)     // Catch: java.lang.Throwable -> L2f
+            long r5 = r5 + r3
+            r3 = 0
+            java.lang.Math.max(r3, r5)     // Catch: java.lang.Throwable -> L2f
+            yads.w04 r1 = r7.e     // Catch: java.lang.Throwable -> L2f
+            r1.getClass()     // Catch: java.lang.Throwable -> L2f
+        L9c:
+            boolean r1 = r0.e     // Catch: java.lang.Throwable -> L2f
+            if (r1 != 0) goto La7
+            r0.e = r2     // Catch: java.lang.Throwable -> L2f
+            yads.w04 r1 = r7.e     // Catch: java.lang.Throwable -> L2f
+            r1.getClass()     // Catch: java.lang.Throwable -> L2f
+        La7:
+            java.lang.String r1 = r0.a     // Catch: java.lang.Throwable -> L2f
+            java.lang.String r3 = r7.g     // Catch: java.lang.Throwable -> L2f
+            boolean r1 = r1.equals(r3)     // Catch: java.lang.Throwable -> L2f
+            if (r1 == 0) goto Lbe
+            boolean r1 = r0.f     // Catch: java.lang.Throwable -> L2f
+            if (r1 != 0) goto Lbe
+            r0.f = r2     // Catch: java.lang.Throwable -> L2f
+            yads.w04 r1 = r7.e     // Catch: java.lang.Throwable -> L2f
+            java.lang.String r0 = r0.a     // Catch: java.lang.Throwable -> L2f
+            r1.a(r8, r0)     // Catch: java.lang.Throwable -> L2f
+        Lbe:
+            monitor-exit(r7)
+            return
+        Lc0:
+            monitor-exit(r7)     // Catch: java.lang.Throwable -> L2f
+            throw r8
+        */
+        throw new UnsupportedOperationException("Method not decompiled: yads.wl0.c(yads.ne):void");
     }
 
     public final synchronized void a(ne neVar) {

@@ -62,49 +62,41 @@ public final class iy implements Camera.AutoFocusCallback {
     }
 
     public final synchronized void b() {
-        try {
-            if (this.d) {
-                this.f = null;
-                if (!this.b && !this.c) {
-                    try {
-                        this.e.autoFocus(this);
-                        this.c = true;
-                    } catch (RuntimeException e) {
-                        Log.w("iy", "Unexpected exception while focusing", e);
-                        a();
-                    }
+        if (this.d) {
+            this.f = null;
+            if (!this.b && !this.c) {
+                try {
+                    this.e.autoFocus(this);
+                    this.c = true;
+                } catch (RuntimeException e) {
+                    Log.w("iy", "Unexpected exception while focusing", e);
+                    a();
                 }
             }
-        } catch (Throwable th) {
-            throw th;
         }
     }
 
     public final synchronized void c() {
-        try {
-            this.b = true;
-            if (this.d) {
-                synchronized (this) {
-                    try {
-                        a aVar = this.f;
-                        if (aVar != null) {
-                            if (aVar.getStatus() != AsyncTask.Status.FINISHED) {
-                                this.f.cancel(true);
-                            }
-                            this.f = null;
+        this.b = true;
+        if (this.d) {
+            synchronized (this) {
+                try {
+                    a aVar = this.f;
+                    if (aVar != null) {
+                        if (aVar.getStatus() != AsyncTask.Status.FINISHED) {
+                            this.f.cancel(true);
                         }
-                        try {
-                            this.e.cancelAutoFocus();
-                        } catch (RuntimeException e) {
-                            Log.w("iy", "Unexpected exception while cancelling focusing", e);
-                        }
-                    } catch (Throwable th) {
-                        throw th;
+                        this.f = null;
                     }
+                    try {
+                        this.e.cancelAutoFocus();
+                    } catch (RuntimeException e) {
+                        Log.w("iy", "Unexpected exception while cancelling focusing", e);
+                    }
+                } catch (Throwable th) {
+                    throw th;
                 }
             }
-        } catch (Throwable th2) {
-            throw th2;
         }
     }
 

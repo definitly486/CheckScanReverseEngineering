@@ -1216,7 +1216,6 @@ public class LinearLayoutCompat extends ViewGroup {
                         i9 = virtualChildCount;
                         i10 = mode2;
                         z4 = true;
-                        view = virtualChildAt4;
                         i12 = i16;
                         i11 = i17;
                         z = z3;
@@ -1253,6 +1252,7 @@ public class LinearLayoutCompat extends ViewGroup {
                         iMax4 = z ? Math.max(measuredHeight2, i34) : i34;
                     }
                     if (i14 >= 0 && i14 == childrenSkipCount + 1) {
+                        view = virtualChildAt4;
                         this.mBaselineChildTop = this.mTotalLength;
                     }
                     if (childrenSkipCount < i14 && ((LinearLayout.LayoutParams) layoutParams3).weight > 0.0f) {

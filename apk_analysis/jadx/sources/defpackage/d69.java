@@ -1,0 +1,48 @@
+package defpackage;
+
+/* JADX INFO: loaded from: classes.dex */
+@bd2(c = "com.warefly.checkscan.component.unityofferwall.UnityOfferwallController$show$2", f = "UnityOfferwallController.kt", l = {45}, m = "invokeSuspend")
+public final class d69 extends pg8 implements bm3<y22, e02<? super m69>, Object> {
+    public int l;
+    public final /* synthetic */ s59 m;
+    public final /* synthetic */ String n;
+    public final /* synthetic */ String o;
+    public final /* synthetic */ tj1.c p;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public d69(s59 s59Var, String str, String str2, tj1.c cVar, e02 e02Var) {
+        super(2, e02Var);
+        this.m = s59Var;
+        this.n = str;
+        this.o = str2;
+        this.p = cVar;
+    }
+
+    @Override // defpackage.cd0
+    public final e02<j59> create(Object obj, e02<?> e02Var) {
+        return new d69(this.m, this.n, this.o, this.p, e02Var);
+    }
+
+    @Override // defpackage.bm3
+    public final Object invoke(y22 y22Var, e02<? super m69> e02Var) {
+        return ((d69) create(y22Var, e02Var)).invokeSuspend(j59.a);
+    }
+
+    @Override // defpackage.cd0
+    public final Object invokeSuspend(Object obj) throws Throwable {
+        a32 a32Var = a32.COROUTINE_SUSPENDED;
+        int i = this.l;
+        if (i == 0) {
+            r57.b(obj);
+            this.l = 1;
+            Object objG = this.m.g(this.n, this.o, this.p, this);
+            return objG == a32Var ? a32Var : objG;
+        }
+        if (i == 1) {
+            r57.b(obj);
+            return obj;
+        }
+        ah.f("call to 'resume' before 'invoke' with coroutine");
+        return null;
+    }
+}

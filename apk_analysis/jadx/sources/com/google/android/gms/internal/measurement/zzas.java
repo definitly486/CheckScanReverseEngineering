@@ -69,6 +69,7 @@ public final class zzas implements Iterable, zzao {
         int i;
         int i2;
         int i3;
+        boolean zIsEmpty;
         zzg zzgVar2;
         if ("charAt".equals(str) || "concat".equals(str) || "hasOwnProperty".equals(str) || "indexOf".equals(str) || "lastIndexOf".equals(str) || "match".equals(str) || "replace".equals(str) || FirebaseAnalytics.Event.SEARCH.equals(str) || "slice".equals(str) || TJAdUnitConstants.String.STYLE_SPLIT.equals(str) || "substring".equals(str) || "toLowerCase".equals(str) || "toLocaleLowerCase".equals(str) || "toString".equals(str) || "toUpperCase".equals(str) || "toLocaleUpperCase".equals(str)) {
             str2 = "trim";
@@ -220,18 +221,22 @@ public final class zzas implements Iterable, zzao {
                         String[] strArrSplit = str3.split(Pattern.quote(strZzc2), ((int) jZzh) + 1);
                         int length = strArrSplit.length;
                         if (!strZzc2.isEmpty() || length <= 0) {
+                            i3 = zIsEmpty;
+                            z = zIsEmpty;
                             i2 = length;
                             i3 = z;
                         } else {
-                            boolean zIsEmpty = strArrSplit[0].isEmpty();
+                            zIsEmpty = strArrSplit[0].isEmpty();
                             i2 = length - 1;
-                            i3 = zIsEmpty;
-                            z = zIsEmpty;
                             if (!strArrSplit[i2].isEmpty()) {
+                                i3 = zIsEmpty;
+                                z = zIsEmpty;
                                 i2 = length;
                                 i3 = z;
                             }
                         }
+                        i3 = zIsEmpty;
+                        z = zIsEmpty;
                         if (length > jZzh) {
                             i2--;
                         }
