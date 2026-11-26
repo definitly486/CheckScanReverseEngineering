@@ -14,7 +14,7 @@ EXTS = {".java", ".kt", ".smali", ".xml", ".json", ".txt"}
 SKIP = {".git", ".gradle", ".venv", "venv", "build", "node_modules", "__pycache__"}
 HTTP = re.compile(r'@(GET|POST|PUT|PATCH|DELETE|HEAD|OPTIONS|HTTP)\s*\(?\s*["\']?([^"\'\s)]*)', re.I)
 PARAM = re.compile(r'@(Path|Query|Header|Field|Part|Body|Url)\s*(?:\(\s*["\']([^"\']+)["\']\s*\))?', re.I)
-URL = re.compile(r"""["']((?:https?://|/api/|/v[0-9]+/)[^"'\\s<>]{1,250})["']""")
+URL = re.compile(r"""["']((?:https?://|/api/|/v[0-9]+/)[^"'\s<>]{1,250})["']""")
 SIGNALS = {
     "auth": re.compile(r"auth|login|sign.?in|token|credential|session|refresh", re.I),
     "sms_otp": re.compile(r"sms|otp|phone|verification|confirm|challenge", re.I),

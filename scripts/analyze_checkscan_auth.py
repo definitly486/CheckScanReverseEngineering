@@ -14,7 +14,7 @@ Output:
     reports/auth_network/auth_network_findings.md
 
 Optional APK decompilation:
-    python3 analyze_checkscan_auth.py --apk ./checkscan.apk
+    python3 scripts/analyze_checkscan_auth.py --apk ./checkscan.apk
 """
 from __future__ import annotations
 

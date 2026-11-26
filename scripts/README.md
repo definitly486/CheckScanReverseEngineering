@@ -23,7 +23,7 @@
 
    Для анализа APKTool укажите каталог `apk_analysis/apktool`.
 
-## CheckScan-специфичные инструменты
+## CheckScan-специфичные инструменты\n\n- `analyze_auth_network.py` — альтернативный анализ auth/network по Smali-методам и XML-ресурсам.
 
 - `checkscan_login.py` — работа с известным CheckScan API и локальной сессией. Не является универсальным сканером.
 - `analyze_checkscan_auth.py` — анализ связей авторизации, DTO, токенов и interceptor.
