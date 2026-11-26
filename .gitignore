@@ -20,7 +20,7 @@
 *.art
 
 # Generated analysis reports and indexes
-/reports/
+
 /logs/
 *.log
 *.report
