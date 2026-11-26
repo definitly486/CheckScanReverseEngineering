@@ -3,7 +3,7 @@
 CheckScan auth/token flow analyzer designed to be launched from repository root.
 
 Default:
-    python3 analyze_checkscan_auth.py
+    python3 scripts/analyze_checkscan_auth.py
 
 It scans repository's existing decompilation:
     apk_analysis/jadx/
@@ -26,7 +26,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent
+REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_SOURCE_DIRS = (
     REPO_ROOT / "apk_analysis" / "jadx",
     REPO_ROOT / "apk_analysis" / "apktool",
